@@ -22,26 +22,33 @@ export default {
     store.dispatch(showLoading())
 
     let seoGraphql = 'seo(url: "'+ path +'"){url,title,description,og_title,og_image,og_description}'
-    // let information = 'information{id, services, common, about, home}'
-    let information = ''
-    // let recentNews = 'recentNews:get5RecentPost{title, coverUrl, slug, public, description, view, category, created_at}'
-    let recentNews = ''
+    let information = '';
+    let indexcourse = 'indexcourse:oneIndexCourse{value}';
+    let price = 'price:onePrice{one, three, six, twelve}';
+    let allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
 
     let seo = {}
     const resp = await fetch('/graphql', {
       body: JSON.stringify({
-        query: '{' + seoGraphql + information + recentNews + '}',
+        query: '{' + seoGraphql + information + indexcourse + allSoftware + price + '}',
       }),
     });
     const { data } = await resp.json();
-    seo = data.seo || {}
-    if (!data ) throw new Error('Failed to load data.');
-    store.dispatch(setData(data))
 
-    store.dispatch(hideLoading())
+    seo = data.seo || {};
+    if (!data ) throw new Error('Failed to load data.');
+
+    store.dispatch(setData(data));
+
+    store.dispatch(hideLoading());
+
     return {
       title: 'Trang chủ',
-      component: <Layout data={store.getState().data}><Home data={store.getState().data} /></Layout>,
+      component: <Layout
+        store={store.getState()}
+      >
+        <Home data={store.getState().data} user={store.getState().user} />
+      </Layout>,
     };
   },
 

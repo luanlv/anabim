@@ -95,6 +95,7 @@ if (__DEV__) {
 
 app.use('/image', require('./serverRoute/image'))
 app.use('/api', require('./serverRoute/api'))
+app.use('/token', require('./serverRoute/token'))
 app.use('/upload', require('./serverRoute/upload'))
 app.use('/auth', require('./serverRoute/auth'))
 
@@ -132,7 +133,7 @@ app.get('*', async (req, res, next) => {
     });
 
     const initialState = {
-      user: req.user || null,
+      user: req.user || {},
       data: {
         categories: {
           needUpdate: true,
@@ -163,6 +164,50 @@ app.get('*', async (req, res, next) => {
           value: {}
         },
 
+        indexcourse: {
+          needUpdate: true,
+          value: {}
+        },
+
+        allSoftware: {
+          needUpdate: true,
+          value: []
+        },
+
+        price: {
+          needUpdate: true,
+          value: {}
+        },
+
+        categoryInfo: {
+          needUpdate: true,
+          value: {}
+        },
+
+        courseInCategory: {
+          needUpdate: true,
+          value: []
+        },
+
+        course: {
+          needUpdate: true,
+          value: {}
+        },
+
+        videos: {
+          needUpdate: true,
+          videos: []
+        },
+
+        softwareInfo: {
+          needUpdate: true,
+          value: {}
+        },
+
+        courseInSoftware: {
+          needUpdate: true,
+          value: []
+        }
       }
     };
 
@@ -170,7 +215,6 @@ app.get('*', async (req, res, next) => {
       fetch,
       // I should not use `history` on server.. but how I do redirection? follow universal-router
     });
-
     store.dispatch(setRuntimeVariable({
       name: 'initialNow',
       value: Date.now(),
@@ -281,4 +325,17 @@ models.sync().catch(err => console.error(err.stack)).then(() => {
 function connect () {
   var options = { server: { socketOptions: { keepAlive: 1 } }, promiseLibrary: Promise };
   return mongoose.connect(mongoDBURL, options).connection;
+}
+
+
+function trimUser(user){
+  if(!user)
+    return undefined
+  else
+    return {
+      name: user.name,
+      role: user.role,
+      isAdmin: user.isAdmin,
+      username: user.username
+    }
 }

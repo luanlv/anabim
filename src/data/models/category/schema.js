@@ -27,9 +27,9 @@ module.exports.all = (root, {}) => {
 };
 
 
-module.exports.one = (root, {code}) => {
+module.exports.one = (root, {slug}) => {
   let query = {}
-  if(code !== undefined) query.code = code
+  if(slug !== undefined) query.slug = slug
   return new Promise((resolve, reject) => {
     model.findOne(query).exec((err, res) => {
       err ? reject(err) : resolve(res);

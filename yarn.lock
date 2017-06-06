@@ -6040,9 +6040,9 @@ lpad-align@^1.0.1:
     longest "^1.0.0"
     meow "^3.3.0"
 
-lru-cache@2, lru-cache@~2.0.0:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-2.0.4.tgz#b8b61ae09848385ec6768760e39c123e7e39568a"
+lru-cache@2, lru-cache@~2.6.5:
+  version "2.6.5"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-2.6.5.tgz#e56d6354148ede8d7707b58d143220fd08df0fd5"
 
 lru-cache@4.0.1, lru-cache@^4.0.1:
   version "4.0.1"
@@ -6057,9 +6057,9 @@ lru-cache@^3.2.0:
   dependencies:
     pseudomap "^1.0.1"
 
-lru-cache@~2.6.5:
-  version "2.6.5"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-2.6.5.tgz#e56d6354148ede8d7707b58d143220fd08df0fd5"
+lru-cache@~2.0.0:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-2.0.4.tgz#b8b61ae09848385ec6768760e39c123e7e39568a"
 
 macaddress@^0.2.8:
   version "0.2.8"
@@ -8247,6 +8247,15 @@ react-draft-wysiwyg@^1.10.0:
     immutable "^4.0.0-rc.1"
     prop-types "^15.5.10"
 
+react-facebook@^4.0.13:
+  version "4.0.13"
+  resolved "https://registry.yarnpkg.com/react-facebook/-/react-facebook-4.0.13.tgz#f99d8d94f76440b708701bec284d90521029da35"
+  dependencies:
+    babel-runtime "^6.23.0"
+    can-use-dom "^0.1.0"
+    prop-types "^15.5.8"
+    react-spinner-children "^1.0.5"
+
 react-hot-loader@^3.0.0-beta.6:
   version "3.0.0-beta.7"
   resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-3.0.0-beta.7.tgz#d5847b8165d731c4d5b30d86d5d4716227a0fa83"
@@ -8353,6 +8362,13 @@ react-slick@^0.14.11, react-slick@~0.14.2:
     json2mq "^0.2.0"
     object-assign "^4.1.0"
     slick-carousel "^1.6.0"
+
+react-spinner-children@^1.0.5:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/react-spinner-children/-/react-spinner-children-1.0.7.tgz#f74e6a7f4079b7b2f1cebc83c1aea0b5c77d60df"
+  dependencies:
+    prop-types "^15.5.10"
+    spin.js "^2.3.2"
 
 react-sticky-el@^1.0.3:
   version "1.0.3"
@@ -9345,6 +9361,10 @@ spdx-license-ids@^1.0.2:
 specificity@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/specificity/-/specificity-0.3.0.tgz#332472d4e5eb5af20821171933998a6bc3b1ce6f"
+
+spin.js@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/spin.js/-/spin.js-2.3.2.tgz#6caa56d520673450fd5cfbc6971e6d0772c37a1a"
 
 split2@^0.2.1:
   version "0.2.1"

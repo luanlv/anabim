@@ -23,25 +23,29 @@ export default {
     store.dispatch(showLoading())
 
     let seoGraphql = 'seo(url: "'+ path +'"){url,title,description,og_title,og_image,og_description}'
-    let information = 'information{id, about, services, common}'
+    let information = '';
+    let indexcourse = 'indexcourse:oneIndexCourse{value}';
+    let price = 'price:onePrice{one, three, six, twelve}';
+    let allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
 
-    let seo = {}
+    let seo = {};
     const resp = await fetch('/graphql', {
       body: JSON.stringify({
-        query: '{' + seoGraphql + ','+ information +'}',
+        query: '{' + seoGraphql + information + indexcourse + allSoftware + price + '}',
       }),
     });
+
     const { data } = await resp.json();
     seo = data.seo || {}
     if (!data ) throw new Error('Failed to load data.');
-    store.dispatch(setData(data))
+    store.dispatch(setData(data));
 
-    store.dispatch(hideLoading())
+    store.dispatch(hideLoading());
     return require.ensure([], require => require('./About').default, 'about')
       .then(About => ({
         title,
         chunk: 'about',
-        component: <Layout data={store.getState().data} ><About data={store.getState().data} /></Layout>,
+        component: <Layout store={store.getState()} ><About data={store.getState().data} /></Layout>,
       }));
   },
 

@@ -27,8 +27,36 @@ export default {
     },
     resolve: model.one
   },
+  oneCourse2: {
+    type: type,
+    args: {
+      slug: {
+        type: GraphQLString
+      }
+    },
+    resolve: model.one2
+  },
   allCourse: {
     type: new GraphQLList(type),
     resolve: model.all
   },
+  courseInCategory: {
+    type: new GraphQLList(type),
+    args: {
+      slug: {
+        type: GraphQLString
+      }
+    },
+    resolve: model.courseInCategory
+  },
+  courseInSoftware: {
+    type: new GraphQLList(type),
+    args: {
+      slug: {
+        type: GraphQLString
+      }
+    },
+    resolve: model.courseInSoftware
+  }
+
 };

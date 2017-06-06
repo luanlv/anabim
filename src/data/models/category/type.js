@@ -23,7 +23,7 @@ export default new GraphQLObjectType({
   description: 'Category object',
   fields: () => ({
     _id: {
-      type: GraphQLID
+      type: GraphQLInt
     },
     name: {
       type: GraphQLString

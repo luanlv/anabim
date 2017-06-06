@@ -23,7 +23,7 @@ export default new GraphQLObjectType({
   description: 'Comment object',
   fields: () => ({
     _id: {
-      type: GraphQLID
+      type: GraphQLInt
     },
     code: {
       type: GraphQLString

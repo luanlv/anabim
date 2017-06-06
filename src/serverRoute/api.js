@@ -5,14 +5,44 @@ const Post = mongoose.model('Post')
 const Setting = mongoose.model('Setting')
 const Information = mongoose.model('Information')
 const Category = mongoose.model('Category')
+const Course = mongoose.model('Course')
+const Software = mongoose.model('Software')
 const Seo = mongoose.model('Seo')
 let bodyParser = require('body-parser')
 let Mailer = require('./services/mailgun');
 let axios = require('axios')
-// import {FB, FacebookApiException} from 'fb';
-//
-// FB.options({version: 'v2.9'});
-// var comhoavangApp = FB.extend({appId: '1968072516812373', appSecret: '4e2c8135946ac8e7b7cd8cd48492d648'}),
+
+
+let video = require('./api/video').default
+let course = require('./api/course').default
+let category = require('./api/category').default
+let activecode = require('./api/activecode').default
+let comment = require('./api/comment').default
+let coupon = require('./api/coupon').default
+let image = require('./api/image').default
+let software = require('./api/software').default
+let price = require('./api/price').default
+let membership= require('./api/membership').default
+let indexcourse = require('./api/indexcourse').default
+let search = require('./api/search').default
+let user = require('./api/user').default
+
+
+router.use('/search', search)
+router.use('/video', video)
+router.use('/course', course)
+router.use('/category', category)
+router.use('/activecode', activecode)
+router.use('/comment', comment)
+router.use('/coupon', coupon)
+router.use('/image', image)
+router.use('/software', software)
+router.use('/price', price)
+router.use('/membership', membership)
+router.use('/indexcourse', indexcourse)
+router.use('/user', user)
+
+
 
 router.post('/post/new', bodyParser.json() ,(req, res) => {
   Post.create(req.body, (err, resData) => {
@@ -72,6 +102,54 @@ router.post('/category/update', bodyParser.json() ,(req, res) => {
   });
 })
 
+
+// software
+router.post('/software/new', bodyParser.json() ,(req, res) => {
+  Software.create(req.body, (err, resData) => {
+    if(err) return res.sendStatus(400)
+    return res.send(resData)
+  })
+})
+
+router.post('/software/delete', bodyParser.json() ,(req, res) => {
+  Software.remove({slug: req.body.slug}, function (err, resData) {
+    if (err) return res.statusCode(400).send(err);
+    res.send(resData);
+  });
+})
+
+router.post('/software/update', bodyParser.json() ,(req, res) => {
+  Software.findOneAndUpdate({slug: req.body.slug}, { $set: req.body}, { new: true }, function (err, resData) {
+    if (err) return res.statusCode(400).send(err);
+    res.send(resData);
+  });
+})
+
+// Course
+router.post('/course/new', bodyParser.json() ,(req, res) => {
+  Course.create(req.body, (err, resData) => {
+    if(err) return res.sendStatus(400)
+    return res.send(resData)
+  })
+})
+
+router.post('/course/delete', bodyParser.json() ,(req, res) => {
+  Course.remove({slug: req.body.slug}, function (err, resData) {
+    if (err) return res.statusCode(400).send(err);
+    res.send(resData);
+  });
+})
+
+router.post('/course/update', bodyParser.json() ,(req, res) => {
+  Course.findOneAndUpdate({slug: req.body.slug}, { $set: req.body}, { new: true }, function (err, resData) {
+    if (err) return res.statusCode(400).send(err);
+    res.send(resData);
+  });
+})
+
+
+// SEO
+
 router.post('/seo/new', bodyParser.json() ,(req, res) => {
   Seo.create(req.body, (err, resData) => {
     if(err) return res.sendStatus(400)
@@ -85,6 +163,13 @@ router.post('/seo/update', bodyParser.json() ,(req, res) => {
     res.send(resData);
   });
 })
+
+
+
+
+
+
+
 
 
 

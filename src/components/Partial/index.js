@@ -1,3 +1,10 @@
 
+export {default as ActiveCode} from './ActiveCode'
+export {default as EmailConfirm} from './EmailConfirm'
 export {default as Footer} from './Footer'
-export {default as Header} from './Header'
+export {default as MemberShip} from './MemberShip'
+export {default as Nav} from './Nav'
+export {default as Password} from './Password'
+// export {default as Sidebar} from './Sidebar'
+export {default as SignIn} from './SignIn'
+export {default as SignUp} from './SignUp'

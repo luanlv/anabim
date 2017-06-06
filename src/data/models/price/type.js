@@ -23,7 +23,7 @@ export default new GraphQLObjectType({
   description: 'Price object',
   fields: () => ({
     _id: {
-      type: GraphQLID
+      type: GraphQLInt
     },
     one: {
       type: GraphQLInt

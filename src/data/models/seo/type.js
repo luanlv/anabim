@@ -23,7 +23,7 @@ export default new GraphQLObjectType({
   description: 'Seo object',
   fields: () => ({
     _id: {
-      type: new GraphQLNonNull(GraphQLID)
+      type: new GraphQLNonNull(GraphQLInt)
     },
     url: {
       type: GraphQLString

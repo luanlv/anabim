@@ -24,14 +24,14 @@ const { allActiveCode, oneActiveCode } = require('./models/activecode/queries').
 const { allCategory, oneCategory } = require('./models/category/queries').default;
 const { allComment, oneComment } = require('./models/comment/queries').default;
 const { allCoupon, oneCoupon } = require('./models/coupon/queries').default;
-const { allCourse, oneCourse } = require('./models/course/queries').default;
+const { allCourse, oneCourse, courseInCategory, courseInSoftware} = require('./models/course/queries').default;
 const { oneIndexCourse } = require('./models/indexcourse/queries').default;
 const { onePrice } = require('./models/price/queries').default;
 const { oneSession } = require('./models/session/queries').default;
 const { oneSoftware, allSoftware } = require('./models/software/queries').default;
 const { oneSubscribe, allSubscribe } = require('./models/subscribe/queries').default;
 const { oneToken } = require('./models/token/queries').default;
-const { oneVideo, allVideo } = require('./models/video/queries').default;
+const { oneVideo, allVideo, videoInCourse } = require('./models/video/queries').default;
 
 
 const schema = new Schema({
@@ -66,6 +66,8 @@ const schema = new Schema({
 
       allCourse,
       oneCourse,
+      courseInCategory,
+      courseInSoftware,
 
       oneIndexCourse,
 
@@ -82,7 +84,8 @@ const schema = new Schema({
       oneToken,
 
       oneVideo,
-      allVideo
+      allVideo,
+      videoInCourse
     },
   }),
 });

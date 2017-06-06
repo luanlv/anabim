@@ -1,12 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
-let mongoose = require('mongoose')
-const User = mongoose.model('User')
-// const Token = mongoose.model('Token')
-// const Session = mongoose.model('Session')
+let mongoose = require('mongoose');
+const User = mongoose.model('User');
+const Token = mongoose.model('Token');
+const Session = mongoose.model('Session');
 
-let passport = require("passport")
+let Mailer = require('./services/mailgun').default
+let passport = require("passport");
 let FacebookStrategy = require("passport-facebook").Strategy
 let GoogleStrategy = require('passport-google-oauth').OAuth2Strategy
 let LocalStrategy = require('passport-local').Strategy
@@ -33,7 +34,7 @@ passport.use(new LocalStrategy(
       //     return done(null, false, {message: "Invalid password"});
       //   }
       // });
-      if(password === 'admin@123'){
+      if(password === 'luan'){
         return done(null, user[0]);
       }  else {
         return done(null, false, {message: "Invalid password"});
@@ -44,10 +45,10 @@ passport.use(new LocalStrategy(
 ))
 
 passport.use(new FacebookStrategy({
-    clientID:'123093138237586',
-    clientSecret:'bfddf6c0cb2bc745914a2b3236f57202',
+    clientID:'1996139930618697',
+    clientSecret:'3dc8e590f986de1667ef7f38fc09bbf2',
     // callbackURL:'http://localhost:3000/auth/facebook/callback',
-    callbackURL:'http://chungcu-timescityparkhill.com/auth/facebook/callback',
+    callbackURL:'http://localhost:3000/auth/facebook/callback',
     profileFields: ['id', 'displayName', 'emails', 'name']
   }, function(accessToken, refreshToken, profile, cb) {
     User.findOrCreate({username: profile.emails[0].value},
@@ -146,20 +147,20 @@ router.get('/google/callback',
 
 router.get('/logout', function(req, res){
   req.logout();
-  res.redirect('/admin/login');
+  res.redirect('/');
 });
 
-router.get('/login', passport.authenticate('local', { successRedirect: '/auth/login/ok',
+router.post('/login', passport.authenticate('local', { successRedirect: '/auth/login/ok',
   failureRedirect: '/auth/login/false' }))
 
 
 
 router.get('/login/ok', function(req, res, next) {
-  res.redirect('/admin')
+  res.redirect('/')
 });
 
 router.get('/login/false', function(req, res, next) {
-  res.redirect('/admin/login')
+  res.redirect('/error')
 });
 
 module.exports = router

@@ -1,2 +1,3 @@
 
-// export {default as Slide} from './Slide'
+export {default as IndexCourse} from './IndexCourse'
+export {default as Search} from './Search'

@@ -7,7 +7,7 @@ let autoIncrement = require('../autoIncrement')
 let schema = new Schema({
   name: String,
   slug: String,
-  coverUrl: String,
+  coverUrl: {type: String, default: '/image/corverUrl.jpg'},
   created_at: {type: Date, default: Date.now}
 }, { collection: 'software'});
 

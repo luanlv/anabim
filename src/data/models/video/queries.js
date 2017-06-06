@@ -31,4 +31,13 @@ export default {
     type: new GraphQLList(type),
     resolve: model.all
   },
+  videoInCourse: {
+    type: new GraphQLList(type),
+    args: {
+      slug: {
+        type: GraphQLString
+      }
+    },
+    resolve: model.videoInCourse
+  }
 };

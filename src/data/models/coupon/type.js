@@ -23,7 +23,7 @@ export default new GraphQLObjectType({
   description: 'Coupon object',
   fields: () => ({
     _id: {
-      type: GraphQLID
+      type: GraphQLInt
     },
     code: {
       type: GraphQLString

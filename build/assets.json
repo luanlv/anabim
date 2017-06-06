@@ -1,4 +1,22 @@
 {
+  "admin": {
+    "js": "/assets/admin.chunk.js"
+  },
+  "course": {
+    "js": "/assets/course.chunk.js"
+  },
+  "contact": {
+    "js": "/assets/contact.chunk.js"
+  },
+  "software": {
+    "js": "/assets/software.chunk.js"
+  },
+  "category": {
+    "js": "/assets/category.chunk.js"
+  },
+  "about": {
+    "js": "/assets/about.chunk.js"
+  },
   "client": {
     "js": "/assets/client.js"
   },

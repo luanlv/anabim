@@ -33,7 +33,49 @@ export default function data(state = {}, action) {
         category: {
           ...state.category,
           value: data.category || state.category.value
-        }
+        },
+
+        indexcourse: {
+          ...state.indexcourse,
+          value: data.indexcourse || state.indexcourse.value
+        },
+
+        allSoftware: {
+          ...state.allSoftware,
+          value: data.allSoftware || state.allSoftware.value
+        },
+
+        price: {
+          ...state.price,
+          value: data.price || state.price.value
+        },
+
+        categoryInfo: {
+          ...state.categoryInfo,
+          value: data.categoryInfo || state.categoryInfo.value
+        },
+        courseInCategory: {
+          ...state.courseInCategory,
+          value: data.courseInCategory || state.courseInCategory.value
+        },
+        course: {
+          ...state.course,
+          value: data.course || state.course.value
+        },
+        videos: {
+          ...state.videos,
+          value: data.videos || state.videos.value
+        },
+
+        softwareInfo: {
+          ...state.softwareInfo,
+          value: data.softwareInfo || state.softwareInfo.value
+        },
+
+        courseInSoftware: {
+          ...state.courseInSoftware,
+          value: data.courseInSoftware || state.courseInSoftware.value
+        },
       }
     default:
       return state;

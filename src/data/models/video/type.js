@@ -24,7 +24,7 @@ export default new GraphQLObjectType({
   description: 'Video object',
   fields: () => ({
     _id: {
-      type: GraphQLID
+      type: GraphQLInt
     },
     stt: {
       type: GraphQLFloat

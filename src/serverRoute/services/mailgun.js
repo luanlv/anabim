@@ -3,7 +3,7 @@ var domain = 'edu.anabim.com';
 var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 
-const from = 'Thông báo Đăng ký tư vấn <admin@chungcu-timescityparkhill.com>'
+const from = 'Anabim Education <admin@anabim.com>'
 
 const RegisterMail = function(email, name) {
   return {
@@ -70,4 +70,4 @@ Mailer.sendToAdmin = function(email, data) {
   });
 }
 
-module.exports = Mailer
+export default Mailer

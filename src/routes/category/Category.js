@@ -1,122 +1,141 @@
 import React from 'react';
+import {ListCourse } from './components'
 import Link from '../../components/Link'
 
-import {Title, BreadCrumb} from './components'
+class Category extends React.Component {
 
-class News extends React.Component {
+  constructor (props) {
+    super(props)
+  }
 
-  render() {
-    const allNews = this.props.data.allNewsByCategory.value
-    const recentNews = this.props.data.recentNews.value
-    const category = this.props.data.category.value
-    const categories = this.props.data.categories.value
+  componentDidMount () {
+    $('.special.cards .image').dimmer({
+      on: 'hover'
+    })
+
+    $('#context2 .menu .item')
+      .tab({
+        context: 'parent'
+      })
+    $('.special.cards .image').dimmer({
+      on: 'hover'
+    })
+  }
+
+  render () {
+
+    var button = (this.props.user.member === 'pending') ? (
+      <button className='ui large orange button'
+              onClick={function () {
+                $('#membership-info').modal('show')
+              }}
+      >Thông tin đăng ký</button>
+    ) : (
+      <button className='ui large orange button '
+              onClick={function () {
+                if (this.props.user.id.length === 0) {
+                  $('#dang-ky')
+                    .modal('show')
+                } else {
+                  if (this.props.user.member === 'none' || this.props.user.member === 'trialed' || this.props.user.member === 'membershiped') {
+                    $('.first.modal')
+                      .modal('show')
+                  }
+                }
+              }}
+      >Đăng ký học ngay</button>
+    )
+    const category = this.props.data.categoryInfo.value
+    const courses = this.props.data.courseInCategory.value
     return (
-      <div>
-        <Title title={category.title} description={''} />
-        <BreadCrumb title={'Các bài viết thuộc: ' + category.title} />
-
-        <div className="container">
-          <div className="row margin-bottom-30">
-            <div className="col-xs-12 col-md-9">
-              {allNews.map(news => {
-                return (
-                  <article className="clearfix hentry">
-                    <Link to={'/news/' + news.slug}>
-                      <img alt="placeholder" className="img-responsive" src="/assets/images/placeholders/848x480.png" />
-                    </Link>
-                    <div className="meta-data">
-                      <time className="meta-data__date" >{news.created_at}</time>
-                      <span className="meta-data__separator">/</span>
-                      <span className="meta-data__author">Gửi bởi Admin</span>
-                      <span className="meta-data__separator">/</span>
-                      <span className="meta-data__categories">
-                      {news.category.map((category, index) => {
-                        return <span>
-                          <Link rel="category tag" to={'/category/' + category}>{findCategoryBySlug(category, categories).title}</Link>
-                            {(news.category.length !== (index + 1) ) ? ' • ' : ''}
-                        </span>
-                      })}
-                      </span>
-                    </div>
-                    <h2 className="hentry__title"><Link to={"/news/" + news.slug}>{news.title}</Link></h2>
-                    <div className="hentry__content">
-                      <p>
-                        {news.description}
-                      </p>
-                      <p>
-                        <Link className="more-link" to={"/news/" + news.slug}>
-                          <span className="btn btn-default btn--post">Xem thêm</span>
-                        </Link>
-                      </p>
-                    </div>
-                  </article>
-                )
-              })}
-
-              {/*<nav className="navigation pagination">*/}
-                {/*<h2 className="screen-reader-text">Posts navigation</h2>*/}
-                {/*<div className="nav-links">*/}
-                  {/*<span className="page-numbers current">1</span>*/}
-                  {/*<a href="news.html" className="page-numbers">2</a>*/}
-                  {/*<a href="news.html" className="page-numbers">3</a>*/}
-                  {/*<a href="news.html" className="next page-numbers"><i className="fa fa-caret-right" /></a>*/}
-                {/*</div>*/}
-              {/*</nav>*/}
-            </div>{/* /.col */}
-            <div className="col-xs-12 col-md-3">
-              <div className="sidebar">
-                <div className="widget_search">
-                  <form action="#" className="search-form" method="get">
-                    <label>
-                      <span className="screen-reader-text">Search for:</span>
-                      <input type="search" name="s"  placeholder="Search ..." className="search-field" />
-                    </label>
-                    <button className="search-submit" type="submit"><i className="fa fa-lg fa-search" /></button>
-                  </form>
+      <div id='main'>
+        <div className='ui segment noBor noRa noSha noPa noMa'>
+          <div style={{background: '#1485bd'}}>
+            <div className='ui container '>
+              <div className='ui two column stackable grid' style={{color: 'white !important', height: '250px'}}>
+                <div className='column'>
+                  <div className='ui breadcrumb white' >
+                    <Link to='/' className='section' >Trang chủ</Link>
+                    <div className='divider' style={{display: 'inline'}}> / </div>
+                    Danh mục: [ <Link to={'/category/' + category.slug} className='section' >{category.name}</Link> ]
+                  </div>
+                  <div style={{color: 'white !important'}} dangerouslySetInnerHTML={{__html: category.description}} />
+                  <div className='row ' style={{paddingTop: '10px'}}>
+                    {button}
+                  </div>
                 </div>
-
-                <div className="widget_recent_entries">
-                  <h4 className="sidebar__headings">Bài viết gần đây</h4> <ul>
-                  {recentNews.map(news => {
-                    return (
-                      <li>
-                        <Link to={'/news/' + news.slug}>{news.title}</Link>
-                      </li>
-                    )
-                  })}
-
-                </ul>
-                </div>
-
-                <div className="widget_categories">
-                  <h4 className="sidebar__headings">Danh mục</h4>
-                  <ul>
-                    {categories.map(el => {
-                      return (
-                        <li>
-                          <Link to={"/category/" + el.slug}>{el.title}</Link>
-                        </li>
-                      )
-                    })}
-                  </ul>
+                <div className='column noPa' style={{backgroundImage: 'url("' + category.coverUrl + '")'}}>
+                  <div style={{background: 'linear-gradient(to right, #1485bd 0%, transparent 30% , transparent 49%, transparent 70%, #1485bd 100%)', width: '100%', height: '100%'}} />
                 </div>
               </div>
-            </div>{/* /.col */}
-          </div>{/* /.row */}
+            </div>
+          </div>
+          <div>
+            <div className='ui container'>
+              <div className='ui segment noBor noSha noPa' style={{margin: '30px auto'}}>
+                <div id='context2'>
+                  <h2 className='header'>Các video có trong danh mục <span style={{color: 'red'}}> {category.name} </span>:</h2>
+                  <hr />
+                  <div className='ui active tab ' data-tab='1'>
+                    <ListCourse courses={courses} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style={{background: 'linear-gradient(to right, black , #333)'}}>
+            <div className='ui container'>
+              <div className='ui stackable grid'>
+                <div className='twelve wide column grid noPa' style={{background: 'url("https://cdn.lynda.com/static/images/category/free-trial.png") no-repeat center black', backgroundSize: '100% 100%', height: '350px', overflow: 'hidden'}}>
+                  <div
+                    style={{width: '100%', height: '100%', background: 'linear-gradient(to right, rgba(0,0,0, 0.9) 10%, rgba(0,0,0, 0.4))'}}>
+                    <div className='ui header' style={{color: 'white !important', lineHeight: '40px', padding: '20px 50px', fontSize: '24px'}}>
+                      Khuyến mãi
+                    </div>
+                    <div style={{color: 'white !important', lineHeight: '40px', paddingLeft: '50px', fontSize: '18px'}}>
+                      Anabim đang trong đợt khuyến mãi, đăng ký càng lâu, giá càng giảm
+                    </div>
+                    <div style={{color: 'white !important', lineHeight: '40px', paddingLeft: '50px'}}>
+                      { button }
+                    </div>
+                  </div>
+                </div>
+                <div className='four wide column grid'>
+
+                  <div className='ui inverted relaxed divided list' style={{marginTop: '30px'}}>
+                    <div className='item'>
+                      <i className='huge inverted history middle aligned icon' />
+                      <div className='content'>
+                        <a className='header'>XEM KHÔNG GIỚI HẠN</a>
+                        <div className='description'>Xem không giới hạn  tất cả video có trên thư viện.
+                        </div>
+                      </div>
+                    </div>
+                    <div className='item'>
+                      <i className='huge inverted student middle aligned icon' />
+                      <div className='content'>
+                        <a className='header'>GIÁO VIÊN KINH NGHIỆM</a>
+                        <div className='description'>Học từ giảng viên có nhiều kinh nghiệm trong linh vực.</div>
+                      </div>
+                    </div>
+                    <div className='item'>
+                      <i className='huge inverted laptop middle aligned icon' />
+                      <div className='content'>
+                        <a className='header'>HỌC TẬP MỌI NƠI</a>
+                        <div className='description'>Học tập mọi lúc, mọi nơi, trên mọi thiết bị.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
-    );
+    )
   }
+
 }
 
-function findCategoryBySlug(slug, categories) {
-  for (let i = 0; i < categories.length; i++){
-    if(categories[i].slug === slug) {
-      return categories[i]
-    }
-  }
-  return {slug:'/', title: 'Không tồn tại'}
-}
-
-export default News
+export default Category

@@ -24,12 +24,9 @@ export default new GraphQLObjectType({
   description: 'IndexCourse object',
   fields: () => ({
     _id: {
-      type: GraphQLID
+      type: GraphQLInt
     },
-    category: {
-      type: GraphQLJSON
-    },
-    courses: {
+    value: {
       type: new GraphQLList(GraphQLJSON)
     },
     created_at: {

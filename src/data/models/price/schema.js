@@ -29,7 +29,7 @@ module.exports.all = (root, {}) => {
 
 module.exports.one = (root, {}) => {
   let query = {}
-  // if(code !== undefined) query.code = code
+  query._id = 1
   return new Promise((resolve, reject) => {
     model.findOne(query).exec((err, res) => {
       err ? reject(err) : resolve(res);

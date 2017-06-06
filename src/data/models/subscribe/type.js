@@ -23,7 +23,7 @@ export default new GraphQLObjectType({
   description: 'Subscribe object',
   fields: () => ({
     _id: {
-      type: GraphQLID
+      type: GraphQLInt
     },
     done: {
       type: GraphQLBoolean

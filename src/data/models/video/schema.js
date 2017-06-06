@@ -3,6 +3,7 @@ let mongoose = require('mongoose'),
 let autoIncrement = require('../autoIncrement')
 
 // const ImageSchema = require('./image').schema;
+const courseModel = require('../course/schema');
 
 let schema = new Schema({
   stt: {type: Number},
@@ -26,6 +27,20 @@ module.exports.all = (root, {}) => {
   return new Promise((resolve, reject) => {
     model.find({}).exec((err, res) => {
       err ? reject(err) : resolve(res);
+    });
+  });
+};
+
+module.exports.videoInCourse = (root, {slug}) => {
+  return new Promise((resolve, reject) => {
+    courseModel.findOne({slug: slug}).exec((err, course) => {
+      if(err) reject(err)
+      let query = {}
+      query.courseId = course._id
+
+      model.find(query).exec((err, res) => {
+        err ? reject(err) : resolve(res);
+      });
     });
   });
 };

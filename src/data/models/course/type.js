@@ -24,7 +24,7 @@ export default new GraphQLObjectType({
   description: 'Course object',
   fields: () => ({
     _id: {
-      type: GraphQLID
+      type: GraphQLInt
     },
     name: {
       type: GraphQLString
@@ -37,6 +37,9 @@ export default new GraphQLObjectType({
     },
     cateID: {
       type: new GraphQLList(GraphQLInt)
+    },
+    categories: {
+      type: new GraphQLList(GraphQLJSON)
     },
     softID: {
       type: new GraphQLList(GraphQLInt)
@@ -67,6 +70,9 @@ export default new GraphQLObjectType({
     },
     related: {
       type: new GraphQLList(GraphQLInt)
+    },
+    relatedCourse: {
+      type: new GraphQLList(GraphQLJSON)
     },
     created_at: {
       type: GraphQLDateTime
