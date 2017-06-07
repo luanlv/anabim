@@ -11,6 +11,7 @@ let schema = new Schema({
   section: {type: Number},
   name: {type: String},
   link: {type: String},
+  kind: {type: String, default: 'free'},
   url: {type: String},
   source: {type: String},
   time: {type: Number},

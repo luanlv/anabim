@@ -34,6 +34,12 @@ export default new GraphQLObjectType({
     price: {
       type: GraphQLInt
     },
+    percent: {
+      type: GraphQLInt
+    },
+    day: {
+      type: GraphQLInt
+    },
     month: {
       type: new GraphQLList(GraphQLInt)
     },

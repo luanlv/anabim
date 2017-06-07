@@ -8,8 +8,10 @@ let schema = new Schema({
   code: String,
   kind: Number,
   price: Number,
+  percent: Number,
+  day: Number,
   month: [Number],
-  active: Boolean,
+  active: {type: Boolean, default: true},
   quantity: Number,
   endTime: Date,
   created_at: {type: Date, default: Date.now}

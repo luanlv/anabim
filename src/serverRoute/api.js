@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var moment = require('moment')
+
 const mongoose = require('mongoose')
 const Post = mongoose.model('Post')
 const Setting = mongoose.model('Setting')
@@ -7,10 +9,18 @@ const Information = mongoose.model('Information')
 const Category = mongoose.model('Category')
 const Course = mongoose.model('Course')
 const Software = mongoose.model('Software')
+const Video = mongoose.model('Video')
+const Price = mongoose.model('Price')
+const Subscribe = mongoose.model('Subscribe')
+const Coupon = mongoose.model('Coupon')
+const User = mongoose.model('User')
+const ActiveCode = mongoose.model('ActiveCode')
+const Session = mongoose.model('Session')
 const Seo = mongoose.model('Seo')
 let bodyParser = require('body-parser')
 let Mailer = require('./services/mailgun');
 let axios = require('axios')
+
 
 
 let video = require('./api/video').default
@@ -147,6 +157,138 @@ router.post('/course/update', bodyParser.json() ,(req, res) => {
   });
 })
 
+
+//Video
+router.post('/video/new', bodyParser.json() ,(req, res) => {
+  Video.create(req.body, (err, resData) => {
+    if(err) return res.sendStatus(400)
+    return res.send(resData)
+  })
+})
+
+router.post('/video/delete', bodyParser.json() ,(req, res) => {
+  console.log(req.body.id)
+  Video.remove({_id: req.body.id}, function (err) {
+    if (err) return res.statusCode(400).send(err);
+    res.send('ok');
+  });
+})
+
+router.post('/video/update', bodyParser.json() ,(req, res) => {
+  Video.findOneAndUpdate({_id: req.body._id}, { $set: req.body}, { new: true }, function (err, resData) {
+    if (err) return res.statusCode(400).send(err);
+    res.send(resData);
+  });
+})
+
+//price
+router.post('/price/update', bodyParser.json() ,(req, res) => {
+  Price.findOneAndUpdate({_id: req.body._id}, { $set: req.body}, { new: true }, function (err, resData) {
+    if (err) return res.statusCode(400).send(err);
+    res.send(resData);
+  });
+})
+
+//membership
+
+router.post('/membership/action', bodyParser.json() ,(req, res) => {
+  if(req.body.action) {
+    Subscribe.update( {_id: req.body._id } ,{$set: {done: true, state: "Đồng ý"}}, (err, respond) => {
+      if (err) throw err
+      User.update({username: req.body.email}, {$set: {
+        member: 'membership',
+        info: {
+          start: moment(),
+          end: moment().add('months', req.body.month).add('days', req.body.bonusDay)
+        }}}, (err, respond) => {
+        if (err) throw err
+
+        var r = new RegExp(req.body.email,'i');
+        Session.remove({session: {$regex: r}}, (err, session) => {
+          if (err) throw err
+          return res.send(respond)
+        })
+
+      })
+    })
+  } else {
+    Subscribe.update( {_id: req.body._id } ,{$set: {done: true, state: "Không đồng ý"}}, (err, respond) => {
+      if (err) throw err
+      User.update({username: req.body.email}, {$set: {
+        member: 'none',
+        }}, (err, respond) => {
+        if (err) throw err
+
+        var r = new RegExp(req.body.email,'i');
+        Session.remove({session: {$regex: r}}, (err, session) => {
+          if (err) throw err
+          return res.send(respond)
+        })
+
+      })
+
+      res.send(respond)
+    })
+  }
+})
+
+
+//user
+
+router.post('/user/update', bodyParser.json() ,(req, res) => {
+  User.findOneAndUpdate({_id: req.body._id}, { $set: req.body}, { new: true }, function (err, resData) {
+    if (err) return res.statusCode(400).send(err);
+    res.send(resData);
+  });
+})
+
+// Active Code
+
+router.post('/activecode/new', bodyParser.json() ,(req, res) => {
+  ActiveCode.create(req.body, (err, resData) => {
+    if(err) return res.sendStatus(400)
+    return res.send(resData)
+  })
+})
+
+router.post('/activecode/delete', bodyParser.json() ,(req, res) => {
+
+  ActiveCode.remove({_id: req.body.id}, function (err) {
+    if (err) return res.statusCode(400).send(err);
+    res.send('ok');
+  });
+})
+
+router.post('/activecode/update', bodyParser.json() ,(req, res) => {
+  ActiveCode.findOneAndUpdate({_id: req.body._id}, { $set: req.body}, { new: true }, function (err, resData) {
+    if (err) return res.statusCode(400).send(err);
+    res.send(resData);
+  });
+})
+
+// Coupon
+
+router.post('/coupon/new', bodyParser.json() ,(req, res) => {
+  Coupon.create(req.body, (err, resData) => {
+    if(err) return res.sendStatus(400)
+    return res.send(resData)
+  })
+})
+
+router.post('/coupon/delete', bodyParser.json() ,(req, res) => {
+
+  Coupon.remove({_id: req.body.id}, function (err) {
+    if (err) return res.statusCode(400).send(err);
+    res.send('ok');
+  });
+})
+
+router.post('/coupon/update', bodyParser.json() ,(req, res) => {
+  Coupon.findOneAndUpdate({_id: req.body._id}, { $set: req.body}, { new: true }, function (err, resData) {
+    if (err) return res.statusCode(400).send(err);
+    res.send(resData);
+  });
+})
 
 // SEO
 

@@ -70,10 +70,11 @@ app.use(cookieParser());
 app.use(jsonParser);
 app.use(urlencodedParser);
 app.use(session({
+  // collection: 'session',
   cookie: { maxAge: (24*3600*1000*30)},
   resave: true,
   saveUninitialized: false,
-  secret: 'luuVANluan',
+  secret: 'LuuVanLuan',
   ttl: 7 * 24 * 60 * 60,
   store: new MongoStore({ mongooseConnection: mongoose.connection })
 }))

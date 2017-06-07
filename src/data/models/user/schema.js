@@ -68,3 +68,19 @@ module.exports.getListOfUsers = () => {
     });
   });
 };
+
+module.exports.getMembership = () => {
+  return new Promise((resolve, reject) => {
+    User.find({member: 'membership'}).exec((err, res) => {
+      err ? reject(err) : resolve(res);
+    });
+  });
+};
+
+module.exports.getTrialMember = () => {
+  return new Promise((resolve, reject) => {
+    User.find({member: 'trial'}).exec((err, res) => {
+      err ? reject(err) : resolve(res);
+    });
+  });
+};

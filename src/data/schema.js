@@ -13,7 +13,7 @@ import {
 } from 'graphql';
 
 const { listImage } = require('./models/image/queries').default;
-const { users } = require('./models/user/queries').default;
+const { users, getMembership, getTrialMember} = require('./models/user/queries').default;
 const { setting } = require('./models/setting/queries').default;
 const { seo, allSeo } = require('./models/seo/queries').default;
 const { getPosts, getOnePost, getAllPosts, getPostRelative, get5RecentPost, getAllPostsByCategory} = require('./models/post/queries').default;
@@ -29,7 +29,7 @@ const { oneIndexCourse } = require('./models/indexcourse/queries').default;
 const { onePrice } = require('./models/price/queries').default;
 const { oneSession } = require('./models/session/queries').default;
 const { oneSoftware, allSoftware } = require('./models/software/queries').default;
-const { oneSubscribe, allSubscribe } = require('./models/subscribe/queries').default;
+const { oneSubscribe, allSubscribe, allPendingSubscribe, allDoneSubscribe } = require('./models/subscribe/queries').default;
 const { oneToken } = require('./models/token/queries').default;
 const { oneVideo, allVideo, videoInCourse } = require('./models/video/queries').default;
 
@@ -48,9 +48,11 @@ const schema = new Schema({
       getAllPosts,
       getPostRelative,
       get5RecentPost,
-      users,
       information,
 
+      users,
+      getMembership,
+      getTrialMember,
 
       allActiveCode,
       oneActiveCode,
@@ -80,6 +82,8 @@ const schema = new Schema({
 
       oneSubscribe,
       allSubscribe,
+      allPendingSubscribe,
+      allDoneSubscribe,
 
       oneToken,
 

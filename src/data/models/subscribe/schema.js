@@ -32,6 +32,22 @@ module.exports.all = (root, {}) => {
   });
 };
 
+module.exports.allPending = (root, {}) => {
+  return new Promise((resolve, reject) => {
+    model.find({done: false}).exec((err, res) => {
+      err ? reject(err) : resolve(res);
+    });
+  });
+};
+
+module.exports.allDone = (root, {}) => {
+  return new Promise((resolve, reject) => {
+    model.find({done: true}).exec((err, res) => {
+      err ? reject(err) : resolve(res);
+    });
+  });
+};
+
 
 module.exports.one = (root, {}) => {
   let query = {}

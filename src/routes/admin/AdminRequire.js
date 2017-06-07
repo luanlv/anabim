@@ -13,6 +13,23 @@ const Admin = {
   KhoaHoc: require('./khoahoc/KhoaHoc').default,
   SuaKhoaHoc: require('./khoahoc/SuaKhoaHoc').default,
 
+  Video: require('./video/Video').default,
+  SuaVideo: require('./video/SuaVideo').default,
+
+  Price: require('./price/Price').default,
+
+  DonHang: require('./donhang/DonHang').default,
+
+  DaDuyet: require('./daduyet/DaDuyet').default,
+
+  Membership: require('./membership/Membership').default,
+
+  ActiveCode: require('./activeCode/ActiveCode').default,
+
+  Coupon: require('./coupon/Coupon').default,
+
+  Trial: require('./trialMember/Trial').default,
+
   // Contact: require('./lienhe/Contact').default,
   // About: require('./gioithieu/About').default,
   // Tracking: require('./tracking/Tracking').default,

@@ -1,15 +1,14 @@
 let mongoose = require('mongoose'),
   Schema = mongoose.Schema;
-let autoIncrement = require('../autoIncrement')
 
 // const ImageSchema = require('./image').schema;
 
 let schema = new Schema({
+  _id: String,
   session: String,
-  expires: {type: Date, default: Date.now}
+  expires: Date
 }, { collection: 'sessions'});
 
-schema.plugin(autoIncrement.plugin, 'Session')
 
 let model = mongoose.model('Session', schema);
 

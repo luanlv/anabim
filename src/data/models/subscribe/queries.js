@@ -31,4 +31,12 @@ export default {
     type: new GraphQLList(type),
     resolve: model.all
   },
+  allPendingSubscribe: {
+    type: new GraphQLList(type),
+    resolve: model.allPending
+  },
+  allDoneSubscribe: {
+    type: new GraphQLList(type),
+    resolve: model.allDone
+  }
 };

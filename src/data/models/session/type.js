@@ -23,7 +23,7 @@ export default new GraphQLObjectType({
   description: 'Session object',
   fields: () => ({
     _id: {
-      type: GraphQLID
+      type: GraphQLString
     },
     session: {
       type: GraphQLString
