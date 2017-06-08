@@ -33,6 +33,8 @@ const { oneSubscribe, allSubscribe, allPendingSubscribe, allDoneSubscribe } = re
 const { oneToken } = require('./models/token/queries').default;
 const { oneVideo, allVideo, videoInCourse } = require('./models/video/queries').default;
 
+const { allCategoryPost, oneCategoryPost } = require('./models/categorypost/queries').default;
+
 
 const schema = new Schema({
   query: new ObjectType({
@@ -89,7 +91,10 @@ const schema = new Schema({
 
       oneVideo,
       allVideo,
-      videoInCourse
+      videoInCourse,
+
+      allCategoryPost,
+      oneCategoryPost
     },
   }),
 });

@@ -39,7 +39,7 @@ class ListNews extends React.Component {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        query: '{ getCategories{title, slug, created_at} }',
+        query: '{ allCategoryPost{title, slug, created_at} }',
       }),
       credentials: 'include',
     })
@@ -48,7 +48,7 @@ class ListNews extends React.Component {
       return {
         ...prev,
         loading: false,
-        data: data.getCategories
+        data: data.allCategoryPost
       }
     })
   }
@@ -72,7 +72,7 @@ const columns = [{
       <Popconfirm placement="right"
         onConfirm={() => {
           let that = this;
-          axios.post('/api/category/delete', {slug: record.slug})
+          axios.post('/api/categorypost/delete', {slug: record.slug})
             .then(res => {
               message.success('Xoá thành công')
               location.reload();

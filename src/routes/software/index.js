@@ -46,7 +46,9 @@ export default {
 
     return require.ensure([], require => require('./Software').default, 'software')
       .then(Software => ({
-        title,
+        title: seo.title || "Phần mềm" +  store.getState().data.softwareInfo.value.name,
+        description: seo.description,
+        seo: seo,
         chunk: 'software',
         component: <Layout store={store.getState()}><Software data={store.getState().data} user={store.getState().user} /></Layout>,
       }));

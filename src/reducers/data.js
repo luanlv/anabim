@@ -34,6 +34,14 @@ export default function data(state = {}, action) {
           ...state.category,
           value: data.category || state.category.value
         },
+        categoryPosts: {
+          ...state.categoryPosts,
+          value: data.categoryPosts || state.categoryPosts.value
+        },
+        categoryPost: {
+          ...state.categoryPost,
+          value: data.categoryPost || state.categoryPost.value
+        },
 
         indexcourse: {
           ...state.indexcourse,

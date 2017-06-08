@@ -33,7 +33,9 @@ const SignUp = ({}) => {
               ).then((res) => {
 
                 if (res.data.status) {
-                  console.log(res.data.m)
+                  alert('Đăng ký thành công! Một email đã được gửi vào tài khoản của bạn.')
+                  $('#dang-nhap')
+                    .modal('show')
                 } else {
                   $('#signupError').text(res.data.m)
                 }

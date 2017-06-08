@@ -1,26 +1,35 @@
 {
   "admin": {
-    "js": "/assets/admin.chunk.js"
+    "js": "/assets/admin.38f1fa4b.chunk.js"
   },
   "course": {
-    "js": "/assets/course.chunk.js"
+    "js": "/assets/course.28eb67b4.chunk.js"
   },
   "contact": {
-    "js": "/assets/contact.chunk.js"
+    "js": "/assets/contact.a61f1567.chunk.js"
   },
   "software": {
-    "js": "/assets/software.chunk.js"
+    "js": "/assets/software.e40bcacd.chunk.js"
   },
   "category": {
-    "js": "/assets/category.chunk.js"
+    "js": "/assets/category.f0c023ae.chunk.js"
+  },
+  "danhmuc": {
+    "js": "/assets/danhmuc.79764022.chunk.js"
+  },
+  "blogdetail": {
+    "js": "/assets/blogdetail.111410cc.chunk.js"
+  },
+  "blog": {
+    "js": "/assets/blog.f1972ba2.chunk.js"
   },
   "about": {
-    "js": "/assets/about.chunk.js"
+    "js": "/assets/about.0eb9e1ba.chunk.js"
   },
   "client": {
-    "js": "/assets/client.js"
+    "js": "/assets/client.6a17b5f6.js"
   },
   "vendor": {
-    "js": "/assets/vendor.js"
+    "js": "/assets/vendor.6167dd65.js"
   }
 }

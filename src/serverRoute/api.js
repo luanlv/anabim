@@ -7,6 +7,7 @@ const Post = mongoose.model('Post')
 const Setting = mongoose.model('Setting')
 const Information = mongoose.model('Information')
 const Category = mongoose.model('Category')
+const CategoryPost = mongoose.model('CategoryPost')
 const Course = mongoose.model('Course')
 const Software = mongoose.model('Software')
 const Video = mongoose.model('Video')
@@ -56,8 +57,8 @@ router.use('/user', user)
 
 router.post('/post/new', bodyParser.json() ,(req, res) => {
   Post.create(req.body, (err, resData) => {
-    if(err) res.sendStatus(400)
-    res.send(resData)
+    if(err) return res.sendStatus(400)
+    return res.send(resData)
   })
 })
 
@@ -107,6 +108,29 @@ router.post('/category/delete', bodyParser.json() ,(req, res) => {
 
 router.post('/category/update', bodyParser.json() ,(req, res) => {
   Category.findOneAndUpdate({slug: req.body.slug}, { $set: req.body}, { new: true }, function (err, resData) {
+    if (err) return res.statusCode(400).send(err);
+    res.send(resData);
+  });
+})
+
+// Category Post
+
+router.post('/categorypost/new', bodyParser.json() ,(req, res) => {
+  CategoryPost.create(req.body, (err, resData) => {
+    if(err) return res.sendStatus(400)
+    return res.send(resData)
+  })
+})
+
+router.post('/categorypost/delete', bodyParser.json() ,(req, res) => {
+  CategoryPost.remove({slug: req.body.slug}, function (err, resData) {
+    if (err) return res.statusCode(400).send(err);
+    res.send(resData);
+  });
+})
+
+router.post('/categorypost/update', bodyParser.json() ,(req, res) => {
+  CategoryPost.findOneAndUpdate({slug: req.body.slug}, { $set: req.body}, { new: true }, function (err, resData) {
     if (err) return res.statusCode(400).send(err);
     res.send(resData);
   });
@@ -232,6 +256,16 @@ router.post('/membership/action', bodyParser.json() ,(req, res) => {
   }
 })
 
+router.get('/membership/activebycode/:code', bodyParser.json() ,(req, res) => {
+  ActiveCode.findOne({code: req.params.code}, function (err, resData) {
+    if (err || !resData) return res.sendStatus(400)
+    return res.send(resData)
+  })
+})
+
+router.post('/membership/activebycode', bodyParser.json(), (req, res) => {
+
+})
 
 //user
 
@@ -289,6 +323,8 @@ router.post('/coupon/update', bodyParser.json() ,(req, res) => {
     res.send(resData);
   });
 })
+
+
 
 // SEO
 

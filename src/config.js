@@ -15,7 +15,7 @@ if (process.env.BROWSER) {
 
 module.exports = {
   // Node.js app
-  port: process.env.PORT || 3456,
+  port: process.env.PORT || 8989,
 
   mongoDBURL: 'mongodb://localhost/english',
   // API Gateway
@@ -23,7 +23,7 @@ module.exports = {
     // API URL to be used in the client-side code
     clientUrl: process.env.API_CLIENT_URL || '',
     // API URL to be used in the server-side code
-    serverUrl: process.env.API_SERVER_URL || `http://localhost:${process.env.PORT || 3456}`,
+    serverUrl: process.env.API_SERVER_URL || `http://localhost:${process.env.PORT || 8989}`,
   },
 
   // Database
@@ -41,8 +41,8 @@ module.exports = {
 
     // https://developers.facebook.com/
     facebook: {
-      id: process.env.FACEBOOK_APP_ID || '186244551745631',
-      secret: process.env.FACEBOOK_APP_SECRET || 'a970ae3240ab4b9b8aae0f9f0661c6fc',
+      id: process.env.FACEBOOK_APP_ID || '100004231235930',
+      secret: process.env.FACEBOOK_APP_SECRET || '5957752b5e6b56027379d8f29c8a06e1',
     },
 
     // https://cloud.google.com/console/project

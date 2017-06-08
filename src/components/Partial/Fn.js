@@ -74,13 +74,13 @@ export default {
       return 'Mã đã quá hạn sử dụng'
     } else if (coupon.quantity < 1) {
       return 'Mã đã hết số lượng'
-    } else if (coupon.month.indexOf(membership.month) > 0) {
+    } else if (coupon.month.indexOf(membership.month) < 0) {
       return 'Mã không áp dụng cho ' + membership.month + ' tháng'
     } else {
       if (coupon.kind === 1) {
         return 'Giảm ' + coupon.percent + '% giá khóa học'
       } else if (coupon.kind === 2) {
-        return 'Giảm ' + coupon.price + ' ngàn'
+        return 'Giảm ' + coupon.price.toLocaleString() + ' ngàn'
       } else {
         return 'Tăng thêm ' + coupon.day + ' ngày'
       }

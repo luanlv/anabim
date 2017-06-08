@@ -46,7 +46,7 @@ class App extends React.Component {
             <Menu theme="dark"
                   mode={this.state.mode}
                   selectedKeys={[this.props.name]}
-                  defaultOpenKeys={[]}
+                  defaultOpenKeys={['taikhoan']}
             >
               <Menu.Item key="Dashboard">
                 <Link to="/admin/">
@@ -90,56 +90,77 @@ class App extends React.Component {
                 </Menu.Item>
               </SubMenu>
 
-              <Menu.Item key="trangchu">
-                <Link to="/admin/trangchu">
+              <SubMenu
+                key="phanmem"
+                title={<span><Icon type="idcard" /><span className="nav-text">Phần mềm</span></span>}
+              >
+                <Menu.Item key="phanmem1">
+                  <Link to="/admin/phanmem?v=list" >Danh sách phần mềm</Link>
+                </Menu.Item>
+                <Menu.Item key="phanmem2">
+                  <Link to="/admin/phanmem?v=add" >Thêm mới phần mềm</Link>
+                </Menu.Item>
+              </SubMenu>
+
+              <SubMenu
+                key="khoahoc"
+                title={<span><Icon type="idcard" /><span className="nav-text">Khóa học</span></span>}
+              >
+                <Menu.Item key="khoahoc1">
+                  <Link to="/admin/phanmem?v=list" >Danh sách khóa học</Link>
+                </Menu.Item>
+                <Menu.Item key="khoahoc2">
+                  <Link to="/admin/phanmem?v=add" >Thêm mới khóa học</Link>
+                </Menu.Item>
+              </SubMenu>
+
+              <Menu.Item key="video">
+                <Link to="/admin/video">
                   <span>
                     <Icon type="tool" />
-                    <span className="nav-text">Trang Chủ</span>
+                    <span className="nav-text">video</span>
                   </span>
                 </Link>
               </Menu.Item>
 
-              <Menu.Item key="gioithieu">
-                <Link to="/admin/gioithieu">
+              <SubMenu
+                key="taikhoan"
+                title={<span><Icon type="idcard" /><span className="nav-text">Tài khoản</span></span>}
+              >
+                <Menu.Item key="taikhoan0">
+                  <Link to="/admin/membership" >Thành viên Membership</Link>
+                </Menu.Item>
+                <Menu.Item key="taikhoan1">
+                  <Link to="/admin/donhang" >Đơn hàng chờ duyệt</Link>
+                </Menu.Item>
+                <Menu.Item key="taikhoan2">
+                  <Link to="/admin/daduyet" >Đơn hàng đã duyệt</Link>
+                </Menu.Item>
+              </SubMenu>
+
+              <Menu.Item key="price">
+                <Link to="/admin/price">
                   <span>
                     <Icon type="tool" />
-                    <span className="nav-text">Trang Giới Thiệu</span>
+                    <span className="nav-text">Bảng giá</span>
                   </span>
                 </Link>
               </Menu.Item>
 
-              <Menu.Item key="dichvu">
-                <Link to="/admin/cacdichvu">
+              <Menu.Item key="coupon">
+                <Link to="/admin/coupon">
                   <span>
                     <Icon type="tool" />
-                    <span className="nav-text">Trang dịch vụ</span>
+                    <span className="nav-text">Mã giảm giá</span>
                   </span>
                 </Link>
               </Menu.Item>
 
-              <Menu.Item key="tracking">
-                <Link to="/admin/tracking">
+              <Menu.Item key="activecode">
+                <Link to="/admin/activecode">
                   <span>
                     <Icon type="tool" />
-                    <span className="nav-text">Trang Tracking</span>
-                  </span>
-                </Link>
-              </Menu.Item>
-
-              <Menu.Item key="lienhe">
-                <Link to="/admin/lienhe">
-                  <span>
-                    <Icon type="tool" />
-                    <span className="nav-text">Trang Liên Hệ</span>
-                  </span>
-                </Link>
-              </Menu.Item>
-
-              <Menu.Item key="common">
-                <Link to="/admin/common">
-                  <span>
-                    <Icon type="tool" />
-                    <span className="nav-text">Thông tin chung</span>
+                    <span className="nav-text">Mã kích hoạt</span>
                   </span>
                 </Link>
               </Menu.Item>

@@ -45,7 +45,9 @@ export default {
     store.dispatch(hideLoading());
     return require.ensure([], require => require('./Category').default, 'category')
       .then(Category => ({
-        title,
+        title: seo.title || "Danh mục các khóa học trong " + store.getState().data.categoryInfo.value.name,
+        description: seo.description,
+        seo: seo,
         chunk: 'category',
         component: <Layout store={store.getState()}><Category data={store.getState().data} user={store.getState().user} /></Layout>,
       }));

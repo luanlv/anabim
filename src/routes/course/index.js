@@ -45,7 +45,9 @@ export default {
     store.dispatch(hideLoading());
     return require.ensure([], require => require('./Course').default, 'course')
       .then(Course => ({
-        title,
+        title: seo.title || store.getState().data.course.value.name,
+        description: seo.description ,
+        seo: seo,
         chunk: 'course',
         component: <Layout store={store.getState()} ><Course data={store.getState().data} user={store.getState().user} params={params} /></Layout>,
       }));

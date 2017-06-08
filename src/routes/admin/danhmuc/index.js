@@ -16,7 +16,6 @@ export default {
   path: '/danhmuc',
 
   async action({query}) {
-    console.log("////////////////////////////////////////////////")
     if(!query.v){
       return { redirect: '/admin/danhmuc?v=list' };
     }

@@ -144,6 +144,14 @@ app.get('*', async (req, res, next) => {
           needUpdate: true,
           value: {}
         },
+        categoryPosts: {
+          needUpdate: true,
+          value: []
+        },
+        categoryPost: {
+          needUpdate: true,
+          value: {}
+        },
         news: {
           needUpdate: true,
           value: {}

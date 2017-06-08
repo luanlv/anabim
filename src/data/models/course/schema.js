@@ -41,9 +41,10 @@ module.exports.all = (root, {}) => {
 
 module.exports.courseInCategory = (root, {slug}) => {
   return new Promise((resolve, reject) => {
-    categoryModel.findOne({slug: slug}).exec((err, category) => {
+    categoryModel.findOne({slug: slug}).exec((err, category = {}) => {
       if(err) reject(err)
       let query = {}
+      if(!category) category = {}
       query.cateID = category._id
 
         model.find(query).exec((err, res) => {
@@ -54,11 +55,8 @@ module.exports.courseInCategory = (root, {slug}) => {
 };
 
 module.exports.courseInSoftware = (root, {slug}) => {
-  console.log("=============================================================================")
-  console.log(slug)
   return new Promise((resolve, reject) => {
-    softwareModel.findOne({slug: slug}).exec((err, software) => {
-      console.log(software)
+    softwareModel.findOne({slug: slug}).exec((err, software = {}) => {
       if(err) reject(err)
       let query = {}
       query.softID = software._id

@@ -212,10 +212,11 @@ class Course extends React.Component {
         </div>
 
         <div className='ui segment container noBor noSha'>
-
-          {/*<FacebookProvider appID='388306348220903'>*/}
-            {/*<Comments href={'http://new.anabim.com' + this.props.location.pathname} />*/}
-          {/*</FacebookProvider>*/}
+          <div  style={{maxWidth: 1000, textAlign: 'center'}}>
+            <FacebookProvider appId='1245241202224163'>
+              <Comments href={'http://edu.anabim.com/course/' + course.slug} />
+            </FacebookProvider>
+          </div>
         </div>
 
       </div>

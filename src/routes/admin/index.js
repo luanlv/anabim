@@ -32,6 +32,8 @@ export default {
     require('./activeCode').default,
     require('./coupon').default,
 
+    require('./category').default,
+
     require('./setting').default,
     require('./login').default,
     require('./news').default,
@@ -39,12 +41,12 @@ export default {
   ],
   async action({store, next, url}) {
     let user = store.getState().user
-    // if (user && url === '/admin/login') {
-    //   return { redirect: '/admin' };
-    // }
-    // if (!user && url !== '/admin/login') {
-    //   return { redirect: '/admin/login' };
-    // }
+    if (user.username && url === '/admin/login') {
+      return { redirect: '/admin' };
+    }
+    if (!user.username && url !== '/admin/login') {
+      return { redirect: '/admin/login' };
+    }
     const route = await next();
     // Provide default values for title, description etc.
     route.title = `Amdmin Page`;

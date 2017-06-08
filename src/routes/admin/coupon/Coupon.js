@@ -155,11 +155,16 @@ class Coupon extends React.Component {
                            })
                          }}
                        />}
-                      {this.state.newCode.kind === 2 && <Input
-                        placeholder="Số tiền giảm"
+                      {this.state.newCode.kind === 2 && <InputNumber
                         defaultValue={this.state.newCode.price}
-                        onChange={(e) => {
-                          let value = e.target.value
+                        min={0}
+                        formatter={value => `${value.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`}
+                        parser={value => value.replace(/(,*)/g, '')}
+                        style={{minWidth: 150, width: '100%'}}
+                        onChange={(value) => {
+                          if(parseInt(value).isNaN){
+                            value = 0;
+                          }
                           this.setState(prev => {
                             return {
                               ...prev,
@@ -171,6 +176,7 @@ class Coupon extends React.Component {
                           })
                         }}
                       />}
+
                       {this.state.newCode.kind === 3 && <Input
                         placeholder="Số ngày tăng"
                         defaultValue={this.state.newCode.day}
@@ -362,11 +368,16 @@ class Coupon extends React.Component {
                           })
                         }}
                       />}
-                      {el.kind === 2 && <Input
-                        placeholder="Giá tiền giảm"
+                      {el.kind === 2 && <InputNumber
                         defaultValue={el.price}
-                        onChange={(e) => {
-                          let value = e.target.value
+                        min={0}
+                        formatter={value => `${value.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`}
+                        parser={value => value.replace(/(,*)/g, '')}
+                        style={{minWidth: 150, width: '100%'}}
+                        onChange={(value) => {
+                          if(parseInt(value).isNaN){
+                            value = 0;
+                          }
                           let coupons = this.state.data
                           coupons[index].price = parseInt(value)
                           this.setState(prev => {

@@ -307,6 +307,9 @@ class Nav extends React.Component {
               <Link to='/' className='item'>
                 <i className='home icon' />
               </Link>
+              <Link to='/blog' className='item'>
+                Blog
+              </Link>
               <div className='right menu'>
 
                 {(user.member === 'member') ? ('') : (

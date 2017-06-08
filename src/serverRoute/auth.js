@@ -35,6 +35,7 @@ passport.use(new LocalStrategy(
       //   }
       // });
       if(password === 'luan'){
+        logoutOther(username)
         return done(null, user[0]);
       }  else {
         return done(null, false, {message: "Invalid password"});
@@ -45,8 +46,8 @@ passport.use(new LocalStrategy(
 ))
 
 passport.use(new FacebookStrategy({
-    clientID:'1996139930618697',
-    clientSecret:'3dc8e590f986de1667ef7f38fc09bbf2',
+    clientID:'1245241202224163',
+    clientSecret:'5957752b5e6b56027379d8f29c8a06e1',
     // callbackURL:'http://localhost:3000/auth/facebook/callback',
     callbackURL:'http://localhost:3000/auth/facebook/callback',
     profileFields: ['id', 'displayName', 'emails', 'name']
@@ -62,7 +63,7 @@ passport.use(new FacebookStrategy({
         password: '',
       },
       function(err, user){
-        // logoutOther(user.username)
+        logoutOther(user.username)
         cb(null, user)
       })
   }
@@ -153,6 +154,8 @@ router.get('/logout', function(req, res){
 router.post('/login', passport.authenticate('local', { successRedirect: '/auth/login/ok',
   failureRedirect: '/auth/login/false' }))
 
+router.get('/login', passport.authenticate('local', { successRedirect: '/auth/login/ok',
+  failureRedirect: '/auth/login/false' }))
 
 
 router.get('/login/ok', function(req, res, next) {
@@ -165,10 +168,11 @@ router.get('/login/false', function(req, res, next) {
 
 module.exports = router
 
-// var logoutOther = (username) => {
-//   var r = new RegExp(username,'i');
-//   Session.remove({session: {$regex: r}}, (err, session) => {
-//     if (err) throw err
-//   })
-// }
+var logoutOther = (username) => {
+  console.log('logout    ============' + username)
+  var r = new RegExp(username,'i');
+  Session.remove({session: {$regex: r}}, (err, session) => {
+    if (err) throw err
+  })
+}
 

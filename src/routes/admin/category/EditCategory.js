@@ -52,7 +52,7 @@ class EditNewsComponent extends React.Component {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        query: '{ getOneCategory(slug: "'+ slug +'"){slug, title, created_at} }',
+        query: '{ oneCategoryPost(slug: "'+ slug +'"){slug, title, created_at} }',
       }),
       credentials: 'include',
     })
@@ -61,7 +61,7 @@ class EditNewsComponent extends React.Component {
       return {
         ...prev,
         loading: false,
-        data: data.getOneCategory
+        data: data.oneCategoryPost
       }
     })
   }
@@ -121,7 +121,7 @@ class EditNewsComponent extends React.Component {
   }
 
   addNews(post){
-    axios.post('/api/category/new', post)
+    axios.post('/api/categorypost/new', post)
       .then(res => {
         message.success('Thêm mới thành công!')
         history.push({
@@ -135,7 +135,7 @@ class EditNewsComponent extends React.Component {
   }
 
   updateNews(post){
-    axios.post('/api/category/update', post)
+    axios.post('/api/categorypost/update', post)
       .then(res => {
         message.success('Cập nhập thành công!')
       })

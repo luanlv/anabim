@@ -43,7 +43,9 @@ export default {
     store.dispatch(hideLoading());
 
     return {
-      title: 'Trang chủ',
+      title: seo.title || "Trang chủ",
+      description: seo.description,
+      seo: seo,
       component: <Layout
         store={store.getState()}
       >

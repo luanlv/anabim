@@ -38,11 +38,11 @@ const Admin = {
   // Editor: require('./editor/Editor').default,
   Login: require('./login/Login').default,
 
-  // ListNews: require('./news/ListNews').default,
-  // EditNews: require('./news/EditNews').default,
+  ListNews: require('./news/ListNews').default,
+  EditNews: require('./news/EditNews').default,
 
-  // EditCategory: require('./category/EditCategory').default,
-  // ListCategories: require('./category/ListCategories').default,
+  EditCategory: require('./category/EditCategory').default,
+  ListCategories: require('./category/ListCategories').default,
 
   Seo: require('./seo/View.js').default
 }

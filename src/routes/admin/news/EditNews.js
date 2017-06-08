@@ -40,7 +40,7 @@ class EditNewsComponent extends React.Component {
   }
 
   async init (slug) {
-    let categories = 'getCategories{title, slug, created_at}'
+    let categories = 'allCategoryPost{title, slug, created_at}'
     let postBySlug = 'getOnePost(slug: "'+ slug +'"){ coverUrl, category, slug, public, title, description, body, view, tags, created_at}'
     const resp = await fetch('/graphql', {
       method: 'post',
@@ -59,13 +59,13 @@ class EditNewsComponent extends React.Component {
         ...prev,
         loading: false,
         data: data.getOnePost,
-        categories: data.getCategories
+        categories: data.allCategoryPost
       }
     })
   }
 
   async init2 (slug) {
-    let categories = 'getCategories{title, slug, created_at}'
+    let categories = 'allCategoryPost{title, slug, created_at}'
     const resp = await fetch('/graphql', {
       method: 'post',
       headers: {
@@ -82,7 +82,7 @@ class EditNewsComponent extends React.Component {
       return {
         ...prev,
         loading: false,
-        categories: data.getCategories
+        categories: data.allCategoryPost
       }
     })
   }
@@ -110,7 +110,6 @@ class EditNewsComponent extends React.Component {
   }
 
   handleOk = (e) => {
-    console.log(e);
     this.setState({
       modalSelectImage: false,
     });
@@ -343,7 +342,6 @@ class EditNewsComponent extends React.Component {
                       id={1}
                       value={this.state.data.body || ''}
                       onChange={(value) => {
-                        console.log(value)
                         this.setState(prev => {
                           return {
                             ...prev,

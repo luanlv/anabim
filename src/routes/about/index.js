@@ -43,7 +43,9 @@ export default {
     store.dispatch(hideLoading());
     return require.ensure([], require => require('./About').default, 'about')
       .then(About => ({
-        title,
+        title: seo.title || "Liên hệ",
+        description: seo.description,
+        seo: seo,
         chunk: 'about',
         component: <Layout store={store.getState()} ><About data={store.getState().data} /></Layout>,
       }));

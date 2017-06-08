@@ -40,7 +40,9 @@ export default {
 
     return require.ensure([], require => require('./Contact').default, 'contact')
       .then(Contact => ({
-        title,
+        title: seo.title || "Liên hệ",
+        description: seo.description,
+        seo: seo,
         chunk: 'contact',
         component: <Layout store={store.getState()} ><Contact data={store.getState().data} /></Layout>,
       }));

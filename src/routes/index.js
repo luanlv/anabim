@@ -25,7 +25,10 @@ export default {
     require('./course').default,
     require('./video').default,
     require('./category').default,
+    require('./danhmuc').default,
     require('./software').default,
+    require('./blog').default,
+    require('./blogDetail').default,
     require('./contact').default,
     require('./admin').default,
 
@@ -38,7 +41,7 @@ export default {
     const route = await next();
 
     // Provide default values for title, description etc.
-    route.title = `${route.title || 'Untitled Page'} - Edu.Anabim.Com`;
+    route.title = `${route.title || 'Untitled Page'} - Anabim Education`;
     route.description = route.description || '';
 
     return route;

@@ -27,7 +27,6 @@ class CKEditor extends React.Component {
     });
   }
   handleOk = (e) => {
-    console.log(e);
     this.setState({
       modalSelectImage: false,
     });
