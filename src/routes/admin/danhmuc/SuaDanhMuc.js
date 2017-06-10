@@ -36,11 +36,14 @@ class SuaDanhMuc extends React.Component {
         tags: []
       }
     }
-    if(this.props.isEdit) this.init(this.props.slug)
+    if(this.props.isEdit) {
+      this.init(this.props.slug)
+    } {
+
+    }
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log(nextProps)
     if(nextProps.isEdit) this.init(nextProps.slug)
   }
 

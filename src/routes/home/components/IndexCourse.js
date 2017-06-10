@@ -45,7 +45,7 @@ class IndexCourse extends React.Component {
                                 </div>
                               </div>
                             </div>
-                            <img src={'/image/get/' + sel.cover.path} />
+                            <img src={'/image/' + sel.coverUrl} />
                           </div>
                           <div className='content'>
                             <Link to={'/course/' + sel.slug} className='header'>{sel.name}</Link>
@@ -56,7 +56,7 @@ class IndexCourse extends React.Component {
                           <div className='extra content'>
                             <a>
                               <i className='play icon' />
-                              Đang cập nhập
+                              {/*Đang cập nhập*/}
                             </a>
                           </div>
                         </div>

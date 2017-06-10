@@ -16,6 +16,7 @@ const Subscribe = mongoose.model('Subscribe')
 const Coupon = mongoose.model('Coupon')
 const User = mongoose.model('User')
 const ActiveCode = mongoose.model('ActiveCode')
+const IndexCourse = mongoose.model('IndexCourse')
 const Session = mongoose.model('Session')
 const Seo = mongoose.model('Seo')
 let bodyParser = require('body-parser')
@@ -324,6 +325,15 @@ router.post('/coupon/update', bodyParser.json() ,(req, res) => {
   });
 })
 
+
+// indexCourse
+
+router.post('/indexcourse/update', bodyParser.json() ,(req, res) => {
+  IndexCourse.findOneAndUpdate({_id: req.body._id}, { $set: req.body}, { new: true }, function (err, resData) {
+    if (err) return res.statusCode(400).send(err);
+    res.send(resData);
+  });
+})
 
 
 // SEO

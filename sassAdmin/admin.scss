@@ -1138,3 +1138,18 @@ canvas {
   cursor: not-allowed;
   opacity: 0.5;
 }
+
+.sortIndex {
+  list-style: circle !important;
+  li {
+    cursor: pointer;
+    padding-bottom: 5px !important;
+
+    > span {
+      padding: 5px;
+    }
+  }
+  .selected {
+    background: cadetblue !important;
+  }
+}

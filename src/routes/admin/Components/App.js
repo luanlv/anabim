@@ -90,6 +90,19 @@ class App extends React.Component {
                 </Menu.Item>
               </SubMenu>
 
+
+              <SubMenu
+                key="danhmucphanmem"
+                title={<span><Icon type="idcard" /><span className="nav-text">Danh mục PM</span></span>}
+              >
+                <Menu.Item key="danhmucphanmem1">
+                  <Link to="/admin/danhmuc?v=list" >Danh mục phần mềm</Link>
+                </Menu.Item>
+                <Menu.Item key="danhmucphanmem2">
+                  <Link to="/admin/danhmuc?v=add" >Thêm mới danh mục</Link>
+                </Menu.Item>
+              </SubMenu>
+
               <SubMenu
                 key="phanmem"
                 title={<span><Icon type="idcard" /><span className="nav-text">Phần mềm</span></span>}
@@ -161,6 +174,15 @@ class App extends React.Component {
                   <span>
                     <Icon type="tool" />
                     <span className="nav-text">Mã kích hoạt</span>
+                  </span>
+                </Link>
+              </Menu.Item>
+
+              <Menu.Item key="trangchu">
+                <Link to="/admin/trangchu">
+                  <span>
+                    <Icon type="tool" />
+                    <span className="nav-text">Khóa học trang chủ</span>
                   </span>
                 </Link>
               </Menu.Item>

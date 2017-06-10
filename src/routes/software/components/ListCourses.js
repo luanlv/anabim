@@ -37,7 +37,7 @@ class ListCourses extends React.Component {
               <div className='extra content'>
                 <a>
                   <i className='play icon' />
-                  Đang cập nhập
+                  {/*Đang cập nhập*/}
                 </a>
               </div>
             </div>

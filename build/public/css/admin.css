@@ -2156,3 +2156,13 @@ canvas {
 .dynamic-delete-button[disabled] {
   cursor: not-allowed;
   opacity: 0.5; }
+
+.sortIndex {
+  list-style: circle !important; }
+  .sortIndex li {
+    cursor: pointer;
+    padding-bottom: 5px !important; }
+    .sortIndex li > span {
+      padding: 5px; }
+  .sortIndex .selected {
+    background: cadetblue !important; }

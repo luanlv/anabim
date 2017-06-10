@@ -1,35 +1,35 @@
 {
   "admin": {
-    "js": "/assets/admin.38f1fa4b.chunk.js"
+    "js": "/assets/admin.a2f13e99.chunk.js"
   },
   "course": {
-    "js": "/assets/course.28eb67b4.chunk.js"
+    "js": "/assets/course.97065dc8.chunk.js"
   },
   "contact": {
-    "js": "/assets/contact.a61f1567.chunk.js"
+    "js": "/assets/contact.b8a97b13.chunk.js"
   },
   "software": {
-    "js": "/assets/software.e40bcacd.chunk.js"
+    "js": "/assets/software.80d298f1.chunk.js"
   },
   "category": {
-    "js": "/assets/category.f0c023ae.chunk.js"
+    "js": "/assets/category.8a23bc45.chunk.js"
   },
   "danhmuc": {
-    "js": "/assets/danhmuc.79764022.chunk.js"
+    "js": "/assets/danhmuc.99139035.chunk.js"
   },
   "blogdetail": {
-    "js": "/assets/blogdetail.111410cc.chunk.js"
+    "js": "/assets/blogdetail.bd45007b.chunk.js"
   },
   "blog": {
-    "js": "/assets/blog.f1972ba2.chunk.js"
+    "js": "/assets/blog.2ed99946.chunk.js"
   },
   "about": {
-    "js": "/assets/about.0eb9e1ba.chunk.js"
+    "js": "/assets/about.f58ef0fe.chunk.js"
   },
   "client": {
-    "js": "/assets/client.6a17b5f6.js"
+    "js": "/assets/client.374679f0.js"
   },
   "vendor": {
-    "js": "/assets/vendor.6167dd65.js"
+    "js": "/assets/vendor.7f9bc67f.js"
   }
 }
