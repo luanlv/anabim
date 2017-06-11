@@ -284,7 +284,7 @@ app.get('*', async (req, res, next) => {
       state: context.store.getState(),
     };
 
-    let version = 7
+    let version = 9
 
     if(isAdmin){
       const html = ReactDOM.renderToStaticMarkup(<HtmlAdmin v={version} {...data} isAdmin={isAdmin} />);
