@@ -1,6 +1,6 @@
 {
   "admin": {
-    "js": "/assets/admin.a2f13e99.chunk.js"
+    "js": "/assets/admin.6ec9ffb9.chunk.js"
   },
   "course": {
     "js": "/assets/course.97065dc8.chunk.js"
@@ -30,6 +30,6 @@
     "js": "/assets/client.374679f0.js"
   },
   "vendor": {
-    "js": "/assets/vendor.7f9bc67f.js"
+    "js": "/assets/vendor.ac6736be.js"
   }
 }

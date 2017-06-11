@@ -23,17 +23,12 @@ class Admin extends React.Component {
     return (
         <div>
           <Row className="padding-5">
-            <Calendar onPanelChange={onPanelChange} />
+            {/*<Calendar onPanelChange={onPanelChange} />*/}
           </Row>
         </div>
     );
   }
 }
-
-function onPanelChange(value, mode) {
-  console.log(value, mode);
-}
-
 
 
 export default Admin

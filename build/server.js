@@ -11171,19 +11171,11 @@ class Admin extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   }
 
   render() {
-    return _ref;
+    return _jsx('div', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
+      className: 'padding-5'
+    }, void 0));
   }
 }
-
-function onPanelChange(value, mode) {
-  console.log(value, mode);
-}
-
-var _ref = _jsx('div', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
-  className: 'padding-5'
-}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Calendar"], {
-  onPanelChange: onPanelChange
-})));
 
 /* harmony default export */ __webpack_exports__["default"] = (Admin);
 
