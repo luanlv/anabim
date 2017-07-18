@@ -316,7 +316,7 @@ class Nav extends React.Component {
                   <a className='item'
                     onClick={() => this.activeCode()}
                   >
-                    Điền mã kích hoạt
+                    Mã kích hoạt
                   </a>
                 )}
                 <a className='red item' onClick={() => this.membership()} >

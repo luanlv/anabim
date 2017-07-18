@@ -3,7 +3,7 @@ import { Button, DatePicker, Switch, Row, Col, message, Collapse, Input, InputNu
 const Option = Select.Option;
 import axios from 'axios'
 import moment from 'moment'
-
+import Editor from '../Components/CustomEditor'
 
 // import CodeMirror from '../Components/CodeMirror'
 const Panel = Collapse.Panel;
@@ -16,7 +16,6 @@ if(process.env.BROWSER) {
 
 const dateFormat = 'YYYY/MM/DD';
 
-import Editor from '../Components/CustomEditor'
 
 import {SortableContainer, SortableElement, arrayMove} from 'react-sortable-hoc';
 

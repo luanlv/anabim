@@ -1,5 +1,14 @@
+#logo {
+  display: none;
+}
+
 @media (min-width: 992px) {
   .header__logo img {
     margin-top: 35px;
   }
+
+  #logo {
+    display: block;
+  }
 }
+

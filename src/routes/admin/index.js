@@ -31,7 +31,7 @@ export default {
     require('./trialMember').default,
     require('./activeCode').default,
     require('./coupon').default,
-    // require('./trangchu').default,
+    require('./trangchu').default,
 
     require('./category').default,
 
