@@ -88,7 +88,7 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div className="boxed-container">
+      <div className="">
         <LoadingBar showFastActions  maxProgress={80} progressIncrease={100} style={{ backgroundColor: 'red', zIndex: 1000, height: '2px' }} />
 
         <Nav user={this.context.store.getState().user} />

@@ -39,7 +39,7 @@ class Html extends React.Component {
     const defaultContent = "Anabim Education - Website đào tạo trực tuyến dành cho Xây dựng";
     const defaultLogo = '/logo_anabim.jpg'
     return (
-      <html className="no-js" lang="en">
+      <html className="no-js" lang="vi">
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -54,7 +54,8 @@ class Html extends React.Component {
           {(seo && seo.og_description) ? (<meta property="og:description" content={seo.og_description} />) : (<meta property="og:description" content={defaultContent} />)}
           <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
-          <link rel="stylesheet" href="/assets/lib/semantic.min.css" />
+          {/*<link rel="stylesheet" href="/assets/lib/semantic.min.css" />*/}
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css" />
           <link rel="stylesheet" href="/assets/app/app.css" />
           <link rel="stylesheet" href="/assets/custom.css" />
 
@@ -73,7 +74,8 @@ class Html extends React.Component {
           <script
             dangerouslySetInnerHTML={{ __html:
             `head.load("/assets/lib/jquery.min.js")`
-            + `.js("/assets/lib/semantic.min.js" )`
+            // + `.js("/assets/lib/semantic.min.js" )`
+            + `.js("https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.js" )`
             + `.js("/assets/lib/jquery.menu-aim.js" )`
             + `.js("/assets/lib/modernizr.custom.js")`
             + `.js("/assets/lib/jquery.dlmenu.js")`
