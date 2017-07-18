@@ -18,7 +18,7 @@ export default {
   async action({query, fetch}) {
 
     return require.ensure([], require => require('../AdminRequire').default, 'admin')
-      .then( Admin => ({
+      .then(Admin => ({
         title,
         chunk: 'admin',
         disableSSR: true,
