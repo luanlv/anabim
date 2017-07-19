@@ -35,7 +35,7 @@ router.post('/image', function(req, res) {
       , (err, image) => {
         if(err) return res.status(400).send("database error")
         res.send(image)
-    })
+      })
   });
 });
 
@@ -55,8 +55,8 @@ router.post('/imageCKEditor', function(req, res) {
     Gm(pathWithName)
       .draw(['image over 0,0 0,0 ' + watermark])
       .write(pathWithName, function (err) {
-      if(err) console.log(err)
-    })
+        if(err) console.log(err)
+      })
     let dimensions = sizeOf(image.data);
     let data = {
       slug: id,

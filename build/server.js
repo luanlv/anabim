@@ -14549,7 +14549,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   __WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */],
-                  { to: '/admin/phanmem?v=list', __source: {
+                  { to: '/admin/khoahoc?v=list', __source: {
                       fileName: _jsxFileName,
                       lineNumber: 123
                     },
@@ -14568,7 +14568,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   __WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */],
-                  { to: '/admin/phanmem?v=add', __source: {
+                  { to: '/admin/khoahoc?v=add', __source: {
                       fileName: _jsxFileName,
                       lineNumber: 126
                     },
@@ -31381,7 +31381,7 @@ class ListCourse extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component
                 )
               )
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/image/get/' + el.coverUrl, __source: {
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: el.coverUrl, __source: {
                 fileName: _jsxFileName,
                 lineNumber: 28
               },
@@ -34622,7 +34622,7 @@ class IndexCourse extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
                           )
                         )
                       ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/image/' + sel.coverUrl, __source: {
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: sel.coverUrl, __source: {
                           fileName: _jsxFileName,
                           lineNumber: 48
                         },
@@ -37052,7 +37052,7 @@ function getSmallImage(req, res, next) {
 }
 
 router.use('*', (req, res, next) => {
-  // console.log('not found!!')
+  console.log('not found!!');
   res.status(404).send('not found!');
 });
 

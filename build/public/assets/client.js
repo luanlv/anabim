@@ -10559,7 +10559,7 @@ var IndexCourse = function (_React$Component) {
                             )
                           )
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/image/' + sel.coverUrl, __source: {
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: sel.coverUrl, __source: {
                             fileName: _jsxFileName,
                             lineNumber: 48
                           },

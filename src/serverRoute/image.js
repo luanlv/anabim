@@ -71,7 +71,7 @@ function getSmallImage(req, res, next){
 }
 
 router.use('*', (req, res, next) => {
-  // console.log('not found!!')
+  console.log('not found!!')
   res.status(404).send('not found!')
 })
 

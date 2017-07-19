@@ -102,7 +102,7 @@ var ListCourse = function (_React$Component) {
                   )
                 )
               ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/image/get/' + el.coverUrl, __source: {
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: el.coverUrl, __source: {
                   fileName: _jsxFileName,
                   lineNumber: 28
                 },

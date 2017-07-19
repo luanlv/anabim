@@ -25,7 +25,7 @@ class ListCourse extends React.Component {
                     </div>
                   </div>
                 </div>
-                <img src={'/image/get/' + el.coverUrl} />
+                <img src={el.coverUrl} />
               </div>
               <div className='content'>
                 <Link to={'/course/' + el.slug} className='header'>{el.name}</Link>

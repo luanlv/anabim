@@ -120,10 +120,10 @@ class App extends React.Component {
                 title={<span><Icon type="idcard" /><span className="nav-text">Khóa học</span></span>}
               >
                 <Menu.Item key="khoahoc1">
-                  <Link to="/admin/phanmem?v=list" >Danh sách khóa học</Link>
+                  <Link to="/admin/khoahoc?v=list" >Danh sách khóa học</Link>
                 </Menu.Item>
                 <Menu.Item key="khoahoc2">
-                  <Link to="/admin/phanmem?v=add" >Thêm mới khóa học</Link>
+                  <Link to="/admin/khoahoc?v=add" >Thêm mới khóa học</Link>
                 </Menu.Item>
               </SubMenu>
 
