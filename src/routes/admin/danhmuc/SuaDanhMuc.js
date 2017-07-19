@@ -196,7 +196,7 @@ class SuaDanhMuc extends React.Component {
                           ...prev,
                           data: {
                             ...prev.data,
-                            title: value,
+                            name: value,
                             slug: newSlug()
                           }
                         }

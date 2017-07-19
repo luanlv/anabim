@@ -19747,7 +19747,7 @@ class SuaDanhMuc extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component
                       this.setState(prev => {
                         return _extends({}, prev, {
                           data: _extends({}, prev.data, {
-                            title: value,
+                            name: value,
                             slug: newSlug()
                           })
                         });
@@ -21424,7 +21424,7 @@ class SuaKhoaHoc extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component
                       this.setState(prev => {
                         return _extends({}, prev, {
                           data: _extends({}, prev.data, {
-                            title: value,
+                            name: value,
                             slug: newSlug()
                           })
                         });
