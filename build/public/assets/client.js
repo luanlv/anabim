@@ -9487,7 +9487,7 @@ var title = 'Trang giới thiệu';
               price = 'price:onePrice{one, three, six, twelve}';
               allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
               course = 'course:oneCourse(slug: "' + params.slug + '"){name, coverUrl, slug, cateID, softID, level, authorId, section, description, vote, numVote, voter, documents, related, relatedCourse, categories, created_at}';
-              videos = 'videos:videoInCourse(slug: "' + params.slug + '"){courseId, section, name, link, url, source, time}';
+              videos = 'videos:videoInCourse(slug: "' + params.slug + '"){courseId, section, name, link, url, kind, source, time}';
               seo = {};
               _context.next = 11;
               return fetch('/graphql', {
@@ -11358,7 +11358,7 @@ var title = 'Trang giới thiệu';
               price = 'price:onePrice{one, three, six, twelve}';
               allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
               course = 'course:oneCourse(slug: "' + params.slug + '"){name, coverUrl, slug, cateID, softID, level, authorId, section, description, vote, numVote, voter, documents, related, relatedCourse, categories, created_at}';
-              videos = 'videos:videoInCourse(slug: "' + params.slug + '"){courseId, section, name, link, url, source, time}';
+              videos = 'videos:videoInCourse(slug: "' + params.slug + '"){courseId, section, name, link, kind, url, source, time}';
               seo = {};
               _context.next = 11;
               return fetch('/graphql', {

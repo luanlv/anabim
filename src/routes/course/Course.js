@@ -33,7 +33,9 @@ class Course extends React.Component {
     var key = "" + moment(moment().format()).add(day, 'days').unix() + day
     var videoBySlug = fn.findVideoBySlug(this.props.data.videos.value, this.props.params.slug, this.props.params.videoSlug)
     var linkVideo = ((videoBySlug.source === 'anabim') ? ('http://video.vnguy.com/?v=' + fn.fixVideo(videoBySlug.link)  + '&k=' + key) : ('https://www.youtube.com/embed/' + videoBySlug.link + '?autoplay=1'))
-
+    console.log(videoBySlug)
+    console.log(linkVideo)
+    console.log(user)
     var button = (user.member === 'pending') ? (
       <button className='ui large orange button'
               onClick={function () {
@@ -198,7 +200,7 @@ class Course extends React.Component {
                               </div>
                             </div>
                             <img className='ui fluid rounded image'
-                                 src={'/image/get/' + el.cover.path}
+                                 src={el.coverUrl}
                                  style={{height: '140px'}} />
                           </div>
                         </div>

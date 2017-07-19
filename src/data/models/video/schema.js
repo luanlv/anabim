@@ -37,7 +37,7 @@ module.exports.videoInCourse = (root, {slug}) => {
     courseModel.findOne({slug: slug}).exec((err, course) => {
       if(err) reject(err)
       let query = {}
-      query.courseId = course._id
+      if(course) query.courseId = course._id
 
       model.find(query).exec((err, res) => {
         err ? reject(err) : resolve(res);

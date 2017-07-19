@@ -28,7 +28,7 @@ export default {
     let price = 'price:onePrice{one, three, six, twelve}';
     let allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
     let course = 'course:oneCourse(slug: "' + params.slug + '"){name, coverUrl, slug, cateID, softID, level, authorId, section, description, vote, numVote, voter, documents, related, relatedCourse, categories, created_at}';
-    let videos = 'videos:videoInCourse(slug: "' + params.slug + '"){courseId, section, name, link, url, source, time}';
+    let videos = 'videos:videoInCourse(slug: "' + params.slug + '"){courseId, section, name, link, kind, url, source, time}';
     let seo = {};
     const resp = await fetch('/graphql', {
       body: JSON.stringify({
