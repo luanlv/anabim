@@ -7945,7 +7945,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                       'a',
-                      { className: 'item', style: { color: 'black !important' }, onClick: () => this.changePassword(),
+                      { className: 'item', style: { color: 'black !important' }, onClick: this.changePassword,
                         __source: {
                           fileName: _jsxFileName,
                           lineNumber: 276
@@ -7962,7 +7962,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                       'a',
-                      { className: 'item', style: { color: 'black !important' }, onClick: () => this.membership(),
+                      { className: 'item', style: { color: 'black !important' }, onClick: this.membership,
                         __source: {
                           fileName: _jsxFileName,
                           lineNumber: 281
@@ -8099,7 +8099,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'a',
-                { className: 'red item', onClick: () => this.membership(), __source: {
+                { className: 'red item', onClick: this.membership, __source: {
                     fileName: _jsxFileName,
                     lineNumber: 324
                   },

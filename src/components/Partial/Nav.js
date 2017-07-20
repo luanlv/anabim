@@ -273,12 +273,12 @@ class Nav extends React.Component {
                         <img src='/assets/img/avatar.png' alt='avatar' />
                       </a>
                       <div className='menu'>
-                        <a className='item' style={{color: 'black !important'}} onClick={() => this.changePassword()}
+                        <a className='item' style={{color: 'black !important'}} onClick={this.changePassword}
                         >
                           <i className='tags icon' />
                           Đổi mật khẩu
                         </a>
-                        <a className='item' style={{color: 'black !important'}} onClick={() => this.membership()}
+                        <a className='item' style={{color: 'black !important'}} onClick={this.membership}
                         >
                           <i className='tags icon' />
                           Membership
@@ -321,7 +321,7 @@ class Nav extends React.Component {
                     Mã kích hoạt
                   </a>
                 )}
-                <a className='red item' onClick={() => this.membership()} >
+                <a className='red item' onClick={this.membership} >
                   Membership
                 </a>
               </div>
