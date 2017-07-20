@@ -2999,12 +2999,14 @@ var Nav = function (_React$Component) {
 
       var user = this.props.user;
       var logged = this.props.user.username;
-
+      if (logged && !this.props.user.passwordChanged) {
+        this.changePassword();
+      }
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'nav', __source: {
             fileName: _jsxFileName,
-            lineNumber: 74
+            lineNumber: 76
           },
           __self: this
         },
@@ -3012,7 +3014,7 @@ var Nav = function (_React$Component) {
           'div',
           { className: 'ui inverted segment nav-top', __source: {
               fileName: _jsxFileName,
-              lineNumber: 75
+              lineNumber: 77
             },
             __self: this
           },
@@ -3020,7 +3022,7 @@ var Nav = function (_React$Component) {
             'div',
             { className: 'ui container', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 76
+                lineNumber: 78
               },
               __self: this
             },
@@ -3028,14 +3030,14 @@ var Nav = function (_React$Component) {
               'div',
               { className: 'ui inverted secondary menu', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 77
+                  lineNumber: 79
                 },
                 __self: this
               },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Sidebar__["a" /* default */], {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 78
+                  lineNumber: 80
                 },
                 __self: this
               }),
@@ -3043,13 +3045,13 @@ var Nav = function (_React$Component) {
                 'a',
                 { id: 'logo', href: 'http://anabim.com/', target: '_blank', style: { width: '120px !important' }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 79
+                    lineNumber: 81
                   },
                   __self: this
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/assets/img/logo.jpg', alt: '', width: 120, height: 42, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 80
+                    lineNumber: 82
                   },
                   __self: this
                 })
@@ -3058,14 +3060,14 @@ var Nav = function (_React$Component) {
                 'span',
                 { className: 'ui top left pointing dropdown item navbar', style: { marginRight: '0px !important' }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 82
+                    lineNumber: 84
                   },
                   __self: this
                 },
                 'DANH M\u1EE4C',
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'dropdown icon', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 84
+                    lineNumber: 86
                   },
                   __self: this
                 }),
@@ -3073,7 +3075,7 @@ var Nav = function (_React$Component) {
                   'ul',
                   { className: 'ui blue menu', id: 'danhmuc', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 85
+                      lineNumber: 87
                     },
                     __self: this
                   },
@@ -3081,13 +3083,13 @@ var Nav = function (_React$Component) {
                     'li',
                     { className: 'item', 'data-submenu-id': '1', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 86
+                        lineNumber: 88
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'dashboard icon', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 87
+                        lineNumber: 89
                       },
                       __self: this
                     }),
@@ -3096,7 +3098,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { id: '1', className: 'popover', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 89
+                          lineNumber: 91
                         },
                         __self: this
                       },
@@ -3104,7 +3106,7 @@ var Nav = function (_React$Component) {
                         'div',
                         { className: 'ui two column grid', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 90
+                            lineNumber: 92
                           },
                           __self: this
                         },
@@ -3112,7 +3114,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 91
+                              lineNumber: 93
                             },
                             __self: this
                           },
@@ -3120,50 +3122,10 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 92
+                                lineNumber: 94
                               },
                               __self: this
                             },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              'li',
-                              {
-                                __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 93
-                                },
-                                __self: this
-                              },
-                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-lam-quen-voi-revit', __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 93
-                                  },
-                                  __self: this
-                                },
-                                'L\xE0m Quen V\u1EDBi Revit (FREE)'
-                              )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              'li',
-                              {
-                                __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 94
-                                },
-                                __self: this
-                              },
-                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-revit-architecture-nen-tang', __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 94
-                                  },
-                                  __self: this
-                                },
-                                'Revit Arrchitecture N\u1EC1n T\u1EA3ng'
-                              )
-                            ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                               'li',
                               {
@@ -3175,13 +3137,13 @@ var Nav = function (_React$Component) {
                               },
                               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-revit-architecture-nang-cao', __source: {
+                                { to: Data.baseUrl + '/course/khoa-hoc-lam-quen-voi-revit', __source: {
                                     fileName: _jsxFileName,
                                     lineNumber: 95
                                   },
                                   __self: this
                                 },
-                                'Revit Arrchitecture N\xE2ng Cao'
+                                'L\xE0m Quen V\u1EDBi Revit (FREE)'
                               )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -3195,13 +3157,13 @@ var Nav = function (_React$Component) {
                               },
                               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-conceptual-massing', __source: {
+                                { to: Data.baseUrl + '/course/khoa-hoc-revit-architecture-nen-tang', __source: {
                                     fileName: _jsxFileName,
                                     lineNumber: 96
                                   },
                                   __self: this
                                 },
-                                'Revit Conceptual Mass'
+                                'Revit Arrchitecture N\u1EC1n T\u1EA3ng'
                               )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -3215,13 +3177,13 @@ var Nav = function (_React$Component) {
                               },
                               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-revit-family-co-ban', __source: {
+                                { to: Data.baseUrl + '/course/khoa-hoc-revit-architecture-nang-cao', __source: {
                                     fileName: _jsxFileName,
                                     lineNumber: 97
                                   },
                                   __self: this
                                 },
-                                'Revit Family C\u01A1 B\u1EA3n'
+                                'Revit Arrchitecture N\xE2ng Cao'
                               )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -3235,13 +3197,13 @@ var Nav = function (_React$Component) {
                               },
                               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-revit-family-nang-cao', __source: {
+                                { to: Data.baseUrl + '/course/khoa-hoc-conceptual-massing', __source: {
                                     fileName: _jsxFileName,
                                     lineNumber: 98
                                   },
                                   __self: this
                                 },
-                                'Revit Family N\xE2ng Cao'
+                                'Revit Conceptual Mass'
                               )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -3255,13 +3217,13 @@ var Nav = function (_React$Component) {
                               },
                               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-revit-family-addaptive-co-ban', __source: {
+                                { to: Data.baseUrl + '/course/khoa-hoc-revit-family-co-ban', __source: {
                                     fileName: _jsxFileName,
                                     lineNumber: 99
                                   },
                                   __self: this
                                 },
-                                'Revit Family Adaptive C\u01A1 B\u1EA3n'
+                                'Revit Family C\u01A1 B\u1EA3n'
                               )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -3275,9 +3237,49 @@ var Nav = function (_React$Component) {
                               },
                               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-revit-family-adaptive-nang-cao', __source: {
+                                { to: Data.baseUrl + '/course/khoa-hoc-revit-family-nang-cao', __source: {
                                     fileName: _jsxFileName,
                                     lineNumber: 100
+                                  },
+                                  __self: this
+                                },
+                                'Revit Family N\xE2ng Cao'
+                              )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              'li',
+                              {
+                                __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 101
+                                },
+                                __self: this
+                              },
+                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                                { to: Data.baseUrl + '/course/khoa-hoc-revit-family-addaptive-co-ban', __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 101
+                                  },
+                                  __self: this
+                                },
+                                'Revit Family Adaptive C\u01A1 B\u1EA3n'
+                              )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              'li',
+                              {
+                                __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 102
+                                },
+                                __self: this
+                              },
+                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                                { to: Data.baseUrl + '/course/khoa-hoc-revit-family-adaptive-nang-cao', __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 102
                                   },
                                   __self: this
                                 },
@@ -3290,7 +3292,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 103
+                              lineNumber: 105
                             },
                             __self: this
                           },
@@ -3298,41 +3300,10 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 104
+                                lineNumber: 106
                               },
                               __self: this
                             },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              'li',
-                              {
-                                __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 105
-                                },
-                                __self: this
-                              },
-                              link('khoa-hoc-dynamo-co-ban', 'Autodesk Dynamo 2016')
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              'li',
-                              {
-                                __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 106
-                                },
-                                __self: this
-                              },
-                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-dynamo-nang-cao', __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 106
-                                  },
-                                  __self: this
-                                },
-                                'Dynamo N\xE2ng Cao'
-                              )
-                            ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                               'li',
                               {
@@ -3342,16 +3313,7 @@ var Nav = function (_React$Component) {
                                 },
                                 __self: this
                               },
-                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-formit-360', __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 107
-                                  },
-                                  __self: this
-                                },
-                                'Autodesk Formit'
-                              )
+                              link('khoa-hoc-dynamo-co-ban', 'Autodesk Dynamo 2016')
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                               'li',
@@ -3364,13 +3326,13 @@ var Nav = function (_React$Component) {
                               },
                               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/sketchup-co-ban', __source: {
+                                { to: Data.baseUrl + '/course/khoa-hoc-dynamo-nang-cao', __source: {
                                     fileName: _jsxFileName,
                                     lineNumber: 108
                                   },
                                   __self: this
                                 },
-                                'Sketchup C\u01A1 B\u1EA3n'
+                                'Dynamo N\xE2ng Cao'
                               )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -3384,13 +3346,13 @@ var Nav = function (_React$Component) {
                               },
                               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-sketchup-nang-cao', __source: {
+                                { to: Data.baseUrl + '/course/khoa-hoc-formit-360', __source: {
                                     fileName: _jsxFileName,
                                     lineNumber: 109
                                   },
                                   __self: this
                                 },
-                                'Sketchup N\xE2ng Cao'
+                                'Autodesk Formit'
                               )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -3404,13 +3366,13 @@ var Nav = function (_React$Component) {
                               },
                               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-autocad-2015-co-ban', __source: {
+                                { to: Data.baseUrl + '/course/sketchup-co-ban', __source: {
                                     fileName: _jsxFileName,
                                     lineNumber: 110
                                   },
                                   __self: this
                                 },
-                                'Autocad 2015 Mi\u1EC5n Ph\xED'
+                                'Sketchup C\u01A1 B\u1EA3n'
                               )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -3424,9 +3386,49 @@ var Nav = function (_React$Component) {
                               },
                               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/thiet-ke-gach-thong-gio-revit', __source: {
+                                { to: Data.baseUrl + '/course/khoa-hoc-sketchup-nang-cao', __source: {
                                     fileName: _jsxFileName,
                                     lineNumber: 111
+                                  },
+                                  __self: this
+                                },
+                                'Sketchup N\xE2ng Cao'
+                              )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              'li',
+                              {
+                                __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 112
+                                },
+                                __self: this
+                              },
+                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                                { to: Data.baseUrl + '/course/khoa-hoc-autocad-2015-co-ban', __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 112
+                                  },
+                                  __self: this
+                                },
+                                'Autocad 2015 Mi\u1EC5n Ph\xED'
+                              )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              'li',
+                              {
+                                __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 113
+                                },
+                                __self: this
+                              },
+                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                                { to: Data.baseUrl + '/course/thiet-ke-gach-thong-gio-revit', __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 113
                                   },
                                   __self: this
                                 },
@@ -3442,13 +3444,13 @@ var Nav = function (_React$Component) {
                     'li',
                     { className: 'item', 'data-submenu-id': '2', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 117
+                        lineNumber: 119
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'object ungroup icon', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 118
+                        lineNumber: 120
                       },
                       __self: this
                     }),
@@ -3457,7 +3459,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { id: '2', className: 'popover', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 120
+                          lineNumber: 122
                         },
                         __self: this
                       },
@@ -3465,7 +3467,7 @@ var Nav = function (_React$Component) {
                         'div',
                         { className: 'ui two column grid', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 121
+                            lineNumber: 123
                           },
                           __self: this
                         },
@@ -3473,7 +3475,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 122
+                              lineNumber: 124
                             },
                             __self: this
                           },
@@ -3481,7 +3483,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 123
+                                lineNumber: 125
                               },
                               __self: this
                             },
@@ -3490,7 +3492,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 124
+                                  lineNumber: 126
                                 },
                                 __self: this
                               },
@@ -3498,7 +3500,7 @@ var Nav = function (_React$Component) {
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
                                 { to: Data.baseUrl + '/course/khoa-hoc-lam-quen-voi-revit', __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 124
+                                    lineNumber: 126
                                   },
                                   __self: this
                                 },
@@ -3510,7 +3512,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 125
+                                  lineNumber: 127
                                 },
                                 __self: this
                               },
@@ -3521,7 +3523,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 126
+                                  lineNumber: 128
                                 },
                                 __self: this
                               },
@@ -3532,7 +3534,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 127
+                                  lineNumber: 129
                                 },
                                 __self: this
                               },
@@ -3544,7 +3546,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 130
+                              lineNumber: 132
                             },
                             __self: this
                           },
@@ -3552,7 +3554,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 131
+                                lineNumber: 133
                               },
                               __self: this
                             },
@@ -3561,7 +3563,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 132
+                                  lineNumber: 134
                                 },
                                 __self: this
                               },
@@ -3572,7 +3574,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 133
+                                  lineNumber: 135
                                 },
                                 __self: this
                               },
@@ -3583,7 +3585,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 134
+                                  lineNumber: 136
                                 },
                                 __self: this
                               },
@@ -3598,13 +3600,13 @@ var Nav = function (_React$Component) {
                     'li',
                     { className: 'item', 'data-submenu-id': '3', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 140
+                        lineNumber: 142
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'calculator icon', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 141
+                        lineNumber: 143
                       },
                       __self: this
                     }),
@@ -3613,7 +3615,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { id: '3', className: 'popover', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 143
+                          lineNumber: 145
                         },
                         __self: this
                       },
@@ -3621,7 +3623,7 @@ var Nav = function (_React$Component) {
                         'div',
                         { className: 'ui two column grid', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 144
+                            lineNumber: 146
                           },
                           __self: this
                         },
@@ -3629,7 +3631,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 145
+                              lineNumber: 147
                             },
                             __self: this
                           },
@@ -3637,7 +3639,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 146
+                                lineNumber: 148
                               },
                               __self: this
                             },
@@ -3646,7 +3648,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 147
+                                  lineNumber: 149
                                 },
                                 __self: this
                               },
@@ -3657,7 +3659,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 148
+                                  lineNumber: 150
                                 },
                                 __self: this
                               },
@@ -3668,7 +3670,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 149
+                                  lineNumber: 151
                                 },
                                 __self: this
                               },
@@ -3679,7 +3681,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 150
+                                  lineNumber: 152
                                 },
                                 __self: this
                               },
@@ -3690,7 +3692,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 151
+                                  lineNumber: 153
                                 },
                                 __self: this
                               },
@@ -3702,7 +3704,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 154
+                              lineNumber: 156
                             },
                             __self: this
                           },
@@ -3710,7 +3712,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 155
+                                lineNumber: 157
                               },
                               __self: this
                             },
@@ -3719,7 +3721,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 156
+                                  lineNumber: 158
                                 },
                                 __self: this
                               },
@@ -3730,7 +3732,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 157
+                                  lineNumber: 159
                                 },
                                 __self: this
                               },
@@ -3741,7 +3743,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 158
+                                  lineNumber: 160
                                 },
                                 __self: this
                               },
@@ -3752,7 +3754,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 159
+                                  lineNumber: 161
                                 },
                                 __self: this
                               },
@@ -3767,13 +3769,13 @@ var Nav = function (_React$Component) {
                     'li',
                     { className: 'item', 'data-submenu-id': '4', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 165
+                        lineNumber: 167
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'cubes icon', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 166
+                        lineNumber: 168
                       },
                       __self: this
                     }),
@@ -3782,7 +3784,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { id: '4', className: 'popover', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 168
+                          lineNumber: 170
                         },
                         __self: this
                       },
@@ -3790,7 +3792,7 @@ var Nav = function (_React$Component) {
                         'div',
                         { className: 'ui two column grid', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 169
+                            lineNumber: 171
                           },
                           __self: this
                         },
@@ -3798,7 +3800,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 170
+                              lineNumber: 172
                             },
                             __self: this
                           },
@@ -3806,7 +3808,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 171
+                                lineNumber: 173
                               },
                               __self: this
                             },
@@ -3815,7 +3817,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 172
+                                  lineNumber: 174
                                 },
                                 __self: this
                               },
@@ -3826,7 +3828,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 173
+                                  lineNumber: 175
                                 },
                                 __self: this
                               },
@@ -3837,7 +3839,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 174
+                                  lineNumber: 176
                                 },
                                 __self: this
                               },
@@ -3849,7 +3851,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 177
+                              lineNumber: 179
                             },
                             __self: this
                           },
@@ -3857,7 +3859,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 178
+                                lineNumber: 180
                               },
                               __self: this
                             },
@@ -3866,7 +3868,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 179
+                                  lineNumber: 181
                                 },
                                 __self: this
                               },
@@ -3877,7 +3879,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 180
+                                  lineNumber: 182
                                 },
                                 __self: this
                               },
@@ -3888,7 +3890,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 181
+                                  lineNumber: 183
                                 },
                                 __self: this
                               },
@@ -3903,13 +3905,13 @@ var Nav = function (_React$Component) {
                     'li',
                     { className: 'item', 'data-submenu-id': '5', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 187
+                        lineNumber: 189
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'cube icon', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 188
+                        lineNumber: 190
                       },
                       __self: this
                     }),
@@ -3918,7 +3920,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { id: '5', className: 'popover', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 190
+                          lineNumber: 192
                         },
                         __self: this
                       },
@@ -3926,7 +3928,7 @@ var Nav = function (_React$Component) {
                         'div',
                         { className: 'ui two column grid', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 191
+                            lineNumber: 193
                           },
                           __self: this
                         },
@@ -3934,7 +3936,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 192
+                              lineNumber: 194
                             },
                             __self: this
                           },
@@ -3942,7 +3944,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 193
+                                lineNumber: 195
                               },
                               __self: this
                             },
@@ -3951,7 +3953,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 194
+                                  lineNumber: 196
                                 },
                                 __self: this
                               },
@@ -3962,7 +3964,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 195
+                                  lineNumber: 197
                                 },
                                 __self: this
                               },
@@ -3974,7 +3976,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 198
+                              lineNumber: 200
                             },
                             __self: this
                           },
@@ -3982,7 +3984,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 199
+                                lineNumber: 201
                               },
                               __self: this
                             },
@@ -3991,7 +3993,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 200
+                                  lineNumber: 202
                                 },
                                 __self: this
                               },
@@ -4002,7 +4004,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 201
+                                  lineNumber: 203
                                 },
                                 __self: this
                               },
@@ -4017,13 +4019,13 @@ var Nav = function (_React$Component) {
                     'li',
                     { className: 'item', 'data-submenu-id': '6', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 207
+                        lineNumber: 209
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'cube icon', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 208
+                        lineNumber: 210
                       },
                       __self: this
                     }),
@@ -4032,7 +4034,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { id: '6', className: 'popover', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 210
+                          lineNumber: 212
                         },
                         __self: this
                       },
@@ -4040,7 +4042,7 @@ var Nav = function (_React$Component) {
                         'div',
                         { className: 'ui two column grid', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 211
+                            lineNumber: 213
                           },
                           __self: this
                         },
@@ -4048,7 +4050,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 212
+                              lineNumber: 214
                             },
                             __self: this
                           },
@@ -4056,7 +4058,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 213
+                                lineNumber: 215
                               },
                               __self: this
                             },
@@ -4065,7 +4067,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 214
+                                  lineNumber: 216
                                 },
                                 __self: this
                               },
@@ -4076,7 +4078,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 215
+                                  lineNumber: 217
                                 },
                                 __self: this
                               },
@@ -4087,7 +4089,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 216
+                                  lineNumber: 218
                                 },
                                 __self: this
                               },
@@ -4102,13 +4104,13 @@ var Nav = function (_React$Component) {
                     'li',
                     { className: 'item', 'data-submenu-id': '7', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 222
+                        lineNumber: 224
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'cube icon', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 223
+                        lineNumber: 225
                       },
                       __self: this
                     }),
@@ -4117,7 +4119,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { id: '7', className: 'popover', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 225
+                          lineNumber: 227
                         },
                         __self: this
                       },
@@ -4125,7 +4127,7 @@ var Nav = function (_React$Component) {
                         'div',
                         { className: 'ui two column grid', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 226
+                            lineNumber: 228
                           },
                           __self: this
                         },
@@ -4133,7 +4135,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 227
+                              lineNumber: 229
                             },
                             __self: this
                           },
@@ -4141,7 +4143,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 228
+                                lineNumber: 230
                               },
                               __self: this
                             },
@@ -4150,7 +4152,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 229
+                                  lineNumber: 231
                                 },
                                 __self: this
                               },
@@ -4161,7 +4163,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 230
+                                  lineNumber: 232
                                 },
                                 __self: this
                               },
@@ -4172,7 +4174,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 231
+                                  lineNumber: 233
                                 },
                                 __self: this
                               },
@@ -4183,7 +4185,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 232
+                                  lineNumber: 234
                                 },
                                 __self: this
                               },
@@ -4194,7 +4196,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 233
+                                  lineNumber: 235
                                 },
                                 __self: this
                               },
@@ -4206,7 +4208,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 236
+                              lineNumber: 238
                             },
                             __self: this
                           },
@@ -4214,7 +4216,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 237
+                                lineNumber: 239
                               },
                               __self: this
                             },
@@ -4223,7 +4225,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 238
+                                  lineNumber: 240
                                 },
                                 __self: this
                               },
@@ -4240,7 +4242,7 @@ var Nav = function (_React$Component) {
                 'div',
                 { className: 'item', style: { paddingTop: 7 }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 247
+                    lineNumber: 249
                   },
                   __self: this
                 },
@@ -4248,7 +4250,7 @@ var Nav = function (_React$Component) {
                   'div',
                   { className: 'ui icon input search search1', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 248
+                      lineNumber: 250
                     },
                     __self: this
                   },
@@ -4256,7 +4258,7 @@ var Nav = function (_React$Component) {
                     'div',
                     { className: 'ui icon input', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 249
+                        lineNumber: 251
                       },
                       __self: this
                     },
@@ -4264,7 +4266,7 @@ var Nav = function (_React$Component) {
                       style: { width: '400px' },
                       className: 'prompt', type: 'text', placeholder: 'T\xCCM KI\u1EBEM KH\xD3A H\u1ECCC ...', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 250
+                        lineNumber: 252
                       },
                       __self: this
                     })
@@ -4275,7 +4277,7 @@ var Nav = function (_React$Component) {
                 'div',
                 { className: 'right menu', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 258
+                    lineNumber: 260
                   },
                   __self: this
                 },
@@ -4283,7 +4285,7 @@ var Nav = function (_React$Component) {
                   'div',
                   { className: 'ui inverted circular item noPa', style: { background: 'black', width: '50px' }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 259
+                      lineNumber: 261
                     },
                     __self: this
                   },
@@ -4291,13 +4293,13 @@ var Nav = function (_React$Component) {
                     'div',
                     { className: 'ui top right pointing dropdown icon button noPa noMa', style: { background: 'black', width: '50px' }, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 260
+                        lineNumber: 262
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'inverted big alarm icon', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 261
+                        lineNumber: 263
                       },
                       __self: this
                     }),
@@ -4305,7 +4307,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { className: 'menu', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 262
+                          lineNumber: 264
                         },
                         __self: this
                       },
@@ -4313,7 +4315,7 @@ var Nav = function (_React$Component) {
                         'div',
                         { className: 'item', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 263
+                            lineNumber: 265
                           },
                           __self: this
                         },
@@ -4326,7 +4328,7 @@ var Nav = function (_React$Component) {
                   'div',
                   { className: 'ui inverted circular item noPa', style: { background: 'black', width: '50px' }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 268
+                      lineNumber: 270
                     },
                     __self: this
                   },
@@ -4334,7 +4336,7 @@ var Nav = function (_React$Component) {
                     'div',
                     { className: 'ui top right pointing dropdown ', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 269
+                        lineNumber: 271
                       },
                       __self: this
                     },
@@ -4342,13 +4344,13 @@ var Nav = function (_React$Component) {
                       'a',
                       { className: 'ui item', style: { padding: 0 }, __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 270
+                          lineNumber: 272
                         },
                         __self: this
                       },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/assets/img/avatar.png', alt: 'avatar', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 271
+                          lineNumber: 273
                         },
                         __self: this
                       })
@@ -4357,7 +4359,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { className: 'menu', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 273
+                          lineNumber: 275
                         },
                         __self: this
                       },
@@ -4368,13 +4370,13 @@ var Nav = function (_React$Component) {
                           },
                           __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 274
+                            lineNumber: 276
                           },
                           __self: this
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'tags icon', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 276
+                            lineNumber: 278
                           },
                           __self: this
                         }),
@@ -4387,13 +4389,13 @@ var Nav = function (_React$Component) {
                           },
                           __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 279
+                            lineNumber: 281
                           },
                           __self: this
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'tags icon', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 281
+                            lineNumber: 283
                           },
                           __self: this
                         }),
@@ -4403,13 +4405,13 @@ var Nav = function (_React$Component) {
                         'a',
                         { href: '/auth/logout', className: 'item', style: { color: 'black !important' }, __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 284
+                            lineNumber: 286
                           },
                           __self: this
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'ui black empty circular label', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 285
+                            lineNumber: 287
                           },
                           __self: this
                         }),
@@ -4422,7 +4424,7 @@ var Nav = function (_React$Component) {
                 'div',
                 { className: 'right menu', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 292
+                    lineNumber: 294
                   },
                   __self: this
                 },
@@ -4430,7 +4432,7 @@ var Nav = function (_React$Component) {
                   'a',
                   { className: 'ui item dang-nhap', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 293
+                      lineNumber: 295
                     },
                     __self: this
                   },
@@ -4440,7 +4442,7 @@ var Nav = function (_React$Component) {
                   'a',
                   { className: 'ui item dang-ky', style: { backgroundColor: '#008cc9' }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 296
+                      lineNumber: 298
                     },
                     __self: this
                   },
@@ -4454,7 +4456,7 @@ var Nav = function (_React$Component) {
           'div',
           { className: 'ui inverted segment nav-bot', __source: {
               fileName: _jsxFileName,
-              lineNumber: 304
+              lineNumber: 306
             },
             __self: this
           },
@@ -4462,7 +4464,7 @@ var Nav = function (_React$Component) {
             'div',
             { className: 'ui inverted  mini secondary pointing menu', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 305
+                lineNumber: 307
               },
               __self: this
             },
@@ -4470,7 +4472,7 @@ var Nav = function (_React$Component) {
               'div',
               { className: 'ui container', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 306
+                  lineNumber: 308
                 },
                 __self: this
               },
@@ -4478,13 +4480,13 @@ var Nav = function (_React$Component) {
                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
                 { to: '/', className: 'item', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 307
+                    lineNumber: 309
                   },
                   __self: this
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'home icon', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 308
+                    lineNumber: 310
                   },
                   __self: this
                 })
@@ -4493,7 +4495,7 @@ var Nav = function (_React$Component) {
                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
                 { to: '/blog', className: 'item', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 310
+                    lineNumber: 312
                   },
                   __self: this
                 },
@@ -4503,7 +4505,7 @@ var Nav = function (_React$Component) {
                 'div',
                 { className: 'right menu', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 313
+                    lineNumber: 315
                   },
                   __self: this
                 },
@@ -4515,7 +4517,7 @@ var Nav = function (_React$Component) {
                     },
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 316
+                      lineNumber: 318
                     },
                     __self: this
                   },
@@ -4527,7 +4529,7 @@ var Nav = function (_React$Component) {
                       return _this2.membership();
                     }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 322
+                      lineNumber: 324
                     },
                     __self: this
                   },
@@ -4579,7 +4581,7 @@ var link = function link(slug, name) {
     __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
     { to: Data.baseUrl + '/course/' + slug, __source: {
         fileName: _jsxFileName,
-        lineNumber: 368
+        lineNumber: 370
       },
       __self: this
     },

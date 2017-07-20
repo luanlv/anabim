@@ -19,6 +19,7 @@ let UserSchema = new Schema({
     start: Date,
     end: Date
   },
+  passwordChanged: {type: Boolean, default: false},
   createAt: {type: Date, default: Date.now}
 }, {collection : 'user4'});
 

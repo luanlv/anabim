@@ -16,11 +16,10 @@ let LocalStrategy = require('passport-local').Strategy
 
 passport.use(new LocalStrategy(
   function(username, password, done){
-    console.log("strategy function starting...");
     User.getUserByEmail(username, function(err, user){
       if (err) throw err;
       if (user.length < 1){
-        console.log("strategy calling done 1");
+        // console.log("strategy calling done 1");
         return done(null, false, {message: "Unknown user"});
       }
 
@@ -34,7 +33,7 @@ passport.use(new LocalStrategy(
       //     return done(null, false, {message: "Invalid password"});
       //   }
       // });
-      if(password === 'luan'){
+      if(password === '123456789'){
         logoutOther(username)
         return done(null, user[0]);
       }  else {
@@ -70,8 +69,8 @@ passport.use(new FacebookStrategy({
 ))
 
 passport.use(new GoogleStrategy({
-    clientID: '181209932345-e5onckmk63rbchst6djlq9tjshbkmr79.apps.googleusercontent.com',
-    clientSecret: 'a6Nz9Od7WfL82VdnFwpxLvKq',
+    clientID: '377562281462-ojvr74j9vssu67ihosqgvdol350i6gn8.apps.googleusercontent.com',
+    clientSecret: 'G99-lcXH9LQBKa6l_3cDbG8w',
     callbackURL: "http://edu.anabim.com/auth/google/callback"
   },
   function(accessToken, refreshToken, profile, cb) {
@@ -169,7 +168,6 @@ router.get('/login/false', function(req, res, next) {
 module.exports = router
 
 var logoutOther = (username) => {
-  console.log('logout    ============' + username)
   var r = new RegExp(username,'i');
   Session.remove({session: {$regex: r}}, (err, session) => {
     if (err) throw err
