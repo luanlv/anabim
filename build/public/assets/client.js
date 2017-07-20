@@ -2999,9 +2999,9 @@ var Nav = function (_React$Component) {
 
       var user = this.props.user;
       var logged = this.props.user.username;
-      if (logged && !this.props.user.passwordChanged && !this.props.user.avatar) {
-        this.changePassword();
-      }
+      // if(logged && !this.props.user.passwordChanged && !this.props.user.avatar) {
+      //   this.changePassword()
+      // }
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'nav', __source: {
