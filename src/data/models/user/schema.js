@@ -20,7 +20,7 @@ let UserSchema = new Schema({
     end: Date
   },
   createAt: {type: Date, default: Date.now}
-});
+}, {collection : 'user4'});
 
 UserSchema.plugin(findOrCreate);
 

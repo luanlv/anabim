@@ -3266,7 +3266,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var api_key = 'key-4639e67edf2df3a4c479a605e8376b9b';
-var domain = 'edu.anabim.com';
+var domain = 'mg.vnguy.com';
 var mailgun = __webpack_require__(270)({ apiKey: api_key, domain: domain });
 
 const from = 'Anabim Education <admin@anabim.com>';
@@ -3276,7 +3276,7 @@ const RegisterMail = function (email, name) {
     from: from,
     to: email,
     subject: `Chào mừng ${name} đến với ANABIM EDUCATION!`,
-    text: `Chúc mừng bạn đã là thành viên của Edu.anabim.com.
+    text: `Chúc mừng bạn đã là thành viên của http://edu.anabim.com.
 Chúng tôi hứa sẽ không ngừng nâng cao chất lượng dịch vụ của mình để giúp đỡ bạn nhiều nhất có thể.`
   };
 };
@@ -3286,7 +3286,7 @@ const ActiveMail = function (email, name, activeUrl) {
     from: from,
     to: email,
     subject: `Kích hoạt tài khoản ${email} trên ANABIM EDUCATION!`,
-    text: `Cám ơn ${name} đã đăng ký tài khoản trên Edu.anabim.com.
+    text: `Cám ơn ${name} đã đăng ký tài khoản trên http://edu.anabim.com.
 Để kích hoạt tài khoản bạn hay click vào link sau: ${activeUrl} `
   };
 };
@@ -12840,7 +12840,7 @@ let UserSchema = new Schema({
     end: Date
   },
   createAt: { type: Date, default: Date.now }
-});
+}, { collection: 'user4' });
 
 UserSchema.plugin(findOrCreate);
 
@@ -36870,7 +36870,7 @@ passport.use(new FacebookStrategy({
   clientID: '1245241202224163',
   clientSecret: '5957752b5e6b56027379d8f29c8a06e1',
   // callbackURL:'http://localhost:3000/auth/facebook/callback',
-  callbackURL: 'http://localhost:3000/auth/facebook/callback',
+  callbackURL: 'http://edu.anabim.com/auth/facebook/callback',
   profileFields: ['id', 'displayName', 'emails', 'name']
 }, function (accessToken, refreshToken, profile, cb) {
   User.findOrCreate({ username: profile.emails[0].value }, {

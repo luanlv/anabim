@@ -49,7 +49,7 @@ passport.use(new FacebookStrategy({
     clientID:'1245241202224163',
     clientSecret:'5957752b5e6b56027379d8f29c8a06e1',
     // callbackURL:'http://localhost:3000/auth/facebook/callback',
-    callbackURL:'http://localhost:3000/auth/facebook/callback',
+    callbackURL:'http://edu.anabim.com/auth/facebook/callback',
     profileFields: ['id', 'displayName', 'emails', 'name']
   }, function(accessToken, refreshToken, profile, cb) {
     User.findOrCreate({username: profile.emails[0].value},
