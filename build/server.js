@@ -3827,7 +3827,8 @@ function trimUser(user) {
     role: user.role,
     isAdmin: user.isAdmin,
     username: user.username,
-    passwordChanged: user.passwordChanged
+    passwordChanged: user.passwordChanged,
+    avatar: user.avatar
   };
 }
 
@@ -6578,7 +6579,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
     const user = this.props.user;
     const logged = this.props.user.username;
-    if (logged && !this.props.user.passwordChanged) {
+    if (logged && !this.props.user.passwordChanged && !this.props.user.avatar) {
       this.changePassword();
     }
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -8130,7 +8131,9 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   }
 
   changePassword() {
-    $('#doi-mat-khau').modal('show');
+    if (false) {
+      $('#doi-mat-khau').modal('show');
+    }
   }
 
 }
@@ -8147,7 +8150,7 @@ let link = function (slug, name) {
     __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
     { to: Data.baseUrl + '/course/' + slug, __source: {
         fileName: _jsxFileName,
-        lineNumber: 370
+        lineNumber: 372
       },
       __self: this
     },

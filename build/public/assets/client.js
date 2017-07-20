@@ -2999,7 +2999,7 @@ var Nav = function (_React$Component) {
 
       var user = this.props.user;
       var logged = this.props.user.username;
-      if (logged && !this.props.user.passwordChanged) {
+      if (logged && !this.props.user.passwordChanged && !this.props.user.avatar) {
         this.changePassword();
       }
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -4562,7 +4562,9 @@ var Nav = function (_React$Component) {
   }, {
     key: 'changePassword',
     value: function changePassword() {
-      $('#doi-mat-khau').modal('show');
+      if (true) {
+        $('#doi-mat-khau').modal('show');
+      }
     }
   }]);
 
@@ -4581,7 +4583,7 @@ var link = function link(slug, name) {
     __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
     { to: Data.baseUrl + '/course/' + slug, __source: {
         fileName: _jsxFileName,
-        lineNumber: 370
+        lineNumber: 372
       },
       __self: this
     },

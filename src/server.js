@@ -346,6 +346,7 @@ function trimUser(user){
       role: user.role,
       isAdmin: user.isAdmin,
       username: user.username,
-      passwordChanged: user.passwordChanged
+      passwordChanged: user.passwordChanged,
+      avatar: user.avatar,
     }
 }

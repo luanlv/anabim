@@ -69,7 +69,7 @@ class Nav extends React.Component {
   render () {
     const user = this.props.user
     const logged = this.props.user.username
-    if(logged && !this.props.user.passwordChanged) {
+    if(logged && !this.props.user.passwordChanged && !this.props.user.avatar) {
       this.changePassword()
     }
     return (
@@ -353,8 +353,10 @@ class Nav extends React.Component {
   }
 
   changePassword () {
-    $('#doi-mat-khau')
-      .modal('show')
+    if(process.env.BROWSER) {
+      $('#doi-mat-khau')
+        .modal('show')
+    }
   }
 
 }
