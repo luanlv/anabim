@@ -23,21 +23,22 @@ passport.use(new LocalStrategy(
         return done(null, false, {message: "Unknown user"});
       }
 
-      // User.comparePassword(password, user[0].password, function (err, isMatch) {
-      //   if (err) throw err;
-      //   if (isMatch) {
-      //     console.log("strategy calling done 2");
-      //     return done(null, user[0]);
-      //   } else {
-      //     console.log("strategy calling done 3");
-      //     return done(null, false, {message: "Invalid password"});
-      //   }
-      // });
+
       if(password === '123456789'){
         logoutOther(username)
         return done(null, user[0]);
       }  else {
-        return done(null, false, {message: "Invalid password"});
+
+        User.comparePassword(password, user[0].password, function (err, isMatch) {
+          if (err) throw err;
+          if (isMatch) {
+            logoutOther(username)
+            return done(null, user[0]);
+          } else {
+            return done(null, false, {message: "Invalid password"});
+          }
+        });
+
       }
 
     });

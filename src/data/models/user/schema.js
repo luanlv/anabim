@@ -55,8 +55,8 @@ module.exports.changePassword = function(email, password, callback){
   bcrypt.genSalt(10, function(err, salt) {
     bcrypt.hash(password, salt, function(err, hash) {
       if(err) throw err
-      console.log(hash)
-      User.update({username: email}, {$set: {password: hash}}, callback)
+      // console.log(hash)
+      User.update({username: email}, {$set: {password: hash, passwordChanged: true}}, callback)
     });
   });
 }
