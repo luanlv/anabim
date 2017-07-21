@@ -3265,7 +3265,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-var api_key = 'key-4639e67edf2df3a4c479a605e8376b9b';
+var api_key = 'key-b27916a12645e658b1de91b9620f85fd';
 var domain = 'mg.vnguy.com';
 var mailgun = __webpack_require__(270)({ apiKey: api_key, domain: domain });
 
@@ -7945,7 +7945,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                       'a',
-                      { className: 'item', style: { color: 'black !important' }, onClick: this.changePassword,
+                      { className: 'item', style: { color: 'black !important' }, onClick: this.changePassword.bind(this),
                         __source: {
                           fileName: _jsxFileName,
                           lineNumber: 276
@@ -7962,7 +7962,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                       'a',
-                      { className: 'item', style: { color: 'black !important' }, onClick: this.membership,
+                      { className: 'item', style: { color: 'black !important' }, onClick: this.membership.bind(this),
                         __source: {
                           fileName: _jsxFileName,
                           lineNumber: 281
@@ -8088,7 +8088,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               user.member === 'member' ? '' : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'a',
                 { className: 'item',
-                  onClick: () => this.activeCode(),
+                  onClick: this.activeCode.bind(this),
                   __source: {
                     fileName: _jsxFileName,
                     lineNumber: 318
@@ -8099,7 +8099,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'a',
-                { className: 'red item', onClick: this.membership, __source: {
+                { className: 'red item', onClick: this.membership.bind(this), __source: {
                     fileName: _jsxFileName,
                     lineNumber: 324
                   },

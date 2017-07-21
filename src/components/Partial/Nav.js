@@ -273,12 +273,12 @@ class Nav extends React.Component {
                         <img src='/assets/img/avatar.png' alt='avatar' />
                       </a>
                       <div className='menu'>
-                        <a className='item' style={{color: 'black !important'}} onClick={this.changePassword}
+                        <a className='item' style={{color: 'black !important'}} onClick={this.changePassword.bind(this)}
                         >
                           <i className='tags icon' />
                           Đổi mật khẩu
                         </a>
-                        <a className='item' style={{color: 'black !important'}} onClick={this.membership}
+                        <a className='item' style={{color: 'black !important'}} onClick={this.membership.bind(this)}
                         >
                           <i className='tags icon' />
                           Membership
@@ -316,12 +316,12 @@ class Nav extends React.Component {
 
                 {(user.member === 'member') ? ('') : (
                   <a className='item'
-                    onClick={() => this.activeCode()}
+                    onClick={this.activeCode.bind(this)}
                   >
                     Mã kích hoạt
                   </a>
                 )}
-                <a className='red item' onClick={this.membership} >
+                <a className='red item' onClick={this.membership.bind(this)} >
                   Membership
                 </a>
               </div>

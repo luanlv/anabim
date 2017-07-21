@@ -2995,8 +2995,6 @@ var Nav = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _this2 = this;
-
       var user = this.props.user;
       var logged = this.props.user.username;
       // if(logged && !this.props.user.passwordChanged && !this.props.user.avatar) {
@@ -4365,7 +4363,7 @@ var Nav = function (_React$Component) {
                       },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'a',
-                        { className: 'item', style: { color: 'black !important' }, onClick: this.changePassword,
+                        { className: 'item', style: { color: 'black !important' }, onClick: this.changePassword.bind(this),
                           __source: {
                             fileName: _jsxFileName,
                             lineNumber: 276
@@ -4382,7 +4380,7 @@ var Nav = function (_React$Component) {
                       ),
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'a',
-                        { className: 'item', style: { color: 'black !important' }, onClick: this.membership,
+                        { className: 'item', style: { color: 'black !important' }, onClick: this.membership.bind(this),
                           __source: {
                             fileName: _jsxFileName,
                             lineNumber: 281
@@ -4508,9 +4506,7 @@ var Nav = function (_React$Component) {
                 user.member === 'member' ? '' : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   'a',
                   { className: 'item',
-                    onClick: function onClick() {
-                      return _this2.activeCode();
-                    },
+                    onClick: this.activeCode.bind(this),
                     __source: {
                       fileName: _jsxFileName,
                       lineNumber: 318
@@ -4521,7 +4517,7 @@ var Nav = function (_React$Component) {
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   'a',
-                  { className: 'red item', onClick: this.membership, __source: {
+                  { className: 'red item', onClick: this.membership.bind(this), __source: {
                       fileName: _jsxFileName,
                       lineNumber: 324
                     },
