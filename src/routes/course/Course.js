@@ -33,9 +33,6 @@ class Course extends React.Component {
     var key = "" + moment(moment().format()).add(day, 'days').unix() + day
     var videoBySlug = fn.findVideoBySlug(this.props.data.videos.value, this.props.params.slug, this.props.params.videoSlug)
     var linkVideo = ((videoBySlug.source === 'anabim') ? ('http://video.vnguy.com/?v=' + fn.fixVideo(videoBySlug.link)  + '&k=' + key) : ('https://www.youtube.com/embed/' + videoBySlug.link + '?autoplay=1'))
-    console.log(videoBySlug)
-    console.log(linkVideo)
-    console.log(user)
     var button = (user.member === 'pending') ? (
       <button className='ui large orange button'
               onClick={function () {
@@ -61,6 +58,7 @@ class Course extends React.Component {
     )
     let course = this.props.data.course.value
     let videos = this.props.data.videos.value
+
     return (
       <div id='main'>
         {(user.member !== 'membership') ? (
@@ -107,7 +105,7 @@ class Course extends React.Component {
               <div className='eleven wide column' style={{paddingTop: '0 !important'}}>
                 <div className='row'>
 
-                  { (videoBySlug.kind === "free" || user.member === "membership" || user.member === "trial") ? (
+                  { (videoBySlug.kind === "free" || (user.member === "membership" || user.member === "trial") && (moment(moment().format()).diff(moment(user.info.end), 'days') <= 0) )  ? (
                     <Video video={videoBySlug} user={this.props.user} linkVideo={linkVideo} button={button} />
                   ) : (
                     <div className="ui segment" style={{height: '556px', background: '#eee'}}>

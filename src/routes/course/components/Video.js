@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 
 class Video extends React.Component {
 
@@ -9,6 +10,7 @@ class Video extends React.Component {
 
   }
   render () {
+    console.log(this.props.user)
     return (
       <div className='ui'>
         { (this.props.linkVideo.length > 1) ? (

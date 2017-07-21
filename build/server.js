@@ -259,13 +259,13 @@ module.exports = require("express");
 /* 9 */
 /***/ (function(module, exports) {
 
-module.exports = require("graphql-type-json");
+module.exports = require("moment");
 
 /***/ }),
 /* 10 */
 /***/ (function(module, exports) {
 
-module.exports = require("moment");
+module.exports = require("graphql-type-json");
 
 /***/ }),
 /* 11 */
@@ -2097,7 +2097,7 @@ module.exports = exports['default'];
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_moment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_moment__);
 
 
@@ -2559,7 +2559,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Partial_Fn__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_facebook__ = __webpack_require__(295);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_facebook___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_facebook__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_moment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_moment__);
 var _jsxFileName = '/Users/mac/Workspace/anabim/src/routes/course/Course.js';
 
@@ -2595,9 +2595,6 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     var key = "" + __WEBPACK_IMPORTED_MODULE_5_moment___default()(__WEBPACK_IMPORTED_MODULE_5_moment___default()().format()).add(day, 'days').unix() + day;
     var videoBySlug = __WEBPACK_IMPORTED_MODULE_3__components_Partial_Fn__["a" /* default */].findVideoBySlug(this.props.data.videos.value, this.props.params.slug, this.props.params.videoSlug);
     var linkVideo = videoBySlug.source === 'anabim' ? 'http://video.vnguy.com/?v=' + __WEBPACK_IMPORTED_MODULE_3__components_Partial_Fn__["a" /* default */].fixVideo(videoBySlug.link) + '&k=' + key : 'https://www.youtube.com/embed/' + videoBySlug.link + '?autoplay=1';
-    console.log(videoBySlug);
-    console.log(linkVideo);
-    console.log(user);
     var button = user.member === 'pending' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'button',
       { className: 'ui large orange button',
@@ -2606,7 +2603,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 37
         },
         __self: this
       },
@@ -2627,7 +2624,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 43
         },
         __self: this
       },
@@ -2635,11 +2632,12 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     );
     let course = this.props.data.course.value;
     let videos = this.props.data.videos.value;
+
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
       { id: 'main', __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 63
         },
         __self: this
       },
@@ -2647,7 +2645,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         'div',
         { className: 'ui segment noBor noRa noSha noMa', style: { backgroundColor: 'teal !important' }, __source: {
             fileName: _jsxFileName,
-            lineNumber: 67
+            lineNumber: 65
           },
           __self: this
         },
@@ -2655,7 +2653,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           'div',
           { className: 'ui container ', __source: {
               fileName: _jsxFileName,
-              lineNumber: 68
+              lineNumber: 66
             },
             __self: this
           },
@@ -2663,7 +2661,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             'div',
             { className: 'ui column stackable grid', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 69
+                lineNumber: 67
               },
               __self: this
             },
@@ -2671,13 +2669,13 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               'div',
               { className: 'ten wide column', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 70
+                  lineNumber: 68
                 },
                 __self: this
               },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { style: { color: 'white' }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 71
+                  lineNumber: 69
                 },
                 __self: this
               })
@@ -2686,7 +2684,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               'div',
               { className: 'six wide column', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 73
+                  lineNumber: 71
                 },
                 __self: this
               },
@@ -2694,7 +2692,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 'div',
                 { className: 'row centerInside', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 74
+                    lineNumber: 72
                   },
                   __self: this
                 },
@@ -2708,7 +2706,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         'div',
         { className: 'ui segment noBor noRa noSha noMa', style: { backgroundColor: 'white !important' }, __source: {
             fileName: _jsxFileName,
-            lineNumber: 83
+            lineNumber: 81
           },
           __self: this
         },
@@ -2716,7 +2714,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           'div',
           { className: 'ui container ', __source: {
               fileName: _jsxFileName,
-              lineNumber: 84
+              lineNumber: 82
             },
             __self: this
           },
@@ -2724,7 +2722,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             'div',
             { className: 'ui column  grid', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 85
+                lineNumber: 83
               },
               __self: this
             },
@@ -2732,7 +2730,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               'div',
               { className: 'sixteen wide column', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 86
+                  lineNumber: 84
                 },
                 __self: this
               },
@@ -2740,7 +2738,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 'div',
                 { className: 'ui breadcrumb', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 87
+                    lineNumber: 85
                   },
                   __self: this
                 },
@@ -2748,7 +2746,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   __WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */],
                   { to: '/', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 88
+                      lineNumber: 86
                     },
                     __self: this
                   },
@@ -2758,7 +2756,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   'div',
                   { className: 'divider', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 89
+                      lineNumber: 87
                     },
                     __self: this
                   },
@@ -2770,7 +2768,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     __WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */],
                     { to: '/category/' + el.slug, key: index, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 91
+                        lineNumber: 89
                       },
                       __self: this
                     },
@@ -2784,7 +2782,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 __WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */],
                 { to: '/course/' + course.slug, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 95
+                    lineNumber: 93
                   },
                   __self: this
                 },
@@ -2792,7 +2790,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   'h1',
                   { className: 'noMa', style: { marginBottom: '10px !important' }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 95
+                      lineNumber: 93
                     },
                     __self: this
                   },
@@ -2809,7 +2807,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         { className: 'ui segment noBor noRa noSha noMa',
           style: { backgroundColor: '#e5e5e5 !important', padding: '0px !important' }, __source: {
             fileName: _jsxFileName,
-            lineNumber: 103
+            lineNumber: 101
           },
           __self: this
         },
@@ -2817,7 +2815,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           'div',
           { className: 'ui container ', __source: {
               fileName: _jsxFileName,
-              lineNumber: 105
+              lineNumber: 103
             },
             __self: this
           },
@@ -2825,7 +2823,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             'div',
             { className: 'ui column  stackable grid', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 106
+                lineNumber: 104
               },
               __self: this
             },
@@ -2833,7 +2831,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               'div',
               { className: 'eleven wide column', style: { paddingTop: '0 !important' }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 107
+                  lineNumber: 105
                 },
                 __self: this
               },
@@ -2841,20 +2839,20 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 'div',
                 { className: 'row', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 108
+                    lineNumber: 106
                   },
                   __self: this
                 },
-                videoBySlug.kind === "free" || user.member === "membership" || user.member === "trial" ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components__["a" /* Video */], { video: videoBySlug, user: this.props.user, linkVideo: linkVideo, button: button, __source: {
+                videoBySlug.kind === "free" || (user.member === "membership" || user.member === "trial") && __WEBPACK_IMPORTED_MODULE_5_moment___default()(__WEBPACK_IMPORTED_MODULE_5_moment___default()().format()).diff(__WEBPACK_IMPORTED_MODULE_5_moment___default()(user.info.end), 'days') <= 0 ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components__["a" /* Video */], { video: videoBySlug, user: this.props.user, linkVideo: linkVideo, button: button, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 111
+                    lineNumber: 109
                   },
                   __self: this
                 }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   'div',
                   { className: 'ui segment', style: { height: '556px', background: '#eee' }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 113
+                      lineNumber: 111
                     },
                     __self: this
                   },
@@ -2862,7 +2860,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     'div',
                     { className: 'centerInside', style: { marginTop: '150px', marginBottom: '20px' }, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 114
+                        lineNumber: 112
                       },
                       __self: this
                     },
@@ -2872,7 +2870,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       {
                         style: { color: 'red', marginLeft: '5px', marginRight: '5px' }, __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 115
+                          lineNumber: 113
                         },
                         __self: this
                       },
@@ -2884,7 +2882,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       {
                         style: { marginLeft: '5px', marginRight: '5px' }, __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 116
+                          lineNumber: 114
                         },
                         __self: this
                       },
@@ -2895,7 +2893,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     'div',
                     { className: 'centerInside', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 119
+                        lineNumber: 117
                       },
                       __self: this
                     },
@@ -2905,7 +2903,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components__["b" /* CourseInfo */], { course: course, user: user, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 126
+                  lineNumber: 124
                 },
                 __self: this
               })
@@ -2914,7 +2912,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               'div',
               { className: 'five wide column ', style: { paddingLeft: '0 !important' }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 128
+                  lineNumber: 126
                 },
                 __self: this
               },
@@ -2922,7 +2920,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 'div',
                 { className: 'ui segment noPa noBor noSha course-info', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 130
+                    lineNumber: 128
                   },
                   __self: this
                 },
@@ -2930,7 +2928,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   'div',
                   { className: 'tabs ui top attached tabular menu', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 131
+                      lineNumber: 129
                     },
                     __self: this
                   },
@@ -2938,7 +2936,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     'a',
                     { className: 'item active', 'data-tab': 'first', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 132
+                        lineNumber: 130
                       },
                       __self: this
                     },
@@ -2948,7 +2946,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     'a',
                     { className: 'item', 'data-tab': 'second', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 133
+                        lineNumber: 131
                       },
                       __self: this
                     },
@@ -2959,7 +2957,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   'div',
                   { className: 'ui bottom attached tab segment active noPa', 'data-tab': 'first', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 135
+                      lineNumber: 133
                     },
                     __self: this
                   },
@@ -2967,7 +2965,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     'div',
                     { className: 'ui styled fluid accordion', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 136
+                        lineNumber: 134
                       },
                       __self: this
                     },
@@ -2976,13 +2974,13 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         'div',
                         { className: 'title active', style: { background: 'rgba(100, 100, 100, 0.1)', fontSize: '16px !important' }, __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 139
+                            lineNumber: 137
                           },
                           __self: this
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: ' dropdown icon', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 140
+                            lineNumber: 138
                           },
                           __self: this
                         }),
@@ -2991,7 +2989,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         'div',
                         { className: 'content active', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 143
+                            lineNumber: 141
                           },
                           __self: this
                         },
@@ -2999,7 +2997,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                           'div',
                           { className: 'ui relaxed divided list course-list', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 144
+                              lineNumber: 142
                             },
                             __self: this
                           },
@@ -3015,18 +3013,18 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                 },
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 149
+                                  lineNumber: 147
                                 },
                                 __self: this
                               },
                               video.kind === 'free' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: ' play middle aligned icon', __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 155
+                                  lineNumber: 153
                                 },
                                 __self: this
                               }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: ' lock middle aligned icon', __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 156
+                                  lineNumber: 154
                                 },
                                 __self: this
                               }),
@@ -3034,7 +3032,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                 'div',
                                 { className: 'content', __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 157
+                                    lineNumber: 155
                                   },
                                   __self: this
                                 },
@@ -3042,7 +3040,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                   'h4',
                                   { className: 'header', __source: {
                                       fileName: _jsxFileName,
-                                      lineNumber: 158
+                                      lineNumber: 156
                                     },
                                     __self: this
                                   },
@@ -3052,7 +3050,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                   'div',
                                   { className: 'description', __source: {
                                       fileName: _jsxFileName,
-                                      lineNumber: 159
+                                      lineNumber: 157
                                     },
                                     __self: this
                                   },
@@ -3070,7 +3068,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   'div',
                   { className: 'ui bottom attached tab segment', 'data-tab': 'second', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 173
+                      lineNumber: 171
                     },
                     __self: this
                   },
@@ -3081,7 +3079,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 'div',
                 { className: 'ui segment noPa', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 178
+                    lineNumber: 176
                   },
                   __self: this
                 },
@@ -3091,7 +3089,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     style: { border: '2px solid transparent !important' },
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 179
+                      lineNumber: 177
                     },
                     __self: this
                   },
@@ -3102,7 +3100,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   { className: 'ui attached celled list  noBor noMa related-courses',
                     style: { background: 'white', borderRadius: '0 0 5px 5px' }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 182
+                      lineNumber: 180
                     },
                     __self: this
                   },
@@ -3111,7 +3109,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       'div',
                       { className: 'item', key: index, __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 186
+                          lineNumber: 184
                         },
                         __self: this
                       },
@@ -3119,7 +3117,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         'div',
                         { className: 'ui avatar index-card-wr', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 187
+                            lineNumber: 185
                           },
                           __self: this
                         },
@@ -3127,7 +3125,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                           'div',
                           { className: 'index-card-text', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 188
+                              lineNumber: 186
                             },
                             __self: this
                           },
@@ -3136,7 +3134,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 189
+                                lineNumber: 187
                               },
                               __self: this
                             },
@@ -3145,7 +3143,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 190
+                                  lineNumber: 188
                                 },
                                 __self: this
                               },
@@ -3155,7 +3153,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                               'div',
                               { className: 'card-text', __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 191
+                                  lineNumber: 189
                                 },
                                 __self: this
                               },
@@ -3166,7 +3164,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                               'div',
                               { className: 'card-button', __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 192
+                                  lineNumber: 190
                                 },
                                 __self: this
                               },
@@ -3174,7 +3172,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                 __WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */],
                                 { to: '/course/' + el.slug, __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 193
+                                    lineNumber: 191
                                   },
                                   __self: this
                                 },
@@ -3182,13 +3180,13 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                                   'button',
                                   { className: 'ui inverted button', __source: {
                                       fileName: _jsxFileName,
-                                      lineNumber: 194
+                                      lineNumber: 192
                                     },
                                     __self: this
                                   },
                                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'play icon', __source: {
                                       fileName: _jsxFileName,
-                                      lineNumber: 195
+                                      lineNumber: 193
                                     },
                                     __self: this
                                   }),
@@ -3202,7 +3200,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                           src: el.coverUrl,
                           style: { height: '140px' }, __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 202
+                            lineNumber: 200
                           },
                           __self: this
                         })
@@ -3219,7 +3217,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         'div',
         { className: 'ui segment container noBor noSha', __source: {
             fileName: _jsxFileName,
-            lineNumber: 216
+            lineNumber: 214
           },
           __self: this
         },
@@ -3227,7 +3225,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           'div',
           { style: { maxWidth: 1000, textAlign: 'center' }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 217
+              lineNumber: 215
             },
             __self: this
           },
@@ -3235,13 +3233,13 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             __WEBPACK_IMPORTED_MODULE_4_react_facebook___default.a,
             { appId: '1245241202224163', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 218
+                lineNumber: 216
               },
               __self: this
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_facebook__["Comments"], { href: 'http://edu.anabim.com/course/' + course.slug, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 219
+                lineNumber: 217
               },
               __self: this
             })
@@ -3869,7 +3867,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _moment = __webpack_require__(10);
+var _moment = __webpack_require__(9);
 
 var _moment2 = _interopRequireDefault(_moment);
 
@@ -5241,7 +5239,7 @@ const Footer = ({ props }) => {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Fn__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_prop_types__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_prop_types__);
@@ -10527,7 +10525,7 @@ module.exports.one = (root, { code }) => {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -10612,7 +10610,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -10731,7 +10729,7 @@ module.exports.one = (root, { slug }) => {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -10849,7 +10847,7 @@ module.exports.one = (root, { code }) => {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -10934,7 +10932,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -11056,7 +11054,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -11320,7 +11318,7 @@ module.exports.one = (root, {}) => {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -11679,7 +11677,7 @@ module.exports.getInformation = () => {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -11934,7 +11932,7 @@ module.exports.getPostRelative = (root, {}) => {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -12061,7 +12059,7 @@ module.exports.one = (root, {}) => {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -12186,7 +12184,7 @@ module.exports.getAllSeo = (root, { filter }) => {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -12291,7 +12289,7 @@ module.exports.one = (root, {}) => {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -12471,7 +12469,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -12619,7 +12617,7 @@ module.exports.one = (root, {}) => {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -12755,7 +12753,7 @@ module.exports.one = (root, { token }) => {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -12920,7 +12918,7 @@ module.exports.getTrialMember = () => {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -13092,7 +13090,7 @@ module.exports.one = (root, { code }) => {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_graphql__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_graphql_iso_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_graphql_iso_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_graphql_type_json__);
 
 
@@ -15825,7 +15823,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__);
@@ -17557,7 +17555,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__);
@@ -18761,7 +18759,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__);
@@ -20150,7 +20148,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_moment__);
 var _jsxFileName = '/Users/mac/Workspace/anabim/src/routes/admin/dashboard/Admin.js';
 /**
@@ -20272,7 +20270,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__);
@@ -23461,7 +23459,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__);
@@ -26230,7 +26228,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Components_ImageUpload__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Components_ImageSelect__ = __webpack_require__(19);
@@ -27489,7 +27487,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Components_CustomEditor__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_sortable_hoc__ = __webpack_require__(297);
@@ -28015,7 +28013,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__);
@@ -30172,7 +30170,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Link__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_moment__);
 var _jsxFileName = '/Users/mac/Workspace/anabim/src/routes/blog/Blog.js';
 
@@ -30493,7 +30491,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Link__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_moment__);
 var _jsxFileName = '/Users/mac/Workspace/anabim/src/routes/blogDetail/BlogDetail.js';
 
@@ -33159,7 +33157,10 @@ class CourseInfo extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_moment__);
 var _jsxFileName = '/Users/mac/Workspace/anabim/src/routes/course/components/Video.js';
+
 
 
 class Video extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
@@ -33169,11 +33170,12 @@ class Video extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   }
   componentDicMount() {}
   render() {
+    console.log(this.props.user);
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
       { className: 'ui', __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 15
         },
         __self: this
       },
@@ -33181,14 +33183,14 @@ class Video extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         allowFullScreen: true, frameBorder: '0',
         src: this.props.linkVideo, __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 17
         },
         __self: this
       }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'ui segment', style: { height: '556px', background: '#eee' }, __source: {
             fileName: _jsxFileName,
-            lineNumber: 19
+            lineNumber: 21
           },
           __self: this
         },
@@ -33196,7 +33198,7 @@ class Video extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           'div',
           { className: 'centerInside', style: { marginTop: '150px', marginBottom: '20px' }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 20
+              lineNumber: 22
             },
             __self: this
           },
@@ -33206,7 +33208,7 @@ class Video extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             {
               style: { color: 'red', marginLeft: '5px', marginRight: '5px' }, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 22
+                lineNumber: 24
               },
               __self: this
             },
@@ -33218,7 +33220,7 @@ class Video extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             {
               style: { marginLeft: '5px', marginRight: '5px' }, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 25
+                lineNumber: 27
               },
               __self: this
             },
@@ -33229,7 +33231,7 @@ class Video extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           'div',
           { className: 'centerInside', __source: {
               fileName: _jsxFileName,
-              lineNumber: 28
+              lineNumber: 30
             },
             __self: this
           },
@@ -33251,6 +33253,7 @@ class Video extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__CourseInfo__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Video__ = __webpack_require__(205);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__Video__["a"]; });
+
 
 
 
@@ -33357,7 +33360,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Link__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_moment__);
 var _jsxFileName = '/Users/mac/Workspace/anabim/src/routes/danhmuc/DanhMuc.js';
 
@@ -36005,7 +36008,7 @@ const title = 'Trang giới thiệu';
 
 var express = __webpack_require__(8);
 var router = express.Router();
-var moment = __webpack_require__(10);
+var moment = __webpack_require__(9);
 
 const mongoose = __webpack_require__(2);
 const Post = mongoose.model('Post');
