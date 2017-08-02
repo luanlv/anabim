@@ -103,7 +103,7 @@ class Home extends React.Component {
             </div>
 
             <div className='main'>
-              <div className='ui container segment noBor noSha' style={{margin: '100px auto !important'}}>
+              <div className='ui container segment noBor noSha' style={{margin: '100px'}}>
                 <div className='ui three column stackable grid'>
                   <div className='column '>
                     <div className='centerInside'><i className='huge history icon ' /></div>

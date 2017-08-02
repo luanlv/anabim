@@ -16,10 +16,11 @@ router.get('/get', (req, res) => {
 router.post('/', bodyParser.json(), (req, res) => {
   req.body.email = req.user.username
   req.body.name = req.user.name
+  console.log(req.body)
   Subscribe.create(req.body, (err, sub) => {
-    if (err) res.sendStatus(400)
+    if (err) return res.sendStatus(400)
     User.update({username: req.user.username}, {$set: {member: 'pending'}}, (err, status) => {
-      if(err) res.sendStatus(400)
+      if(err) return res.sendStatus(400)
       req.user.member = 'pending'
       res.send('pending')
     })
