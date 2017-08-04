@@ -16,7 +16,7 @@ let LocalStrategy = require('passport-local').Strategy
 
 passport.use(new LocalStrategy(
   function(username, password, done){
-    User.getUserByEmail(username, function(err, user){
+    User.getUserByEmail(username.trim().toLowerCase(), function(err, user){
       if (err) throw err;
       if (user.length < 1){
         // console.log("strategy calling done 1");
@@ -52,11 +52,12 @@ passport.use(new FacebookStrategy({
     callbackURL:'http://edu.anabim.com/auth/facebook/callback',
     profileFields: ['id', 'displayName', 'emails', 'name']
   }, function(accessToken, refreshToken, profile, cb) {
-    User.findOrCreate({username: profile.emails[0].value},
+  let username = profile.emails ? profile.emails[0].value : (profile.id + '@facebook.com')
+    User.findOrCreate({username: username},
       {
         uid: profile.id,
         name: profile.displayName,
-        username: profile.emails[0].value,
+        username: username,
         provider: 'facebook',
         accessToken: accessToken,
         mustConfirmEmail: false,

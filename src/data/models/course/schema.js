@@ -59,7 +59,8 @@ module.exports.courseInSoftware = (root, {slug}) => {
     softwareModel.findOne({slug: slug}).exec((err, software = {}) => {
       if(err) reject(err)
       let query = {}
-      query.softID = software._id
+      let id = software ? software._id : 1
+      query.softID = id
 
       model.find(query).exec((err, res) => {
         err ? reject(err) : resolve(res);
