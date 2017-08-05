@@ -7,7 +7,7 @@ const Coupon = mongoose.model('Coupon')
 
 router.get('/get', (req, res) => {
   Coupon.find({}, (err, Coupons) => {
-    if(err) res.sendStatus(400)
+    if(err) return res.sendStatus(400)
     res.send(Coupons)
   })
 })

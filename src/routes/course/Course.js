@@ -57,6 +57,9 @@ class Course extends React.Component {
       >Đăng ký học ngay</button>
     )
     let course = this.props.data.course.value
+    if(!course.categories) course.categories = []
+    if(!course.section) course.section = []
+    if(!course.relatedCourse) course.relatedCourse = []
     let videos = this.props.data.videos.value
 
     return (

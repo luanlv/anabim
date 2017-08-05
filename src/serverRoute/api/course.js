@@ -9,7 +9,7 @@ const Category = mongoose.model('Category')
 
 router.get('/get', (req, res) => {
   Course.find({}, (err, courses) => {
-    if(err) res.sendStatus(400)
+    if(err) return res.sendStatus(400)
     res.send(courses)
   })
 })
@@ -57,7 +57,7 @@ router.get('/getBySlug/:slug', (req, res) => {
 
 router.get('/getByCourseSlug/:courseSlug', (req, res) => {
   Course.find({courseId: parseInt(req.params.courseId)}, (err, courses) => {
-    if(err) res.sendStatus(400)
+    if(err) return res.sendStatus(400)
     res.send(courses)
   })
 })
@@ -65,9 +65,9 @@ router.get('/getByCourseSlug/:courseSlug', (req, res) => {
 
 router.get('/getBySoftwareSlug/:slug', (req, res) => {
   Software.findOne({slug: req.params.slug}, (err, software) => {
-    if (err) res.sendStatus(400)
+    if (err) return res.sendStatus(400)
     Course.find({softID: software._id}, (err, course) => {
-      if (err) res.sendStatus(400)
+      if (err) return res.sendStatus(400)
       res.send(course)
     })
   })
@@ -75,9 +75,9 @@ router.get('/getBySoftwareSlug/:slug', (req, res) => {
 
 router.get('/getByCategorySlug/:slug', (req, res) => {
   Category.findOne({slug: req.params.slug}, (err, category) => {
-    if (err) res.sendStatus(400)
+    if (err) return res.sendStatus(400)
     Course.find({softID: category._id}, (err, course) => {
-      if (err) res.sendStatus(400)
+      if (err) return res.sendStatus(400)
       res.send(course)
     })
   })

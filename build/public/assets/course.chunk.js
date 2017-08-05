@@ -4539,13 +4539,16 @@ var Course = function (_React$Component) {
         '\u0110\u0103ng k\xFD h\u1ECDc ngay'
       );
       var course = this.props.data.course.value;
+      if (!course.categories) course.categories = [];
+      if (!course.section) course.section = [];
+      if (!course.relatedCourse) course.relatedCourse = [];
       var videos = this.props.data.videos.value;
 
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { id: 'main', __source: {
             fileName: _jsxFileName,
-            lineNumber: 63
+            lineNumber: 66
           },
           __self: this
         },
@@ -4553,7 +4556,7 @@ var Course = function (_React$Component) {
           'div',
           { className: 'ui segment noBor noRa noSha noMa', style: { backgroundColor: 'teal !important' }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 65
+              lineNumber: 68
             },
             __self: this
           },
@@ -4561,7 +4564,7 @@ var Course = function (_React$Component) {
             'div',
             { className: 'ui container ', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 66
+                lineNumber: 69
               },
               __self: this
             },
@@ -4569,7 +4572,7 @@ var Course = function (_React$Component) {
               'div',
               { className: 'ui column stackable grid', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 67
+                  lineNumber: 70
                 },
                 __self: this
               },
@@ -4577,13 +4580,13 @@ var Course = function (_React$Component) {
                 'div',
                 { className: 'ten wide column', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 68
+                    lineNumber: 71
                   },
                   __self: this
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { style: { color: 'white' }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 69
+                    lineNumber: 72
                   },
                   __self: this
                 })
@@ -4592,7 +4595,7 @@ var Course = function (_React$Component) {
                 'div',
                 { className: 'six wide column', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 71
+                    lineNumber: 74
                   },
                   __self: this
                 },
@@ -4600,7 +4603,7 @@ var Course = function (_React$Component) {
                   'div',
                   { className: 'row centerInside', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 72
+                      lineNumber: 75
                     },
                     __self: this
                   },
@@ -4614,7 +4617,7 @@ var Course = function (_React$Component) {
           'div',
           { className: 'ui segment noBor noRa noSha noMa', style: { backgroundColor: 'white !important' }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 81
+              lineNumber: 84
             },
             __self: this
           },
@@ -4622,7 +4625,7 @@ var Course = function (_React$Component) {
             'div',
             { className: 'ui container ', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 82
+                lineNumber: 85
               },
               __self: this
             },
@@ -4630,7 +4633,7 @@ var Course = function (_React$Component) {
               'div',
               { className: 'ui column  grid', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 83
+                  lineNumber: 86
                 },
                 __self: this
               },
@@ -4638,7 +4641,7 @@ var Course = function (_React$Component) {
                 'div',
                 { className: 'sixteen wide column', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 84
+                    lineNumber: 87
                   },
                   __self: this
                 },
@@ -4646,7 +4649,7 @@ var Course = function (_React$Component) {
                   'div',
                   { className: 'ui breadcrumb', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 85
+                      lineNumber: 88
                     },
                     __self: this
                   },
@@ -4654,7 +4657,7 @@ var Course = function (_React$Component) {
                     __WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */],
                     { to: '/', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 86
+                        lineNumber: 89
                       },
                       __self: this
                     },
@@ -4664,7 +4667,7 @@ var Course = function (_React$Component) {
                     'div',
                     { className: 'divider', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 87
+                        lineNumber: 90
                       },
                       __self: this
                     },
@@ -4676,7 +4679,7 @@ var Course = function (_React$Component) {
                       __WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */],
                       { to: '/category/' + el.slug, key: index, __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 89
+                          lineNumber: 92
                         },
                         __self: this
                       },
@@ -4690,7 +4693,7 @@ var Course = function (_React$Component) {
                   __WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */],
                   { to: '/course/' + course.slug, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 93
+                      lineNumber: 96
                     },
                     __self: this
                   },
@@ -4698,7 +4701,7 @@ var Course = function (_React$Component) {
                     'h1',
                     { className: 'noMa', style: { marginBottom: '10px !important' }, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 93
+                        lineNumber: 96
                       },
                       __self: this
                     },
@@ -4715,7 +4718,7 @@ var Course = function (_React$Component) {
           { className: 'ui segment noBor noRa noSha noMa',
             style: { backgroundColor: '#e5e5e5 !important', padding: '0px !important' }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 101
+              lineNumber: 104
             },
             __self: this
           },
@@ -4723,7 +4726,7 @@ var Course = function (_React$Component) {
             'div',
             { className: 'ui container ', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 103
+                lineNumber: 106
               },
               __self: this
             },
@@ -4731,7 +4734,7 @@ var Course = function (_React$Component) {
               'div',
               { className: 'ui column  stackable grid', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 104
+                  lineNumber: 107
                 },
                 __self: this
               },
@@ -4739,7 +4742,7 @@ var Course = function (_React$Component) {
                 'div',
                 { className: 'eleven wide column', style: { paddingTop: '0 !important' }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 105
+                    lineNumber: 108
                   },
                   __self: this
                 },
@@ -4747,20 +4750,20 @@ var Course = function (_React$Component) {
                   'div',
                   { className: 'row', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 106
+                      lineNumber: 109
                     },
                     __self: this
                   },
                   videoBySlug.kind === "free" || (user.member === "membership" || user.member === "trial") && __WEBPACK_IMPORTED_MODULE_5_moment___default()(__WEBPACK_IMPORTED_MODULE_5_moment___default()().format()).diff(__WEBPACK_IMPORTED_MODULE_5_moment___default()(user.info.end), 'days') <= 0 ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components__["a" /* Video */], { video: videoBySlug, user: this.props.user, linkVideo: linkVideo, button: button, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 109
+                      lineNumber: 112
                     },
                     __self: this
                   }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'ui segment', style: { height: '556px', background: '#eee' }, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 111
+                        lineNumber: 114
                       },
                       __self: this
                     },
@@ -4768,7 +4771,7 @@ var Course = function (_React$Component) {
                       'div',
                       { className: 'centerInside', style: { marginTop: '150px', marginBottom: '20px' }, __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 112
+                          lineNumber: 115
                         },
                         __self: this
                       },
@@ -4778,7 +4781,7 @@ var Course = function (_React$Component) {
                         {
                           style: { color: 'red', marginLeft: '5px', marginRight: '5px' }, __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 113
+                            lineNumber: 116
                           },
                           __self: this
                         },
@@ -4790,7 +4793,7 @@ var Course = function (_React$Component) {
                         {
                           style: { marginLeft: '5px', marginRight: '5px' }, __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 114
+                            lineNumber: 117
                           },
                           __self: this
                         },
@@ -4801,7 +4804,7 @@ var Course = function (_React$Component) {
                       'div',
                       { className: 'centerInside', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 117
+                          lineNumber: 120
                         },
                         __self: this
                       },
@@ -4811,7 +4814,7 @@ var Course = function (_React$Component) {
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components__["b" /* CourseInfo */], { course: course, user: user, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 124
+                    lineNumber: 127
                   },
                   __self: this
                 })
@@ -4820,7 +4823,7 @@ var Course = function (_React$Component) {
                 'div',
                 { className: 'five wide column ', style: { paddingLeft: '0 !important' }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 126
+                    lineNumber: 129
                   },
                   __self: this
                 },
@@ -4828,7 +4831,7 @@ var Course = function (_React$Component) {
                   'div',
                   { className: 'ui segment noPa noBor noSha course-info', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 128
+                      lineNumber: 131
                     },
                     __self: this
                   },
@@ -4836,7 +4839,7 @@ var Course = function (_React$Component) {
                     'div',
                     { className: 'tabs ui top attached tabular menu', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 129
+                        lineNumber: 132
                       },
                       __self: this
                     },
@@ -4844,7 +4847,7 @@ var Course = function (_React$Component) {
                       'a',
                       { className: 'item active', 'data-tab': 'first', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 130
+                          lineNumber: 133
                         },
                         __self: this
                       },
@@ -4854,7 +4857,7 @@ var Course = function (_React$Component) {
                       'a',
                       { className: 'item', 'data-tab': 'second', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 131
+                          lineNumber: 134
                         },
                         __self: this
                       },
@@ -4865,7 +4868,7 @@ var Course = function (_React$Component) {
                     'div',
                     { className: 'ui bottom attached tab segment active noPa', 'data-tab': 'first', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 133
+                        lineNumber: 136
                       },
                       __self: this
                     },
@@ -4873,7 +4876,7 @@ var Course = function (_React$Component) {
                       'div',
                       { className: 'ui styled fluid accordion', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 134
+                          lineNumber: 137
                         },
                         __self: this
                       },
@@ -4882,13 +4885,13 @@ var Course = function (_React$Component) {
                           'div',
                           { className: 'title active', style: { background: 'rgba(100, 100, 100, 0.1)', fontSize: '16px !important' }, __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 137
+                              lineNumber: 140
                             },
                             __self: this
                           },
                           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: ' dropdown icon', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 138
+                              lineNumber: 141
                             },
                             __self: this
                           }),
@@ -4897,7 +4900,7 @@ var Course = function (_React$Component) {
                           'div',
                           { className: 'content active', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 141
+                              lineNumber: 144
                             },
                             __self: this
                           },
@@ -4905,7 +4908,7 @@ var Course = function (_React$Component) {
                             'div',
                             { className: 'ui relaxed divided list course-list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 142
+                                lineNumber: 145
                               },
                               __self: this
                             },
@@ -4921,18 +4924,18 @@ var Course = function (_React$Component) {
                                   },
                                   __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 147
+                                    lineNumber: 150
                                   },
                                   __self: this
                                 },
                                 video.kind === 'free' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: ' play middle aligned icon', __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 153
+                                    lineNumber: 156
                                   },
                                   __self: this
                                 }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: ' lock middle aligned icon', __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 154
+                                    lineNumber: 157
                                   },
                                   __self: this
                                 }),
@@ -4940,7 +4943,7 @@ var Course = function (_React$Component) {
                                   'div',
                                   { className: 'content', __source: {
                                       fileName: _jsxFileName,
-                                      lineNumber: 155
+                                      lineNumber: 158
                                     },
                                     __self: this
                                   },
@@ -4948,7 +4951,7 @@ var Course = function (_React$Component) {
                                     'h4',
                                     { className: 'header', __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 156
+                                        lineNumber: 159
                                       },
                                       __self: this
                                     },
@@ -4958,7 +4961,7 @@ var Course = function (_React$Component) {
                                     'div',
                                     { className: 'description', __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 157
+                                        lineNumber: 160
                                       },
                                       __self: this
                                     },
@@ -4976,7 +4979,7 @@ var Course = function (_React$Component) {
                     'div',
                     { className: 'ui bottom attached tab segment', 'data-tab': 'second', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 171
+                        lineNumber: 174
                       },
                       __self: this
                     },
@@ -4987,7 +4990,7 @@ var Course = function (_React$Component) {
                   'div',
                   { className: 'ui segment noPa', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 176
+                      lineNumber: 179
                     },
                     __self: this
                   },
@@ -4997,7 +5000,7 @@ var Course = function (_React$Component) {
                       style: { border: '2px solid transparent !important' },
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 177
+                        lineNumber: 180
                       },
                       __self: this
                     },
@@ -5008,7 +5011,7 @@ var Course = function (_React$Component) {
                     { className: 'ui attached celled list  noBor noMa related-courses',
                       style: { background: 'white', borderRadius: '0 0 5px 5px' }, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 180
+                        lineNumber: 183
                       },
                       __self: this
                     },
@@ -5017,7 +5020,7 @@ var Course = function (_React$Component) {
                         'div',
                         { className: 'item', key: index, __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 184
+                            lineNumber: 187
                           },
                           __self: this
                         },
@@ -5025,7 +5028,7 @@ var Course = function (_React$Component) {
                           'div',
                           { className: 'ui avatar index-card-wr', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 185
+                              lineNumber: 188
                             },
                             __self: this
                           },
@@ -5033,7 +5036,7 @@ var Course = function (_React$Component) {
                             'div',
                             { className: 'index-card-text', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 186
+                                lineNumber: 189
                               },
                               __self: this
                             },
@@ -5042,7 +5045,7 @@ var Course = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 187
+                                  lineNumber: 190
                                 },
                                 __self: this
                               },
@@ -5051,7 +5054,7 @@ var Course = function (_React$Component) {
                                 {
                                   __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 188
+                                    lineNumber: 191
                                   },
                                   __self: this
                                 },
@@ -5061,7 +5064,7 @@ var Course = function (_React$Component) {
                                 'div',
                                 { className: 'card-text', __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 189
+                                    lineNumber: 192
                                   },
                                   __self: this
                                 },
@@ -5072,7 +5075,7 @@ var Course = function (_React$Component) {
                                 'div',
                                 { className: 'card-button', __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 190
+                                    lineNumber: 193
                                   },
                                   __self: this
                                 },
@@ -5080,7 +5083,7 @@ var Course = function (_React$Component) {
                                   __WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */],
                                   { to: '/course/' + el.slug, __source: {
                                       fileName: _jsxFileName,
-                                      lineNumber: 191
+                                      lineNumber: 194
                                     },
                                     __self: this
                                   },
@@ -5088,13 +5091,13 @@ var Course = function (_React$Component) {
                                     'button',
                                     { className: 'ui inverted button', __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 192
+                                        lineNumber: 195
                                       },
                                       __self: this
                                     },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'play icon', __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 193
+                                        lineNumber: 196
                                       },
                                       __self: this
                                     }),
@@ -5108,7 +5111,7 @@ var Course = function (_React$Component) {
                             src: el.coverUrl,
                             style: { height: '140px' }, __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 200
+                              lineNumber: 203
                             },
                             __self: this
                           })
@@ -5125,7 +5128,7 @@ var Course = function (_React$Component) {
           'div',
           { className: 'ui segment container noBor noSha', __source: {
               fileName: _jsxFileName,
-              lineNumber: 214
+              lineNumber: 217
             },
             __self: this
           },
@@ -5133,7 +5136,7 @@ var Course = function (_React$Component) {
             'div',
             { style: { maxWidth: 1000, textAlign: 'center' }, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 215
+                lineNumber: 218
               },
               __self: this
             },
@@ -5141,13 +5144,13 @@ var Course = function (_React$Component) {
               __WEBPACK_IMPORTED_MODULE_4_react_facebook___default.a,
               { appId: '1245241202224163', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 216
+                  lineNumber: 219
                 },
                 __self: this
               },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_facebook__["Comments"], { href: 'http://edu.anabim.com/course/' + course.slug, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 217
+                  lineNumber: 220
                 },
                 __self: this
               })

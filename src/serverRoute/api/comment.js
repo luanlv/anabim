@@ -7,7 +7,7 @@ const Comment = mongoose.model('Comment')
 
 router.get('/get', (req, res) => {
   Comment.find({}, (err, comments) => {
-    if(err) res.sendStatus(400)
+    if(err) return res.sendStatus(400)
     res.send(comments)
   })
 })

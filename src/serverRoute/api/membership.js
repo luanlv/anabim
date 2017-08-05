@@ -8,7 +8,7 @@ const User = mongoose.model('User')
 
 router.get('/get', (req, res) => {
   Subscribe.find({email: req.user.username}, (err, subscribe) => {
-    if(err) res.sendStatus(400)
+    if(err) return res.sendStatus(400)
     res.json(subscribe)
   })
 })
@@ -33,7 +33,7 @@ router.get('/', (req, res) => {
   else
     Subscribe.find({email: req.user.username}, (err, subscrible) => {
       if(err) throw err
-      if(subscrible.length < 1) res.sendStatus(400)
+      if(subscrible.length < 1) return res.sendStatus(400)
       res.send(subscrible[0])
     })
 })

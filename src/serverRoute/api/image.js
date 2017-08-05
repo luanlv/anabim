@@ -7,7 +7,7 @@ const Image = mongoose.model('Image')
 
 router.get('/get', (req, res) => {
   Image.find({}, (err, images) => {
-    if(err) res.sendStatus(400)
+    if(err) return res.sendStatus(400)
     res.send(images)
   })
 })
