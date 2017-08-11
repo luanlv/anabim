@@ -20,6 +20,8 @@ export default {
     require('./dashboard').default,
     require('./library').default,
 
+    require('./thongtinchung').default,
+    
     require('./danhmuc').default,
     require('./phanmem').default,
     require('./khoahoc').default,

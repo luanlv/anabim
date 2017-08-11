@@ -1,9 +1,14 @@
 /* global $ */
 import React from 'react'
 import Link from '../../components/Link'
+import PropTypes from 'prop-types';
 import Sidebar from './Sidebar'
 
 class Nav extends React.Component {
+  
+  static contextTypes = { store: PropTypes.object.isRequired };
+  
+  
   // eslint-disable-next-line
   constructor (props) {
     super(props)
@@ -72,6 +77,7 @@ class Nav extends React.Component {
     // if(logged && !this.props.user.passwordChanged && !this.props.user.avatar) {
     //   this.changePassword()
     // }
+    const menu = this.context.store.getState().data.information.value.menu
     return (
       <div className='nav'>
         <div className='ui inverted segment nav-top'>
@@ -309,9 +315,13 @@ class Nav extends React.Component {
               <Link to='/' className='item'>
                 <i className='home icon' />
               </Link>
-              <Link to='/blog' className='item'>
-                Blog
-              </Link>
+              {menu.map((el, index) => {
+                return (
+                  <Link key={index} to={el.url} className='item'>
+                    {el.title}
+                  </Link>
+                )
+              })}
               <div className='right menu'>
 
                 {(user.member === 'member') ? ('') : (

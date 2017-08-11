@@ -25,12 +25,7 @@ export default new GraphQLObjectType({
     id: {
       type: new GraphQLNonNull(GraphQLString)
     },
-    common: {type: GraphQLJSON},
-    about: {type: GraphQLJSON},
-    contact: {type: GraphQLJSON},
-    tracking: {type: GraphQLJSON},
-    allService: {type: GraphQLJSON},
-    services: {type: GraphQLJSON},
-    home: {type: GraphQLJSON}
+    menu: {type: GraphQLJSON},
+    footer: {type: GraphQLJSON}
   })
 });

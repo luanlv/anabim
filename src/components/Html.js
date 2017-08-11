@@ -47,6 +47,7 @@ class Html extends React.Component {
           {(seo && seo.title) ? (<title>{seo.title}</title>) : (<title>{title}</title>) }
           {(seo && seo.description) ? (<meta name="description" content={seo.description} />): ( description ? <meta name="description" content={description} /> : '' ) }
           <meta property='fb:app_id' content='1245241202224163' />
+          <meta property='fb:admins' content='100002088645796' />
           <meta property='fb:admins' content='100004231235930' />
           {(seo && seo.og_title) ? (<meta property="og:title" content={seo.og_title} />) : (<meta property="og:title" content={defaultContent} />) }
           {(seo && seo.url) ? (<meta property="og:url" content={url + seo.url} />) : (<meta property="og:url" content={url} />) }

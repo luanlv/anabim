@@ -65,7 +65,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "/assets/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 280);
+/******/ 	return __webpack_require__(__webpack_require__.s = 282);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -111,7 +111,7 @@ module.exports = require("axios");
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__history__ = __webpack_require__(13);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -211,8 +211,8 @@ const Admin = {
   KhoaHoc: __webpack_require__(152).default,
   SuaKhoaHoc: __webpack_require__(153).default,
 
-  Video: __webpack_require__(178).default,
-  SuaVideo: __webpack_require__(177).default,
+  Video: __webpack_require__(180).default,
+  SuaVideo: __webpack_require__(179).default,
 
   Price: __webpack_require__(167).default,
 
@@ -226,9 +226,11 @@ const Admin = {
 
   Coupon: __webpack_require__(140).default,
 
-  Trial: __webpack_require__(175).default,
+  Trial: __webpack_require__(177).default,
 
-  TrangChu: __webpack_require__(173).default,
+  TrangChu: __webpack_require__(175).default,
+
+  Common: __webpack_require__(173).default,
 
   // Contact: require('./lienhe/Contact').default,
   // About: require('./gioithieu/About').default,
@@ -278,7 +280,7 @@ module.exports = require("body-parser");
 /***/ (function(module, exports, __webpack_require__) {
 
 var mongoose = __webpack_require__(2);
-let autoIncrement = __webpack_require__(264);
+let autoIncrement = __webpack_require__(266);
 autoIncrement.initialize(mongoose.connection);
 
 module.exports = autoIncrement;
@@ -288,7 +290,7 @@ module.exports = autoIncrement;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_createBrowserHistory__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_createBrowserHistory__ = __webpack_require__(257);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_createBrowserHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_history_createBrowserHistory__);
 /**
  * React Starter Kit (https://www.reactstarterkit.com/)
@@ -321,7 +323,7 @@ module.exports = require("react-redux-loading-bar");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Partial__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux_loading_bar__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_redux_loading_bar__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/components/Layout.js';
 /**
@@ -482,11 +484,17 @@ Layout.contextTypes = { store: __WEBPACK_IMPORTED_MODULE_3_prop_types___default.
 
 /***/ }),
 /* 16 */
+/***/ (function(module, exports) {
+
+module.exports = require("prop-types");
+
+/***/ }),
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = setData;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants__ = __webpack_require__(22);
 /* eslint-disable import/prefer-default-export */
 
 
@@ -501,27 +509,21 @@ function setData(value = {}) {
 }
 
 /***/ }),
-/* 17 */
-/***/ (function(module, exports) {
-
-module.exports = require("prop-types");
-
-/***/ }),
 /* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_draft_js_editor_lib_Editor__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_draft_js_editor_lib_Editor__ = __webpack_require__(284);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_draft_js_editor_lib_Editor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_draft_js_editor_lib_Editor__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_draft_js_editor_lib_components_defaultDecorator__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_draft_js_editor_lib_components_defaultDecorator__ = __webpack_require__(285);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_draft_js_editor_lib_components_defaultDecorator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_draft_js_editor_lib_components_defaultDecorator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_draft_js__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_draft_js__ = __webpack_require__(283);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_draft_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_draft_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_draft_js_export_html__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_draft_js_export_html__ = __webpack_require__(286);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_draft_js_export_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_draft_js_export_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_draft_js_import_html__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_draft_js_import_html__ = __webpack_require__(287);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_draft_js_import_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_draft_js_import_html__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/admin/Components/CustomEditor/index.js';
 
@@ -579,7 +581,7 @@ class MultipleEditorsDemo extends __WEBPACK_IMPORTED_MODULE_0_react__["Component
 
 }
 
-/* unused harmony default export */ var _unused_webpack_default_export = (MultipleEditorsDemo);
+/* harmony default export */ __webpack_exports__["a"] = (MultipleEditorsDemo);
 
 /***/ }),
 /* 19 */
@@ -592,7 +594,7 @@ class MultipleEditorsDemo extends __WEBPACK_IMPORTED_MODULE_0_react__["Component
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_antd__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_antd__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_copy_to_clipboard__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_copy_to_clipboard__ = __webpack_require__(272);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_copy_to_clipboard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_copy_to_clipboard__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/admin/Components/ImageSelect/index.js';
 
@@ -613,7 +615,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 
-var Waypoint = __webpack_require__(273);
+var Waypoint = __webpack_require__(275);
 
 
 const Dragger = __WEBPACK_IMPORTED_MODULE_2_antd__["Upload"].Dragger;
@@ -959,28 +961,6 @@ module.exports = require("react-codemirror");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* eslint-disable import/prefer-default-export */
-
-const SET_RUNTIME_VARIABLE = 'SET_RUNTIME_VARIABLE';
-/* harmony export (immutable) */ __webpack_exports__["c"] = SET_RUNTIME_VARIABLE;
-
-
-const SET_SETTING = 'SET_SETTING';
-/* harmony export (immutable) */ __webpack_exports__["d"] = SET_SETTING;
-
-const SET_DATA = 'SET_DATA';
-/* harmony export (immutable) */ __webpack_exports__["b"] = SET_DATA;
-
-
-const SET_MEMBERSHIP = 'SET_MEMBERSHIP';
-/* harmony export (immutable) */ __webpack_exports__["a"] = SET_MEMBERSHIP;
-
-
-/***/ }),
-/* 22 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd__ = __webpack_require__(4);
@@ -1085,6 +1065,28 @@ class ImageUpload extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
 /* harmony default export */ __webpack_exports__["a"] = (ImageUpload);
 
 /***/ }),
+/* 22 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* eslint-disable import/prefer-default-export */
+
+const SET_RUNTIME_VARIABLE = 'SET_RUNTIME_VARIABLE';
+/* harmony export (immutable) */ __webpack_exports__["c"] = SET_RUNTIME_VARIABLE;
+
+
+const SET_SETTING = 'SET_SETTING';
+/* harmony export (immutable) */ __webpack_exports__["d"] = SET_SETTING;
+
+const SET_DATA = 'SET_DATA';
+/* harmony export (immutable) */ __webpack_exports__["b"] = SET_DATA;
+
+
+const SET_MEMBERSHIP = 'SET_MEMBERSHIP';
+/* harmony export (immutable) */ __webpack_exports__["a"] = SET_MEMBERSHIP;
+
+
+/***/ }),
 /* 23 */
 /***/ (function(module, exports) {
 
@@ -1100,9 +1102,9 @@ module.exports = require("universal-router");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_resize_detector__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_resize_detector__ = __webpack_require__(291);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_resize_detector___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_resize_detector__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_visibility_sensor__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_visibility_sensor__ = __webpack_require__(294);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_visibility_sensor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_visibility_sensor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ImageSelect__ = __webpack_require__(19);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/admin/Components/CKEditor/index.js';
@@ -1337,7 +1339,7 @@ class CKEditor extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_slug__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_slug__ = __webpack_require__(279);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_slug___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_slug__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/admin/Components/Tags/index.js';
 
@@ -1875,11 +1877,11 @@ function toComment(sourceMap) {
 "use strict";
 
 
-var _stringify = __webpack_require__(246);
+var _stringify = __webpack_require__(248);
 
 var _stringify2 = _interopRequireDefault(_stringify);
 
-var _slicedToArray2 = __webpack_require__(247);
+var _slicedToArray2 = __webpack_require__(249);
 
 var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 
@@ -2015,7 +2017,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _en_US = __webpack_require__(243);
+var _en_US = __webpack_require__(245);
 
 var _en_US2 = _interopRequireDefault(_en_US);
 
@@ -2023,7 +2025,7 @@ var _en_US3 = __webpack_require__(36);
 
 var _en_US4 = _interopRequireDefault(_en_US3);
 
-var _objectAssign = __webpack_require__(286);
+var _objectAssign = __webpack_require__(288);
 
 var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -2463,10 +2465,10 @@ const WrappedDynamicFieldSet = __WEBPACK_IMPORTED_MODULE_1_antd__["Form"].create
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Link__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Partial_Fn__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_facebook__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_facebook__ = __webpack_require__(290);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_facebook___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_facebook__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_moment__);
@@ -3177,7 +3179,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var api_key = 'key-b27916a12645e658b1de91b9620f85fd';
 var domain = 'mg.vnguy.com';
-var mailgun = __webpack_require__(263)({ apiKey: api_key, domain: domain });
+var mailgun = __webpack_require__(265)({ apiKey: api_key, domain: domain });
 
 const from = 'Anabim Education <admin@anabim.com>';
 
@@ -3252,7 +3254,7 @@ Mailer.sendToAdmin = function (email, data) {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(239);
+    var content = __webpack_require__(241);
     var insertCss = __webpack_require__(33);
 
     if (typeof content === 'string') {
@@ -3328,35 +3330,35 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_path__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_express__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_express___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_express__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_cookie_parser__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_cookie_parser__ = __webpack_require__(252);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_cookie_parser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_cookie_parser__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_body_parser__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_body_parser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_body_parser__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_express_jwt__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_express_jwt__ = __webpack_require__(255);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_express_jwt___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_express_jwt__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_express_graphql__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_express_graphql__ = __webpack_require__(254);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_express_graphql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_express_graphql__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jsonwebtoken__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jsonwebtoken__ = __webpack_require__(264);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jsonwebtoken___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jsonwebtoken__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_react_dom_server__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_react_dom_server__ = __webpack_require__(273);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_react_dom_server___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_react_dom_server__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_pretty_error__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_pretty_error__ = __webpack_require__(271);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_pretty_error___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_pretty_error__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_App__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Html__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_HtmlAdmin__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__routes_error_ErrorPage__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__routes_error_ErrorPage__ = __webpack_require__(205);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__routes_error_ErrorPage_css__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__routes_error_ErrorPage_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__routes_error_ErrorPage_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__createFetch__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__passport__ = __webpack_require__(124);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__router__ = __webpack_require__(130);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__data_schema__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__assets_json__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__assets_json__ = __webpack_require__(247);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__assets_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__assets_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__store_configureStore__ = __webpack_require__(235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__store_configureStore__ = __webpack_require__(237);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__actions_runtime__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__config__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__config___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__config__);
@@ -3402,9 +3404,9 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 
-const session = __webpack_require__(254);
-const MongoStore = __webpack_require__(249)(session);
-var routeCache = __webpack_require__(276);
+const session = __webpack_require__(256);
+const MongoStore = __webpack_require__(251)(session);
+var routeCache = __webpack_require__(278);
 
 //mongoose
 
@@ -3462,11 +3464,11 @@ if (true) {
   app.enable('trust proxy');
 }
 
-app.use('/image', __webpack_require__(232));
-app.use('/api', __webpack_require__(217));
-app.use('/token', __webpack_require__(233));
-app.use('/upload', __webpack_require__(234));
-app.use('/auth', __webpack_require__(231));
+app.use('/image', __webpack_require__(234));
+app.use('/api', __webpack_require__(219));
+app.use('/token', __webpack_require__(235));
+app.use('/upload', __webpack_require__(236));
+app.use('/auth', __webpack_require__(233));
 
 //
 // Register API middleware
@@ -3781,7 +3783,7 @@ var _moment = __webpack_require__(9);
 
 var _moment2 = _interopRequireDefault(_moment);
 
-var _en_US = __webpack_require__(244);
+var _en_US = __webpack_require__(246);
 
 var _en_US2 = _interopRequireDefault(_en_US);
 
@@ -3847,7 +3849,7 @@ module.exports = exports['default'];
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = setRuntimeVariable;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants__ = __webpack_require__(22);
 /* eslint-disable import/prefer-default-export */
 
 
@@ -3868,7 +3870,7 @@ function setRuntimeVariable({ name, value }) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = setMember;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants__ = __webpack_require__(22);
 /* eslint-disable import/prefer-default-export */
 
 
@@ -3889,9 +3891,9 @@ function setMember(value = {}) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux__ = __webpack_require__(274);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_redux__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -3966,7 +3968,7 @@ App.childContextTypes = ContextType;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_serialize_javascript__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_serialize_javascript___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_serialize_javascript__);
@@ -4069,101 +4071,107 @@ class Html extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           },
           __self: this
         }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { property: 'fb:admins', content: '100004231235930', __source: {
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { property: 'fb:admins', content: '100002088645796', __source: {
             fileName: _jsxFileName,
             lineNumber: 50
           },
           __self: this
         }),
-        seo && seo.og_title ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { property: 'og:title', content: seo.og_title, __source: {
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { property: 'fb:admins', content: '100004231235930', __source: {
             fileName: _jsxFileName,
             lineNumber: 51
           },
           __self: this
+        }),
+        seo && seo.og_title ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { property: 'og:title', content: seo.og_title, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 52
+          },
+          __self: this
         }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { property: 'og:title', content: defaultContent, __source: {
             fileName: _jsxFileName,
-            lineNumber: 51
+            lineNumber: 52
           },
           __self: this
         }),
         seo && seo.url ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { property: 'og:url', content: url + seo.url, __source: {
             fileName: _jsxFileName,
-            lineNumber: 52
+            lineNumber: 53
           },
           __self: this
         }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { property: 'og:url', content: url, __source: {
             fileName: _jsxFileName,
-            lineNumber: 52
+            lineNumber: 53
           },
           __self: this
         }),
         seo && seo.og_image ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { property: 'og:image', content: url + seo.og_image, __source: {
             fileName: _jsxFileName,
-            lineNumber: 53
+            lineNumber: 54
           },
           __self: this
         }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { property: 'og:image', content: url + defaultLogo, __source: {
             fileName: _jsxFileName,
-            lineNumber: 53
+            lineNumber: 54
           },
           __self: this
         }),
         seo && seo.og_description ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { property: 'og:description', content: seo.og_description, __source: {
             fileName: _jsxFileName,
-            lineNumber: 54
+            lineNumber: 55
           },
           __self: this
         }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { property: 'og:description', content: defaultContent, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 54
-          },
-          __self: this
-        }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'apple-touch-icon', href: 'apple-touch-icon.png', __source: {
             fileName: _jsxFileName,
             lineNumber: 55
           },
           __self: this
         }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css', __source: {
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'apple-touch-icon', href: 'apple-touch-icon.png', __source: {
             fileName: _jsxFileName,
-            lineNumber: 58
+            lineNumber: 56
           },
           __self: this
         }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', href: '/assets/app/app.css', __source: {
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css', __source: {
             fileName: _jsxFileName,
             lineNumber: 59
           },
           __self: this
         }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', href: '/assets/custom.css', __source: {
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', href: '/assets/app/app.css', __source: {
             fileName: _jsxFileName,
             lineNumber: 60
           },
           __self: this
         }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', href: '/assets/custom.css', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 61
+          },
+          __self: this
+        }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', type: 'text/css', href: "/css/app.css?v=" + v, __source: {
             fileName: _jsxFileName,
-            lineNumber: 62
+            lineNumber: 63
           },
           __self: this
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('script', { src: '/assets/lib/head.min.js', __source: {
             fileName: _jsxFileName,
-            lineNumber: 64
+            lineNumber: 65
           },
           __self: this
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('style', { dangerouslySetInnerHTML: { __html: this.props.css }, __source: {
             fileName: _jsxFileName,
-            lineNumber: 65
+            lineNumber: 66
           },
           __self: this
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('script', { dangerouslySetInnerHTML: { __html: this.props.scriptTop }, __source: {
             fileName: _jsxFileName,
-            lineNumber: 66
+            lineNumber: 67
           },
           __self: this
         })
@@ -4173,19 +4181,19 @@ class Html extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 69
+            lineNumber: 70
           },
           __self: this
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: 'app', dangerouslySetInnerHTML: { __html: children }, __source: {
             fileName: _jsxFileName,
-            lineNumber: 70
+            lineNumber: 71
           },
           __self: this
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('script', { dangerouslySetInnerHTML: { __html: `window.App=${__WEBPACK_IMPORTED_MODULE_2_serialize_javascript___default()(app)}` }, __source: {
             fileName: _jsxFileName,
-            lineNumber: 71
+            lineNumber: 72
           },
           __self: this
         }),
@@ -4195,13 +4203,13 @@ class Html extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             + `.js("https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.js" )` + `.js("/assets/lib/jquery.menu-aim.js" )` + `.js("/assets/lib/modernizr.custom.js")` + `.js("/assets/lib/jquery.dlmenu.js")` + `.js("${scripts[0]}?v=${v}")` + `.js("${scripts[1]}?v=${v}")` },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 74
+            lineNumber: 75
           },
           __self: this
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('script', { dangerouslySetInnerHTML: { __html: this.props.scriptBottom }, __source: {
             fileName: _jsxFileName,
-            lineNumber: 88
+            lineNumber: 89
           },
           __self: this
         })
@@ -4234,7 +4242,7 @@ Html.defaultProps = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_serialize_javascript__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_serialize_javascript___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_serialize_javascript__);
@@ -4426,7 +4434,7 @@ Html.defaultProps = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/components/Partial/ActiveCode.js';
 /* global $ */
@@ -4651,492 +4659,326 @@ const EmailConfirm = ({}) => {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _jsxFileName = '/home/luan/Workspace/anabim/src/components/Partial/Footer.js',
-    _this = this;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(6);
+var _jsxFileName = '/home/luan/Workspace/anabim/src/components/Partial/Footer.js';
 
 
 
-const Footer = ({ props }) => {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'div',
-    { id: 'footer', __source: {
-        fileName: _jsxFileName,
-        lineNumber: 5
-      },
-      __self: _this
-    },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+
+class Footer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
+    const footer = this.context.store.getState().data.information.value.footer;
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
-      { className: 'ui inverted segment noBor noSha noRa noMa footer-top', __source: {
+      { id: 'footer', __source: {
           fileName: _jsxFileName,
-          lineNumber: 6
+          lineNumber: 20
         },
-        __self: _this
+        __self: this
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: 'ui container', __source: {
+        { className: 'ui inverted segment noBor noSha noRa noMa footer-top', __source: {
             fileName: _jsxFileName,
-            lineNumber: 7
+            lineNumber: 21
           },
-          __self: _this
+          __self: this
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
-          { className: 'ui stackable grid', __source: {
+          { className: 'ui container', __source: {
               fileName: _jsxFileName,
-              lineNumber: 8
+              lineNumber: 22
             },
-            __self: _this
+            __self: this
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: ' twelve wide column', __source: {
+            { className: 'ui stackable grid', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 9
+                lineNumber: 23
               },
-              __self: _this
+              __self: this
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
-              { className: 'ui three column grid', __source: {
+              { className: ' twelve wide column', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 10
+                  lineNumber: 24
                 },
-                __self: _this
+                __self: this
               },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'column ', __source: {
+                { className: 'ui three column grid', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 11
+                    lineNumber: 25
                   },
-                  __self: _this
+                  __self: this
                 },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'h3',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 12
-                    },
-                    __self: _this
-                  },
-                  'ANABIM EDUCATION'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 13
-                    },
-                    __self: _this
-                  },
-                  'Kh\xF3a h\u1ECDc online'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 14
-                    },
-                    __self: _this
-                  },
-                  'Kho\xE1c h\u1ECDc offline'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 15
-                    },
-                    __self: _this
-                  },
-                  'H\u01B0\u1EDBng d\u1EABn thanh to\xE1n kh\xF3a h\u1ECDc'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 16
-                    },
-                    __self: _this
-                  },
-                  'H\xECnh \u1EA3nh'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 17
-                    },
-                    __self: _this
-                  },
-                  'C\u1ED9ng \u0111\u1ED3ng'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 18
-                    },
-                    __self: _this
-                  },
-                  'V\u1EC1 ch\xFAng t\xF4i'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 19
-                    },
-                    __self: _this
-                  },
-                  'Li\xEAn h\u1EC7'
-                )
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'column', __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 22
-                  },
-                  __self: _this
-                },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'h3',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 23
-                    },
-                    __self: _this
-                  },
-                  'V\u0102N PH\xD2NG ANABIM'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'span',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 24
-                    },
-                    __self: _this
-                  },
-                  'ANABIM CO,.LTD',
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 25
-                    },
-                    __self: _this
-                  }),
-                  '36B ng\xF5 554 \u0111\u01B0\u1EDDng Tr\u01B0\u1EDDng Chinh, \u0110\u1ED1ng \u0110a, H\xE0 N\u1ED9i.'
-                ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   'div',
-                  {
-                    __source: {
+                  { className: 'column ', __source: {
                       fileName: _jsxFileName,
                       lineNumber: 26
                     },
-                    __self: _this
+                    __self: this
                   },
-                  '0975 622 789'
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'h3',
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 27
+                      },
+                      __self: this
+                    },
+                    'ANABIM EDUCATION'
+                  ),
+                  footer.cot1.map((el, index) => {
+                    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_2__Link__["a" /* default */],
+                      { key: index, to: el.url, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 29
+                        },
+                        __self: this
+                      },
+                      el.title
+                    );
+                  })
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   'div',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 27
-                    },
-                    __self: _this
-                  },
-                  'revithanoi@gmail.com'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 28
-                    },
-                    __self: _this
-                  },
-                  ' www.anabim.com'
-                )
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'column ', __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 31
-                  },
-                  __self: _this
-                },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'h3',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 32
-                    },
-                    __self: _this
-                  },
-                  'H\u1ED6 TR\u1EE2'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  {
-                    __source: {
+                  { className: 'column', __source: {
                       fileName: _jsxFileName,
                       lineNumber: 33
                     },
-                    __self: _this
+                    __self: this
                   },
-                  'Mr. Th\xF9y - Ki\u1EBFn tr\xFAc',
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
-                    __source: {
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'h3',
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 34
+                      },
+                      __self: this
+                    },
+                    'V\u0102N PH\xD2NG ANABIM'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { dangerouslySetInnerHTML: { __html: footer.cot2 }, __source: {
                       fileName: _jsxFileName,
                       lineNumber: 35
                     },
-                    __self: _this
-                  }),
-                  '01669053063'
+                    __self: this
+                  })
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   'div',
-                  {
-                    __source: {
+                  { className: 'column ', __source: {
                       fileName: _jsxFileName,
                       lineNumber: 38
                     },
-                    __self: _this
+                    __self: this
                   },
-                  'Mr. Chi\u1EBFn - MEP',
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
-                    __source: {
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'h3',
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 39
+                      },
+                      __self: this
+                    },
+                    'H\u1ED6 TR\u1EE2'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { dangerouslySetInnerHTML: { __html: footer.cot3 }, __source: {
                       fileName: _jsxFileName,
                       lineNumber: 40
                     },
-                    __self: _this
-                  }),
-                  '0979 269 448'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 43
-                    },
-                    __self: _this
-                  },
-                  'Mr. Huy - K\u1EBFt c\u1EA5u',
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 45
-                    },
-                    __self: _this
-                  }),
-                  '0978 542 680'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 49
-                    },
-                    __self: _this
-                  },
-                  'Mr. V\u01B0\u1EE3ng - Doanh nghi\u1EC7p',
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 51
-                    },
-                    __self: _this
-                  }),
-                  '0975 622 789'
+                    __self: this
+                  })
                 )
               )
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'four wide column ', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 58
-              },
-              __self: _this
-            },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'h3',
-              { className: 'centerInside', __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 59
-                },
-                __self: _this
-              },
-              'Connect'
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
-              { className: 'row centerInside', __source: {
+              { className: 'four wide column ', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 60
+                  lineNumber: 45
                 },
-                __self: _this
+                __self: this
               },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'a',
-                { target: '_blank', href: 'https://facebook.com/daotaokientrucxaydung/', __source: {
+                'h3',
+                { className: 'centerInside', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 61
+                    lineNumber: 46
                   },
-                  __self: _this
+                  __self: this
                 },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'huge facebook square icon', __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 61
-                  },
-                  __self: _this
-                })
+                'Connect'
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'a',
-                { target: '_blank', href: 'https://plus.google.com/105729788429368018982', __source: {
+                'div',
+                { className: 'row centerInside', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 62
+                    lineNumber: 47
                   },
-                  __self: _this
+                  __self: this
                 },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'huge google plus square icon', __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 62
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'a',
+                  { target: '_blank', href: 'https://facebook.com/daotaokientrucxaydung/', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 48
+                    },
+                    __self: this
                   },
-                  __self: _this
-                })
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', {
+                    className: 'huge facebook square icon', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 48
+                    },
+                    __self: this
+                  })
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'a',
+                  { target: '_blank', href: 'https://plus.google.com/105729788429368018982', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 50
+                    },
+                    __self: this
+                  },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', {
+                    className: 'huge google plus square icon', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 50
+                    },
+                    __self: this
+                  })
+                )
               )
             )
           )
         )
-      )
-    ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'div',
-      { className: 'ui inverted segment noBor noSha noRa noMa footer-bot', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 68
-        },
-        __self: _this
-      },
+      ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: 'ui container', __source: {
+        { className: 'ui inverted segment noBor noSha noRa noMa footer-bot', __source: {
             fileName: _jsxFileName,
-            lineNumber: 69
+            lineNumber: 57
           },
-          __self: _this
+          __self: this
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
-          { className: 'ui secondary  menu', __source: {
+          { className: 'ui container', __source: {
               fileName: _jsxFileName,
-              lineNumber: 70
+              lineNumber: 58
             },
-            __self: _this
+            __self: this
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'a',
-            { className: 'active item', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 71
-              },
-              __self: _this
-            },
-            '\xA9 2017 Anabim.com, Inc.'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'a',
-            { className: 'item', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 74
-              },
-              __self: _this
-            },
-            'Site Map'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'a',
-            { className: 'item', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 77
-              },
-              __self: _this
-            },
-            'Privacy policy'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'a',
-            { className: 'item', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 80
-              },
-              __self: _this
-            },
-            'Web Use Policy'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: 'right menu', __source: {
+            { className: 'ui secondary  menu', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 83
+                lineNumber: 59
               },
-              __self: _this
+              __self: this
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
-              { className: 'ui item', __source: {
+              { className: 'active item', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 84
+                  lineNumber: 60
                 },
-                __self: _this
+                __self: this
               },
-              'ANABIM',
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'i',
-                { className: 'icons', __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 86
-                  },
-                  __self: _this
+              '\xA9 2017 Anabim.com, Inc.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'a',
+              { className: 'item', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 63
                 },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'angle double up icon', __source: {
+                __self: this
+              },
+              'Site Map'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'a',
+              { className: 'item', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 66
+                },
+                __self: this
+              },
+              'Privacy policy'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'a',
+              { className: 'item', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 69
+                },
+                __self: this
+              },
+              'Web Use Policy'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'right menu', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 72
+                },
+                __self: this
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'a',
+                { className: 'ui item', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 87
+                    lineNumber: 73
                   },
-                  __self: _this
-                })
+                  __self: this
+                },
+                'ANABIM',
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'i',
+                  { className: 'icons', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 75
+                    },
+                    __self: this
+                  },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'angle double up icon', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 76
+                    },
+                    __self: this
+                  })
+                )
               )
             )
           )
         )
       )
-    )
-  );
-};
+    );
+  }
+}
 
+Footer.contextTypes = { store: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object.isRequired };
 /* harmony default export */ __webpack_exports__["a"] = (Footer);
 
 /***/ }),
@@ -5151,7 +4993,7 @@ const Footer = ({ props }) => {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_prop_types__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_prop_types__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__actions_user__ = __webpack_require__(55);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/components/Partial/MemberShip.js';
@@ -6416,14 +6258,18 @@ var checkPhoneNumber = function (phone) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Link__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Sidebar__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Sidebar__ = __webpack_require__(65);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/components/Partial/Nav.js';
 /* global $ */
 
 
 
 
+
 class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+
   // eslint-disable-next-line
   constructor(props) {
     super(props);
@@ -6490,11 +6336,12 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     // if(logged && !this.props.user.passwordChanged && !this.props.user.avatar) {
     //   this.changePassword()
     // }
+    const menu = this.context.store.getState().data.information.value.menu;
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
       { className: 'nav', __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 82
         },
         __self: this
       },
@@ -6502,7 +6349,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         'div',
         { className: 'ui inverted segment nav-top', __source: {
             fileName: _jsxFileName,
-            lineNumber: 77
+            lineNumber: 83
           },
           __self: this
         },
@@ -6510,7 +6357,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           'div',
           { className: 'ui container', __source: {
               fileName: _jsxFileName,
-              lineNumber: 78
+              lineNumber: 84
             },
             __self: this
           },
@@ -6518,14 +6365,14 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             'div',
             { className: 'ui inverted secondary menu', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 79
+                lineNumber: 85
               },
               __self: this
             },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Sidebar__["a" /* default */], {
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Sidebar__["a" /* default */], {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 80
+                lineNumber: 86
               },
               __self: this
             }),
@@ -6533,13 +6380,13 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               'a',
               { id: 'logo', href: 'http://anabim.com/', target: '_blank', style: { width: '120px !important' }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 81
+                  lineNumber: 87
                 },
                 __self: this
               },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/assets/img/logo.jpg', alt: '', width: 120, height: 42, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 82
+                  lineNumber: 88
                 },
                 __self: this
               })
@@ -6548,14 +6395,14 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               'span',
               { className: 'ui top left pointing dropdown item navbar', style: { marginRight: '0px !important' }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 84
+                  lineNumber: 90
                 },
                 __self: this
               },
               'DANH M\u1EE4C',
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'dropdown icon', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 86
+                  lineNumber: 92
                 },
                 __self: this
               }),
@@ -6563,7 +6410,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 'ul',
                 { className: 'ui blue menu', id: 'danhmuc', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 87
+                    lineNumber: 93
                   },
                   __self: this
                 },
@@ -6571,13 +6418,13 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   'li',
                   { className: 'item', 'data-submenu-id': '1', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 88
+                      lineNumber: 94
                     },
                     __self: this
                   },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'dashboard icon', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 89
+                      lineNumber: 95
                     },
                     __self: this
                   }),
@@ -6586,7 +6433,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     'div',
                     { id: '1', className: 'popover', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 91
+                        lineNumber: 97
                       },
                       __self: this
                     },
@@ -6594,7 +6441,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       'div',
                       { className: 'ui two column grid', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 92
+                          lineNumber: 98
                         },
                         __self: this
                       },
@@ -6602,7 +6449,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         'div',
                         { className: 'column', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 93
+                            lineNumber: 99
                           },
                           __self: this
                         },
@@ -6610,130 +6457,10 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                           'ul',
                           { className: 'ui list', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 94
+                              lineNumber: 100
                             },
                             __self: this
                           },
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'li',
-                            {
-                              __source: {
-                                fileName: _jsxFileName,
-                                lineNumber: 95
-                              },
-                              __self: this
-                            },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                              { to: Data.baseUrl + '/course/khoa-hoc-lam-quen-voi-revit', __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 95
-                                },
-                                __self: this
-                              },
-                              'L\xE0m Quen V\u1EDBi Revit (FREE)'
-                            )
-                          ),
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'li',
-                            {
-                              __source: {
-                                fileName: _jsxFileName,
-                                lineNumber: 96
-                              },
-                              __self: this
-                            },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                              { to: Data.baseUrl + '/course/khoa-hoc-revit-architecture-nen-tang', __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 96
-                                },
-                                __self: this
-                              },
-                              'Revit Arrchitecture N\u1EC1n T\u1EA3ng'
-                            )
-                          ),
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'li',
-                            {
-                              __source: {
-                                fileName: _jsxFileName,
-                                lineNumber: 97
-                              },
-                              __self: this
-                            },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                              { to: Data.baseUrl + '/course/khoa-hoc-revit-architecture-nang-cao', __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 97
-                                },
-                                __self: this
-                              },
-                              'Revit Arrchitecture N\xE2ng Cao'
-                            )
-                          ),
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'li',
-                            {
-                              __source: {
-                                fileName: _jsxFileName,
-                                lineNumber: 98
-                              },
-                              __self: this
-                            },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                              { to: Data.baseUrl + '/course/khoa-hoc-conceptual-massing', __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 98
-                                },
-                                __self: this
-                              },
-                              'Revit Conceptual Mass'
-                            )
-                          ),
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'li',
-                            {
-                              __source: {
-                                fileName: _jsxFileName,
-                                lineNumber: 99
-                              },
-                              __self: this
-                            },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                              { to: Data.baseUrl + '/course/khoa-hoc-revit-family-co-ban', __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 99
-                                },
-                                __self: this
-                              },
-                              'Revit Family C\u01A1 B\u1EA3n'
-                            )
-                          ),
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'li',
-                            {
-                              __source: {
-                                fileName: _jsxFileName,
-                                lineNumber: 100
-                              },
-                              __self: this
-                            },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                              { to: Data.baseUrl + '/course/khoa-hoc-revit-family-nang-cao', __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 100
-                                },
-                                __self: this
-                              },
-                              'Revit Family N\xE2ng Cao'
-                            )
-                          ),
                           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'li',
                             {
@@ -6745,13 +6472,13 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                               __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                              { to: Data.baseUrl + '/course/khoa-hoc-revit-family-addaptive-co-ban', __source: {
+                              { to: Data.baseUrl + '/course/khoa-hoc-lam-quen-voi-revit', __source: {
                                   fileName: _jsxFileName,
                                   lineNumber: 101
                                 },
                                 __self: this
                               },
-                              'Revit Family Adaptive C\u01A1 B\u1EA3n'
+                              'L\xE0m Quen V\u1EDBi Revit (FREE)'
                             )
                           ),
                           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -6765,33 +6492,95 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                               __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                              { to: Data.baseUrl + '/course/khoa-hoc-revit-family-adaptive-nang-cao', __source: {
+                              { to: Data.baseUrl + '/course/khoa-hoc-revit-architecture-nen-tang', __source: {
                                   fileName: _jsxFileName,
                                   lineNumber: 102
                                 },
                                 __self: this
                               },
-                              'Revit Family Adaptive N\xE2ng Cao'
+                              'Revit Arrchitecture N\u1EC1n T\u1EA3ng'
                             )
-                          )
-                        )
-                      ),
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'column', __source: {
-                            fileName: _jsxFileName,
-                            lineNumber: 105
-                          },
-                          __self: this
-                        },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          'ul',
-                          { className: 'ui list', __source: {
-                              fileName: _jsxFileName,
-                              lineNumber: 106
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'li',
+                            {
+                              __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 103
+                              },
+                              __self: this
                             },
-                            __self: this
-                          },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                              { to: Data.baseUrl + '/course/khoa-hoc-revit-architecture-nang-cao', __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 103
+                                },
+                                __self: this
+                              },
+                              'Revit Arrchitecture N\xE2ng Cao'
+                            )
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'li',
+                            {
+                              __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 104
+                              },
+                              __self: this
+                            },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                              { to: Data.baseUrl + '/course/khoa-hoc-conceptual-massing', __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 104
+                                },
+                                __self: this
+                              },
+                              'Revit Conceptual Mass'
+                            )
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'li',
+                            {
+                              __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 105
+                              },
+                              __self: this
+                            },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                              { to: Data.baseUrl + '/course/khoa-hoc-revit-family-co-ban', __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 105
+                                },
+                                __self: this
+                              },
+                              'Revit Family C\u01A1 B\u1EA3n'
+                            )
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'li',
+                            {
+                              __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 106
+                              },
+                              __self: this
+                            },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                              { to: Data.baseUrl + '/course/khoa-hoc-revit-family-nang-cao', __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 106
+                                },
+                                __self: this
+                              },
+                              'Revit Family N\xE2ng Cao'
+                            )
+                          ),
                           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'li',
                             {
@@ -6801,7 +6590,16 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                               },
                               __self: this
                             },
-                            link('khoa-hoc-dynamo-co-ban', 'Autodesk Dynamo 2016')
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                              { to: Data.baseUrl + '/course/khoa-hoc-revit-family-addaptive-co-ban', __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 107
+                                },
+                                __self: this
+                              },
+                              'Revit Family Adaptive C\u01A1 B\u1EA3n'
+                            )
                           ),
                           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'li',
@@ -6814,9 +6612,58 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                               __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                              { to: Data.baseUrl + '/course/khoa-hoc-dynamo-nang-cao', __source: {
+                              { to: Data.baseUrl + '/course/khoa-hoc-revit-family-adaptive-nang-cao', __source: {
                                   fileName: _jsxFileName,
                                   lineNumber: 108
+                                },
+                                __self: this
+                              },
+                              'Revit Family Adaptive N\xE2ng Cao'
+                            )
+                          )
+                        )
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'column', __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 111
+                          },
+                          __self: this
+                        },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          'ul',
+                          { className: 'ui list', __source: {
+                              fileName: _jsxFileName,
+                              lineNumber: 112
+                            },
+                            __self: this
+                          },
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'li',
+                            {
+                              __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 113
+                              },
+                              __self: this
+                            },
+                            link('khoa-hoc-dynamo-co-ban', 'Autodesk Dynamo 2016')
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'li',
+                            {
+                              __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 114
+                              },
+                              __self: this
+                            },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                              { to: Data.baseUrl + '/course/khoa-hoc-dynamo-nang-cao', __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 114
                                 },
                                 __self: this
                               },
@@ -6828,7 +6675,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 109
+                                lineNumber: 115
                               },
                               __self: this
                             },
@@ -6836,7 +6683,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                               __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
                               { to: Data.baseUrl + '/course/khoa-hoc-formit-360', __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 109
+                                  lineNumber: 115
                                 },
                                 __self: this
                               },
@@ -6848,7 +6695,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 110
+                                lineNumber: 116
                               },
                               __self: this
                             },
@@ -6856,7 +6703,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                               __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
                               { to: Data.baseUrl + '/course/sketchup-co-ban', __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 110
+                                  lineNumber: 116
                                 },
                                 __self: this
                               },
@@ -6868,7 +6715,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 111
+                                lineNumber: 117
                               },
                               __self: this
                             },
@@ -6876,7 +6723,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                               __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
                               { to: Data.baseUrl + '/course/khoa-hoc-sketchup-nang-cao', __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 111
+                                  lineNumber: 117
                                 },
                                 __self: this
                               },
@@ -6888,7 +6735,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 112
+                                lineNumber: 118
                               },
                               __self: this
                             },
@@ -6896,7 +6743,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                               __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
                               { to: Data.baseUrl + '/course/khoa-hoc-autocad-2015-co-ban', __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 112
+                                  lineNumber: 118
                                 },
                                 __self: this
                               },
@@ -6908,7 +6755,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 113
+                                lineNumber: 119
                               },
                               __self: this
                             },
@@ -6916,7 +6763,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                               __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
                               { to: Data.baseUrl + '/course/thiet-ke-gach-thong-gio-revit', __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 113
+                                  lineNumber: 119
                                 },
                                 __self: this
                               },
@@ -6932,13 +6779,13 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   'li',
                   { className: 'item', 'data-submenu-id': '2', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 119
+                      lineNumber: 125
                     },
                     __self: this
                   },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'object ungroup icon', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 120
+                      lineNumber: 126
                     },
                     __self: this
                   }),
@@ -6947,7 +6794,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     'div',
                     { id: '2', className: 'popover', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 122
+                        lineNumber: 128
                       },
                       __self: this
                     },
@@ -6955,7 +6802,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       'div',
                       { className: 'ui two column grid', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 123
+                          lineNumber: 129
                         },
                         __self: this
                       },
@@ -6963,7 +6810,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         'div',
                         { className: 'column', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 124
+                            lineNumber: 130
                           },
                           __self: this
                         },
@@ -6971,7 +6818,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                           'ul',
                           { className: 'ui list', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 125
+                              lineNumber: 131
                             },
                             __self: this
                           },
@@ -6980,7 +6827,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 126
+                                lineNumber: 132
                               },
                               __self: this
                             },
@@ -6988,7 +6835,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                               __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
                               { to: Data.baseUrl + '/course/khoa-hoc-lam-quen-voi-revit', __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 126
+                                  lineNumber: 132
                                 },
                                 __self: this
                               },
@@ -7000,7 +6847,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 127
+                                lineNumber: 133
                               },
                               __self: this
                             },
@@ -7011,7 +6858,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 128
+                                lineNumber: 134
                               },
                               __self: this
                             },
@@ -7022,7 +6869,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 129
+                                lineNumber: 135
                               },
                               __self: this
                             },
@@ -7034,7 +6881,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         'div',
                         { className: 'column', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 132
+                            lineNumber: 138
                           },
                           __self: this
                         },
@@ -7042,7 +6889,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                           'ul',
                           { className: 'ui list', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 133
+                              lineNumber: 139
                             },
                             __self: this
                           },
@@ -7051,7 +6898,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 134
+                                lineNumber: 140
                               },
                               __self: this
                             },
@@ -7062,7 +6909,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 135
+                                lineNumber: 141
                               },
                               __self: this
                             },
@@ -7073,7 +6920,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 136
+                                lineNumber: 142
                               },
                               __self: this
                             },
@@ -7088,13 +6935,13 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   'li',
                   { className: 'item', 'data-submenu-id': '3', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 142
+                      lineNumber: 148
                     },
                     __self: this
                   },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'calculator icon', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 143
+                      lineNumber: 149
                     },
                     __self: this
                   }),
@@ -7103,7 +6950,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     'div',
                     { id: '3', className: 'popover', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 145
+                        lineNumber: 151
                       },
                       __self: this
                     },
@@ -7111,7 +6958,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       'div',
                       { className: 'ui two column grid', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 146
+                          lineNumber: 152
                         },
                         __self: this
                       },
@@ -7119,7 +6966,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         'div',
                         { className: 'column', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 147
+                            lineNumber: 153
                           },
                           __self: this
                         },
@@ -7127,7 +6974,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                           'ul',
                           { className: 'ui list', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 148
+                              lineNumber: 154
                             },
                             __self: this
                           },
@@ -7136,7 +6983,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 149
+                                lineNumber: 155
                               },
                               __self: this
                             },
@@ -7147,7 +6994,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 150
+                                lineNumber: 156
                               },
                               __self: this
                             },
@@ -7158,7 +7005,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 151
+                                lineNumber: 157
                               },
                               __self: this
                             },
@@ -7169,7 +7016,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 152
+                                lineNumber: 158
                               },
                               __self: this
                             },
@@ -7180,7 +7027,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 153
+                                lineNumber: 159
                               },
                               __self: this
                             },
@@ -7192,7 +7039,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         'div',
                         { className: 'column', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 156
+                            lineNumber: 162
                           },
                           __self: this
                         },
@@ -7200,7 +7047,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                           'ul',
                           { className: 'ui list', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 157
+                              lineNumber: 163
                             },
                             __self: this
                           },
@@ -7209,7 +7056,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 158
+                                lineNumber: 164
                               },
                               __self: this
                             },
@@ -7220,7 +7067,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 159
+                                lineNumber: 165
                               },
                               __self: this
                             },
@@ -7231,7 +7078,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 160
+                                lineNumber: 166
                               },
                               __self: this
                             },
@@ -7242,7 +7089,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 161
+                                lineNumber: 167
                               },
                               __self: this
                             },
@@ -7257,13 +7104,13 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   'li',
                   { className: 'item', 'data-submenu-id': '4', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 167
+                      lineNumber: 173
                     },
                     __self: this
                   },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'cubes icon', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 168
+                      lineNumber: 174
                     },
                     __self: this
                   }),
@@ -7272,7 +7119,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     'div',
                     { id: '4', className: 'popover', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 170
+                        lineNumber: 176
                       },
                       __self: this
                     },
@@ -7280,7 +7127,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       'div',
                       { className: 'ui two column grid', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 171
+                          lineNumber: 177
                         },
                         __self: this
                       },
@@ -7288,7 +7135,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         'div',
                         { className: 'column', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 172
+                            lineNumber: 178
                           },
                           __self: this
                         },
@@ -7296,7 +7143,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                           'ul',
                           { className: 'ui list', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 173
+                              lineNumber: 179
                             },
                             __self: this
                           },
@@ -7305,7 +7152,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 174
+                                lineNumber: 180
                               },
                               __self: this
                             },
@@ -7316,7 +7163,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 175
+                                lineNumber: 181
                               },
                               __self: this
                             },
@@ -7327,7 +7174,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 176
+                                lineNumber: 182
                               },
                               __self: this
                             },
@@ -7339,7 +7186,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         'div',
                         { className: 'column', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 179
+                            lineNumber: 185
                           },
                           __self: this
                         },
@@ -7347,7 +7194,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                           'ul',
                           { className: 'ui list', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 180
+                              lineNumber: 186
                             },
                             __self: this
                           },
@@ -7356,7 +7203,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 181
+                                lineNumber: 187
                               },
                               __self: this
                             },
@@ -7367,7 +7214,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 182
+                                lineNumber: 188
                               },
                               __self: this
                             },
@@ -7378,7 +7225,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 183
+                                lineNumber: 189
                               },
                               __self: this
                             },
@@ -7393,13 +7240,13 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   'li',
                   { className: 'item', 'data-submenu-id': '5', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 189
+                      lineNumber: 195
                     },
                     __self: this
                   },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'cube icon', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 190
+                      lineNumber: 196
                     },
                     __self: this
                   }),
@@ -7408,7 +7255,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     'div',
                     { id: '5', className: 'popover', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 192
+                        lineNumber: 198
                       },
                       __self: this
                     },
@@ -7416,50 +7263,10 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       'div',
                       { className: 'ui two column grid', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 193
+                          lineNumber: 199
                         },
                         __self: this
                       },
-                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'column', __source: {
-                            fileName: _jsxFileName,
-                            lineNumber: 194
-                          },
-                          __self: this
-                        },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          'ul',
-                          { className: 'ui list', __source: {
-                              fileName: _jsxFileName,
-                              lineNumber: 195
-                            },
-                            __self: this
-                          },
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'li',
-                            {
-                              __source: {
-                                fileName: _jsxFileName,
-                                lineNumber: 196
-                              },
-                              __self: this
-                            },
-                            link('khoa-hoc-autocad-2015-co-ban', 'Autocad 2015 Miễn Phí')
-                          ),
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'li',
-                            {
-                              __source: {
-                                fileName: _jsxFileName,
-                                lineNumber: 197
-                              },
-                              __self: this
-                            },
-                            link('khoa-hoc-lam-quen-voi-revit', 'Làm Quen Với Revit (FREE)')
-                          )
-                        )
-                      ),
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
                         { className: 'column', __source: {
@@ -7485,7 +7292,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                               },
                               __self: this
                             },
-                            link('khoa-hoc-dynamo-co-ban', 'Autodesk Dynamo 2016')
+                            link('khoa-hoc-autocad-2015-co-ban', 'Autocad 2015 Miễn Phí')
                           ),
                           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'li',
@@ -7493,6 +7300,46 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                               __source: {
                                 fileName: _jsxFileName,
                                 lineNumber: 203
+                              },
+                              __self: this
+                            },
+                            link('khoa-hoc-lam-quen-voi-revit', 'Làm Quen Với Revit (FREE)')
+                          )
+                        )
+                      ),
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'column', __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 206
+                          },
+                          __self: this
+                        },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          'ul',
+                          { className: 'ui list', __source: {
+                              fileName: _jsxFileName,
+                              lineNumber: 207
+                            },
+                            __self: this
+                          },
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'li',
+                            {
+                              __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 208
+                              },
+                              __self: this
+                            },
+                            link('khoa-hoc-dynamo-co-ban', 'Autodesk Dynamo 2016')
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'li',
+                            {
+                              __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 209
                               },
                               __self: this
                             },
@@ -7507,13 +7354,13 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   'li',
                   { className: 'item', 'data-submenu-id': '6', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 209
+                      lineNumber: 215
                     },
                     __self: this
                   },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'cube icon', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 210
+                      lineNumber: 216
                     },
                     __self: this
                   }),
@@ -7522,7 +7369,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     'div',
                     { id: '6', className: 'popover', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 212
+                        lineNumber: 218
                       },
                       __self: this
                     },
@@ -7530,7 +7377,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       'div',
                       { className: 'ui two column grid', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 213
+                          lineNumber: 219
                         },
                         __self: this
                       },
@@ -7538,7 +7385,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         'div',
                         { className: 'column', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 214
+                            lineNumber: 220
                           },
                           __self: this
                         },
@@ -7546,7 +7393,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                           'ul',
                           { className: 'ui list', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 215
+                              lineNumber: 221
                             },
                             __self: this
                           },
@@ -7555,7 +7402,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 216
+                                lineNumber: 222
                               },
                               __self: this
                             },
@@ -7566,7 +7413,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 217
+                                lineNumber: 223
                               },
                               __self: this
                             },
@@ -7577,7 +7424,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 218
+                                lineNumber: 224
                               },
                               __self: this
                             },
@@ -7592,13 +7439,13 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   'li',
                   { className: 'item', 'data-submenu-id': '7', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 224
+                      lineNumber: 230
                     },
                     __self: this
                   },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'cube icon', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 225
+                      lineNumber: 231
                     },
                     __self: this
                   }),
@@ -7607,7 +7454,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     'div',
                     { id: '7', className: 'popover', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 227
+                        lineNumber: 233
                       },
                       __self: this
                     },
@@ -7615,7 +7462,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       'div',
                       { className: 'ui two column grid', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 228
+                          lineNumber: 234
                         },
                         __self: this
                       },
@@ -7623,7 +7470,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         'div',
                         { className: 'column', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 229
+                            lineNumber: 235
                           },
                           __self: this
                         },
@@ -7631,7 +7478,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                           'ul',
                           { className: 'ui list', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 230
+                              lineNumber: 236
                             },
                             __self: this
                           },
@@ -7640,7 +7487,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 231
+                                lineNumber: 237
                               },
                               __self: this
                             },
@@ -7651,7 +7498,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 232
+                                lineNumber: 238
                               },
                               __self: this
                             },
@@ -7662,7 +7509,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 233
+                                lineNumber: 239
                               },
                               __self: this
                             },
@@ -7673,7 +7520,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 234
+                                lineNumber: 240
                               },
                               __self: this
                             },
@@ -7684,7 +7531,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 235
+                                lineNumber: 241
                               },
                               __self: this
                             },
@@ -7696,7 +7543,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         'div',
                         { className: 'column', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 238
+                            lineNumber: 244
                           },
                           __self: this
                         },
@@ -7704,7 +7551,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                           'ul',
                           { className: 'ui list', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 239
+                              lineNumber: 245
                             },
                             __self: this
                           },
@@ -7713,7 +7560,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                             {
                               __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 240
+                                lineNumber: 246
                               },
                               __self: this
                             },
@@ -7730,7 +7577,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               'div',
               { className: 'item', style: { paddingTop: 7 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 249
+                  lineNumber: 255
                 },
                 __self: this
               },
@@ -7738,7 +7585,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 'div',
                 { className: 'ui icon input search search1', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 250
+                    lineNumber: 256
                   },
                   __self: this
                 },
@@ -7746,7 +7593,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   'div',
                   { className: 'ui icon input', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 251
+                      lineNumber: 257
                     },
                     __self: this
                   },
@@ -7754,7 +7601,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     style: { width: '400px' },
                     className: 'prompt', type: 'text', placeholder: 'T\xCCM KI\u1EBEM KH\xD3A H\u1ECCC ...', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 252
+                      lineNumber: 258
                     },
                     __self: this
                   })
@@ -7765,7 +7612,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               'div',
               { className: 'right menu', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 260
+                  lineNumber: 266
                 },
                 __self: this
               },
@@ -7773,7 +7620,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 'div',
                 { className: 'ui inverted circular item noPa', style: { background: 'black', width: '50px' }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 261
+                    lineNumber: 267
                   },
                   __self: this
                 },
@@ -7781,13 +7628,13 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   'div',
                   { className: 'ui top right pointing dropdown icon button noPa noMa', style: { background: 'black', width: '50px' }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 262
+                      lineNumber: 268
                     },
                     __self: this
                   },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'inverted big alarm icon', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 263
+                      lineNumber: 269
                     },
                     __self: this
                   }),
@@ -7795,7 +7642,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     'div',
                     { className: 'menu', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 264
+                        lineNumber: 270
                       },
                       __self: this
                     },
@@ -7803,7 +7650,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       'div',
                       { className: 'item', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 265
+                          lineNumber: 271
                         },
                         __self: this
                       },
@@ -7816,7 +7663,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 'div',
                 { className: 'ui inverted circular item noPa', style: { background: 'black', width: '50px' }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 270
+                    lineNumber: 276
                   },
                   __self: this
                 },
@@ -7824,7 +7671,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   'div',
                   { className: 'ui top right pointing dropdown ', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 271
+                      lineNumber: 277
                     },
                     __self: this
                   },
@@ -7832,13 +7679,13 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     'a',
                     { className: 'ui item', style: { padding: 0 }, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 272
+                        lineNumber: 278
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/assets/img/avatar.png', alt: 'avatar', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 273
+                        lineNumber: 279
                       },
                       __self: this
                     })
@@ -7847,7 +7694,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     'div',
                     { className: 'menu', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 275
+                        lineNumber: 281
                       },
                       __self: this
                     },
@@ -7856,13 +7703,13 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       { className: 'item', style: { color: 'black !important' }, onClick: this.changePassword.bind(this),
                         __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 276
+                          lineNumber: 282
                         },
                         __self: this
                       },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'tags icon', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 278
+                          lineNumber: 284
                         },
                         __self: this
                       }),
@@ -7873,13 +7720,13 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       { className: 'item', style: { color: 'black !important' }, onClick: this.membership.bind(this),
                         __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 281
+                          lineNumber: 287
                         },
                         __self: this
                       },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'tags icon', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 283
+                          lineNumber: 289
                         },
                         __self: this
                       }),
@@ -7889,13 +7736,13 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       'a',
                       { href: '/auth/logout', className: 'item', style: { color: 'black !important' }, __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 286
+                          lineNumber: 292
                         },
                         __self: this
                       },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'ui black empty circular label', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 287
+                          lineNumber: 293
                         },
                         __self: this
                       }),
@@ -7908,7 +7755,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               'div',
               { className: 'right menu', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 294
+                  lineNumber: 300
                 },
                 __self: this
               },
@@ -7916,7 +7763,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 'a',
                 { className: 'ui item dang-nhap', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 295
+                    lineNumber: 301
                   },
                   __self: this
                 },
@@ -7926,7 +7773,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 'a',
                 { className: 'ui item dang-ky', style: { backgroundColor: '#008cc9' }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 298
+                    lineNumber: 304
                   },
                   __self: this
                 },
@@ -7940,7 +7787,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         'div',
         { className: 'ui inverted segment nav-bot', __source: {
             fileName: _jsxFileName,
-            lineNumber: 306
+            lineNumber: 312
           },
           __self: this
         },
@@ -7948,7 +7795,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           'div',
           { className: 'ui inverted  mini secondary pointing menu', __source: {
               fileName: _jsxFileName,
-              lineNumber: 307
+              lineNumber: 313
             },
             __self: this
           },
@@ -7956,7 +7803,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             'div',
             { className: 'ui container', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 308
+                lineNumber: 314
               },
               __self: this
             },
@@ -7964,32 +7811,34 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
               { to: '/', className: 'item', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 309
+                  lineNumber: 315
                 },
                 __self: this
               },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'home icon', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 310
+                  lineNumber: 316
                 },
                 __self: this
               })
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-              { to: '/blog', className: 'item', __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 312
+            menu.map((el, index) => {
+              return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                { key: index, to: el.url, className: 'item', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 320
+                  },
+                  __self: this
                 },
-                __self: this
-              },
-              'Blog'
-            ),
+                el.title
+              );
+            }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
               { className: 'right menu', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 315
+                  lineNumber: 325
                 },
                 __self: this
               },
@@ -7999,7 +7848,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   onClick: this.activeCode.bind(this),
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 318
+                    lineNumber: 328
                   },
                   __self: this
                 },
@@ -8009,7 +7858,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 'a',
                 { className: 'red item', onClick: this.membership.bind(this), __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 324
+                    lineNumber: 334
                   },
                   __self: this
                 },
@@ -8046,6 +7895,7 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
 }
 
+Nav.contextTypes = { store: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.object.isRequired };
 /* harmony default export */ __webpack_exports__["a"] = (Nav);
 
 let Data = {};
@@ -8058,7 +7908,7 @@ let link = function (slug, name) {
     __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
     { to: Data.baseUrl + '/course/' + slug, __source: {
         fileName: _jsxFileName,
-        lineNumber: 372
+        lineNumber: 382
       },
       __self: this
     },
@@ -10141,7 +9991,7 @@ const SignUp = ({}) => {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -11121,281 +10971,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 let mongoose = __webpack_require__(2);
 
 var schema = new mongoose.Schema({
+
   id: { type: String },
-  common: {
-    logo1: { type: String, default: '/assets/images/logo.png' },
-    logo2: { type: String, default: '/assets/images/logo-footer.png' },
 
-    facebook: { type: String, default: 'https://www.facebook.com/ProteusThemes' },
-    google: { type: String, default: 'https://www.youtube.com/user/ProteusNetCompany' },
-
-    footer1: { type: String, default: 'But i must explain to you how all this mistaken idea pleasure and praising pain was born and i will give you. But i explain to you how all this mistaken idea.' },
-    footer2: { type: String, default: 'But i must explain to you how all this mistaken idea pleasure and praising pain was born and i will give you. But i explain to you how all this mistaken idea.' },
-
-    title1: { type: String, default: 'Call Us Anytime' },
-    body1: { type: String, default: '1-888-123-4567' },
-    title2: { type: String, default: 'Opening Time' },
-    body2: { type: String, default: '08:00 - 18:00' },
-    title3: { type: String, default: 'Email Us' },
-    body3: { type: String, default: 'info@cargopress.io' },
-
-    menu: {
-      type: Object,
-      default: {
-        menu1: 'Home',
-        path1: '/',
-        menu2: 'Services',
-        path2: '/service',
-        menu3: 'About',
-        path3: '/about',
-        menu4: 'Track & Trace',
-        path4: '/tracking',
-        menu5: 'News',
-        path5: '/news',
-        menu6: 'Contact',
-        path6: '/contact'
-      }
-    }
-
-  },
-
-  contact: {
-    title: { type: String, default: 'CONTACT US' },
-    description: { type: String, default: 'We are waiting you to get in touch with us' },
-    header: { type: String, default: 'SEND US AN EMAIL, OR THREE' },
-    body: { type: String, default: 'Nội Dung' },
-    widget: { type: String, default: `<div> <div class="widget_black-studio-tinymce"> <div class="featured-widget"> <h3 class="widget-title"> <span class="widget-title__inline">OLD FASHIONED CONTACT</span> </h3> <p> <strong>CargoPress, Itd.</strong><br /> 227 Marion Street<br /> Columbia, SC 29201 </p> <p> 1-888-123-4567<br /> 1-888-123-4568<br /> <a href="mailto:info@cargopress.com">info@cargopress.com</a> </p> </div> </div> <div class="widget_pw_opening_time"> <div class="featured-widget"> <h3> <span class="icon icons-ornament-left" /> OPENING TIME <span class="icon icons-ornament-right" /> </h3> <dl class="week-day "> <dt>Monday</dt> <dd>8:00 - 16:00</dd> </dl> <dl class="week-day light-bg"> <dt>Tuesday</dt> <dd>8:00 - 16:00</dd> </dl> <dl class="week-day "> <dt>Wednesday</dt> <dd>8:00 - 16:00</dd> </dl> <dl class="week-day light-bg"> <dt>Thursday</dt> <dd>8:00 - 16:00</dd> </dl> <dl class="week-day "> <dt>Friday</dt> <dd>8:00 - 16:00</dd> </dl> <dl class="week-day light-bg"> <dt>Saturday</dt> <dd>8:00 - 16:00</dd> </dl> <dl class="week-day closed today"> <dt>Sunday</dt> <dd>CLOSED</dd> </dl> </div> </div> </div>` }
-  },
-
-  about: {
-    title: { type: String, default: 'About Us' },
-    description: { type: String, default: 'Something about us from a little bit of different perspective' },
-    img1: { type: String, default: '/assets/images/placeholders/848x480.png' },
-    img2: { type: String, default: '/assets/images/placeholders/848x480.png' },
-    body: { type: String, default: 'Nội Dung' }
-  },
-  tracking: {
-    title: { type: String, default: 'TRACKER' },
-    description: { type: String, default: 'Know exactly where your cargo/freight is at all times' },
-    body: { type: String, default: 'Nội Dung' }
-  },
-
-  allService: {
-    title: { type: String, default: 'SERVICES' },
-    description: { type: String, default: 'What we do and what can you expect from us' }
-  },
-
-  services: {
-    groundtransport: {
-      type: Object,
-      default: {
-        title: 'Ground Transport',
-        slug: 'ground-transport',
-        img1: '/assets/images/placeholders/848x480.png',
-        img2: '/assets/images/placeholders/848x480.png',
-        body: 'Nội Dung Ground Transport',
-        description: 'Ground transport and freight forwarding services, along with other ancillary services, helps us to provide tailor made logistic solutions to our clients, which we design as per their requirements and business ecosystem to help cut their cost, '
-      }
-    },
-    cargo: {
-      type: Object,
-      default: {
-        title: 'Cargo',
-        slug: 'cargo',
-        img1: '/assets/images/placeholders/848x480.png',
-        img2: '/assets/images/placeholders/848x480.png',
-        body: 'Nội Dung cargo',
-        description: 'Team of cargo experts are always available to help you with any queries you might have, or if you want to consult in length your logistic requirements. We would study your requirements and provide you with a quote that would not only suit your'
-      }
-    },
-    logisticservice: {
-      type: Object,
-      default: {
-        title: 'Logistic Service',
-        slug: 'logistic-service',
-        img1: '/assets/images/placeholders/848x480.png',
-        img2: '/assets/images/placeholders/848x480.png',
-        body: 'Nội Dung Logistic Service',
-        description: 'We provide logistic services in the nation, whether it is freight transportation, supply chain solutions, warehousing and distribution, customer resource area services, customs, security and insurance, temperature controlled logistics, industry '
-      }
-    },
-    trackingservice: {
-      type: Object,
-      default: {
-        title: 'Tracking Service',
-        slug: 'tracking-service',
-        img1: '/assets/images/placeholders/848x480.png',
-        img2: '/assets/images/placeholders/848x480.png',
-        body: 'Nội Dung Tracking Service',
-        description: 'Our trucking service is based on the principle of providing our clients with the flexibility and reliability, to move legal load across town, or across the country, whenever they want. Our in-house team of experienced'
-      }
-    },
-    warehousing: {
-      type: Object,
-      default: {
-        title: 'Warehousing',
-        slug: 'warehousing',
-        img1: '/assets/images/placeholders/848x480.png',
-        img2: '/assets/images/placeholders/848x480.png',
-        body: 'Nội Dung Warehousing',
-        description: 'Our warehousing and distribution services are regularly audited and analyzed to ensure that it meets the contemporary business models, and any and all upgrades are made to ensure our services continue to help our clients meet their logistic'
-      }
-    },
-    storage: {
-      type: Object,
-      default: {
-        title: 'Storage',
-        slug: 'storage',
-        img1: '/assets/images/placeholders/848x480.png',
-        img2: '/assets/images/placeholders/848x480.png',
-        body: 'Nội Dung Storage',
-        description: 'We take pride in catering to a broad range of clientele throughout the country with our warehousing services, which is comprehensive, reliable and flexible – qualities that are essential to help businesses in this market. Our experienced experts'
-      }
-    }
-  },
-
-  home: {
-    slideTitle1: { type: String, default: 'GROUND OR AIR, THERE IS NO STOPPING FOR US' },
-    slideBody1: { type: String, default: 'Starting from loading to unloading and maintaining the highest standards in terms of safety while in transit, we take nothing to chance' },
-    slideImg1: { type: String, default: '/assets/images/placeholders/1920x600.png' },
-    slideTitle2: { type: String, default: 'UNBEATABLE TRUCKING AND TRANSPORT SERVICES' },
-    slideBody2: { type: String, default: 'Starting from loading to unloading and maintaining the highest standards in terms of safety while in transit, we take nothing to chance' },
-    slideImg2: { type: String, default: '/assets/images/placeholders/1920x600.png' },
-    aboutTitle: { type: String, default: 'GIỚI THIỆU' },
-    aboutBody: { type: String, default: 'Our warehousing services are known nationwide to be one of the most reliable, safe and affordable, because we take pride in delivering the best of warehousing services, at the most reasonable prices. Our own warehouses, as well as our partner’s warehouses are located at strategic locations to ensure that there is no additional cost.' },
-    about1: {
-      type: Object,
-      default: {
-        title: 'Cargo',
-        path: '/service/cargo',
-        img: '/assets/images/placeholders/848x480.png',
-        body: 'Team of cargo experts are always available to help you with any queries you might have, or if you want to consult in length your logistic requirements. We would study your requirements and provide you with a quote that would not only suit your'
-      }
-    },
-    about2: {
-      type: Object,
-      default: {
-        title: 'LOGISTIC SERVICE',
-        path: '/service/logistic-service',
-        img: '/assets/images/placeholders/848x480.png',
-        body: 'We provide logistic services in the nation, whether it is freight transportation, supply chain solutions, warehousing and distribution, customer resource area services, customs, security and insurance, temperature controlled logistics, industry . We would study your requirements and provide you with a quote that would not only suit your'
-      }
-    },
-    about3: {
-      type: Object,
-      default: {
-        title: 'STORAGE',
-        path: '/service/storage',
-        img: '/assets/images/placeholders/848x480.png',
-        body: 'We take pride in catering to a broad range of clientele throughout the country with our warehousing services, which is comprehensive, reliable and flexible – qualities that are essential to help businesses in this market. Our experienced experts'
-      }
-    },
-    service1: {
-      type: Object,
-      default: {
-        title: 'STORAGE',
-        path: '/service/storage',
-        description: 'We can package and store your things.'
-      }
-    },
-    service2: {
-      type: Object,
-      default: {
-        title: 'Cargo',
-        path: '/service/cargo',
-        description: 'Let us transport your things from point A to point B fast and securely. .'
-      }
-    },
-    service3: {
-      type: Object,
-      default: {
-        title: 'WORLDWIDE TRANSPORT',
-        path: '/service/ground-transport',
-        description: 'We can transport your things anywhere in the world. .'
-      }
-    },
-    service4: {
-      type: Object,
-      default: {
-        title: 'WAREHOUSING',
-        path: '/service/warehousing',
-        description: 'We have top notch security and loads of space. Store your stuff at our warehouse..'
-      }
-    },
-    service5: {
-      type: Object,
-      default: {
-        title: 'DOOR-TO-DOOR DELIVERY',
-        path: '/service/storage',
-        description: 'Do you need something delivered? We are what you are looking for! .'
-      }
-    },
-    service6: {
-      type: Object,
-      default: {
-        title: 'GROUND TRANSPORT',
-        path: '/service/storage',
-        description: 'Transport your things with our super moving vans..'
-      }
-    },
-
-    coreValue: {
-      type: Object,
-      default: {
-        title: 'OUR CORE VALUES',
-        author: 'WRITTEN BY CARGOPRESS CEO',
-        body: 'Core values are the fundamental beliefs of a person or organization. The core values are the guiding principles that t dictate behavior and action. Core values can help people to know what is right from wrong, they can help companies to determine if they are on the right path and fulfilling their business goals; and they create an unwavering and unchanging guide. There are many different types of core values and many different examples of core values depending upon the context.'
-      }
-    },
-    aboutUs: {
-      type: Object,
-      default: {
-        title: 'ABOUT US',
-        body: `<p> But i must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete count of the system, and expound the actual teaings of the great explorer idea announcing. But i must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete count of the system, and expound the actual teaings of the great explorer idea announcing. </p> <p> But i must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and i will give you a complete count of the system, and expound the actual teaings of the great explorer idea announcing. </p>`
-      }
-    },
-    form: {
-      type: Object,
-      default: {
-        header: 'REQUEST A QUICK QUOTE',
-        body: 'But i must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete count.'
-      }
-    },
-    testimonials: {
-      type: Object,
-      default: {
-        name1: 'Frank Martin',
-        job1: 'Transporter',
-        testimonial1: 'But I must explain to you how all this mistakn idea of denouncing pleasure and praising pain was born and I will give you a complete of the system, and expound the actual teaings of the great explorer idea.',
-        name2: 'Martin Frank',
-        job2: 'Transporter',
-        testimonial2: 'But I must explain to you how all this mistakn idea of denouncing pleasure and praising pain was born and I will give you a complete of the system, and expound the actual teaings of the great explorer idea.',
-        name3: 'Martin Frank',
-        job3: 'Transporter',
-        testimonial3: 'But I must explain to you how all this mistakn idea of denouncing pleasure and praising pain was born and I will give you a complete of the system, and expound the actual teaings of the great explorer idea.',
-        name4: 'Martin Frank',
-        job4: 'Transporter',
-        testimonial4: 'But I must explain to you how all this mistakn idea of denouncing pleasure and praising pain was born and I will give you a complete of the system, and expound the actual teaings of the great explorer idea.'
-      }
-    },
-    partners: {
-      type: Object,
-      default: {
-        img1: '/assets/images/placeholders/208x98.png',
-        url1: '/',
-        img2: '/assets/images/placeholders/208x98.png',
-        url2: '/',
-        img3: '/assets/images/placeholders/208x98.png',
-        url3: '/',
-        img4: '/assets/images/placeholders/208x98.png',
-        url4: '/',
-        img5: '/assets/images/placeholders/208x98.png',
-        url5: '/',
-        img6: '/assets/images/placeholders/208x98.png',
-        url6: '/'
-      }
-    }
+  menu: { type: [], default: [{ title: 'Blog', url: '/blog' }] },
+  //
+  footer: {
+    cot1: { type: [], default: [{ title: 'Khoác học offline', url: '/' }, { title: 'Hướng dẫn thanh toán khóa học', url: '/' }, { title: 'Về chúng tôi', url: '/' }, { title: 'Liên hệ', url: '/' }] },
+    cot2: { type: String, default: `<div> <span>ANABIM CO,.LTD <br />36B ngõ 554 đường Trường Chinh, Đống Đa, Hà Nội.</span> <div>0975 622 789</div> <div>revithanoi@gmail.com</div> <div> www.anabim.com</div> </div>` },
+    cot3: { type: String, default: `<div> <div> Mr. Thùy - Kiến trúc <br /> 01669053063 </div> <div> Mr. Chiến - MEP <br /> 0979 269 448 </div> <div> Mr. Huy - Kết cấu <br /> 0978 542 680 </div> <div> Mr. Vượng - Doanh nghiệp <br /> 0975 622 789 </div> </div>` }
   }
+
 }, {
   collection: 'information'
 });
@@ -11405,6 +10991,7 @@ let model = mongoose.model('Information', schema);
 module.exports = model;
 
 module.exports.getInformation = () => {
+  console.log(" get information !!!! ");
   return new Promise((resolve, reject) => {
     model.findOne({}).exec((err, res) => {
       err ? reject(err) : resolve(res);
@@ -11437,13 +11024,8 @@ module.exports.getInformation = () => {
     id: {
       type: new __WEBPACK_IMPORTED_MODULE_0_graphql__["GraphQLNonNull"](__WEBPACK_IMPORTED_MODULE_0_graphql__["GraphQLString"])
     },
-    common: { type: __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default.a },
-    about: { type: __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default.a },
-    contact: { type: __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default.a },
-    tracking: { type: __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default.a },
-    allService: { type: __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default.a },
-    services: { type: __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default.a },
-    home: { type: __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default.a }
+    menu: { type: __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default.a },
+    footer: { type: __WEBPACK_IMPORTED_MODULE_2_graphql_type_json___default.a }
   })
 }));
 
@@ -12452,7 +12034,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 let mongoose = __webpack_require__(2),
     Schema = mongoose.Schema;
 let autoIncrement = __webpack_require__(12);
-let uuid = __webpack_require__(266);
+let uuid = __webpack_require__(268);
 
 // const ImageSchema = require('./image').schema;
 
@@ -12568,9 +12150,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 let mongoose = __webpack_require__(2),
     Schema = mongoose.Schema;
-let findOrCreate = __webpack_require__(265);
+let findOrCreate = __webpack_require__(267);
 let autoIncrement = __webpack_require__(12);
-var bcrypt = __webpack_require__(248);
+var bcrypt = __webpack_require__(250);
 
 let UserSchema = new Schema({
   name: String,
@@ -13133,7 +12715,7 @@ const schema = new __WEBPACK_IMPORTED_MODULE_0_graphql__["GraphQLSchema"]({
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = data;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants__ = __webpack_require__(22);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -13242,7 +12824,7 @@ function data(state = {}, action) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = runtime;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants__ = __webpack_require__(22);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -13264,7 +12846,7 @@ function runtime(state = {}, action) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = setting;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants__ = __webpack_require__(22);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -13286,7 +12868,7 @@ function setting(state = {}, action) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = user;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants__ = __webpack_require__(22);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -13311,7 +12893,7 @@ function user(state = {}, action) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_universal_router__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_universal_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_universal_router__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__routes__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__routes__ = __webpack_require__(211);
 /**
  * React Starter Kit (https://www.reactstarterkit.com/)
  *
@@ -13671,7 +13253,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/about/index.js';
@@ -13706,7 +13288,7 @@ const title = 'Trang giới thiệu';
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
       let seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-      let information = '';
+      let information = 'information{menu, footer}';
       let indexcourse = 'indexcourse:oneIndexCourse{value}';
       let price = 'price:onePrice{one, three, six, twelve}';
       let allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
@@ -13767,7 +13349,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Link__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_antd_lib_locale_provider_en_US__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_antd_lib_locale_provider_en_US___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_antd_lib_locale_provider_en_US__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_sticky__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_sticky__ = __webpack_require__(293);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_sticky___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_sticky__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/admin/Components/App.js';
 
@@ -14653,7 +14235,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               __WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item,
-              { key: 'Library', __source: {
+              { key: 'thongtinchung', __source: {
                   fileName: _jsxFileName,
                   lineNumber: 190
                 },
@@ -14661,7 +14243,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */],
-                { to: '/admin/library', __source: {
+                { to: '/admin/thongtinchung', __source: {
                     fileName: _jsxFileName,
                     lineNumber: 191
                   },
@@ -14690,14 +14272,14 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       },
                       __self: this
                     },
-                    'Th\u01B0 vi\u1EC7n \u1EA3nh'
+                    'Th\xF4ng tin website'
                   )
                 )
               )
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               __WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item,
-              { key: 'Setting', __source: {
+              { key: 'Library', __source: {
                   fileName: _jsxFileName,
                   lineNumber: 199
                 },
@@ -14705,7 +14287,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */],
-                { to: '/admin/setting', __source: {
+                { to: '/admin/library', __source: {
                     fileName: _jsxFileName,
                     lineNumber: 200
                   },
@@ -14720,7 +14302,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     },
                     __self: this
                   },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: 'tool', __source: {
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: 'appstore-o', __source: {
                       fileName: _jsxFileName,
                       lineNumber: 202
                     },
@@ -14734,22 +14316,22 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       },
                       __self: this
                     },
-                    'C\xE0i \u0111\u1EB7t'
+                    'Th\u01B0 vi\u1EC7n \u1EA3nh'
                   )
                 )
               )
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               __WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item,
-              { key: 'Logout', __source: {
+              { key: 'Setting', __source: {
                   fileName: _jsxFileName,
                   lineNumber: 208
                 },
                 __self: this
               },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'a',
-                { href: '/auth/logout', __source: {
+                __WEBPACK_IMPORTED_MODULE_2__components_Link__["a" /* default */],
+                { to: '/admin/setting', __source: {
                     fileName: _jsxFileName,
                     lineNumber: 209
                   },
@@ -14778,6 +14360,50 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       },
                       __self: this
                     },
+                    'C\xE0i \u0111\u1EB7t'
+                  )
+                )
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_antd__["Menu"].Item,
+              { key: 'Logout', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 217
+                },
+                __self: this
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'a',
+                { href: '/auth/logout', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 218
+                  },
+                  __self: this
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'span',
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 219
+                    },
+                    __self: this
+                  },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: 'tool', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 220
+                    },
+                    __self: this
+                  }),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'span',
+                    { className: 'nav-text', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 221
+                      },
+                      __self: this
+                    },
                     '\u0110\u0103ng xu\u1EA5t'
                   )
                 )
@@ -14790,13 +14416,13 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 219
+              lineNumber: 228
             },
             __self: this
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Header, { style: { height: 47, background: 'white', padding: 0 }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 220
+              lineNumber: 229
             },
             __self: this
           }),
@@ -14804,7 +14430,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             Content,
             { style: { margin: '0 5px' }, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 222
+                lineNumber: 231
               },
               __self: this
             },
@@ -14812,7 +14438,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               __WEBPACK_IMPORTED_MODULE_1_antd__["Breadcrumb"],
               { style: { margin: '12px 0' }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 223
+                  lineNumber: 232
                 },
                 __self: this
               },
@@ -14821,7 +14447,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 224
+                    lineNumber: 233
                   },
                   __self: this
                 },
@@ -14832,7 +14458,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 225
+                    lineNumber: 234
                   },
                   __self: this
                 },
@@ -14843,7 +14469,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               'div',
               { style: { background: '#fff', minHeight: 500 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 227
+                  lineNumber: 236
                 },
                 __self: this
               },
@@ -14854,7 +14480,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             Footer,
             { style: { textAlign: 'center' }, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 231
+                lineNumber: 240
               },
               __self: this
             },
@@ -14877,7 +14503,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_avatar_editor__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_avatar_editor__ = __webpack_require__(289);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_avatar_editor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_avatar_editor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_axios__);
@@ -16577,7 +16203,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__history__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Components_Tags__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Components_ImageUpload__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Components_ImageUpload__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Components_ImageSelect__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Components_TreeSelect__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Components_CKEditor__ = __webpack_require__(24);
@@ -19185,7 +18811,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__history__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Components_Tags__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Components_ImageUpload__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Components_ImageUpload__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Components_ImageSelect__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Components_TreeSelect__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Components_CKEditor__ = __webpack_require__(24);
@@ -20557,7 +20183,7 @@ const isAdmin = false;
 /* harmony default export */ __webpack_exports__["default"] = ({
 
   path: '/admin',
-  children: [__webpack_require__(148).default, __webpack_require__(156).default, __webpack_require__(146).default, __webpack_require__(166).default, __webpack_require__(154).default, __webpack_require__(181).default, __webpack_require__(168).default, __webpack_require__(150).default, __webpack_require__(143).default, __webpack_require__(160).default, __webpack_require__(176).default, __webpack_require__(136).default, __webpack_require__(141).default, __webpack_require__(174).default, __webpack_require__(139).default, __webpack_require__(172).default, __webpack_require__(158).default, __webpack_require__(163).default, __webpack_require__(170).default],
+  children: [__webpack_require__(148).default, __webpack_require__(156).default, __webpack_require__(174).default, __webpack_require__(146).default, __webpack_require__(166).default, __webpack_require__(154).default, __webpack_require__(183).default, __webpack_require__(168).default, __webpack_require__(150).default, __webpack_require__(143).default, __webpack_require__(160).default, __webpack_require__(178).default, __webpack_require__(136).default, __webpack_require__(141).default, __webpack_require__(176).default, __webpack_require__(139).default, __webpack_require__(172).default, __webpack_require__(158).default, __webpack_require__(163).default, __webpack_require__(170).default],
   action({ store, next, url }) {
     return _asyncToGenerator(function* () {
       let user = store.getState().user;
@@ -20781,7 +20407,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__history__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Components_Tags__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Components_ImageUpload__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Components_ImageUpload__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Components_ImageSelect__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Components_TreeSelect__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Components_CKEditor__ = __webpack_require__(24);
@@ -22063,7 +21689,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_antd__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_antd__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_copy_to_clipboard__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_copy_to_clipboard__ = __webpack_require__(272);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_copy_to_clipboard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_copy_to_clipboard__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Components_ImageEditor__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_axios__ = __webpack_require__(5);
@@ -22087,7 +21713,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 
-var Waypoint = __webpack_require__(273);
+var Waypoint = __webpack_require__(275);
 
 
 
@@ -22981,7 +22607,7 @@ var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/admin/login/Login.js'
 
 const FormItem = __WEBPACK_IMPORTED_MODULE_1_antd__["Form"].Item;
 
-var slug = __webpack_require__(277);
+var slug = __webpack_require__(279);
 class Login extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   constructor(props) {
     super(props);
@@ -23685,7 +23311,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_css__ = __webpack_require__(241);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_css__ = __webpack_require__(243);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_antd__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_antd__);
@@ -23693,7 +23319,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__history__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Components_Tags__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Components_ImageUpload__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Components_ImageUpload__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Components_ImageSelect__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Components_CKEditor__ = __webpack_require__(24);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/admin/news/EditNews.js';
@@ -24924,7 +24550,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__history__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Components_Tags__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Components_ImageUpload__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Components_ImageUpload__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Components_ImageSelect__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Components_TreeSelect__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Components_CKEditor__ = __webpack_require__(24);
@@ -25982,7 +25608,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Components_ImageUpload__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Components_ImageUpload__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Components_ImageSelect__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_axios__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_axios__);
@@ -27239,10 +26865,565 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Components_ImageUpload__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Components_ImageSelect__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Components_CustomEditor__ = __webpack_require__(18);
+var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/admin/thongtinchung/Common.js';
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+
+
+// import CodeMirror from '../Components/CodeMirror'
+
+const Panel = __WEBPACK_IMPORTED_MODULE_1_antd__["Collapse"].Panel;
+var CodeMirror = __webpack_require__(20);
+
+
+
+
+
+if (false) {
+  require('codemirror/mode/javascript/javascript');
+  require('codemirror/mode/xml/xml');
+  require('codemirror/mode/css/css');
+}
+
+class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.showModalSelectImage = type => {
+      this.setState(prev => {
+        return _extends({}, prev, {
+          modalSelectImage: true,
+          selectImageType: type
+        });
+      });
+    };
+
+    this.handleOk = e => {
+      this.setState({
+        modalSelectImage: false
+      });
+    };
+
+    this.handleCancel = e => {
+      this.setState({
+        modalSelectImage: false
+      });
+    };
+
+    this.state = {
+      data: {},
+      showModalSelectImage: false
+    };
+    this.init();
+  }
+
+  init() {
+    var _this = this;
+
+    return _asyncToGenerator(function* () {
+      let information = 'information{menu, footer}';
+      const resp = yield fetch('/graphql', {
+        method: 'post',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          query: '{' + information + '}'
+        }),
+        credentials: 'include'
+      });
+      const { data } = yield resp.json();
+      _this.setState({
+        data: data.information
+      });
+    })();
+  }
+
+  updateSetting(data) {
+    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post('/api/information/update', data).then(res => {
+      __WEBPACK_IMPORTED_MODULE_1_antd__["message"].success('Cập nhập thành công!');
+    }).catch(err => {
+      __WEBPACK_IMPORTED_MODULE_1_antd__["message"].error('Cập nhập thất bại');
+    });
+  }
+
+  render() {
+
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62
+        },
+        __self: this
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1_antd__["Collapse"],
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 63
+          },
+          __self: this
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Panel,
+          { header: 'Menu', key: 'Menu', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 65
+            },
+            __self: this
+          },
+          this.state.data.menu && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 66
+              },
+              __self: this
+            },
+            this.state.data.menu.map((el, index) => {
+              return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { key: index, style: { border: '1px solid #ddd', padding: 5 }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 68
+                  },
+                  __self: this
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], { size: 'large', style: { width: '40%' }, defaultValue: el.title, onChange: e => {
+                    let value = e.target.value;
+                    let menu = this.state.data.menu;
+                    let row = menu[index];
+                    row.title = value;
+                    this.setState(prev => {
+                      return _extends({}, prev, {
+                        data: _extends({}, prev.data, {
+                          menu: menu
+                        })
+                      });
+                    });
+                  }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 70
+                  },
+                  __self: this
+                }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], { size: 'large', style: { width: '40%' }, defaultValue: el.url, onChange: e => {
+                    let value = e.target.value;
+                    let menu = this.state.data.menu;
+                    let row = menu[index];
+                    row.url = value;
+                    this.setState(prev => {
+                      return _extends({}, prev, {
+                        data: _extends({}, prev.data, {
+                          menu: menu
+                        })
+                      });
+                    });
+                  }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 86
+                  },
+                  __self: this
+                }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_antd__["Button"],
+                  { type: 'danger',
+                    onClick: () => {
+                      let menu = this.state.data.menu;
+                      let newMenu = menu.filter((el, idx) => {
+                        return index !== idx;
+                      });
+                      this.setState(prev => {
+                        return _extends({}, prev, {
+                          data: _extends({}, prev.data, {
+                            menu: newMenu
+                          })
+                        });
+                      });
+                    },
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 102
+                    },
+                    __self: this
+                  },
+                  'X\xF3a'
+                )
+              );
+            }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_antd__["Button"],
+              { type: 'primary',
+                onClick: () => {
+                  let menu = this.state.data.menu;
+                  menu.push({ title: '', url: '' });
+                  this.setState(prev => {
+                    return _extends({}, prev, {
+                      data: _extends({}, prev.data, {
+                        menu: menu
+                      })
+                    });
+                  });
+                },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 121
+                },
+                __self: this
+              },
+              'Th\xEAm m\u1EDBi'
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Panel,
+          { header: 'Footer Cột 1', key: 'Footer1', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 140
+            },
+            __self: this
+          },
+          this.state.data.footer && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 141
+              },
+              __self: this
+            },
+            this.state.data.footer.cot1.map((el, index) => {
+              return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { key: index, style: { border: '1px solid #ddd', padding: 5 }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 143
+                  },
+                  __self: this
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], { size: 'large', style: { width: '40%' }, defaultValue: el.title, onChange: e => {
+                    let value = e.target.value;
+                    let menu = this.state.data.footer.cot1;
+                    let row = menu[index];
+                    row.title = value;
+                    this.setState(prev => {
+                      return _extends({}, prev, {
+                        data: _extends({}, prev.data, {
+                          footer: _extends({}, prev.data.footer, {
+                            cot1: menu
+                          })
+                        })
+                      });
+                    });
+                  }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 144
+                  },
+                  __self: this
+                }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], { size: 'large', style: { width: '40%' }, defaultValue: el.url, onChange: e => {
+                    let value = e.target.value;
+                    let menu = this.state.data.footer.cot1;
+                    let row = menu[index];
+                    row.url = value;
+                    this.setState(prev => {
+                      return _extends({}, prev, {
+                        data: _extends({}, prev.data, {
+                          footer: _extends({}, prev.data.footer, {
+                            cot1: menu
+                          })
+                        })
+                      });
+                    });
+                  }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 163
+                  },
+                  __self: this
+                }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_antd__["Button"],
+                  { type: 'danger',
+                    onClick: () => {
+                      let menu = this.state.data.footer.cot1;
+                      let newMenu = menu.filter((el, idx) => {
+                        return index !== idx;
+                      });
+                      this.setState(prev => {
+                        return _extends({}, prev, {
+                          data: _extends({}, prev.data, {
+                            footer: _extends({}, prev.data.footer, {
+                              cot1: newMenu
+                            })
+                          })
+                        });
+                      });
+                    },
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 182
+                    },
+                    __self: this
+                  },
+                  'X\xF3a'
+                )
+              );
+            }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_antd__["Button"],
+              { type: 'primary',
+                onClick: () => {
+                  let menu = this.state.data.footer.cot1;
+                  menu.push({ title: '', url: '' });
+                  this.setState(prev => {
+                    return _extends({}, prev, {
+                      data: _extends({}, prev.data, {
+                        footer: _extends({}, prev.data.footer, {
+                          cot1: menu
+                        })
+                      })
+                    });
+                  });
+                },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 204
+                },
+                __self: this
+              },
+              'Th\xEAm m\u1EDBi'
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Panel,
+          { header: 'Footer Cột 2', key: 'Footer2', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 226
+            },
+            __self: this
+          },
+          this.state.data.footer && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__Components_CustomEditor__["a" /* default */], {
+            initValue: this.state.data.footer.cot2,
+            handleChange: value => {
+              this.setState(prev => {
+                return _extends({}, prev, {
+                  data: _extends({}, prev.data, {
+                    footer: _extends({}, prev.data.footer, {
+                      cot2: value
+                    })
+                  })
+                });
+              });
+            },
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 227
+            },
+            __self: this
+          })
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          Panel,
+          { header: 'Footer Cột 3', key: 'Footer3', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 248
+            },
+            __self: this
+          },
+          this.state.data.footer && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__Components_CustomEditor__["a" /* default */], {
+            initValue: this.state.data.footer.cot3,
+            handleChange: value => {
+              this.setState(prev => {
+                return _extends({}, prev, {
+                  data: _extends({}, prev.data, {
+                    footer: _extends({}, prev.data.footer, {
+                      cot3: value
+                    })
+                  })
+                });
+              });
+            },
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 249
+            },
+            __self: this
+          })
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+        { className: 'padding-5', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 271
+          },
+          __self: this
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_antd__["Button"],
+          {
+            size: 'large',
+            type: 'primary',
+            onClick: () => {
+              this.updateSetting({ information: this.state.data });
+            },
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 272
+            },
+            __self: this
+          },
+          'C\u1EADp nh\u1EADp'
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1_antd__["Modal"],
+        {
+          style: { top: 30 },
+          width: '90%',
+          title: 'Basic Modal', visible: this.state.modalSelectImage,
+          onOk: this.handleOk, onCancel: this.handleCancel,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 281
+          },
+          __self: this
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Components_ImageSelect__["a" /* default */], { handleSelect: img => this.handleSelectImage(img), __source: {
+            fileName: _jsxFileName,
+            lineNumber: 287
+          },
+          __self: this
+        })
+      )
+    );
+  }
+
+  handleSelectImage(img) {
+    if (this.state.selectImageType === 'logo1') {
+      this.setState(prevState => {
+        return _extends({}, prevState, {
+          modalSelectImage: false,
+          data: _extends({}, prevState.data, {
+            logo1: '/image/' + img.name
+          })
+        });
+      });
+    } else if (this.state.selectImageType === 'logo2') {
+      this.setState(prevState => {
+        return _extends({}, prevState, {
+          modalSelectImage: false,
+          data: _extends({}, prevState.data, {
+            logo2: '/image/' + img.name
+          })
+        });
+      });
+    } else {
+      window.prompt("Copy to clipboard: Ctrl+C, Enter", '/image/' + img.name);
+      this.setState(prevState => {
+        return _extends({}, prevState, {
+          modalSelectImage: false
+        });
+      });
+    }
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Contact);
+
+/***/ }),
+/* 174 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/admin/thongtinchung/index.js';
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+
+
+const title = 'Thong tin chung';
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+
+  path: '/thongtinchung',
+
+  action({ query }) {
+    var _this = this;
+
+    return _asyncToGenerator(function* () {
+      return new Promise(function(resolve) { resolve(); }).then((function (require) {
+        return __webpack_require__(7).default;
+      }).bind(null, __webpack_require__)).catch(__webpack_require__.oe).then(function (Admin) {
+        return {
+          title,
+          chunk: 'admin',
+          disableSSR: true,
+          component: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            Admin.App,
+            {
+              name: title,
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 24
+              },
+              __self: _this
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Admin.Common, { title: title, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 27
+              },
+              __self: _this
+            })
+          )
+        };
+      });
+    })();
+  }
+});
+
+/***/ }),
+/* 175 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Components_CustomEditor__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_sortable_hoc__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_sortable_hoc__ = __webpack_require__(292);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_sortable_hoc___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_react_sortable_hoc__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -27691,7 +27872,7 @@ function findIndexCategory(id, list) {
 }
 
 /***/ }),
-/* 174 */
+/* 176 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27754,7 +27935,7 @@ const title = 'Lien He';
 });
 
 /***/ }),
-/* 175 */
+/* 177 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28167,7 +28348,7 @@ class DonHang extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony default export */ __webpack_exports__["default"] = (DonHang);
 
 /***/ }),
-/* 176 */
+/* 178 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28230,7 +28411,7 @@ const title = 'Lien He';
 });
 
 /***/ }),
-/* 177 */
+/* 179 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28243,13 +28424,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__history__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Components_Tags__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Components_ImageUpload__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Components_ImageUpload__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Components_ImageSelect__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Components_TreeSelect__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Components_CKEditor__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Components_DynamicForm__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__VideoComponent__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__VideoIntroComponent__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__VideoComponent__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__VideoIntroComponent__ = __webpack_require__(182);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/admin/video/SuaVideo.js';
@@ -28754,7 +28935,7 @@ function mapStringToInt(array = []) {
 }
 
 /***/ }),
-/* 178 */
+/* 180 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28915,7 +29096,7 @@ const columns = [{
 /* harmony default export */ __webpack_exports__["default"] = (Video);
 
 /***/ }),
-/* 179 */
+/* 181 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29379,7 +29560,7 @@ function slugify(str = '') {
 }
 
 /***/ }),
-/* 180 */
+/* 182 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29805,7 +29986,7 @@ function slugify(str = '') {
 }
 
 /***/ }),
-/* 181 */
+/* 183 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29914,7 +30095,7 @@ const title = 'Danh muc';
 });
 
 /***/ }),
-/* 182 */
+/* 184 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30143,7 +30324,7 @@ class About extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony default export */ __webpack_exports__["default"] = (About);
 
 /***/ }),
-/* 183 */
+/* 185 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30151,7 +30332,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/blog/index.js';
@@ -30186,7 +30367,7 @@ const title = 'Trang giới thiệu';
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
       let seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-      let information = '';
+      let information = 'information{menu, footer}';
       let getAllPosts = 'allNews:getAllPosts{category, slug, title, description, body, created_at}';
       let get5RecentPost = 'recentNews:get5RecentPost{category, slug, title, description, body, created_at}';
       let categoryPosts = 'categoryPosts:allCategoryPost{slug, title}';
@@ -30205,7 +30386,7 @@ const title = 'Trang giới thiệu';
 
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["hideLoading"])());
       return new Promise(function(resolve) { resolve(); }).then((function (require) {
-        return __webpack_require__(182).default;
+        return __webpack_require__(184).default;
       }).bind(null, __webpack_require__)).catch(__webpack_require__.oe).then(function (Blog) {
         return {
           title: seo.title || "Tin tức",
@@ -30235,7 +30416,7 @@ const title = 'Trang giới thiệu';
 });
 
 /***/ }),
-/* 184 */
+/* 186 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30452,7 +30633,7 @@ class About extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony default export */ __webpack_exports__["default"] = (About);
 
 /***/ }),
-/* 185 */
+/* 187 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30460,7 +30641,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/blogDetail/index.js';
@@ -30495,7 +30676,7 @@ const title = 'Trang giới thiệu';
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
       let seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-      let information = '';
+      let information = 'information{menu, footer}';
       let getAllPosts = 'allNews:getAllPosts{category, slug, title, description, body, created_at}';
       let getOnePost = 'news:getOnePost(slug:"' + params.slug + '"){category, slug, title, description, body, created_at}';
       let get5RecentPost = 'recentNews:get5RecentPost{category, slug, title, description, body, created_at}';
@@ -30515,7 +30696,7 @@ const title = 'Trang giới thiệu';
 
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["hideLoading"])());
       return new Promise(function(resolve) { resolve(); }).then((function (require) {
-        return __webpack_require__(184).default;
+        return __webpack_require__(186).default;
       }).bind(null, __webpack_require__)).catch(__webpack_require__.oe).then(function (BlogDetail) {
         return {
           title: seo.title || store.getState().data.news.value.title,
@@ -30545,14 +30726,14 @@ const title = 'Trang giới thiệu';
 });
 
 /***/ }),
-/* 186 */
+/* 188 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components__ = __webpack_require__(190);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Link__ = __webpack_require__(6);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/category/Category.js';
 
@@ -31056,7 +31237,7 @@ class Category extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony default export */ __webpack_exports__["default"] = (Category);
 
 /***/ }),
-/* 187 */
+/* 189 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31219,16 +31400,16 @@ class ListCourse extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component
 /* harmony default export */ __webpack_exports__["a"] = (ListCourse);
 
 /***/ }),
-/* 188 */
+/* 190 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Courses__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Courses__ = __webpack_require__(189);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Courses__["a"]; });
 
 
 /***/ }),
-/* 189 */
+/* 191 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31236,7 +31417,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/category/index.js';
@@ -31271,7 +31452,7 @@ const title = 'Trang giới thiệu';
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
       let seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-      let information = '';
+      let information = 'information{menu, footer}';
       let indexcourse = 'indexcourse:oneIndexCourse{value}';
       let price = 'price:onePrice{one, three, six, twelve}';
       let allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
@@ -31292,7 +31473,7 @@ const title = 'Trang giới thiệu';
 
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["hideLoading"])());
       return new Promise(function(resolve) { resolve(); }).then((function (require) {
-        return __webpack_require__(186).default;
+        return __webpack_require__(188).default;
       }).bind(null, __webpack_require__)).catch(__webpack_require__.oe).then(function (Category) {
         return {
           title: seo.title || "Danh mục các khóa học trong " + store.getState().data.categoryInfo.value.name,
@@ -31322,14 +31503,14 @@ const title = 'Trang giới thiệu';
 });
 
 /***/ }),
-/* 190 */
+/* 192 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components__ = __webpack_require__(197);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/contact/Contact.js';
 
 
@@ -31699,7 +31880,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony default export */ __webpack_exports__["default"] = (Contact);
 
 /***/ }),
-/* 191 */
+/* 193 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31777,7 +31958,7 @@ class BreadCrumb extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component
 /* unused harmony default export */ var _unused_webpack_default_export = (BreadCrumb);
 
 /***/ }),
-/* 192 */
+/* 194 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32026,7 +32207,7 @@ class Form extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* unused harmony default export */ var _unused_webpack_default_export = (Form);
 
 /***/ }),
-/* 193 */
+/* 195 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32081,7 +32262,7 @@ class Title extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* unused harmony default export */ var _unused_webpack_default_export = (Title);
 
 /***/ }),
-/* 194 */
+/* 196 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32476,17 +32657,17 @@ class Widget extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* unused harmony default export */ var _unused_webpack_default_export = (Widget);
 
 /***/ }),
-/* 195 */
+/* 197 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Title__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Title__ = __webpack_require__(195);
 /* unused harmony reexport Title */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__BreadCrumb__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__BreadCrumb__ = __webpack_require__(193);
 /* unused harmony reexport BreadCrumb */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Widget__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Widget__ = __webpack_require__(196);
 /* unused harmony reexport Widget */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Form__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Form__ = __webpack_require__(194);
 /* unused harmony reexport FormEmail */
 
 
@@ -32494,7 +32675,7 @@ class Widget extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
 
 /***/ }),
-/* 196 */
+/* 198 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32502,7 +32683,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/contact/index.js';
@@ -32536,7 +32717,7 @@ const title = 'Trang liên hệ';
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
       let seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-      let information = '';
+      let information = 'information{menu, footer}';
       let price = 'price:onePrice{one, three, six, twelve}';
 
       let seo = {};
@@ -32553,7 +32734,7 @@ const title = 'Trang liên hệ';
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["hideLoading"])());
 
       return new Promise(function(resolve) { resolve(); }).then((function (require) {
-        return __webpack_require__(190).default;
+        return __webpack_require__(192).default;
       }).bind(null, __webpack_require__)).catch(__webpack_require__.oe).then(function (Contact) {
         return {
           title: seo.title || "Liên hệ",
@@ -32583,7 +32764,7 @@ const title = 'Trang liên hệ';
 });
 
 /***/ }),
-/* 197 */
+/* 199 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32783,12 +32964,16 @@ class CourseInfo extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component
                 'C\u1EA5p \u0111\u1ED9 : ',
                 this.props.course.level
               ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'ui inverted grey segment centerInside ', style: { marginBottom: '0px !important' }, __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 46
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'ui inverted grey segment centerInside ', style: { marginBottom: '0px !important' }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 46
+                  },
+                  __self: this
                 },
-                __self: this
-              }),
+                ' 0:00:00'
+              ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'noMa centerInside', __source: {
@@ -32807,7 +32992,7 @@ class CourseInfo extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component
                   },
                   __self: this
                 },
-                '1,066,481'
+                '3,103'
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
@@ -32903,7 +33088,7 @@ class CourseInfo extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component
 /* harmony default export */ __webpack_exports__["a"] = (CourseInfo);
 
 /***/ }),
-/* 198 */
+/* 200 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32997,20 +33182,20 @@ class Video extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony default export */ __webpack_exports__["a"] = (Video);
 
 /***/ }),
-/* 199 */
+/* 201 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CourseInfo__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CourseInfo__ = __webpack_require__(199);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__CourseInfo__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Video__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Video__ = __webpack_require__(200);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__Video__["a"]; });
 
 
 
 
 /***/ }),
-/* 200 */
+/* 202 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33018,7 +33203,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/course/index.js';
@@ -33053,7 +33238,7 @@ const title = 'Trang giới thiệu';
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
       let seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-      let information = '';
+      let information = 'information{menu, footer}';
       let indexcourse = 'indexcourse:oneIndexCourse{value}';
       let price = 'price:onePrice{one, three, six, twelve}';
       let allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
@@ -33104,7 +33289,7 @@ const title = 'Trang giới thiệu';
 });
 
 /***/ }),
-/* 201 */
+/* 203 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33334,7 +33519,7 @@ class About extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony default export */ __webpack_exports__["default"] = (About);
 
 /***/ }),
-/* 202 */
+/* 204 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33342,7 +33527,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/danhmuc/index.js';
@@ -33377,7 +33562,7 @@ const title = 'Trang giới thiệu';
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
       let seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-      let information = '';
+      let information = 'information{menu, footer}';
       let getAllNewsInCategory = 'allNewsByCategory:getAllPostsByCategory(slug:"' + params.slug + '"){category, slug, title, description, body, created_at}';
       let get5RecentPost = 'recentNews:get5RecentPost{category, slug, title, description, body, created_at}';
       let categoryPost = 'categoryPost:oneCategoryPost(slug:"' + params.slug + '"){slug, title}';
@@ -33397,7 +33582,7 @@ const title = 'Trang giới thiệu';
 
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["hideLoading"])());
       return new Promise(function(resolve) { resolve(); }).then((function (require) {
-        return __webpack_require__(201).default;
+        return __webpack_require__(203).default;
       }).bind(null, __webpack_require__)).catch(__webpack_require__.oe).then(function (DanhMuc) {
         return {
           title: seo.title || store.getState().data.categoryPost.value.title,
@@ -33427,14 +33612,14 @@ const title = 'Trang giới thiệu';
 });
 
 /***/ }),
-/* 203 */
+/* 205 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ErrorPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_isomorphic_style_loader_lib_withStyles__);
@@ -33551,13 +33736,13 @@ ErrorPage.propTypes = {
 /* unused harmony default export */ var _unused_webpack_default_export = (__WEBPACK_IMPORTED_MODULE_2_isomorphic_style_loader_lib_withStyles___default()(__WEBPACK_IMPORTED_MODULE_3__ErrorPage_css___default.a)(ErrorPage));
 
 /***/ }),
-/* 204 */
+/* 206 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_index__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_index__ = __webpack_require__(209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Link__ = __webpack_require__(6);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/home/Home.js';
 /**
@@ -33805,7 +33990,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: 'ui container segment noBor noSha', style: { margin: '100px' }, __source: {
+            { className: 'ui container segment noBor noSha', __source: {
                 fileName: _jsxFileName,
                 lineNumber: 106
               },
@@ -33955,7 +34140,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { id: 'slider2', style: { background: 'url("/assets/img/5.jpg") no-repeat center #eee' }, __source: {
+            { id: 'slider2', style: { background: 'url("/assets/img/5.jpg") no-repeat center #eee', marginTop: 50 }, __source: {
                 fileName: _jsxFileName,
                 lineNumber: 133
               },
@@ -34241,7 +34426,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony default export */ __webpack_exports__["a"] = (Home);
 
 /***/ }),
-/* 205 */
+/* 207 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34461,7 +34646,7 @@ class IndexCourse extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { style: { height: '40px' }, __source: {
+                { style: { height: '80px' }, __source: {
                     fileName: _jsxFileName,
                     lineNumber: 66
                   },
@@ -34531,7 +34716,7 @@ class IndexCourse extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
 /* harmony default export */ __webpack_exports__["a"] = (IndexCourse);
 
 /***/ }),
-/* 206 */
+/* 208 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34607,29 +34792,29 @@ class Search extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony default export */ __webpack_exports__["a"] = (Search);
 
 /***/ }),
-/* 207 */
+/* 209 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__IndexCourse__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__IndexCourse__ = __webpack_require__(207);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__IndexCourse__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Search__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Search__ = __webpack_require__(208);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__Search__["a"]; });
 
 
 
 
 /***/ }),
-/* 208 */
+/* 210 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Home__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Home__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__actions_data__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__actions_data__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_redux_loading_bar__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/home/index.js';
@@ -34663,7 +34848,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4_react_redux_loading_bar__["showLoading"])());
 
       let seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-      let information = '';
+      let information = 'information{menu, footer}';
       let indexcourse = 'indexcourse:oneIndexCourse{value}';
       let price = 'price:onePrice{one, three, six, twelve}';
       let allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
@@ -34711,7 +34896,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 });
 
 /***/ }),
-/* 209 */
+/* 211 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34734,15 +34919,15 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
   path: '/',
 
   // Keep in mind, routes are evaluated in order
-  children: [__webpack_require__(208).default,
+  children: [__webpack_require__(210).default,
 
   // require('./allService').default,
   // require('./service').default,
   // require('./tracking').default,
-  __webpack_require__(132).default, __webpack_require__(200).default, __webpack_require__(216).default, __webpack_require__(189).default, __webpack_require__(202).default, __webpack_require__(215).default, __webpack_require__(183).default, __webpack_require__(185).default, __webpack_require__(196).default, __webpack_require__(151).default,
+  __webpack_require__(132).default, __webpack_require__(202).default, __webpack_require__(218).default, __webpack_require__(191).default, __webpack_require__(204).default, __webpack_require__(217).default, __webpack_require__(185).default, __webpack_require__(187).default, __webpack_require__(198).default, __webpack_require__(151).default,
 
   // Wildcard routes, e.g. { path: '*', ... } (must go last)
-  __webpack_require__(211).default],
+  __webpack_require__(213).default],
 
   action({ next }) {
     return _asyncToGenerator(function* () {
@@ -34760,17 +34945,17 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 });
 
 /***/ }),
-/* 210 */
+/* 212 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__NotFound_css__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__NotFound_css__ = __webpack_require__(244);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__NotFound_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__NotFound_css__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/notFound/NotFound.js';
 /**
@@ -34839,7 +35024,7 @@ NotFound.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_2_isomorphic_style_loader_lib_withStyles___default()(__WEBPACK_IMPORTED_MODULE_3__NotFound_css___default.a)(NotFound));
 
 /***/ }),
-/* 211 */
+/* 213 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34847,7 +35032,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__NotFound__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__NotFound__ = __webpack_require__(212);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/notFound/index.js';
 /**
  * React Starter Kit (https://www.reactstarterkit.com/)
@@ -34894,14 +35079,14 @@ const title = 'Page Not Found';
 });
 
 /***/ }),
-/* 212 */
+/* 214 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Link__ = __webpack_require__(6);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/software/Software.js';
 
@@ -35393,7 +35578,7 @@ class Software extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony default export */ __webpack_exports__["default"] = (Software);
 
 /***/ }),
-/* 213 */
+/* 215 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -35557,16 +35742,16 @@ class ListCourses extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
 /* harmony default export */ __webpack_exports__["a"] = (ListCourses);
 
 /***/ }),
-/* 214 */
+/* 216 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ListCourses__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ListCourses__ = __webpack_require__(215);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__ListCourses__["a"]; });
 
 
 /***/ }),
-/* 215 */
+/* 217 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -35574,7 +35759,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/software/index.js';
@@ -35609,7 +35794,7 @@ const title = 'Trang giới thiệu';
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
       let seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-      let information = '';
+      let information = 'information{menu, footer}';
       let indexcourse = 'indexcourse:oneIndexCourse{value}';
       let price = 'price:onePrice{one, three, six, twelve}';
       let allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
@@ -35631,7 +35816,7 @@ const title = 'Trang giới thiệu';
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["hideLoading"])());
 
       return new Promise(function(resolve) { resolve(); }).then((function (require) {
-        return __webpack_require__(212).default;
+        return __webpack_require__(214).default;
       }).bind(null, __webpack_require__)).catch(__webpack_require__.oe).then(function (Software) {
         return {
           title: seo.title || "Phần mềm" + store.getState().data.softwareInfo.value.name,
@@ -35661,7 +35846,7 @@ const title = 'Trang giới thiệu';
 });
 
 /***/ }),
-/* 216 */
+/* 218 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -35669,7 +35854,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/video/index.js';
@@ -35704,7 +35889,7 @@ const title = 'Trang giới thiệu';
       store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
       let seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-      let information = '';
+      let information = 'information{menu, footer}';
       let indexcourse = 'indexcourse:oneIndexCourse{value}';
       let price = 'price:onePrice{one, three, six, twelve}';
       let allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
@@ -35755,7 +35940,7 @@ const title = 'Trang giới thiệu';
 });
 
 /***/ }),
-/* 217 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var express = __webpack_require__(8);
@@ -35783,19 +35968,19 @@ let bodyParser = __webpack_require__(11);
 let Mailer = __webpack_require__(42);
 let axios = __webpack_require__(5);
 
-let video = __webpack_require__(230).default;
-let course = __webpack_require__(222).default;
-let category = __webpack_require__(219).default;
-let activecode = __webpack_require__(218).default;
-let comment = __webpack_require__(220).default;
-let coupon = __webpack_require__(221).default;
-let image = __webpack_require__(223).default;
-let software = __webpack_require__(228).default;
-let price = __webpack_require__(226).default;
-let membership = __webpack_require__(225).default;
-let indexcourse = __webpack_require__(224).default;
-let search = __webpack_require__(227).default;
-let user = __webpack_require__(229).default;
+let video = __webpack_require__(232).default;
+let course = __webpack_require__(224).default;
+let category = __webpack_require__(221).default;
+let activecode = __webpack_require__(220).default;
+let comment = __webpack_require__(222).default;
+let coupon = __webpack_require__(223).default;
+let image = __webpack_require__(225).default;
+let software = __webpack_require__(230).default;
+let price = __webpack_require__(228).default;
+let membership = __webpack_require__(227).default;
+let indexcourse = __webpack_require__(226).default;
+let search = __webpack_require__(229).default;
+let user = __webpack_require__(231).default;
 
 router.use('/search', search);
 router.use('/video', video);
@@ -35840,9 +36025,8 @@ router.post('/setting/update', bodyParser.json(), (req, res) => {
 });
 
 router.post('/information/update', bodyParser.json(), (req, res) => {
-  console.log('update !!!!!!!');
   console.log(req.body);
-  Information.findOneAndUpdate({ id: "information" }, { $set: req.body }, { new: true }, function (err, resData) {
+  Information.findOneAndUpdate({ id: "information" }, { $set: req.body.information }, { new: true }, function (err, resData) {
     if (err) return res.statusCode(400).send('error');
     res.send(resData);
   });
@@ -36102,7 +36286,7 @@ router.post('/seo/update', bodyParser.json(), (req, res) => {
 module.exports = router;
 
 /***/ }),
-/* 218 */
+/* 220 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36126,7 +36310,7 @@ router.get('/get', (req, res) => {
 /* harmony default export */ __webpack_exports__["default"] = (router);
 
 /***/ }),
-/* 219 */
+/* 221 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36158,7 +36342,7 @@ router.get('/getBySlug/:slug', (req, res) => {
 /* harmony default export */ __webpack_exports__["default"] = (router);
 
 /***/ }),
-/* 220 */
+/* 222 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36182,7 +36366,7 @@ router.get('/get', (req, res) => {
 /* harmony default export */ __webpack_exports__["default"] = (router);
 
 /***/ }),
-/* 221 */
+/* 223 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36214,7 +36398,7 @@ router.post('/', bodyParser.json(), (req, res) => {
 /* harmony default export */ __webpack_exports__["default"] = (router);
 
 /***/ }),
-/* 222 */
+/* 224 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36302,7 +36486,7 @@ router.get('/getByCategorySlug/:slug', (req, res) => {
 /* harmony default export */ __webpack_exports__["default"] = (router);
 
 /***/ }),
-/* 223 */
+/* 225 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36326,7 +36510,7 @@ router.get('/get', (req, res) => {
 /* harmony default export */ __webpack_exports__["default"] = (router);
 
 /***/ }),
-/* 224 */
+/* 226 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36356,7 +36540,7 @@ router.get('/getOne', (req, res) => {
 /* harmony default export */ __webpack_exports__["default"] = (router);
 
 /***/ }),
-/* 225 */
+/* 227 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36403,7 +36587,7 @@ router.get('/', (req, res) => {
 /* harmony default export */ __webpack_exports__["default"] = (router);
 
 /***/ }),
-/* 226 */
+/* 228 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36434,7 +36618,7 @@ router.get('/getOne', (req, res) => {
 /* harmony default export */ __webpack_exports__["default"] = (router);
 
 /***/ }),
-/* 227 */
+/* 229 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36484,7 +36668,7 @@ function isAdmin(req, res, next) {
 }
 
 /***/ }),
-/* 228 */
+/* 230 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36515,7 +36699,7 @@ router.get('/getBySlug/:slug', (req, res) => {
 /* harmony default export */ __webpack_exports__["default"] = (router);
 
 /***/ }),
-/* 229 */
+/* 231 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36540,7 +36724,7 @@ router.post('/password', bodyParser.json(), (req, res) => {
 /* harmony default export */ __webpack_exports__["default"] = (router);
 
 /***/ }),
-/* 230 */
+/* 232 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36582,7 +36766,7 @@ router.get('/getByCourseSlug/:courseSlug', (req, res) => {
 /* harmony default export */ __webpack_exports__["default"] = (router);
 
 /***/ }),
-/* 231 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var express = __webpack_require__(8);
@@ -36596,8 +36780,8 @@ const Session = mongoose.model('Session');
 let Mailer = __webpack_require__(42).default;
 let passport = __webpack_require__(46);
 let FacebookStrategy = __webpack_require__(47).Strategy;
-let GoogleStrategy = __webpack_require__(267).OAuth2Strategy;
-let LocalStrategy = __webpack_require__(268).Strategy;
+let GoogleStrategy = __webpack_require__(269).OAuth2Strategy;
+let LocalStrategy = __webpack_require__(270).Strategy;
 
 // let bodyParser = require('body-parser')
 
@@ -36742,23 +36926,23 @@ var logoutOther = username => {
 };
 
 /***/ }),
-/* 232 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var express = __webpack_require__(8);
 var router = express.Router();
 const path = __webpack_require__(34);
 const fs = __webpack_require__(44);
-var request = __webpack_require__(275);
+var request = __webpack_require__(277);
 var Gm = __webpack_require__(45);
-var utf8 = __webpack_require__(278);
-var iconv = __webpack_require__(256);
+var utf8 = __webpack_require__(280);
+var iconv = __webpack_require__(258);
 const mongoose = __webpack_require__(2);
 const Image = mongoose.model('Image');
 
-const imagemin = __webpack_require__(258);
-const imageminJpegtran = __webpack_require__(259);
-const imageminPngquant = __webpack_require__(260);
+const imagemin = __webpack_require__(260);
+const imageminJpegtran = __webpack_require__(261);
+const imageminPngquant = __webpack_require__(262);
 
 router.post('/delete', (req, res) => {
   let pathImage = path.join(__dirname, '../images', req.body.name);
@@ -36828,7 +37012,7 @@ var download = function (uri, filename, callback) {
 module.exports = router;
 
 /***/ }),
-/* 233 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var express = __webpack_require__(8);
@@ -36858,14 +37042,14 @@ router.get('/active/:token', (req, res) => {
 module.exports = router;
 
 /***/ }),
-/* 234 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var express = __webpack_require__(8);
 var router = express.Router();
-const fileUpload = __webpack_require__(251);
+const fileUpload = __webpack_require__(253);
 const path = __webpack_require__(34);
-var sizeOf = __webpack_require__(257);
+var sizeOf = __webpack_require__(259);
 var fs = __webpack_require__(44);
 var Gm = __webpack_require__(45);
 //mongodb
@@ -37026,18 +37210,18 @@ function randomString(len, charSet) {
 }
 
 /***/ }),
-/* 235 */
+/* 237 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = configureStore;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_redux__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux_thunk__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux_thunk__ = __webpack_require__(276);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux_thunk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_redux_thunk__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createHelpers__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__logger__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createHelpers__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__logger__ = __webpack_require__(239);
 
 
 
@@ -37078,7 +37262,7 @@ function configureStore(initialState, helpersConfig) {
 }
 
 /***/ }),
-/* 236 */
+/* 238 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -37119,12 +37303,12 @@ function createHelpers({ fetch, history }) {
 }
 
 /***/ }),
-/* 237 */
+/* 239 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = createLogger;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_util__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_util__ = __webpack_require__(281);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_util___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_util__);
 
 
@@ -37169,7 +37353,7 @@ function createLogger() {
 }
 
 /***/ }),
-/* 238 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(32)(true);
@@ -37183,7 +37367,7 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 
 
 /***/ }),
-/* 239 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(32)(true);
@@ -37197,7 +37381,7 @@ exports.push([module.i, "/**\n * React Starter Kit (https://www.reactstarterkit.
 
 
 /***/ }),
-/* 240 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(32)(true);
@@ -37214,11 +37398,11 @@ exports.locals = {
 };
 
 /***/ }),
-/* 241 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(238);
+    var content = __webpack_require__(240);
     var insertCss = __webpack_require__(33);
 
     if (typeof content === 'string') {
@@ -37249,11 +37433,11 @@ exports.locals = {
   
 
 /***/ }),
-/* 242 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(240);
+    var content = __webpack_require__(242);
     var insertCss = __webpack_require__(33);
 
     if (typeof content === 'string') {
@@ -37284,7 +37468,7 @@ exports.locals = {
   
 
 /***/ }),
-/* 243 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37323,7 +37507,7 @@ exports['default'] = {
 module.exports = exports['default'];
 
 /***/ }),
-/* 244 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37349,217 +37533,217 @@ exports['default'] = {
 module.exports = exports['default'];
 
 /***/ }),
-/* 245 */
+/* 247 */
 /***/ (function(module, exports) {
 
 module.exports = require("./assets.json");
 
 /***/ }),
-/* 246 */
+/* 248 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-runtime/core-js/json/stringify");
 
 /***/ }),
-/* 247 */
+/* 249 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-runtime/helpers/slicedToArray");
 
 /***/ }),
-/* 248 */
+/* 250 */
 /***/ (function(module, exports) {
 
 module.exports = require("bcryptjs");
 
 /***/ }),
-/* 249 */
+/* 251 */
 /***/ (function(module, exports) {
 
 module.exports = require("connect-mongo");
 
 /***/ }),
-/* 250 */
+/* 252 */
 /***/ (function(module, exports) {
 
 module.exports = require("cookie-parser");
 
 /***/ }),
-/* 251 */
+/* 253 */
 /***/ (function(module, exports) {
 
 module.exports = require("express-fileupload");
 
 /***/ }),
-/* 252 */
+/* 254 */
 /***/ (function(module, exports) {
 
 module.exports = require("express-graphql");
 
 /***/ }),
-/* 253 */
+/* 255 */
 /***/ (function(module, exports) {
 
 module.exports = require("express-jwt");
 
 /***/ }),
-/* 254 */
+/* 256 */
 /***/ (function(module, exports) {
 
 module.exports = require("express-session");
 
 /***/ }),
-/* 255 */
+/* 257 */
 /***/ (function(module, exports) {
 
 module.exports = require("history/createBrowserHistory");
 
 /***/ }),
-/* 256 */
+/* 258 */
 /***/ (function(module, exports) {
 
 module.exports = require("iconv-lite");
 
 /***/ }),
-/* 257 */
+/* 259 */
 /***/ (function(module, exports) {
 
 module.exports = require("image-size");
 
 /***/ }),
-/* 258 */
+/* 260 */
 /***/ (function(module, exports) {
 
 module.exports = require("imagemin");
 
 /***/ }),
-/* 259 */
+/* 261 */
 /***/ (function(module, exports) {
 
 module.exports = require("imagemin-jpegtran");
 
 /***/ }),
-/* 260 */
+/* 262 */
 /***/ (function(module, exports) {
 
 module.exports = require("imagemin-pngquant");
 
 /***/ }),
-/* 261 */
+/* 263 */
 /***/ (function(module, exports) {
 
 module.exports = require("isomorphic-fetch");
 
 /***/ }),
-/* 262 */
+/* 264 */
 /***/ (function(module, exports) {
 
 module.exports = require("jsonwebtoken");
 
 /***/ }),
-/* 263 */
+/* 265 */
 /***/ (function(module, exports) {
 
 module.exports = require("mailgun-js");
 
 /***/ }),
-/* 264 */
+/* 266 */
 /***/ (function(module, exports) {
 
 module.exports = require("mongoose-auto-increment");
 
 /***/ }),
-/* 265 */
+/* 267 */
 /***/ (function(module, exports) {
 
 module.exports = require("mongoose-findorcreate");
 
 /***/ }),
-/* 266 */
+/* 268 */
 /***/ (function(module, exports) {
 
 module.exports = require("node-uuid");
 
 /***/ }),
-/* 267 */
+/* 269 */
 /***/ (function(module, exports) {
 
 module.exports = require("passport-google-oauth");
 
 /***/ }),
-/* 268 */
+/* 270 */
 /***/ (function(module, exports) {
 
 module.exports = require("passport-local");
 
 /***/ }),
-/* 269 */
+/* 271 */
 /***/ (function(module, exports) {
 
 module.exports = require("pretty-error");
 
 /***/ }),
-/* 270 */
+/* 272 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-copy-to-clipboard");
 
 /***/ }),
-/* 271 */
+/* 273 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom/server");
 
 /***/ }),
-/* 272 */
+/* 274 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-redux");
 
 /***/ }),
-/* 273 */
+/* 275 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-waypoint");
 
 /***/ }),
-/* 274 */
+/* 276 */
 /***/ (function(module, exports) {
 
 module.exports = require("redux-thunk");
 
 /***/ }),
-/* 275 */
+/* 277 */
 /***/ (function(module, exports) {
 
 module.exports = require("request");
 
 /***/ }),
-/* 276 */
+/* 278 */
 /***/ (function(module, exports) {
 
 module.exports = require("route-cache");
 
 /***/ }),
-/* 277 */
+/* 279 */
 /***/ (function(module, exports) {
 
 module.exports = require("slug");
 
 /***/ }),
-/* 278 */
+/* 280 */
 /***/ (function(module, exports) {
 
 module.exports = require("utf8");
 
 /***/ }),
-/* 279 */
+/* 281 */
 /***/ (function(module, exports) {
 
 module.exports = require("util");
 
 /***/ }),
-/* 280 */
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(51);
@@ -37567,73 +37751,73 @@ module.exports = __webpack_require__(50);
 
 
 /***/ }),
-/* 281 */
+/* 283 */
 /***/ (function(module, exports) {
 
 module.exports = require("draft-js");
 
 /***/ }),
-/* 282 */
+/* 284 */
 /***/ (function(module, exports) {
 
 module.exports = require("draft-js-editor/lib/Editor");
 
 /***/ }),
-/* 283 */
+/* 285 */
 /***/ (function(module, exports) {
 
 module.exports = require("draft-js-editor/lib/components/defaultDecorator");
 
 /***/ }),
-/* 284 */
+/* 286 */
 /***/ (function(module, exports) {
 
 module.exports = require("draft-js-export-html");
 
 /***/ }),
-/* 285 */
+/* 287 */
 /***/ (function(module, exports) {
 
 module.exports = require("draft-js-import-html");
 
 /***/ }),
-/* 286 */
+/* 288 */
 /***/ (function(module, exports) {
 
 module.exports = require("object-assign");
 
 /***/ }),
-/* 287 */
+/* 289 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-avatar-editor");
 
 /***/ }),
-/* 288 */
+/* 290 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-facebook");
 
 /***/ }),
-/* 289 */
+/* 291 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-resize-detector");
 
 /***/ }),
-/* 290 */
+/* 292 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-sortable-hoc");
 
 /***/ }),
-/* 291 */
+/* 293 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-sticky");
 
 /***/ }),
-/* 292 */
+/* 294 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-visibility-sensor");

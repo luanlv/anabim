@@ -63,7 +63,7 @@ class IndexCourse extends React.Component {
                       )
                     })}
                   </div>
-                  <div style={{height: '40px'}}>
+                  <div style={{height: '80px'}}>
                     <Link to={'/category/' + el.category.slug}>
                       <button className='ui button pull-right' style={{marginTop: '30px', fontSize: '20px !important', lineHeight: '24x !important'}}>
                         Xem tất cả

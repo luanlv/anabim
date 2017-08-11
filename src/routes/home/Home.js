@@ -103,7 +103,7 @@ class Home extends React.Component {
             </div>
 
             <div className='main'>
-              <div className='ui container segment noBor noSha' style={{margin: '100px'}}>
+              <div className='ui container segment noBor noSha'>
                 <div className='ui three column stackable grid'>
                   <div className='column '>
                     <div className='centerInside'><i className='huge history icon ' /></div>
@@ -130,7 +130,7 @@ class Home extends React.Component {
                   </div>
                 </div>
               </div>
-              <div id='slider2' style={{background: 'url("/assets/img/5.jpg") no-repeat center #eee'}}>
+              <div id='slider2' style={{background: 'url("/assets/img/5.jpg") no-repeat center #eee', marginTop: 50}}>
                 <div className='hero-img'>
                   <div className='ui container'>
                     <div className='ui stackable grid'>

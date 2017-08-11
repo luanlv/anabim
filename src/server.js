@@ -215,7 +215,7 @@ app.get('*', async (req, res, next) => {
         courseInSoftware: {
           needUpdate: true,
           value: []
-        }
+        },
       }
     };
 

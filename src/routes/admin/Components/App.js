@@ -186,6 +186,15 @@ class App extends React.Component {
                   </span>
                 </Link>
               </Menu.Item>
+  
+              <Menu.Item key="thongtinchung">
+                <Link to="/admin/thongtinchung">
+                  <span>
+                    <Icon type="appstore-o" />
+                    <span className="nav-text">Thông tin website</span>
+                  </span>
+                </Link>
+              </Menu.Item>
 
               <Menu.Item key="Library">
                 <Link to="/admin/library">

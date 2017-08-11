@@ -44,11 +44,11 @@ class CourseInfo extends React.Component {
                   Cấp độ : {this.props.course.level}
                 </div>
                 <div className='ui inverted grey segment centerInside ' style={{marginBottom: '0px !important'}}>
-                  {/*Đang cập nhập*/}
+                  {/*Đang cập nhập*/} 0:00:00
                 </div>
                 <div className='noMa centerInside'>Thời lượng học</div>
                 <div className='ui inverted grey segment centerInside' style={{marginBottom: '0px !important'}}>
-                  1,066,481
+                  3,103
                 </div>
                 <div className='noMa centerInside'>Lượt xem</div>
               </div>

@@ -85,9 +85,8 @@ router.post('/setting/update', bodyParser.json() ,(req, res) => {
 })
 
 router.post('/information/update', bodyParser.json() ,(req, res) => {
-  console.log('update !!!!!!!')
   console.log(req.body)
-  Information.findOneAndUpdate({id: "information"}, { $set: req.body}, { new: true }, function (err, resData) {
+  Information.findOneAndUpdate({id: "information"}, { $set: req.body.information}, { new: true }, function (err, resData) {
     if (err) return res.statusCode(400).send('error');
     res.send(resData);
   });

@@ -31,6 +31,8 @@ const Admin = {
   Trial: require('./trialMember/Trial').default,
 
   TrangChu: require('./trangchu/TrangChu').default,
+  
+  Common: require('./thongtinchung/Common').default,
 
   // Contact: require('./lienhe/Contact').default,
   // About: require('./gioithieu/About').default,

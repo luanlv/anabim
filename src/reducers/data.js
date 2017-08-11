@@ -83,7 +83,7 @@ export default function data(state = {}, action) {
         courseInSoftware: {
           ...state.courseInSoftware,
           value: data.courseInSoftware || state.courseInSoftware.value
-        },
+        }
       }
     default:
       return state;

@@ -4,7 +4,7 @@ webpackJsonp([9],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_createBrowserHistory__ = __webpack_require__(731);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_createBrowserHistory__ = __webpack_require__(732);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_createBrowserHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_history_createBrowserHistory__);
 /**
  * React Starter Kit (https://www.reactstarterkit.com/)
@@ -30,9 +30,9 @@ webpackJsonp([9],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Partial__ = __webpack_require__(450);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux_loading_bar__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux_loading_bar__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_redux_loading_bar__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/components/Layout.js';
 
@@ -251,19 +251,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_redbox_react__ = __webpack_require__(843);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_redbox_react__ = __webpack_require__(844);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_redbox_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_redbox_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_deep_force_update__ = __webpack_require__(748);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_deep_force_update__ = __webpack_require__(749);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_deep_force_update___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_deep_force_update__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_fastclick__ = __webpack_require__(720);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_fastclick__ = __webpack_require__(721);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_fastclick___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_fastclick__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_query_string__ = __webpack_require__(747);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_query_string__ = __webpack_require__(748);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_query_string___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_query_string__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_history_PathUtils__ = __webpack_require__(162);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_history_PathUtils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_history_PathUtils__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_App__ = __webpack_require__(440);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__createFetch__ = __webpack_require__(451);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__store_configureStore__ = __webpack_require__(495);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__store_configureStore__ = __webpack_require__(496);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__history__ = __webpack_require__(185);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__DOMUtils__ = __webpack_require__(438);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/client.js',
@@ -756,7 +756,7 @@ function setMember() {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux__ = __webpack_require__(179);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -858,7 +858,7 @@ App.childContextTypes = ContextType;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/components/Partial/ActiveCode.js';
 
@@ -1112,493 +1112,349 @@ var EmailConfirm = function EmailConfirm(_ref) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _jsxFileName = '/home/luan/Workspace/anabim/src/components/Partial/Footer.js',
-    _this = this;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(85);
+var _jsxFileName = '/home/luan/Workspace/anabim/src/components/Partial/Footer.js';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 
 
-var Footer = function Footer(_ref) {
-  var props = _ref.props;
 
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'div',
-    { id: 'footer', __source: {
-        fileName: _jsxFileName,
-        lineNumber: 5
-      },
-      __self: _this
-    },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'div',
-      { className: 'ui inverted segment noBor noSha noRa noMa footer-top', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 6
-        },
-        __self: _this
-      },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+
+var Footer = function (_React$Component) {
+  _inherits(Footer, _React$Component);
+
+  function Footer(props) {
+    _classCallCheck(this, Footer);
+
+    var _this = _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).call(this, props));
+
+    _this.state = {};
+
+    return _this;
+  }
+
+  _createClass(Footer, [{
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var footer = this.context.store.getState().data.information.value.footer;
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: 'ui container', __source: {
+        { id: 'footer', __source: {
             fileName: _jsxFileName,
-            lineNumber: 7
+            lineNumber: 20
           },
-          __self: _this
+          __self: this
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
-          { className: 'ui stackable grid', __source: {
+          { className: 'ui inverted segment noBor noSha noRa noMa footer-top', __source: {
               fileName: _jsxFileName,
-              lineNumber: 8
+              lineNumber: 21
             },
-            __self: _this
+            __self: this
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: ' twelve wide column', __source: {
+            { className: 'ui container', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 9
+                lineNumber: 22
               },
-              __self: _this
+              __self: this
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
-              { className: 'ui three column grid', __source: {
+              { className: 'ui stackable grid', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 10
+                  lineNumber: 23
                 },
-                __self: _this
+                __self: this
               },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'column ', __source: {
+                { className: ' twelve wide column', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 11
+                    lineNumber: 24
                   },
-                  __self: _this
+                  __self: this
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'h3',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 12
-                    },
-                    __self: _this
-                  },
-                  'ANABIM EDUCATION'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 13
-                    },
-                    __self: _this
-                  },
-                  'Kh\xF3a h\u1ECDc online'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 14
-                    },
-                    __self: _this
-                  },
-                  'Kho\xE1c h\u1ECDc offline'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 15
-                    },
-                    __self: _this
-                  },
-                  'H\u01B0\u1EDBng d\u1EABn thanh to\xE1n kh\xF3a h\u1ECDc'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 16
-                    },
-                    __self: _this
-                  },
-                  'H\xECnh \u1EA3nh'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 17
-                    },
-                    __self: _this
-                  },
-                  'C\u1ED9ng \u0111\u1ED3ng'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 18
-                    },
-                    __self: _this
-                  },
-                  'V\u1EC1 ch\xFAng t\xF4i'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'a',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 19
-                    },
-                    __self: _this
-                  },
-                  'Li\xEAn h\u1EC7'
-                )
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'column', __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 22
-                  },
-                  __self: _this
-                },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'h3',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 23
-                    },
-                    __self: _this
-                  },
-                  'V\u0102N PH\xD2NG ANABIM'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'span',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 24
-                    },
-                    __self: _this
-                  },
-                  'ANABIM CO,.LTD',
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
-                    __source: {
+                  'div',
+                  { className: 'ui three column grid', __source: {
                       fileName: _jsxFileName,
                       lineNumber: 25
                     },
-                    __self: _this
-                  }),
-                  '36B ng\xF5 554 \u0111\u01B0\u1EDDng Tr\u01B0\u1EDDng Chinh, \u0110\u1ED1ng \u0110a, H\xE0 N\u1ED9i.'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 26
-                    },
-                    __self: _this
+                    __self: this
                   },
-                  '0975 622 789'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 27
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'column ', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 26
+                      },
+                      __self: this
                     },
-                    __self: _this
-                  },
-                  'revithanoi@gmail.com'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 28
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'h3',
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 27
+                        },
+                        __self: this
+                      },
+                      'ANABIM EDUCATION'
+                    ),
+                    footer.cot1.map(function (el, index) {
+                      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_2__Link__["a" /* default */],
+                        { key: index, to: el.url, __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 29
+                          },
+                          __self: _this2
+                        },
+                        el.title
+                      );
+                    })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'column', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 33
+                      },
+                      __self: this
                     },
-                    __self: _this
-                  },
-                  ' www.anabim.com'
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'h3',
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 34
+                        },
+                        __self: this
+                      },
+                      'V\u0102N PH\xD2NG ANABIM'
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { dangerouslySetInnerHTML: { __html: footer.cot2 }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 35
+                      },
+                      __self: this
+                    })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'column ', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 38
+                      },
+                      __self: this
+                    },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      'h3',
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 39
+                        },
+                        __self: this
+                      },
+                      'H\u1ED6 TR\u1EE2'
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { dangerouslySetInnerHTML: { __html: footer.cot3 }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 40
+                      },
+                      __self: this
+                    })
+                  )
                 )
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'column ', __source: {
+                { className: 'four wide column ', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 31
+                    lineNumber: 45
                   },
-                  __self: _this
+                  __self: this
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   'h3',
-                  {
-                    __source: {
+                  { className: 'centerInside', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 32
+                      lineNumber: 46
                     },
-                    __self: _this
+                    __self: this
                   },
-                  'H\u1ED6 TR\u1EE2'
+                  'Connect'
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   'div',
-                  {
-                    __source: {
+                  { className: 'row centerInside', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 33
+                      lineNumber: 47
                     },
-                    __self: _this
+                    __self: this
                   },
-                  'Mr. Th\xF9y - Ki\u1EBFn tr\xFAc',
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 35
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    { target: '_blank', href: 'https://facebook.com/daotaokientrucxaydung/', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 48
+                      },
+                      __self: this
                     },
-                    __self: _this
-                  }),
-                  '01669053063'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 38
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', {
+                      className: 'huge facebook square icon', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 48
+                      },
+                      __self: this
+                    })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    { target: '_blank', href: 'https://plus.google.com/105729788429368018982', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 50
+                      },
+                      __self: this
                     },
-                    __self: _this
-                  },
-                  'Mr. Chi\u1EBFn - MEP',
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 40
-                    },
-                    __self: _this
-                  }),
-                  '0979 269 448'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 43
-                    },
-                    __self: _this
-                  },
-                  'Mr. Huy - K\u1EBFt c\u1EA5u',
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 45
-                    },
-                    __self: _this
-                  }),
-                  '0978 542 680'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 49
-                    },
-                    __self: _this
-                  },
-                  'Mr. V\u01B0\u1EE3ng - Doanh nghi\u1EC7p',
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 51
-                    },
-                    __self: _this
-                  }),
-                  '0975 622 789'
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', {
+                      className: 'huge google plus square icon', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 50
+                      },
+                      __self: this
+                    })
+                  )
                 )
               )
             )
-          ),
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'ui inverted segment noBor noSha noRa noMa footer-bot', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 57
+            },
+            __self: this
+          },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: 'four wide column ', __source: {
+            { className: 'ui container', __source: {
                 fileName: _jsxFileName,
                 lineNumber: 58
               },
-              __self: _this
+              __self: this
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'h3',
-              { className: 'centerInside', __source: {
+              'div',
+              { className: 'ui secondary  menu', __source: {
                   fileName: _jsxFileName,
                   lineNumber: 59
                 },
-                __self: _this
-              },
-              'Connect'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              { className: 'row centerInside', __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 60
-                },
-                __self: _this
+                __self: this
               },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'a',
-                { target: '_blank', href: 'https://facebook.com/daotaokientrucxaydung/', __source: {
+                { className: 'active item', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 61
+                    lineNumber: 60
                   },
-                  __self: _this
+                  __self: this
                 },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'huge facebook square icon', __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 61
-                  },
-                  __self: _this
-                })
+                '\xA9 2017 Anabim.com, Inc.'
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'a',
-                { target: '_blank', href: 'https://plus.google.com/105729788429368018982', __source: {
+                { className: 'item', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 62
+                    lineNumber: 63
                   },
-                  __self: _this
+                  __self: this
                 },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'huge google plus square icon', __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 62
-                  },
-                  __self: _this
-                })
-              )
-            )
-          )
-        )
-      )
-    ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'div',
-      { className: 'ui inverted segment noBor noSha noRa noMa footer-bot', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 68
-        },
-        __self: _this
-      },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'div',
-        { className: 'ui container', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 69
-          },
-          __self: _this
-        },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'div',
-          { className: 'ui secondary  menu', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 70
-            },
-            __self: _this
-          },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'a',
-            { className: 'active item', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 71
-              },
-              __self: _this
-            },
-            '\xA9 2017 Anabim.com, Inc.'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'a',
-            { className: 'item', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 74
-              },
-              __self: _this
-            },
-            'Site Map'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'a',
-            { className: 'item', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 77
-              },
-              __self: _this
-            },
-            'Privacy policy'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'a',
-            { className: 'item', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 80
-              },
-              __self: _this
-            },
-            'Web Use Policy'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'right menu', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 83
-              },
-              __self: _this
-            },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'a',
-              { className: 'ui item', __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 84
-                },
-                __self: _this
-              },
-              'ANABIM',
+                'Site Map'
+              ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'i',
-                { className: 'icons', __source: {
+                'a',
+                { className: 'item', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 86
+                    lineNumber: 66
                   },
-                  __self: _this
+                  __self: this
                 },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'angle double up icon', __source: {
+                'Privacy policy'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'a',
+                { className: 'item', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 87
+                    lineNumber: 69
                   },
-                  __self: _this
-                })
+                  __self: this
+                },
+                'Web Use Policy'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'right menu', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 72
+                  },
+                  __self: this
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'a',
+                  { className: 'ui item', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 73
+                    },
+                    __self: this
+                  },
+                  'ANABIM',
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'i',
+                    { className: 'icons', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 75
+                      },
+                      __self: this
+                    },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'angle double up icon', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 76
+                      },
+                      __self: this
+                    })
+                  )
+                )
               )
             )
           )
         )
-      )
-    )
-  );
-};
+      );
+    }
+  }]);
+
+  return Footer;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+Footer.contextTypes = { store: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object.isRequired };
+
 
 /* harmony default export */ __webpack_exports__["a"] = (Footer);
 
@@ -1615,7 +1471,7 @@ var Footer = function Footer(_ref) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_prop_types__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_prop_types__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__actions_user__ = __webpack_require__(439);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/components/Partial/MemberShip.js';
@@ -2909,8 +2765,10 @@ var checkPhoneNumber = function checkPhoneNumber(phone) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Link__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Sidebar__ = __webpack_require__(447);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Link__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Sidebar__ = __webpack_require__(447);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/components/Partial/Nav.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -2922,6 +2780,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 /* global $ */
+
 
 
 
@@ -2995,16 +2854,19 @@ var Nav = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       var user = this.props.user;
       var logged = this.props.user.username;
       // if(logged && !this.props.user.passwordChanged && !this.props.user.avatar) {
       //   this.changePassword()
       // }
+      var menu = this.context.store.getState().data.information.value.menu;
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'nav', __source: {
             fileName: _jsxFileName,
-            lineNumber: 76
+            lineNumber: 82
           },
           __self: this
         },
@@ -3012,7 +2874,7 @@ var Nav = function (_React$Component) {
           'div',
           { className: 'ui inverted segment nav-top', __source: {
               fileName: _jsxFileName,
-              lineNumber: 77
+              lineNumber: 83
             },
             __self: this
           },
@@ -3020,7 +2882,7 @@ var Nav = function (_React$Component) {
             'div',
             { className: 'ui container', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 78
+                lineNumber: 84
               },
               __self: this
             },
@@ -3028,14 +2890,14 @@ var Nav = function (_React$Component) {
               'div',
               { className: 'ui inverted secondary menu', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 79
+                  lineNumber: 85
                 },
                 __self: this
               },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Sidebar__["a" /* default */], {
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Sidebar__["a" /* default */], {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 80
+                  lineNumber: 86
                 },
                 __self: this
               }),
@@ -3043,13 +2905,13 @@ var Nav = function (_React$Component) {
                 'a',
                 { id: 'logo', href: 'http://anabim.com/', target: '_blank', style: { width: '120px !important' }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 81
+                    lineNumber: 87
                   },
                   __self: this
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/assets/img/logo.jpg', alt: '', width: 120, height: 42, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 82
+                    lineNumber: 88
                   },
                   __self: this
                 })
@@ -3058,14 +2920,14 @@ var Nav = function (_React$Component) {
                 'span',
                 { className: 'ui top left pointing dropdown item navbar', style: { marginRight: '0px !important' }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 84
+                    lineNumber: 90
                   },
                   __self: this
                 },
                 'DANH M\u1EE4C',
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'dropdown icon', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 86
+                    lineNumber: 92
                   },
                   __self: this
                 }),
@@ -3073,7 +2935,7 @@ var Nav = function (_React$Component) {
                   'ul',
                   { className: 'ui blue menu', id: 'danhmuc', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 87
+                      lineNumber: 93
                     },
                     __self: this
                   },
@@ -3081,13 +2943,13 @@ var Nav = function (_React$Component) {
                     'li',
                     { className: 'item', 'data-submenu-id': '1', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 88
+                        lineNumber: 94
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'dashboard icon', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 89
+                        lineNumber: 95
                       },
                       __self: this
                     }),
@@ -3096,7 +2958,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { id: '1', className: 'popover', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 91
+                          lineNumber: 97
                         },
                         __self: this
                       },
@@ -3104,7 +2966,7 @@ var Nav = function (_React$Component) {
                         'div',
                         { className: 'ui two column grid', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 92
+                            lineNumber: 98
                           },
                           __self: this
                         },
@@ -3112,7 +2974,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 93
+                              lineNumber: 99
                             },
                             __self: this
                           },
@@ -3120,130 +2982,10 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 94
+                                lineNumber: 100
                               },
                               __self: this
                             },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              'li',
-                              {
-                                __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 95
-                                },
-                                __self: this
-                              },
-                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-lam-quen-voi-revit', __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 95
-                                  },
-                                  __self: this
-                                },
-                                'L\xE0m Quen V\u1EDBi Revit (FREE)'
-                              )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              'li',
-                              {
-                                __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 96
-                                },
-                                __self: this
-                              },
-                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-revit-architecture-nen-tang', __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 96
-                                  },
-                                  __self: this
-                                },
-                                'Revit Arrchitecture N\u1EC1n T\u1EA3ng'
-                              )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              'li',
-                              {
-                                __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 97
-                                },
-                                __self: this
-                              },
-                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-revit-architecture-nang-cao', __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 97
-                                  },
-                                  __self: this
-                                },
-                                'Revit Arrchitecture N\xE2ng Cao'
-                              )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              'li',
-                              {
-                                __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 98
-                                },
-                                __self: this
-                              },
-                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-conceptual-massing', __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 98
-                                  },
-                                  __self: this
-                                },
-                                'Revit Conceptual Mass'
-                              )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              'li',
-                              {
-                                __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 99
-                                },
-                                __self: this
-                              },
-                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-revit-family-co-ban', __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 99
-                                  },
-                                  __self: this
-                                },
-                                'Revit Family C\u01A1 B\u1EA3n'
-                              )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              'li',
-                              {
-                                __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 100
-                                },
-                                __self: this
-                              },
-                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-revit-family-nang-cao', __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 100
-                                  },
-                                  __self: this
-                                },
-                                'Revit Family N\xE2ng Cao'
-                              )
-                            ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                               'li',
                               {
@@ -3255,13 +2997,13 @@ var Nav = function (_React$Component) {
                               },
                               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-revit-family-addaptive-co-ban', __source: {
+                                { to: Data.baseUrl + '/course/khoa-hoc-lam-quen-voi-revit', __source: {
                                     fileName: _jsxFileName,
                                     lineNumber: 101
                                   },
                                   __self: this
                                 },
-                                'Revit Family Adaptive C\u01A1 B\u1EA3n'
+                                'L\xE0m Quen V\u1EDBi Revit (FREE)'
                               )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -3275,33 +3017,95 @@ var Nav = function (_React$Component) {
                               },
                               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-revit-family-adaptive-nang-cao', __source: {
+                                { to: Data.baseUrl + '/course/khoa-hoc-revit-architecture-nen-tang', __source: {
                                     fileName: _jsxFileName,
                                     lineNumber: 102
                                   },
                                   __self: this
                                 },
-                                'Revit Family Adaptive N\xE2ng Cao'
+                                'Revit Arrchitecture N\u1EC1n T\u1EA3ng'
                               )
-                            )
-                          )
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          'div',
-                          { className: 'column', __source: {
-                              fileName: _jsxFileName,
-                              lineNumber: 105
-                            },
-                            __self: this
-                          },
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'ul',
-                            { className: 'ui list', __source: {
-                                fileName: _jsxFileName,
-                                lineNumber: 106
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              'li',
+                              {
+                                __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 103
+                                },
+                                __self: this
                               },
-                              __self: this
-                            },
+                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                                { to: Data.baseUrl + '/course/khoa-hoc-revit-architecture-nang-cao', __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 103
+                                  },
+                                  __self: this
+                                },
+                                'Revit Arrchitecture N\xE2ng Cao'
+                              )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              'li',
+                              {
+                                __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 104
+                                },
+                                __self: this
+                              },
+                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                                { to: Data.baseUrl + '/course/khoa-hoc-conceptual-massing', __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 104
+                                  },
+                                  __self: this
+                                },
+                                'Revit Conceptual Mass'
+                              )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              'li',
+                              {
+                                __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 105
+                                },
+                                __self: this
+                              },
+                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                                { to: Data.baseUrl + '/course/khoa-hoc-revit-family-co-ban', __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 105
+                                  },
+                                  __self: this
+                                },
+                                'Revit Family C\u01A1 B\u1EA3n'
+                              )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              'li',
+                              {
+                                __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 106
+                                },
+                                __self: this
+                              },
+                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                                { to: Data.baseUrl + '/course/khoa-hoc-revit-family-nang-cao', __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 106
+                                  },
+                                  __self: this
+                                },
+                                'Revit Family N\xE2ng Cao'
+                              )
+                            ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                               'li',
                               {
@@ -3311,7 +3115,16 @@ var Nav = function (_React$Component) {
                                 },
                                 __self: this
                               },
-                              link('khoa-hoc-dynamo-co-ban', 'Autodesk Dynamo 2016')
+                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                                { to: Data.baseUrl + '/course/khoa-hoc-revit-family-addaptive-co-ban', __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 107
+                                  },
+                                  __self: this
+                                },
+                                'Revit Family Adaptive C\u01A1 B\u1EA3n'
+                              )
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                               'li',
@@ -3324,9 +3137,58 @@ var Nav = function (_React$Component) {
                               },
                               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                                { to: Data.baseUrl + '/course/khoa-hoc-dynamo-nang-cao', __source: {
+                                { to: Data.baseUrl + '/course/khoa-hoc-revit-family-adaptive-nang-cao', __source: {
                                     fileName: _jsxFileName,
                                     lineNumber: 108
+                                  },
+                                  __self: this
+                                },
+                                'Revit Family Adaptive N\xE2ng Cao'
+                              )
+                            )
+                          )
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          'div',
+                          { className: 'column', __source: {
+                              fileName: _jsxFileName,
+                              lineNumber: 111
+                            },
+                            __self: this
+                          },
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'ul',
+                            { className: 'ui list', __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 112
+                              },
+                              __self: this
+                            },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              'li',
+                              {
+                                __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 113
+                                },
+                                __self: this
+                              },
+                              link('khoa-hoc-dynamo-co-ban', 'Autodesk Dynamo 2016')
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              'li',
+                              {
+                                __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 114
+                                },
+                                __self: this
+                              },
+                              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                                { to: Data.baseUrl + '/course/khoa-hoc-dynamo-nang-cao', __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 114
                                   },
                                   __self: this
                                 },
@@ -3338,7 +3200,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 109
+                                  lineNumber: 115
                                 },
                                 __self: this
                               },
@@ -3346,7 +3208,7 @@ var Nav = function (_React$Component) {
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
                                 { to: Data.baseUrl + '/course/khoa-hoc-formit-360', __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 109
+                                    lineNumber: 115
                                   },
                                   __self: this
                                 },
@@ -3358,7 +3220,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 110
+                                  lineNumber: 116
                                 },
                                 __self: this
                               },
@@ -3366,7 +3228,7 @@ var Nav = function (_React$Component) {
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
                                 { to: Data.baseUrl + '/course/sketchup-co-ban', __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 110
+                                    lineNumber: 116
                                   },
                                   __self: this
                                 },
@@ -3378,7 +3240,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 111
+                                  lineNumber: 117
                                 },
                                 __self: this
                               },
@@ -3386,7 +3248,7 @@ var Nav = function (_React$Component) {
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
                                 { to: Data.baseUrl + '/course/khoa-hoc-sketchup-nang-cao', __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 111
+                                    lineNumber: 117
                                   },
                                   __self: this
                                 },
@@ -3398,7 +3260,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 112
+                                  lineNumber: 118
                                 },
                                 __self: this
                               },
@@ -3406,7 +3268,7 @@ var Nav = function (_React$Component) {
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
                                 { to: Data.baseUrl + '/course/khoa-hoc-autocad-2015-co-ban', __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 112
+                                    lineNumber: 118
                                   },
                                   __self: this
                                 },
@@ -3418,7 +3280,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 113
+                                  lineNumber: 119
                                 },
                                 __self: this
                               },
@@ -3426,7 +3288,7 @@ var Nav = function (_React$Component) {
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
                                 { to: Data.baseUrl + '/course/thiet-ke-gach-thong-gio-revit', __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 113
+                                    lineNumber: 119
                                   },
                                   __self: this
                                 },
@@ -3442,13 +3304,13 @@ var Nav = function (_React$Component) {
                     'li',
                     { className: 'item', 'data-submenu-id': '2', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 119
+                        lineNumber: 125
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'object ungroup icon', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 120
+                        lineNumber: 126
                       },
                       __self: this
                     }),
@@ -3457,7 +3319,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { id: '2', className: 'popover', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 122
+                          lineNumber: 128
                         },
                         __self: this
                       },
@@ -3465,7 +3327,7 @@ var Nav = function (_React$Component) {
                         'div',
                         { className: 'ui two column grid', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 123
+                            lineNumber: 129
                           },
                           __self: this
                         },
@@ -3473,7 +3335,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 124
+                              lineNumber: 130
                             },
                             __self: this
                           },
@@ -3481,7 +3343,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 125
+                                lineNumber: 131
                               },
                               __self: this
                             },
@@ -3490,7 +3352,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 126
+                                  lineNumber: 132
                                 },
                                 __self: this
                               },
@@ -3498,7 +3360,7 @@ var Nav = function (_React$Component) {
                                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
                                 { to: Data.baseUrl + '/course/khoa-hoc-lam-quen-voi-revit', __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 126
+                                    lineNumber: 132
                                   },
                                   __self: this
                                 },
@@ -3510,7 +3372,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 127
+                                  lineNumber: 133
                                 },
                                 __self: this
                               },
@@ -3521,7 +3383,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 128
+                                  lineNumber: 134
                                 },
                                 __self: this
                               },
@@ -3532,7 +3394,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 129
+                                  lineNumber: 135
                                 },
                                 __self: this
                               },
@@ -3544,7 +3406,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 132
+                              lineNumber: 138
                             },
                             __self: this
                           },
@@ -3552,7 +3414,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 133
+                                lineNumber: 139
                               },
                               __self: this
                             },
@@ -3561,7 +3423,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 134
+                                  lineNumber: 140
                                 },
                                 __self: this
                               },
@@ -3572,7 +3434,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 135
+                                  lineNumber: 141
                                 },
                                 __self: this
                               },
@@ -3583,7 +3445,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 136
+                                  lineNumber: 142
                                 },
                                 __self: this
                               },
@@ -3598,13 +3460,13 @@ var Nav = function (_React$Component) {
                     'li',
                     { className: 'item', 'data-submenu-id': '3', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 142
+                        lineNumber: 148
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'calculator icon', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 143
+                        lineNumber: 149
                       },
                       __self: this
                     }),
@@ -3613,7 +3475,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { id: '3', className: 'popover', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 145
+                          lineNumber: 151
                         },
                         __self: this
                       },
@@ -3621,7 +3483,7 @@ var Nav = function (_React$Component) {
                         'div',
                         { className: 'ui two column grid', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 146
+                            lineNumber: 152
                           },
                           __self: this
                         },
@@ -3629,7 +3491,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 147
+                              lineNumber: 153
                             },
                             __self: this
                           },
@@ -3637,7 +3499,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 148
+                                lineNumber: 154
                               },
                               __self: this
                             },
@@ -3646,7 +3508,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 149
+                                  lineNumber: 155
                                 },
                                 __self: this
                               },
@@ -3657,7 +3519,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 150
+                                  lineNumber: 156
                                 },
                                 __self: this
                               },
@@ -3668,7 +3530,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 151
+                                  lineNumber: 157
                                 },
                                 __self: this
                               },
@@ -3679,7 +3541,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 152
+                                  lineNumber: 158
                                 },
                                 __self: this
                               },
@@ -3690,7 +3552,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 153
+                                  lineNumber: 159
                                 },
                                 __self: this
                               },
@@ -3702,7 +3564,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 156
+                              lineNumber: 162
                             },
                             __self: this
                           },
@@ -3710,7 +3572,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 157
+                                lineNumber: 163
                               },
                               __self: this
                             },
@@ -3719,7 +3581,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 158
+                                  lineNumber: 164
                                 },
                                 __self: this
                               },
@@ -3730,7 +3592,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 159
+                                  lineNumber: 165
                                 },
                                 __self: this
                               },
@@ -3741,7 +3603,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 160
+                                  lineNumber: 166
                                 },
                                 __self: this
                               },
@@ -3752,7 +3614,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 161
+                                  lineNumber: 167
                                 },
                                 __self: this
                               },
@@ -3767,13 +3629,13 @@ var Nav = function (_React$Component) {
                     'li',
                     { className: 'item', 'data-submenu-id': '4', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 167
+                        lineNumber: 173
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'cubes icon', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 168
+                        lineNumber: 174
                       },
                       __self: this
                     }),
@@ -3782,7 +3644,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { id: '4', className: 'popover', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 170
+                          lineNumber: 176
                         },
                         __self: this
                       },
@@ -3790,7 +3652,7 @@ var Nav = function (_React$Component) {
                         'div',
                         { className: 'ui two column grid', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 171
+                            lineNumber: 177
                           },
                           __self: this
                         },
@@ -3798,7 +3660,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 172
+                              lineNumber: 178
                             },
                             __self: this
                           },
@@ -3806,7 +3668,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 173
+                                lineNumber: 179
                               },
                               __self: this
                             },
@@ -3815,7 +3677,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 174
+                                  lineNumber: 180
                                 },
                                 __self: this
                               },
@@ -3826,7 +3688,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 175
+                                  lineNumber: 181
                                 },
                                 __self: this
                               },
@@ -3837,7 +3699,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 176
+                                  lineNumber: 182
                                 },
                                 __self: this
                               },
@@ -3849,7 +3711,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 179
+                              lineNumber: 185
                             },
                             __self: this
                           },
@@ -3857,7 +3719,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 180
+                                lineNumber: 186
                               },
                               __self: this
                             },
@@ -3866,7 +3728,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 181
+                                  lineNumber: 187
                                 },
                                 __self: this
                               },
@@ -3877,7 +3739,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 182
+                                  lineNumber: 188
                                 },
                                 __self: this
                               },
@@ -3888,7 +3750,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 183
+                                  lineNumber: 189
                                 },
                                 __self: this
                               },
@@ -3903,13 +3765,13 @@ var Nav = function (_React$Component) {
                     'li',
                     { className: 'item', 'data-submenu-id': '5', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 189
+                        lineNumber: 195
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'cube icon', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 190
+                        lineNumber: 196
                       },
                       __self: this
                     }),
@@ -3918,7 +3780,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { id: '5', className: 'popover', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 192
+                          lineNumber: 198
                         },
                         __self: this
                       },
@@ -3926,50 +3788,10 @@ var Nav = function (_React$Component) {
                         'div',
                         { className: 'ui two column grid', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 193
+                            lineNumber: 199
                           },
                           __self: this
                         },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          'div',
-                          { className: 'column', __source: {
-                              fileName: _jsxFileName,
-                              lineNumber: 194
-                            },
-                            __self: this
-                          },
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'ul',
-                            { className: 'ui list', __source: {
-                                fileName: _jsxFileName,
-                                lineNumber: 195
-                              },
-                              __self: this
-                            },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              'li',
-                              {
-                                __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 196
-                                },
-                                __self: this
-                              },
-                              link('khoa-hoc-autocad-2015-co-ban', 'Autocad 2015 Miễn Phí')
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                              'li',
-                              {
-                                __source: {
-                                  fileName: _jsxFileName,
-                                  lineNumber: 197
-                                },
-                                __self: this
-                              },
-                              link('khoa-hoc-lam-quen-voi-revit', 'Làm Quen Với Revit (FREE)')
-                            )
-                          )
-                        ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                           'div',
                           { className: 'column', __source: {
@@ -3995,7 +3817,7 @@ var Nav = function (_React$Component) {
                                 },
                                 __self: this
                               },
-                              link('khoa-hoc-dynamo-co-ban', 'Autodesk Dynamo 2016')
+                              link('khoa-hoc-autocad-2015-co-ban', 'Autocad 2015 Miễn Phí')
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                               'li',
@@ -4003,6 +3825,46 @@ var Nav = function (_React$Component) {
                                 __source: {
                                   fileName: _jsxFileName,
                                   lineNumber: 203
+                                },
+                                __self: this
+                              },
+                              link('khoa-hoc-lam-quen-voi-revit', 'Làm Quen Với Revit (FREE)')
+                            )
+                          )
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          'div',
+                          { className: 'column', __source: {
+                              fileName: _jsxFileName,
+                              lineNumber: 206
+                            },
+                            __self: this
+                          },
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'ul',
+                            { className: 'ui list', __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 207
+                              },
+                              __self: this
+                            },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              'li',
+                              {
+                                __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 208
+                                },
+                                __self: this
+                              },
+                              link('khoa-hoc-dynamo-co-ban', 'Autodesk Dynamo 2016')
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                              'li',
+                              {
+                                __source: {
+                                  fileName: _jsxFileName,
+                                  lineNumber: 209
                                 },
                                 __self: this
                               },
@@ -4017,13 +3879,13 @@ var Nav = function (_React$Component) {
                     'li',
                     { className: 'item', 'data-submenu-id': '6', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 209
+                        lineNumber: 215
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'cube icon', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 210
+                        lineNumber: 216
                       },
                       __self: this
                     }),
@@ -4032,7 +3894,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { id: '6', className: 'popover', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 212
+                          lineNumber: 218
                         },
                         __self: this
                       },
@@ -4040,7 +3902,7 @@ var Nav = function (_React$Component) {
                         'div',
                         { className: 'ui two column grid', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 213
+                            lineNumber: 219
                           },
                           __self: this
                         },
@@ -4048,7 +3910,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 214
+                              lineNumber: 220
                             },
                             __self: this
                           },
@@ -4056,7 +3918,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 215
+                                lineNumber: 221
                               },
                               __self: this
                             },
@@ -4065,7 +3927,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 216
+                                  lineNumber: 222
                                 },
                                 __self: this
                               },
@@ -4076,7 +3938,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 217
+                                  lineNumber: 223
                                 },
                                 __self: this
                               },
@@ -4087,7 +3949,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 218
+                                  lineNumber: 224
                                 },
                                 __self: this
                               },
@@ -4102,13 +3964,13 @@ var Nav = function (_React$Component) {
                     'li',
                     { className: 'item', 'data-submenu-id': '7', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 224
+                        lineNumber: 230
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'cube icon', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 225
+                        lineNumber: 231
                       },
                       __self: this
                     }),
@@ -4117,7 +3979,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { id: '7', className: 'popover', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 227
+                          lineNumber: 233
                         },
                         __self: this
                       },
@@ -4125,7 +3987,7 @@ var Nav = function (_React$Component) {
                         'div',
                         { className: 'ui two column grid', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 228
+                            lineNumber: 234
                           },
                           __self: this
                         },
@@ -4133,7 +3995,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 229
+                              lineNumber: 235
                             },
                             __self: this
                           },
@@ -4141,7 +4003,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 230
+                                lineNumber: 236
                               },
                               __self: this
                             },
@@ -4150,7 +4012,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 231
+                                  lineNumber: 237
                                 },
                                 __self: this
                               },
@@ -4161,7 +4023,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 232
+                                  lineNumber: 238
                                 },
                                 __self: this
                               },
@@ -4172,7 +4034,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 233
+                                  lineNumber: 239
                                 },
                                 __self: this
                               },
@@ -4183,7 +4045,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 234
+                                  lineNumber: 240
                                 },
                                 __self: this
                               },
@@ -4194,7 +4056,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 235
+                                  lineNumber: 241
                                 },
                                 __self: this
                               },
@@ -4206,7 +4068,7 @@ var Nav = function (_React$Component) {
                           'div',
                           { className: 'column', __source: {
                               fileName: _jsxFileName,
-                              lineNumber: 238
+                              lineNumber: 244
                             },
                             __self: this
                           },
@@ -4214,7 +4076,7 @@ var Nav = function (_React$Component) {
                             'ul',
                             { className: 'ui list', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 239
+                                lineNumber: 245
                               },
                               __self: this
                             },
@@ -4223,7 +4085,7 @@ var Nav = function (_React$Component) {
                               {
                                 __source: {
                                   fileName: _jsxFileName,
-                                  lineNumber: 240
+                                  lineNumber: 246
                                 },
                                 __self: this
                               },
@@ -4240,7 +4102,7 @@ var Nav = function (_React$Component) {
                 'div',
                 { className: 'item', style: { paddingTop: 7 }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 249
+                    lineNumber: 255
                   },
                   __self: this
                 },
@@ -4248,7 +4110,7 @@ var Nav = function (_React$Component) {
                   'div',
                   { className: 'ui icon input search search1', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 250
+                      lineNumber: 256
                     },
                     __self: this
                   },
@@ -4256,7 +4118,7 @@ var Nav = function (_React$Component) {
                     'div',
                     { className: 'ui icon input', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 251
+                        lineNumber: 257
                       },
                       __self: this
                     },
@@ -4264,7 +4126,7 @@ var Nav = function (_React$Component) {
                       style: { width: '400px' },
                       className: 'prompt', type: 'text', placeholder: 'T\xCCM KI\u1EBEM KH\xD3A H\u1ECCC ...', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 252
+                        lineNumber: 258
                       },
                       __self: this
                     })
@@ -4275,7 +4137,7 @@ var Nav = function (_React$Component) {
                 'div',
                 { className: 'right menu', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 260
+                    lineNumber: 266
                   },
                   __self: this
                 },
@@ -4283,7 +4145,7 @@ var Nav = function (_React$Component) {
                   'div',
                   { className: 'ui inverted circular item noPa', style: { background: 'black', width: '50px' }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 261
+                      lineNumber: 267
                     },
                     __self: this
                   },
@@ -4291,13 +4153,13 @@ var Nav = function (_React$Component) {
                     'div',
                     { className: 'ui top right pointing dropdown icon button noPa noMa', style: { background: 'black', width: '50px' }, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 262
+                        lineNumber: 268
                       },
                       __self: this
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'inverted big alarm icon', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 263
+                        lineNumber: 269
                       },
                       __self: this
                     }),
@@ -4305,7 +4167,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { className: 'menu', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 264
+                          lineNumber: 270
                         },
                         __self: this
                       },
@@ -4313,7 +4175,7 @@ var Nav = function (_React$Component) {
                         'div',
                         { className: 'item', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 265
+                            lineNumber: 271
                           },
                           __self: this
                         },
@@ -4326,7 +4188,7 @@ var Nav = function (_React$Component) {
                   'div',
                   { className: 'ui inverted circular item noPa', style: { background: 'black', width: '50px' }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 270
+                      lineNumber: 276
                     },
                     __self: this
                   },
@@ -4334,7 +4196,7 @@ var Nav = function (_React$Component) {
                     'div',
                     { className: 'ui top right pointing dropdown ', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 271
+                        lineNumber: 277
                       },
                       __self: this
                     },
@@ -4342,13 +4204,13 @@ var Nav = function (_React$Component) {
                       'a',
                       { className: 'ui item', style: { padding: 0 }, __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 272
+                          lineNumber: 278
                         },
                         __self: this
                       },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/assets/img/avatar.png', alt: 'avatar', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 273
+                          lineNumber: 279
                         },
                         __self: this
                       })
@@ -4357,7 +4219,7 @@ var Nav = function (_React$Component) {
                       'div',
                       { className: 'menu', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 275
+                          lineNumber: 281
                         },
                         __self: this
                       },
@@ -4366,13 +4228,13 @@ var Nav = function (_React$Component) {
                         { className: 'item', style: { color: 'black !important' }, onClick: this.changePassword.bind(this),
                           __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 276
+                            lineNumber: 282
                           },
                           __self: this
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'tags icon', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 278
+                            lineNumber: 284
                           },
                           __self: this
                         }),
@@ -4383,13 +4245,13 @@ var Nav = function (_React$Component) {
                         { className: 'item', style: { color: 'black !important' }, onClick: this.membership.bind(this),
                           __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 281
+                            lineNumber: 287
                           },
                           __self: this
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'tags icon', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 283
+                            lineNumber: 289
                           },
                           __self: this
                         }),
@@ -4399,13 +4261,13 @@ var Nav = function (_React$Component) {
                         'a',
                         { href: '/auth/logout', className: 'item', style: { color: 'black !important' }, __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 286
+                            lineNumber: 292
                           },
                           __self: this
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'ui black empty circular label', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 287
+                            lineNumber: 293
                           },
                           __self: this
                         }),
@@ -4418,7 +4280,7 @@ var Nav = function (_React$Component) {
                 'div',
                 { className: 'right menu', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 294
+                    lineNumber: 300
                   },
                   __self: this
                 },
@@ -4426,7 +4288,7 @@ var Nav = function (_React$Component) {
                   'a',
                   { className: 'ui item dang-nhap', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 295
+                      lineNumber: 301
                     },
                     __self: this
                   },
@@ -4436,7 +4298,7 @@ var Nav = function (_React$Component) {
                   'a',
                   { className: 'ui item dang-ky', style: { backgroundColor: '#008cc9' }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 298
+                      lineNumber: 304
                     },
                     __self: this
                   },
@@ -4450,7 +4312,7 @@ var Nav = function (_React$Component) {
           'div',
           { className: 'ui inverted segment nav-bot', __source: {
               fileName: _jsxFileName,
-              lineNumber: 306
+              lineNumber: 312
             },
             __self: this
           },
@@ -4458,7 +4320,7 @@ var Nav = function (_React$Component) {
             'div',
             { className: 'ui inverted  mini secondary pointing menu', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 307
+                lineNumber: 313
               },
               __self: this
             },
@@ -4466,7 +4328,7 @@ var Nav = function (_React$Component) {
               'div',
               { className: 'ui container', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 308
+                  lineNumber: 314
                 },
                 __self: this
               },
@@ -4474,32 +4336,34 @@ var Nav = function (_React$Component) {
                 __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
                 { to: '/', className: 'item', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 309
+                    lineNumber: 315
                   },
                   __self: this
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'home icon', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 310
+                    lineNumber: 316
                   },
                   __self: this
                 })
               ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
-                { to: '/blog', className: 'item', __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 312
+              menu.map(function (el, index) {
+                return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
+                  { key: index, to: el.url, className: 'item', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 320
+                    },
+                    __self: _this2
                   },
-                  __self: this
-                },
-                'Blog'
-              ),
+                  el.title
+                );
+              }),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'right menu', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 315
+                    lineNumber: 325
                   },
                   __self: this
                 },
@@ -4509,7 +4373,7 @@ var Nav = function (_React$Component) {
                     onClick: this.activeCode.bind(this),
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 318
+                      lineNumber: 328
                     },
                     __self: this
                   },
@@ -4519,7 +4383,7 @@ var Nav = function (_React$Component) {
                   'a',
                   { className: 'red item', onClick: this.membership.bind(this), __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 324
+                      lineNumber: 334
                     },
                     __self: this
                   },
@@ -4561,6 +4425,9 @@ var Nav = function (_React$Component) {
   return Nav;
 }(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
+Nav.contextTypes = { store: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.object.isRequired };
+
+
 /* harmony default export */ __webpack_exports__["a"] = (Nav);
 
 var Data = {};
@@ -4573,7 +4440,7 @@ var link = function link(slug, name) {
     __WEBPACK_IMPORTED_MODULE_1__components_Link__["a" /* default */],
     { to: Data.baseUrl + '/course/' + slug, __source: {
         fileName: _jsxFileName,
-        lineNumber: 372
+        lineNumber: 382
       },
       __self: this
     },
@@ -4802,7 +4669,7 @@ var Password = function Password(_ref) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Link__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Link__ = __webpack_require__(85);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/components/Partial/Sidebar.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -6692,7 +6559,7 @@ var SignUp = function SignUp(_ref) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch__ = __webpack_require__(734);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch__ = __webpack_require__(735);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -6834,7 +6701,7 @@ function data() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__runtime__ = __webpack_require__(454);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__setting__ = __webpack_require__(455);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__data__ = __webpack_require__(452);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_redux_loading_bar__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_redux_loading_bar__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_react_redux_loading_bar__);
 
 
@@ -6939,7 +6806,7 @@ function user() {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_universal_router__ = __webpack_require__(398);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_universal_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_universal_router__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__routes__ = __webpack_require__(490);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__routes__ = __webpack_require__(491);
 /**
  * React Starter Kit (https://www.reactstarterkit.com/)
  *
@@ -6965,7 +6832,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/about/index.js';
 
@@ -7008,7 +6875,7 @@ var title = 'Trang giới thiệu';
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
               seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-              information = '';
+              information = 'information{menu, footer}';
               indexcourse = 'indexcourse:oneIndexCourse{value}';
               price = 'price:onePrice{one, three, six, twelve}';
               allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
@@ -7043,7 +6910,7 @@ var title = 'Trang giới thiệu';
 
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["hideLoading"])());
               return _context.abrupt('return', __webpack_require__.e/* require.ensure */(8).then((function (require) {
-                return __webpack_require__(860).default;
+                return __webpack_require__(861).default;
               }).bind(null, __webpack_require__)).catch(__webpack_require__.oe).then(function (About) {
                 return {
                   title: seo.title || "Liên hệ",
@@ -7748,7 +7615,7 @@ var isAdmin = false;
 /* harmony default export */ __webpack_exports__["default"] = ({
 
   path: '/admin',
-  children: [__webpack_require__(464).default, __webpack_require__(468).default, __webpack_require__(463).default, __webpack_require__(472).default, __webpack_require__(467).default, __webpack_require__(478).default, __webpack_require__(473).default, __webpack_require__(465).default, __webpack_require__(462).default, __webpack_require__(470).default, __webpack_require__(477).default, __webpack_require__(459).default, __webpack_require__(461).default, __webpack_require__(476).default, __webpack_require__(460).default, __webpack_require__(475).default, __webpack_require__(469).default, __webpack_require__(471).default, __webpack_require__(474).default],
+  children: [__webpack_require__(464).default, __webpack_require__(468).default, __webpack_require__(476).default, __webpack_require__(463).default, __webpack_require__(472).default, __webpack_require__(467).default, __webpack_require__(479).default, __webpack_require__(473).default, __webpack_require__(465).default, __webpack_require__(462).default, __webpack_require__(470).default, __webpack_require__(478).default, __webpack_require__(459).default, __webpack_require__(461).default, __webpack_require__(477).default, __webpack_require__(460).default, __webpack_require__(475).default, __webpack_require__(469).default, __webpack_require__(471).default, __webpack_require__(474).default],
   action: function action(_ref) {
     var _this = this;
 
@@ -7938,7 +7805,7 @@ var title = 'Danh muc';
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux_loading_bar__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux_loading_bar__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/admin/library/index.js';
 
@@ -8649,6 +8516,82 @@ var title = 'Setting';
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/admin/thongtinchung/index.js';
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+
+
+var title = 'Thong tin chung';
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+
+  path: '/thongtinchung',
+
+  action: function action(_ref) {
+    var _this = this;
+
+    var query = _ref.query;
+    return _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
+      return regeneratorRuntime.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              return _context.abrupt('return', __webpack_require__.e/* require.ensure */(0).then((function (require) {
+                return __webpack_require__(15).default;
+              }).bind(null, __webpack_require__)).catch(__webpack_require__.oe).then(function (Admin) {
+                return {
+                  title: title,
+                  chunk: 'admin',
+                  disableSSR: true,
+                  component: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    Admin.App,
+                    {
+                      name: title,
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 24
+                      },
+                      __self: _this
+                    },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Admin.Common, { title: title, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 27
+                      },
+                      __self: _this
+                    })
+                  )
+                };
+              }));
+
+            case 1:
+            case 'end':
+              return _context.stop();
+          }
+        }
+      }, _callee, _this);
+    }))();
+  }
+});
+
+/***/ }),
+
+/***/ 477:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/admin/trangchu/index.js';
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
@@ -8718,7 +8661,7 @@ var title = 'Lien He';
 
 /***/ }),
 
-/***/ 477:
+/***/ 478:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8794,7 +8737,7 @@ var title = 'Lien He';
 
 /***/ }),
 
-/***/ 478:
+/***/ 479:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8924,7 +8867,7 @@ var title = 'Danh muc';
 
 /***/ }),
 
-/***/ 479:
+/***/ 480:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8933,7 +8876,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/blog/index.js';
 
@@ -8976,7 +8919,7 @@ var title = 'Trang giới thiệu';
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
               seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-              information = '';
+              information = 'information{menu, footer}';
               getAllPosts = 'allNews:getAllPosts{category, slug, title, description, body, created_at}';
               get5RecentPost = 'recentNews:get5RecentPost{category, slug, title, description, body, created_at}';
               categoryPosts = 'categoryPosts:allCategoryPost{slug, title}';
@@ -9011,7 +8954,7 @@ var title = 'Trang giới thiệu';
 
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["hideLoading"])());
               return _context.abrupt('return', __webpack_require__.e/* require.ensure */(7).then((function (require) {
-                return __webpack_require__(861).default;
+                return __webpack_require__(862).default;
               }).bind(null, __webpack_require__)).catch(__webpack_require__.oe).then(function (Blog) {
                 return {
                   title: seo.title || "Tin tức",
@@ -9048,7 +8991,7 @@ var title = 'Trang giới thiệu';
 
 /***/ }),
 
-/***/ 480:
+/***/ 481:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9057,7 +9000,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/blogDetail/index.js';
 
@@ -9101,7 +9044,7 @@ var title = 'Trang giới thiệu';
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
               seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-              information = '';
+              information = 'information{menu, footer}';
               getAllPosts = 'allNews:getAllPosts{category, slug, title, description, body, created_at}';
               getOnePost = 'news:getOnePost(slug:"' + params.slug + '"){category, slug, title, description, body, created_at}';
               get5RecentPost = 'recentNews:get5RecentPost{category, slug, title, description, body, created_at}';
@@ -9137,7 +9080,7 @@ var title = 'Trang giới thiệu';
 
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["hideLoading"])());
               return _context.abrupt('return', __webpack_require__.e/* require.ensure */(6).then((function (require) {
-                return __webpack_require__(862).default;
+                return __webpack_require__(863).default;
               }).bind(null, __webpack_require__)).catch(__webpack_require__.oe).then(function (BlogDetail) {
                 return {
                   title: seo.title || store.getState().data.news.value.title,
@@ -9174,7 +9117,7 @@ var title = 'Trang giới thiệu';
 
 /***/ }),
 
-/***/ 481:
+/***/ 482:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9183,7 +9126,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/category/index.js';
 
@@ -9227,7 +9170,7 @@ var title = 'Trang giới thiệu';
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
               seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-              information = '';
+              information = 'information{menu, footer}';
               indexcourse = 'indexcourse:oneIndexCourse{value}';
               price = 'price:onePrice{one, three, six, twelve}';
               allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
@@ -9264,7 +9207,7 @@ var title = 'Trang giới thiệu';
 
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["hideLoading"])());
               return _context.abrupt('return', __webpack_require__.e/* require.ensure */(4).then((function (require) {
-                return __webpack_require__(863).default;
+                return __webpack_require__(864).default;
               }).bind(null, __webpack_require__)).catch(__webpack_require__.oe).then(function (Category) {
                 return {
                   title: seo.title || "Danh mục các khóa học trong " + store.getState().data.categoryInfo.value.name,
@@ -9301,7 +9244,7 @@ var title = 'Trang giới thiệu';
 
 /***/ }),
 
-/***/ 482:
+/***/ 483:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9310,7 +9253,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/contact/index.js';
 
@@ -9352,7 +9295,7 @@ var title = 'Trang liên hệ';
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
               seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-              information = '';
+              information = 'information{menu, footer}';
               price = 'price:onePrice{one, three, six, twelve}';
               seo = {};
               _context.next = 7;
@@ -9386,7 +9329,7 @@ var title = 'Trang liên hệ';
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["hideLoading"])());
 
               return _context.abrupt('return', __webpack_require__.e/* require.ensure */(2).then((function (require) {
-                return __webpack_require__(864).default;
+                return __webpack_require__(865).default;
               }).bind(null, __webpack_require__)).catch(__webpack_require__.oe).then(function (Contact) {
                 return {
                   title: seo.title || "Liên hệ",
@@ -9423,7 +9366,7 @@ var title = 'Trang liên hệ';
 
 /***/ }),
 
-/***/ 483:
+/***/ 484:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9432,7 +9375,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/course/index.js';
 
@@ -9476,7 +9419,7 @@ var title = 'Trang giới thiệu';
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
               seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-              information = '';
+              information = 'information{menu, footer}';
               indexcourse = 'indexcourse:oneIndexCourse{value}';
               price = 'price:onePrice{one, three, six, twelve}';
               allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
@@ -9551,7 +9494,7 @@ var title = 'Trang giới thiệu';
 
 /***/ }),
 
-/***/ 484:
+/***/ 485:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9560,7 +9503,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/danhmuc/index.js';
 
@@ -9604,7 +9547,7 @@ var title = 'Trang giới thiệu';
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
               seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-              information = '';
+              information = 'information{menu, footer}';
               getAllNewsInCategory = 'allNewsByCategory:getAllPostsByCategory(slug:"' + params.slug + '"){category, slug, title, description, body, created_at}';
               get5RecentPost = 'recentNews:get5RecentPost{category, slug, title, description, body, created_at}';
               categoryPost = 'categoryPost:oneCategoryPost(slug:"' + params.slug + '"){slug, title}';
@@ -9640,7 +9583,7 @@ var title = 'Trang giới thiệu';
 
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["hideLoading"])());
               return _context.abrupt('return', __webpack_require__.e/* require.ensure */(5).then((function (require) {
-                return __webpack_require__(865).default;
+                return __webpack_require__(866).default;
               }).bind(null, __webpack_require__)).catch(__webpack_require__.oe).then(function (DanhMuc) {
                 return {
                   title: seo.title || store.getState().data.categoryPost.value.title,
@@ -9677,14 +9620,14 @@ var title = 'Trang giới thiệu';
 
 /***/ }),
 
-/***/ 485:
+/***/ 486:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_index__ = __webpack_require__(488);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Link__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_index__ = __webpack_require__(489);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Link__ = __webpack_require__(85);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/home/Home.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -9950,7 +9893,7 @@ var Home = function (_React$Component) {
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
-              { className: 'ui container segment noBor noSha', style: { margin: '100px' }, __source: {
+              { className: 'ui container segment noBor noSha', __source: {
                   fileName: _jsxFileName,
                   lineNumber: 106
                 },
@@ -10100,7 +10043,7 @@ var Home = function (_React$Component) {
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
-              { id: 'slider2', style: { background: 'url("/assets/img/5.jpg") no-repeat center #eee' }, __source: {
+              { id: 'slider2', style: { background: 'url("/assets/img/5.jpg") no-repeat center #eee', marginTop: 50 }, __source: {
                   fileName: _jsxFileName,
                   lineNumber: 133
                 },
@@ -10390,13 +10333,13 @@ var Home = function (_React$Component) {
 
 /***/ }),
 
-/***/ 486:
+/***/ 487:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Link__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Link__ = __webpack_require__(85);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/home/components/IndexCourse.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -10628,7 +10571,7 @@ var IndexCourse = function (_React$Component) {
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   'div',
-                  { style: { height: '40px' }, __source: {
+                  { style: { height: '80px' }, __source: {
                       fileName: _jsxFileName,
                       lineNumber: 66
                     },
@@ -10702,7 +10645,7 @@ var IndexCourse = function (_React$Component) {
 
 /***/ }),
 
-/***/ 487:
+/***/ 488:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10802,13 +10745,13 @@ var Search = function (_React$Component) {
 
 /***/ }),
 
-/***/ 488:
+/***/ 489:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__IndexCourse__ = __webpack_require__(486);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__IndexCourse__ = __webpack_require__(487);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__IndexCourse__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Search__ = __webpack_require__(487);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Search__ = __webpack_require__(488);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__Search__["a"]; });
 
 
@@ -10816,17 +10759,17 @@ var Search = function (_React$Component) {
 
 /***/ }),
 
-/***/ 489:
+/***/ 490:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Home__ = __webpack_require__(485);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Home__ = __webpack_require__(486);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__actions_data__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_redux_loading_bar__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_redux_loading_bar__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/home/index.js';
 
@@ -10868,7 +10811,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4_react_redux_loading_bar__["showLoading"])());
 
               seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-              information = '';
+              information = 'information{menu, footer}';
               indexcourse = 'indexcourse:oneIndexCourse{value}';
               price = 'price:onePrice{one, three, six, twelve}';
               allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
@@ -10940,7 +10883,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 /***/ }),
 
-/***/ 490:
+/***/ 491:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10963,15 +10906,15 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
   path: '/',
 
   // Keep in mind, routes are evaluated in order
-  children: [__webpack_require__(489).default,
+  children: [__webpack_require__(490).default,
 
   // require('./allService').default,
   // require('./service').default,
   // require('./tracking').default,
-  __webpack_require__(458).default, __webpack_require__(483).default, __webpack_require__(494).default, __webpack_require__(481).default, __webpack_require__(484).default, __webpack_require__(493).default, __webpack_require__(479).default, __webpack_require__(480).default, __webpack_require__(482).default, __webpack_require__(466).default,
+  __webpack_require__(458).default, __webpack_require__(484).default, __webpack_require__(495).default, __webpack_require__(482).default, __webpack_require__(485).default, __webpack_require__(494).default, __webpack_require__(480).default, __webpack_require__(481).default, __webpack_require__(483).default, __webpack_require__(466).default,
 
   // Wildcard routes, e.g. { path: '*', ... } (must go last)
-  __webpack_require__(492).default],
+  __webpack_require__(493).default],
 
   action: function action(_ref) {
     var _this = this;
@@ -11008,17 +10951,17 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 /***/ }),
 
-/***/ 491:
+/***/ 492:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(399);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__NotFound_css__ = __webpack_require__(735);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__NotFound_css__ = __webpack_require__(736);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__NotFound_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__NotFound_css__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/notFound/NotFound.js';
 
@@ -11111,7 +11054,7 @@ NotFound.propTypes = {
 
 /***/ }),
 
-/***/ 492:
+/***/ 493:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11119,7 +11062,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__NotFound__ = __webpack_require__(491);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__NotFound__ = __webpack_require__(492);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/notFound/index.js';
 /**
  * React Starter Kit (https://www.reactstarterkit.com/)
@@ -11166,7 +11109,7 @@ var title = 'Page Not Found';
 
 /***/ }),
 
-/***/ 493:
+/***/ 494:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11175,7 +11118,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/software/index.js';
 
@@ -11219,7 +11162,7 @@ var title = 'Trang giới thiệu';
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
               seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-              information = '';
+              information = 'information{menu, footer}';
               indexcourse = 'indexcourse:oneIndexCourse{value}';
               price = 'price:onePrice{one, three, six, twelve}';
               allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
@@ -11257,7 +11200,7 @@ var title = 'Trang giới thiệu';
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["hideLoading"])());
 
               return _context.abrupt('return', __webpack_require__.e/* require.ensure */(3).then((function (require) {
-                return __webpack_require__(866).default;
+                return __webpack_require__(867).default;
               }).bind(null, __webpack_require__)).catch(__webpack_require__.oe).then(function (Software) {
                 return {
                   title: seo.title || "Phần mềm" + store.getState().data.softwareInfo.value.name,
@@ -11294,7 +11237,7 @@ var title = 'Trang giới thiệu';
 
 /***/ }),
 
-/***/ 494:
+/***/ 495:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11303,7 +11246,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_data__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__);
 var _jsxFileName = '/home/luan/Workspace/anabim/src/routes/video/index.js';
 
@@ -11347,7 +11290,7 @@ var title = 'Trang giới thiệu';
               store.dispatch(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_react_redux_loading_bar__["showLoading"])());
 
               seoGraphql = 'seo(url: "' + path + '"){url,title,description,og_title,og_image,og_description}';
-              information = '';
+              information = 'information{menu, footer}';
               indexcourse = 'indexcourse:oneIndexCourse{value}';
               price = 'price:onePrice{one, three, six, twelve}';
               allSoftware = 'allSoftware:allSoftware{name, slug, coverUrl}';
@@ -11422,17 +11365,17 @@ var title = 'Trang giới thiệu';
 
 /***/ }),
 
-/***/ 495:
+/***/ 496:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = configureStore;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux_thunk__ = __webpack_require__(847);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux_thunk__ = __webpack_require__(848);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux_thunk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_redux_thunk__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers__ = __webpack_require__(453);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createHelpers__ = __webpack_require__(496);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__logger__ = __webpack_require__(497);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createHelpers__ = __webpack_require__(497);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__logger__ = __webpack_require__(498);
 
 
 
@@ -11479,7 +11422,7 @@ function configureStore(initialState, helpersConfig) {
 
 /***/ }),
 
-/***/ 496:
+/***/ 497:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11548,12 +11491,12 @@ function createHelpers(_ref2) {
 
 /***/ }),
 
-/***/ 497:
+/***/ 498:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = createLogger;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux_logger__ = __webpack_require__(846);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux_logger__ = __webpack_require__(847);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux_logger___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_redux_logger__);
 
 
@@ -11565,7 +11508,7 @@ function createLogger() {
 
 /***/ }),
 
-/***/ 718:
+/***/ 719:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(414)(true);
@@ -11583,11 +11526,11 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 735:
+/***/ 736:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(718);
+    var content = __webpack_require__(719);
     var insertCss = __webpack_require__(419);
 
     if (typeof content === 'string') {
@@ -11638,7 +11581,7 @@ var SET_MEMBERSHIP = 'SET_MEMBERSHIP';
 
 /***/ }),
 
-/***/ 744:
+/***/ 745:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -11887,26 +11830,17 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 744;
+webpackContext.id = 745;
 
 /***/ }),
 
-/***/ 859:
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(393);
-module.exports = __webpack_require__(392);
-
-
-/***/ }),
-
-/***/ 97:
+/***/ 85:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__history__ = __webpack_require__(185);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -12012,7 +11946,16 @@ Link.defaultProps = {
 
 /* harmony default export */ __webpack_exports__["a"] = (Link);
 
+/***/ }),
+
+/***/ 860:
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(393);
+module.exports = __webpack_require__(392);
+
+
 /***/ })
 
-},[859]);
+},[860]);
 //# sourceMappingURL=client.js.map
