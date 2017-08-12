@@ -33,6 +33,8 @@ const Admin = {
   TrangChu: require('./trangchu/TrangChu').default,
   
   Common: require('./thongtinchung/Common').default,
+  
+  MainMenu: require('./menuchinh/MainMenu').default,
 
   // Contact: require('./lienhe/Contact').default,
   // About: require('./gioithieu/About').default,

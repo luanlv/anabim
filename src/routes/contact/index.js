@@ -22,7 +22,7 @@ export default {
     store.dispatch(showLoading())
 
     let seoGraphql = 'seo(url: "'+ path +'"){url,title,description,og_title,og_image,og_description}'
-    let information = 'information{menu, footer}';
+    let information = 'information{menu, footer, nav}';
     let price = 'price:onePrice{one, three, six, twelve}';
 
     let seo = {}

@@ -26,6 +26,7 @@ export default new GraphQLObjectType({
       type: new GraphQLNonNull(GraphQLString)
     },
     menu: {type: GraphQLJSON},
-    footer: {type: GraphQLJSON}
+    footer: {type: GraphQLJSON},
+    nav: {type: GraphQLJSON}
   })
 });

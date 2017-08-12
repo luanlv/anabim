@@ -21,6 +21,7 @@ export default {
     require('./library').default,
 
     require('./thongtinchung').default,
+    require('./menuchinh').default,
     
     require('./danhmuc').default,
     require('./phanmem').default,

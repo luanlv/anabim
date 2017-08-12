@@ -23,7 +23,7 @@ export default {
     store.dispatch(showLoading())
 
     let seoGraphql = 'seo(url: "'+ path +'"){url,title,description,og_title,og_image,og_description}'
-    let information = 'information{menu, footer}';
+    let information = 'information{menu, footer, nav}';
     let getAllNewsInCategory = 'allNewsByCategory:getAllPostsByCategory(slug:"' + params.slug + '"){category, slug, title, description, body, created_at}'
     let get5RecentPost = 'recentNews:get5RecentPost{category, slug, title, description, body, created_at}'
     let categoryPost = 'categoryPost:oneCategoryPost(slug:"'+ params.slug +'"){slug, title}'

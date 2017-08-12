@@ -78,6 +78,7 @@ class Nav extends React.Component {
     //   this.changePassword()
     // }
     const menu = this.context.store.getState().data.information.value.menu
+    const nav = this.context.store.getState().data.information.value.nav
     return (
       <div className='nav'>
         <div className='ui inverted segment nav-top'>
@@ -98,25 +99,20 @@ class Nav extends React.Component {
                       <div className='ui two column grid'>
                         <div className='column'>
                           <ul className='ui list'>
-                            <li><Link to={Data.baseUrl + '/course/khoa-hoc-lam-quen-voi-revit'}>Làm Quen Với Revit (FREE)</Link></li>
-                            <li><Link to={Data.baseUrl + '/course/khoa-hoc-revit-architecture-nen-tang'}>Revit Arrchitecture Nền Tảng</Link></li>
-                            <li><Link to={Data.baseUrl + '/course/khoa-hoc-revit-architecture-nang-cao'}>Revit Arrchitecture Nâng Cao</Link></li>
-                            <li><Link to={Data.baseUrl + '/course/khoa-hoc-conceptual-massing'}>Revit Conceptual Mass</Link></li>
-                            <li><Link to={Data.baseUrl + '/course/khoa-hoc-revit-family-co-ban'}>Revit Family Cơ Bản</Link></li>
-                            <li><Link to={Data.baseUrl + '/course/khoa-hoc-revit-family-nang-cao'}>Revit Family Nâng Cao</Link></li>
-                            <li><Link to={Data.baseUrl + '/course/khoa-hoc-revit-family-addaptive-co-ban'}>Revit Family Adaptive Cơ Bản</Link></li>
-                            <li><Link to={Data.baseUrl + '/course/khoa-hoc-revit-family-adaptive-nang-cao'}>Revit Family Adaptive Nâng Cao</Link></li>
+                            {nav.nav1left.map((el, index) => {
+                              return <li key={index}>
+                                <Link to={el.url}>{el.title}</Link>
+                              </li>
+                            })}
                           </ul>
                         </div>
                         <div className='column'>
                           <ul className='ui list'>
-                            <li>{link('khoa-hoc-dynamo-co-ban', 'Autodesk Dynamo 2016')}</li>
-                            <li><Link to={Data.baseUrl + '/course/khoa-hoc-dynamo-nang-cao'}>Dynamo Nâng Cao</Link></li>
-                            <li><Link to={Data.baseUrl + '/course/khoa-hoc-formit-360'}>Autodesk Formit</Link></li>
-                            <li><Link to={Data.baseUrl + '/course/sketchup-co-ban'}>Sketchup Cơ Bản</Link></li>
-                            <li><Link to={Data.baseUrl + '/course/khoa-hoc-sketchup-nang-cao'}>Sketchup Nâng Cao</Link></li>
-                            <li><Link to={Data.baseUrl + '/course/khoa-hoc-autocad-2015-co-ban'}>Autocad 2015 Miễn Phí</Link></li>
-                            <li><Link to={Data.baseUrl + '/course/thiet-ke-gach-thong-gio-revit'}>Thiết Kế Gạch Thông Gió</Link></li>
+                            {nav.nav1right.map((el, index) => {
+                              return <li key={index}>
+                                <Link to={el.url}>{el.title}</Link>
+                              </li>
+                            })}
                           </ul>
                         </div>
                       </div>
@@ -129,17 +125,20 @@ class Nav extends React.Component {
                       <div className='ui two column grid'>
                         <div className='column'>
                           <ul className='ui list'>
-                            <li><Link to={Data.baseUrl + '/course/khoa-hoc-lam-quen-voi-revit'}>Làm Quen Với Revit (FREE)</Link></li>
-                            <li>{link('khoa-hoc-revit-mep-co-ban', 'Khóa học Revit MEP cơ bản')}</li>
-                            <li>{link('khoa-hoc-revit-mep-nang-cao', 'Khóa Học Revit MEP Nâng Cao')}</li>
-                            <li>{link('khoa-hoc-family-mep-phan-1', 'Family MEP')}</li>
+                            {nav.nav2left.map((el, index) => {
+                              return <li key={index}>
+                                <Link to={el.url}>{el.title}</Link>
+                              </li>
+                            })}
                           </ul>
                         </div>
                         <div className='column'>
                           <ul className='ui list'>
-                            <li>{link('khoa-hoc-dynamo-co-ban', 'Autodesk Dynamo 2016')}</li>
-                            <li>{link('khoa-hoc-dynamo-nang-cao', 'Khóa học Dynamo nâng cao')}</li>
-                            <li>{link('khoa-hoc-autocad-2015-co-ban', 'Autocad 2015 Miễn Phí')}</li>
+                           {nav.nav2right.map((el, index) => {
+                             return <li key={index}>
+                               <Link to={el.url}>{el.title}</Link>
+                             </li>
+                           })}
                           </ul>
                         </div>
                       </div>
@@ -152,19 +151,20 @@ class Nav extends React.Component {
                       <div className='ui two column grid'>
                         <div className='column'>
                           <ul className='ui list'>
-                            <li>{link('khoa-hoc-autocad-2015-co-ban', 'Autocad 2015 Miễn Phí')}</li>
-                            <li>{link('khoa-hoc-lam-quen-voi-revit', 'Làm Quen Với Revit (FREE)')}</li>
-                            <li>{link('khoa-hoc-revit-structure-co-ban', 'Revit Structure Cơ Bản')}</li>
-                            <li>{link('khoa-hoc-robot-structural-co-ban', 'Robot Structural Cơ Bản')}</li>
-                            <li>{link('Revit-Structure-Concrete', 'Revit Structure Concrete')}</li>
+                            {nav.nav3left.map((el, index) => {
+                              return <li key={index}>
+                                <Link to={el.url}>{el.title}</Link>
+                              </li>
+                            })}
                           </ul>
                         </div>
                         <div className='column'>
                           <ul className='ui list'>
-                            <li>{link('khoa-hoc-revit-structure-steel', 'Revit Structure Steel')}</li>
-                            <li>{link('khoa-hoc-revit-family-structure', 'Family Revit Structure')}</li>
-                            <li>{link('khoa-hoc-dynamo-co-ban', 'Autodesk Dynamo 2016')}</li>
-                            <li>{link('khoa-hoc-dynamo-nang-cao', 'Khóa học Dynamo nâng cao')}</li>
+                           {nav.nav3right.map((el, index) => {
+                             return <li key={index}>
+                               <Link to={el.url}>{el.title}</Link>
+                             </li>
+                           })}
                           </ul>
                         </div>
                       </div>
@@ -177,16 +177,20 @@ class Nav extends React.Component {
                       <div className='ui two column grid'>
                         <div className='column'>
                           <ul className='ui list'>
-                            <li>{link('khoa-hoc-autocad-2015-co-ban', 'Autocad 2015 Miễn Phí')}</li>
-                            <li>{link('khoa-hoc-lam-quen-voi-revit', 'Làm Quen Với Revit (FREE)')}</li>
-                            <li>{link('khoa-hoc-ecotec-co-ban', 'Autodesk Ecotec')}</li>
+                           {nav.nav4left.map((el, index) => {
+                             return <li key={index}>
+                               <Link to={el.url}>{el.title}</Link>
+                             </li>
+                           })}
                           </ul>
                         </div>
                         <div className='column'>
                           <ul className='ui list'>
-                            <li>{link('khoa-hoc-vasari', 'Autodesk Vasari')}</li>
-                            <li>{link('khoa-hoc-dynamo-co-ban', 'Autodesk Dynamo 2016')}</li>
-                            <li>{link('khoa-hoc-dynamo-nang-cao', 'Khóa học Dynamo nâng cao')}</li>
+                            {nav.nav4right.map((el, index) => {
+                              return <li key={index}>
+                                <Link to={el.url}>{el.title}</Link>
+                              </li>
+                            })}
                           </ul>
                         </div>
                       </div>
@@ -199,14 +203,20 @@ class Nav extends React.Component {
                       <div className='ui two column grid'>
                         <div className='column'>
                           <ul className='ui list'>
-                            <li>{link('khoa-hoc-autocad-2015-co-ban', 'Autocad 2015 Miễn Phí')}</li>
-                            <li>{link('khoa-hoc-lam-quen-voi-revit', 'Làm Quen Với Revit (FREE)')}</li>
+                            {nav.nav5left.map((el, index) => {
+                              return <li key={index}>
+                                <Link to={el.url}>{el.title}</Link>
+                              </li>
+                            })}
                           </ul>
                         </div>
                         <div className='column'>
                           <ul className='ui list'>
-                            <li>{link('khoa-hoc-dynamo-co-ban', 'Autodesk Dynamo 2016')}</li>
-                            <li>{link('khoa-hoc-dynamo-nang-cao', 'Dynamo Nâng Cao')}</li>
+                            {nav.nav5right.map((el, index) => {
+                              return <li key={index}>
+                                <Link to={el.url}>{el.title}</Link>
+                              </li>
+                            })}
                           </ul>
                         </div>
                       </div>
@@ -219,9 +229,11 @@ class Nav extends React.Component {
                       <div className='ui two column grid'>
                         <div className='column'>
                           <ul className='ui list'>
-                            <li>{link('khoa-hoc-autocad-2015-co-ban', 'Autocad 2015 Miễn Phí')}</li>
-                            <li>{link('khoa-hoc-lam-quen-voi-revit', 'Làm Quen Với Revit (FREE)')}</li>
-                            <li>{link('khoa-hoc-infrawork-360', 'Khóa Học Infrawork 360')}</li>
+                            {nav.nav6left.map((el, index) => {
+                              return <li key={index}>
+                                <Link to={el.url}>{el.title}</Link>
+                              </li>
+                            })}
                           </ul>
                         </div>
                       </div>
@@ -234,16 +246,20 @@ class Nav extends React.Component {
                       <div className='ui two column grid'>
                         <div className='column'>
                           <ul className='ui list' >
-                            <li>{link('khoa-hoc-autocad-2015-co-ban', 'Autocad 2015 Miễn Phí')}</li>
-                            <li>{link('khoa-hoc-lam-quen-voi-revit', 'Làm Quen Với Revit (FREE)')}</li>
-                            <li>{link('khoa-hoc-dynamo-nang-cao', 'Dynamo Nâng Cao')}</li>
-                            <li>{link('khoa-hoc-bim-glue', 'Khóa Học BIM Glue')}</li>
-                            <li>{link('khoa-hoc-naviswork-phan-2', 'Khóa Học Naviswork Phần 2')}</li>
+                            {nav.nav7left.map((el, index) => {
+                              return <li key={index}>
+                                <Link to={el.url}>{el.title}</Link>
+                              </li>
+                            })}
                           </ul>
                         </div>
                         <div className='column'>
                           <ul className='ui list'>
-                            <li>{link('khoa-hoc-naviswork-co-ban', 'Khóa Học Naviswork 2016')}</li>
+                            {nav.nav7right.map((el, index) => {
+                              return <li key={index}>
+                                <Link to={el.url}>{el.title}</Link>
+                              </li>
+                            })}
                           </ul>
                         </div>
                       </div>
