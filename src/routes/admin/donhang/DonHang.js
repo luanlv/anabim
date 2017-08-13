@@ -93,7 +93,7 @@ class DonHang extends React.Component {
                       <span>{el.month} tháng</span>
                     </Td>
                     <Td>
-                      <span>{el.price.toLocaleString()}</span>
+                      <span>{(el.price || 0).toLocaleString()}</span>
                     </Td>
                     <Td>
                       <span>{el.coupon ? el.coupon.code : ''}</span>

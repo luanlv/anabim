@@ -4162,8 +4162,8 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     // if(logged && !this.props.user.passwordChanged && !this.props.user.avatar) {
     //   this.changePassword()
     // }
-    const menu = this.context.store.getState().data.information.value.menu;
-    const nav = this.context.store.getState().data.information.value.nav;
+    const menu = this.context.store.getState().data.information.value.menu || {};
+    const nav = this.context.store.getState().data.information.value.nav || { nav1left: [], nav2left: [], nav3left: [], nav4left: [], nav5left: [], nav6left: [], nav7left: [], nav1right: [], nav2right: [], nav3right: [], nav4right: [], nav5right: [], nav6right: [], nav7right: [] };
     return _jsx('div', {
       className: 'nav'
     }, void 0, _jsx('div', {
@@ -10912,7 +10912,7 @@ class DonHang extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     return _jsx('div', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], {
       className: 'padding-5'
     }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Table"], {}, void 0, _ref, _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Tbody"], {}, void 0, that.state.data.map((el, key) => {
-      return _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Tr"], {}, key, _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Td"], {}, void 0, _jsx('span', {}, void 0, el.name)), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Td"], {}, void 0, _jsx('span', {}, void 0, el.email)), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Td"], {}, void 0, _jsx('span', {}, void 0, el.phone)), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Td"], {}, void 0, _jsx('span', {}, void 0, el.month, ' th\xE1ng')), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Td"], {}, void 0, _jsx('span', {}, void 0, el.price.toLocaleString())), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Td"], {}, void 0, _jsx('span', {}, void 0, el.coupon ? el.coupon.code : '')), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Td"], {}, void 0, _jsx('span', {}, void 0, __WEBPACK_IMPORTED_MODULE_3_moment___default()(el.createdAt).format("DD/MM/YYYY"))), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Td"], {}, void 0, _jsx('div', {}, void 0, _jsx('button', {
+      return _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Tr"], {}, key, _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Td"], {}, void 0, _jsx('span', {}, void 0, el.name)), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Td"], {}, void 0, _jsx('span', {}, void 0, el.email)), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Td"], {}, void 0, _jsx('span', {}, void 0, el.phone)), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Td"], {}, void 0, _jsx('span', {}, void 0, el.month, ' th\xE1ng')), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Td"], {}, void 0, _jsx('span', {}, void 0, (el.price || 0).toLocaleString())), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Td"], {}, void 0, _jsx('span', {}, void 0, el.coupon ? el.coupon.code : '')), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Td"], {}, void 0, _jsx('span', {}, void 0, __WEBPACK_IMPORTED_MODULE_3_moment___default()(el.createdAt).format("DD/MM/YYYY"))), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_super_responsive_table__["Td"], {}, void 0, _jsx('div', {}, void 0, _jsx('button', {
         onClick: () => {
           el.action = true;
           __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post('/api/membership/action', el).then(res => {
@@ -20158,9 +20158,9 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 const title = 'Page Not Found';
 
-var _ref = _jsx(__WEBPACK_IMPORTED_MODULE_1__components_Layout__["a" /* default */], {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_2__NotFound__["a" /* default */], {
+var _ref = _jsx(__WEBPACK_IMPORTED_MODULE_2__NotFound__["a" /* default */], {
   title: title
-}));
+});
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
@@ -20169,6 +20169,7 @@ var _ref = _jsx(__WEBPACK_IMPORTED_MODULE_1__components_Layout__["a" /* default 
   action() {
     return {
       title,
+      // component: <Layout><NotFound title={title} /></Layout>,
       component: _ref,
       status: 404
     };
