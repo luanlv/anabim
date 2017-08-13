@@ -77,8 +77,8 @@ class Nav extends React.Component {
     // if(logged && !this.props.user.passwordChanged && !this.props.user.avatar) {
     //   this.changePassword()
     // }
-    const menu = this.context.store.getState().data.information.value.menu
-    const nav = this.context.store.getState().data.information.value.nav
+    const menu = this.context.store.getState().data.information.value.menu || {}
+    const nav = this.context.store.getState().data.information.value.nav || {nav1left: [], nav2left: [], nav3left: [], nav4left: [],nav5left: [],nav6left: [],nav7left: [], nav1right: [], nav2right: [], nav3right: [], nav4right: [], nav5right: [], nav6right: [], nav7right: []}
     return (
       <div className='nav'>
         <div className='ui inverted segment nav-top'>
