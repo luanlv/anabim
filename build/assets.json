@@ -1,9 +1,9 @@
 {
   "admin": {
-    "js": "/assets/admin.7548e111.chunk.js"
+    "js": "/assets/admin.f77ba8d2.chunk.js"
   },
   "course": {
-    "js": "/assets/course.74c3ed98.chunk.js"
+    "js": "/assets/course.2a350861.chunk.js"
   },
   "contact": {
     "js": "/assets/contact.595c4c9a.chunk.js"
@@ -27,9 +27,9 @@
     "js": "/assets/about.a32baafd.chunk.js"
   },
   "client": {
-    "js": "/assets/client.de98de3b.js"
+    "js": "/assets/client.a89fe92b.js"
   },
   "vendor": {
-    "js": "/assets/vendor.c6d17f58.js"
+    "js": "/assets/vendor.34a98984.js"
   }
 }

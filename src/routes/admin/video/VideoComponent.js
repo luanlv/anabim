@@ -14,7 +14,8 @@ class HorizontalLoginForm extends React.Component {
 
       }
     }
-    console.log(props.defaultValue)
+    // console.log('=============================================')
+    // console.log(props.defaultValue)
   }
 
   componentDidMount() {

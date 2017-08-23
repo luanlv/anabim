@@ -48,6 +48,9 @@ export default {
     if (user.username && url === '/admin/login') {
       return { redirect: '/admin' };
     }
+    if (!(user.username === 'admin@anabim.com')) {
+      return { redirect: '/' };
+    }
     if (!user.username && url !== '/admin/login') {
       return { redirect: '/admin/login' };
     }

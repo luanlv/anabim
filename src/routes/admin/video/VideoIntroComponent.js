@@ -15,9 +15,11 @@ class HorizontalLoginForm extends React.Component {
         section: -1,
         courseId: props.courseId,
         kind: 'free',
-        source: 'anabim'
+        source: 'youtube',
+        url: "null"
       }
     }
+    console.log(props.defaultValue)
   }
 
   componentDidMount() {
@@ -70,7 +72,7 @@ class HorizontalLoginForm extends React.Component {
           <Input
             style={{ width: '100%'}}
             defaultValue={this.state.data.link}
-            placeholder="Link video"
+              placeholder="Link video"
             onChange={(e) => {
               let value = e.target.value
               this.setState(prev => {
@@ -162,7 +164,7 @@ class HorizontalLoginForm extends React.Component {
           URL
         </Button>
 
-      {this.state.data._id && <a target="_blank" href={"/course/" + this.props.courseSlug + "/" + this.state.data.url}>
+      {this.state.data._id && <a target="_blank" href={"/course/" + this.props.courseSlug}>
         <Button
           style={{marginRight: 10, marginBottom: '5px'}}
           type="primary"

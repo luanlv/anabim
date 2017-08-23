@@ -11,6 +11,7 @@ class Video extends React.Component {
   }
   render () {
     console.log(this.props.user)
+    console.log(this.props.linkVideo)
     return (
       <div className='ui'>
         { (this.props.linkVideo.length > 1) ? (

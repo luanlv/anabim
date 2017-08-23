@@ -191,7 +191,7 @@ class SuaVideo extends React.Component {
               {this.state.videos.filter(function (el) {
                 return el.section  < 0
               }).map(function(video, index) {
-                return <VideoIntro defaultValue={video} key={video._id} courseId={that.state.course._id} />
+                return <VideoIntro defaultValue={video} key={video._id} courseId={that.state.course._id} courseSlug={that.state.course.slug} />
               })}
               {this.state.videos.filter(function (el) {
                 return el.section  < 0

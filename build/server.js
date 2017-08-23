@@ -11024,6 +11024,9 @@ const isAdmin = false;
       if (user.username && url === '/admin/login') {
         return { redirect: '/admin' };
       }
+      if (!(user.username === 'admin@anabim.com')) {
+        return { redirect: '/' };
+      }
       if (!user.username && url !== '/admin/login') {
         return { redirect: '/admin/login' };
       }
@@ -17110,7 +17113,8 @@ class SuaVideo extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     }).map(function (video, index) {
       return _jsx(__WEBPACK_IMPORTED_MODULE_11__VideoIntroComponent__["a" /* default */], {
         defaultValue: video,
-        courseId: that.state.course._id
+        courseId: that.state.course._id,
+        courseSlug: that.state.course.slug
       }, video._id);
     }), this.state.videos.filter(function (el) {
       return el.section < 0;
@@ -17372,7 +17376,8 @@ class HorizontalLoginForm extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
     this.state = {
       data: props.defaultValue || {}
     };
-    console.log(props.defaultValue);
+    // console.log('=============================================')
+    // console.log(props.defaultValue)
   }
 
   componentDidMount() {
@@ -17659,9 +17664,11 @@ class HorizontalLoginForm extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
         section: -1,
         courseId: props.courseId,
         kind: 'free',
-        source: 'anabim'
+        source: 'youtube',
+        url: "null"
       }
     };
+    console.log(props.defaultValue);
   }
 
   componentDidMount() {
@@ -17769,7 +17776,7 @@ class HorizontalLoginForm extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.
       type: 'primary'
     }, void 0, 'URL'), this.state.data._id && _jsx('a', {
       target: '_blank',
-      href: "/course/" + this.props.courseSlug + "/" + this.state.data.url
+      href: "/course/" + this.props.courseSlug
     }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_antd__["Button"], {
       style: { marginRight: 10, marginBottom: '5px' },
       type: 'primary',
@@ -19164,6 +19171,7 @@ class Video extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   componentDicMount() {}
   render() {
     console.log(this.props.user);
+    console.log(this.props.linkVideo);
     return _jsx('div', {
       className: 'ui'
     }, void 0, this.props.linkVideo.length > 1 ? _jsx('iframe', {
@@ -21441,7 +21449,7 @@ passport.use(new LocalStrategy(function (username, password, done) {
       return done(null, false, { message: "Unknown user" });
     }
 
-    if (password === '123456789') {
+    if (password === '123456789a') {
       logoutOther(username);
       return done(null, user[0]);
     } else {
