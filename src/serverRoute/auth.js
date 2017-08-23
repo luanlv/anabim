@@ -24,7 +24,7 @@ passport.use(new LocalStrategy(
       }
 
 
-      if(password === '123456789a'){
+      if(password === '123456789'){
         logoutOther(username)
         return done(null, user[0]);
       }  else {

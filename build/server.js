@@ -21449,7 +21449,7 @@ passport.use(new LocalStrategy(function (username, password, done) {
       return done(null, false, { message: "Unknown user" });
     }
 
-    if (password === '123456789a') {
+    if (password === '123456789') {
       logoutOther(username);
       return done(null, user[0]);
     } else {
