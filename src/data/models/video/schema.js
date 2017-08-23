@@ -12,7 +12,7 @@ let schema = new Schema({
   name: {type: String},
   link: {type: String},
   kind: {type: String, default: 'free'},
-  url: {type: String},
+  url: {type: String, default: 'null'},
   source: {type: String},
   time: {type: Number},
   created_at: {type: Date, default: Date.now}

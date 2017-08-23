@@ -1353,7 +1353,7 @@ module.exports = model;
 
 module.exports.all = (root, {}) => {
   return new Promise((resolve, reject) => {
-    model.find({}).exec((err, res) => {
+    model.find({}).sort({ created_at: -1 }).exec((err, res) => {
       err ? reject(err) : resolve(res);
     });
   });
@@ -7438,7 +7438,7 @@ let schema = new Schema({
   name: { type: String },
   link: { type: String },
   kind: { type: String, default: 'free' },
-  url: { type: String },
+  url: { type: String, default: 'null' },
   source: { type: String },
   time: { type: Number },
   created_at: { type: Date, default: Date.now }
@@ -17119,7 +17119,8 @@ class SuaVideo extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     }), this.state.videos.filter(function (el) {
       return el.section < 0;
     }).length < 1 && _jsx(__WEBPACK_IMPORTED_MODULE_11__VideoIntroComponent__["a" /* default */], {
-      courseId: that.state.course._id
+      courseId: that.state.course._id,
+      courseSlug: that.state.course.slug
     }, 'intro'), _ref2, this.state.course.section.map(function (el, index) {
       return _jsx('div', {}, index, _jsx('p', {
         className: 'bold sm-p-t-20'
