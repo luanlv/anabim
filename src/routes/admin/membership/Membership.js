@@ -88,7 +88,7 @@ class DonHang extends React.Component {
                     </Td>
                     <Td>
                       <span>
-                        <DatePicker defaultValue={moment(moment(el.info.createdAt).format("DD/MM/YYYY"), "DD/MM/YYYY")} format={"DD/MM/YYYY"}
+                        <DatePicker defaultValue={moment(moment(el.info.created_at).format("DD/MM/YYYY"), "DD/MM/YYYY")} format={"DD/MM/YYYY"}
                                     onChange={(date, dateString) => {
                                       let newData = that.state.data
                                       newData[index].info.createdAt = date.format()

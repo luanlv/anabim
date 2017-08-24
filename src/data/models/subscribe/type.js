@@ -55,7 +55,10 @@ export default new GraphQLObjectType({
     coupon: {
       type: GraphQLJSON
     },
-    created_at: {
+    createdAt: {
+      type: GraphQLDateTime
+    },
+    createAt: {
       type: GraphQLDateTime
     },
   })

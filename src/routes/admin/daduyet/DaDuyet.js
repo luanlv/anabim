@@ -26,7 +26,7 @@ class DonHang extends React.Component {
   }
 
   async init () {
-    let subscribe = 'allDoneSubscribe{_id, done, state, email, name, phone, month, bonusDay, price, info, coupon, created_at}';
+    let subscribe = 'allDoneSubscribe{_id, done, state, email, name, phone, month, bonusDay, price, info, coupon, createAt}';
     const resp = await fetch('/graphql', {
       method: 'post',
       headers: {
@@ -93,13 +93,13 @@ class DonHang extends React.Component {
                       <span>{el.month} tháng</span>
                     </Td>
                     <Td>
-                      <span>{el.price.toLocaleString()}</span>
+                      <span>{(el.price || 0).toLocaleString()}</span>
                     </Td>
                     <Td>
                       <span>{el.coupon ? el.coupon.code : ''}</span>
                     </Td>
                     <Td>
-                      <span>{moment(el.createdAt).format("DD/MM/YYYY")}</span>
+                      <span>{moment(el.createAt).format("DD/MM/YYYY")}</span>
                     </Td>
                     <Td>
                       <div>

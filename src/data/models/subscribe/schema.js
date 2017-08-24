@@ -12,10 +12,11 @@ let schema = new Schema({
   phone: String,
   month: Number,
   bonusDay: {type: Number, default: 0},
-  price: Number,
+  price: {type: Number, default: 0},
   info: String,
   coupon: Coupon,
-  created_at: {type: Date, default: Date.now}
+  created_at: {type: Date, default: Date.now},
+  createAt: {type: Date, default: Date.now}
 }, { collection: 'subscribe'});
 
 schema.plugin(autoIncrement.plugin, 'Subscribe')
