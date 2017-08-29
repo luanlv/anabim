@@ -55,7 +55,7 @@ passport.use(new FacebookStrategy({
   let username = profile.emails ? profile.emails[0].value : (profile.id + '@facebook.com')
     User.findOrCreate({username: username},
       {
-        uid: profile.id,
+        uid: username,
         name: profile.displayName,
         username: username,
         provider: 'facebook',
@@ -79,7 +79,7 @@ passport.use(new GoogleStrategy({
 
     User.findOrCreate({username: profile.emails[0].value},
       {
-        uid: profile.id,
+        uid: profile.emails[0].value,
         name: profile.displayName,
         username: profile.emails[0].value,
         provider: 'google',
