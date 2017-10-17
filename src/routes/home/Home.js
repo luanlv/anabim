@@ -43,7 +43,7 @@ class Home extends React.Component {
 
     $('.ui.embed').embed()
 
-    $('#video-background').html('<source src="http://video.vnguy.com/video.mp4" type="video/mp4" />')
+    $('#video-background').html('<source src="http://video.anabim.com/video.mp4" type="video/mp4" />')
   }
 
   render() {
