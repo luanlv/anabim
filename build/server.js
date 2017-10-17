@@ -2162,7 +2162,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     var day = Math.floor(Math.random() * 10);
     var key = "" + __WEBPACK_IMPORTED_MODULE_5_moment___default()(__WEBPACK_IMPORTED_MODULE_5_moment___default()().format()).add(day, 'days').unix() + day;
     var videoBySlug = __WEBPACK_IMPORTED_MODULE_3__components_Partial_Fn__["a" /* default */].findVideoBySlug(this.props.data.videos.value, this.props.params.slug, this.props.params.videoSlug);
-    var linkVideo = videoBySlug.source === 'anabim' ? 'http://video.vnguy.com/?v=' + __WEBPACK_IMPORTED_MODULE_3__components_Partial_Fn__["a" /* default */].fixVideo(videoBySlug.link) + '&k=' + key : 'https://www.youtube.com/embed/' + videoBySlug.link + '?autoplay=1';
+    var linkVideo = videoBySlug.source === 'anabim' ? 'http://video.anabim.com/?v=' + __WEBPACK_IMPORTED_MODULE_3__components_Partial_Fn__["a" /* default */].fixVideo(videoBySlug.link) + '&k=' + key : 'https://www.youtube.com/embed/' + videoBySlug.link + '?autoplay=1';
     var button = user.member === 'pending' ? _jsx('button', {
       className: 'ui large orange button',
       onClick: function () {
@@ -19616,7 +19616,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
     $('.ui.embed').embed();
 
-    $('#video-background').html('<source src="http://video.vnguy.com/video.mp4" type="video/mp4" />');
+    $('#video-background').html('<source src="http://video.anabim.com/video.mp4" type="video/mp4" />');
   }
 
   render() {
