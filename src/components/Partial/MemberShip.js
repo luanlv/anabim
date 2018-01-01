@@ -221,9 +221,9 @@ class Membership extends React.Component {
               </div>
               <div className='ui bottom attached tab segment noBor' data-tab='second'>
                 <h2>NGÂN HÀNG TMCP NGOẠI THƯƠNG THĂNG LONG (VIETCOMBANK)</h2>
-                <h3>Phòng giao dịch Kim Liên – Ô Chợ Dừa – 390 Xã Đàn – Hà Nội</h3>
-                <h3>- Chủ tài khoản: <span style={{color: 'red'}}>PHẠM ĐỨC THỊNH</span></h3>
-                <h3>- Số tài khoản: <span style={{color: 'red'}}>0491000064512</span></h3>
+                <h3>Chi nhánh Hà Nội</h3>
+                <h3>- Chủ tài khoản: <span style={{color: 'red'}}>NGUYỄN XUÂN TRƯỜNG</span></h3>
+                <h3>- Số tài khoản: <span style={{color: 'red'}}>0541000259683</span></h3>
               </div>
             </div>
             <div className='eight wide column'>

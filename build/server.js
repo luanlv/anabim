@@ -3726,7 +3726,7 @@ var _ref26 = _jsx('h3', {}, void 0, '\u0110\u1ECBa ch\u1EC9: 36B ng\xF5 554, Tr\
 
 var _ref27 = _jsx('h2', {}, void 0, 'NG\xC2N H\xC0NG TMCP NGO\u1EA0I TH\u01AF\u01A0NG TH\u0102NG LONG (VIETCOMBANK)');
 
-var _ref28 = _jsx('h3', {}, void 0, 'Ph\xF2ng giao d\u1ECBch Kim Li\xEAn \u2013 \xD4 Ch\u1EE3 D\u1EEBa \u2013 390 X\xE3 \u0110\xE0n \u2013 H\xE0 N\u1ED9i');
+var _ref28 = _jsx('h3', {}, void 0, 'Chi nh\xE1nh H\xE0 N\u1ED9i');
 
 var _ref29 = _jsx('div', {
   className: 'eight wide column'
@@ -3913,9 +3913,9 @@ class Membership extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component
       'data-tab': 'second'
     }, void 0, _ref27, _ref28, _jsx('h3', {}, void 0, '- Ch\u1EE7 t\xE0i kho\u1EA3n: ', _jsx('span', {
       style: { color: 'red' }
-    }, void 0, 'PH\u1EA0M \u0110\u1EE8C TH\u1ECANH')), _jsx('h3', {}, void 0, '- S\u1ED1 t\xE0i kho\u1EA3n: ', _jsx('span', {
+    }, void 0, 'NGUY\u1EC4N XU\xC2N TR\u01AF\u1EDCNG')), _jsx('h3', {}, void 0, '- S\u1ED1 t\xE0i kho\u1EA3n: ', _jsx('span', {
       style: { color: 'red' }
-    }, void 0, '0491000064512')))), _ref29), _jsx('div', {
+    }, void 0, '0541000259683')))), _ref29), _jsx('div', {
       className: 'ui segment noBor noMa'
     }, void 0, _jsx('div', {
       className: 'ui',
