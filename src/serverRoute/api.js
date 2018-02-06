@@ -270,8 +270,14 @@ router.post('/membership/activebycode', bodyParser.json(), (req, res) => {
 //user
 
 router.post('/user/update', bodyParser.json() ,(req, res) => {
-  User.findOneAndUpdate({_id: req.body._id}, { $set: req.body}, { new: true }, function (err, resData) {
-    if (err) return res.statusCode(400).send(err);
+  // console.log(req.body)
+  delete req.body._id
+  User.findOneAndUpdate({username: req.body.username}, { $set: req.body}, { new: true }, function (err, resData) {
+    if (err) {
+      console.log(err)
+      return res.sendStatus(400);
+    }
+    // console.log(resData)
     res.send(resData);
   });
 })

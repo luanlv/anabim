@@ -2343,7 +2343,7 @@ class Course extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-var api_key = 'key-b27916a12645e658b1de91b9620f85fd';
+var api_key = 'b27916a12645e658b1de91b9620f85fd';
 var domain = 'mg.vnguy.com';
 var mailgun = __webpack_require__(267)({ apiKey: api_key, domain: domain });
 
@@ -7254,7 +7254,7 @@ let UserSchema = new Schema({
 
 UserSchema.plugin(findOrCreate);
 
-UserSchema.plugin(autoIncrement.plugin, 'User');
+// UserSchema.plugin(autoIncrement.plugin, 'User')
 
 let User = mongoose.model('User', UserSchema);
 
@@ -7300,7 +7300,7 @@ module.exports.getListOfUsers = () => {
 
 module.exports.getMembership = () => {
   return new Promise((resolve, reject) => {
-    User.find({ member: 'membership' }).exec((err, res) => {
+    User.find({ member: 'membership' }).sort({ createdAt: -1 }).exec((err, res) => {
       err ? reject(err) : resolve(res);
     });
   });
@@ -7338,7 +7338,7 @@ module.exports.getTrialMember = () => {
   description: 'User object',
   fields: () => ({
     _id: {
-      type: __WEBPACK_IMPORTED_MODULE_0_graphql__["GraphQLInt"]
+      type: __WEBPACK_IMPORTED_MODULE_0_graphql__["GraphQLString"]
     },
     name: {
       type: __WEBPACK_IMPORTED_MODULE_0_graphql__["GraphQLString"]
@@ -20865,8 +20865,14 @@ router.post('/membership/activebycode', bodyParser.json(), (req, res) => {});
 //user
 
 router.post('/user/update', bodyParser.json(), (req, res) => {
-  User.findOneAndUpdate({ _id: req.body._id }, { $set: req.body }, { new: true }, function (err, resData) {
-    if (err) return res.statusCode(400).send(err);
+  // console.log(req.body)
+  delete req.body._id;
+  User.findOneAndUpdate({ username: req.body.username }, { $set: req.body }, { new: true }, function (err, resData) {
+    if (err) {
+      console.log(err);
+      return res.sendStatus(400);
+    }
+    // console.log(resData)
     res.send(resData);
   });
 });

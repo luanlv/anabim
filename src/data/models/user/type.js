@@ -24,7 +24,7 @@ export default new GraphQLObjectType({
   description: 'User object',
   fields: () => ({
     _id: {
-      type: GraphQLInt
+      type: GraphQLString
     },
     name: {
       type: GraphQLString

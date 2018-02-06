@@ -25,7 +25,7 @@ let UserSchema = new Schema({
 
 UserSchema.plugin(findOrCreate);
 
-UserSchema.plugin(autoIncrement.plugin, 'User')
+// UserSchema.plugin(autoIncrement.plugin, 'User')
 
 let User = mongoose.model('User', UserSchema)
 
@@ -72,7 +72,7 @@ module.exports.getListOfUsers = () => {
 
 module.exports.getMembership = () => {
   return new Promise((resolve, reject) => {
-    User.find({member: 'membership'}).exec((err, res) => {
+    User.find({member: 'membership'}).sort({createdAt: -1}).exec((err, res) => {
       err ? reject(err) : resolve(res);
     });
   });

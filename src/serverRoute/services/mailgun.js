@@ -1,4 +1,4 @@
-var api_key = 'key-b27916a12645e658b1de91b9620f85fd';
+var api_key = 'b27916a12645e658b1de91b9620f85fd';
 var domain = 'mg.vnguy.com';
 var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
