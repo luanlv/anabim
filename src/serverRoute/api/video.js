@@ -30,4 +30,8 @@ router.get('/getByCourseSlug/:courseSlug', (req, res) => {
   })
 })
 
+router.post('/view', (req, res) => {
+  res.send('ok')
+})
+
 export default router;
